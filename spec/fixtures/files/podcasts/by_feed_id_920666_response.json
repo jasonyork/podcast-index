@@ -1,0 +1,106 @@
+{
+  "status": "true",
+  "query": {
+    "id": "920666"
+  },
+  "feed": {
+    "id": 920666,
+    "podcastGuid": "917393e3-1b1e-5cef-ace4-edaa54e1f810",
+    "title": "Podcasting 2.0",
+    "url": "http://mp3s.nashownotes.com/pc20rss.xml",
+    "originalUrl": "http://mp3s.nashownotes.com/pc20rss.xml",
+    "link": "http://podcastindex.org",
+    "description": "The Podcast Index presents Podcasting 2.0 - Upgrading Podcasting",
+    "author": "Podcast Index LLC",
+    "ownerName": "Adam Curry",
+    "image": "https://noagendaassets.com/enc/1601061118.678_pciavatar.jpg",
+    "artwork": "https://noagendaassets.com/enc/1601061118.678_pciavatar.jpg",
+    "lastUpdateTime": 1672795848,
+    "lastCrawlTime": 1672795830,
+    "lastParseTime": 1672795894,
+    "lastGoodHttpStatusTime": 1672795830,
+    "lastHttpStatus": 200,
+    "contentType": "text/xml; charset=UTF-8",
+    "itunesId": 1584274529,
+    "itunesType": "episodic",
+    "generator": "Freedom Controller",
+    "language": "en",
+    "explicit": false,
+    "type": 0,
+    "dead": 0,
+    "chash": "64059994cb75f4fc444a379db143e974",
+    "episodeCount": 48,
+    "crawlErrors": 0,
+    "parseErrors": 0,
+    "categories": {
+      "55": "News",
+      "59": "Politics",
+      "102": "Technology"
+    },
+    "locked": 1,
+    "imageUrlHash": 1114062829,
+    "value": {
+      "model": {
+        "type": "lightning",
+        "method": "keysend",
+        "suggested": "0.00000005000"
+      },
+      "destinations": [
+        {
+          "name": "Podcastindex.org",
+          "type": "node",
+          "address": "03ae9f91a0cb8ff43840e3c322c4c61f019d8c1c3cea15a25cfc425ac605e61a4a",
+          "split": 91
+        },
+        {
+          "name": "Dreb Scott (Chapters)",
+          "type": "node",
+          "address": "02453e4e93322d60219808c00c2e6d1f1c673420e95b5511a33c40cfb4df5e9148",
+          "split": 5
+        },
+        {
+          "name": "Sovereign Feeds",
+          "type": "node",
+          "address": "02a128c92baf0ede00ed0fc3720a92ba2c6392e0b58aa4decab1d787a666d94cb7",
+          "split": 5,
+          "customKey": "112111100",
+          "customValue": "wal_MB9T45QHGyW",
+          "fee": true
+        },
+        {
+          "name": "BoostBot",
+          "type": "node",
+          "address": "03d55f4d4c870577e98ac56605a54c5ed20c8897e41197a068fd61bdb580efaa67",
+          "split": 1
+        },
+        {
+          "name": "Boostagram Monitor",
+          "type": "node",
+          "address": "038399372001f2741d58d6ec4846fccb78daa1a485e69e2eebc5aadba047d35956",
+          "split": 1
+        },
+        {
+          "name": "Saturn Test",
+          "type": "node",
+          "address": "030a58b8653d32b99200a2334cfe913e51dc7d155aa0116c176657a4f1722677a3",
+          "split": 1,
+          "customKey": "696969",
+          "customValue": "gq0Z8b1wEftMkFL4vj7E"
+        },
+        {
+          "name": "Stay Safe Sage",
+          "type": "node",
+          "address": "030a58b8653d32b99200a2334cfe913e51dc7d155aa0116c176657a4f1722677a3",
+          "split": 1,
+          "customKey": "696969",
+          "customValue": "t2vRy8BdZutknl3LYOSG"
+        }
+      ]
+    },
+    "funding": {
+      "url": "https://paypal.me/podcastindex",
+      "message": "Value 4 Value"
+    }
+  },
+  "description": "Found matching feeds."
+}

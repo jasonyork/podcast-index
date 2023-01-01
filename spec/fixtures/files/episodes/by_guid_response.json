@@ -1,0 +1,110 @@
+{
+  "status": "true",
+  "id": "920666",
+  "url": null,
+  "podcastGuid": null,
+  "guid": "PC2084",
+  "episode": {
+    "id": 8031009367,
+    "title": "Episode 84: All Aboard to On-Board!",
+    "link": "http://adam.curry.com/html/PC208420220506Podcas-9vksRH4FlPRKdPB0QqFRHZ1GnmRNbz.html",
+    "description": "<p>Podcasting 2.0 for May 6th 2022 Episode 84: \"All Aboard to On-Board!\"</p>\n<p>Adam & Dave discuss the week's developments on podcastindex.org and we're joined by Fountain's Oscar Merry</p>\n\n<p>Download the mp3</p>\n<p>Podcast Feed</p>\n<p>PodcastIndex.org</p>\n<p>Preservepodcasting.com</p>\n<p>Check out the podcasting 2.0 apps and services newpodcastapps.com</p>\n<p>Support us with your Time Talent and Treasure</p>\n<p>Positioning</p>\n<p>Boost Bait</p>\n<p>ShowNotes</p>\n<p>Put us in your value split</p>\n<p>Oscar Merry Fountain.fm</p>\n<p>Jensen SF</p>\n<p>Khalil Rountree's Bitcoin Awakening</p>\n...",
+    "guid": "PC2084",
+    "datePublished": 1651867250,
+    "datePublishedPretty": "May 06, 2022 3:00pm",
+    "dateCrawled": 1672453087,
+    "enclosureUrl": "https://op3.dev/e/mp3s.nashownotes.com/PC20-84-2022-05-06-Final.mp3",
+    "enclosureType": "audio/mpeg",
+    "enclosureLength": 84757256,
+    "duration": 7058,
+    "explicit": 0,
+    "episode": null,
+    "episodeType": "full",
+    "season": 0,
+    "image": "https://noagendaassets.com/enc/1601061118.678_pciavatar.jpg",
+    "imageUrlHash": 1114062829,
+    "feedItunesId": 1584274529,
+    "feedImage": "https://noagendaassets.com/enc/1601061118.678_pciavatar.jpg",
+    "feedImageUrlHash": 1114062829,
+    "feedId": 920666,
+    "feedTitle": "Podcasting 2.0",
+    "feedLanguage": "en",
+    "chaptersUrl": "http://34.117.70.159/http%3Amp3s.nashownotes.compc20rss.xml/PC2084",
+    "persons": [
+      {
+        "id": 2887562,
+        "name": "Adam Curry",
+        "role": "host",
+        "group": "cast",
+        "href": "http://curry.com",
+        "img": "https://feeds.podcastindex.org/adam_avatar.jpg"
+      },
+      {
+        "id": 2887563,
+        "name": "Dave Jones",
+        "role": "host",
+        "group": "cast",
+        "href": "http://dave.sobr.org",
+        "img": "https://feeds.podcastindex.org/dave_avatar.jpg"
+      },
+      {
+        "id": 2887564,
+        "name": "Oscar Merry",
+        "role": "guest",
+        "group": "cast",
+        "href": "https://fountain.fm/",
+        "img": "https://cdn.masto.host/podcastindexsocial/accounts/avatars/106/308/425/108/516/919/original/94816333ea4c146a.jpg"
+      }
+    ],
+    "transcripts": [
+      {
+        "url": "https://mp3s.nashownotes.com/PC20-84-Captions.srt",
+        "type": "application/srt"
+      }
+    ],
+    "value": {
+      "model": {
+        "type": "lightning",
+        "method": "keysend",
+        "suggested": "0.00000005000"
+      },
+      "destinations": [
+        {
+          "name": "Podcastindex.org",
+          "type": "node",
+          "address": "03ae9f91a0cb8ff43840e3c322c4c61f019d8c1c3cea15a25cfc425ac605e61a4a",
+          "split": 64
+        },
+        {
+          "name": "Oscar Merry - Fountain",
+          "type": "node",
+          "address": "02a128c92baf0ede00ed0fc3720a92ba2c6392e0b58aa4decab1d787a666d94cb7",
+          "split": 25,
+          "customKey": "112111100",
+          "customValue": "wal_ZmqFg13NB31oek"
+        },
+        {
+          "name": "Dreb Scott (Chapters)",
+          "type": "node",
+          "address": "02453e4e93322d60219808c00c2e6d1f1c673420e95b5511a33c40cfb4df5e9148",
+          "split": 5
+        },
+        {
+          "name": "Sovereign Feeds",
+          "type": "node",
+          "address": "02a128c92baf0ede00ed0fc3720a92ba2c6392e0b58aa4decab1d787a666d94cb7",
+          "split": 5,
+          "customKey": "112111100",
+          "customValue": "wal_MB9T45QHGyW"
+        },
+        {
+          "name": "Boostagram Monitor",
+          "type": "node",
+          "address": "038399372001f2741d58d6ec4846fccb78daa1a485e69e2eebc5aadba047d35956",
+          "split": 1
+        }
+      ]
+    }
+  },
+  "description": "Found matching item."
+}

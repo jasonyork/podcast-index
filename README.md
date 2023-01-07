@@ -1,8 +1,6 @@
 # PodcastIndex
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/podcast_index`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+A Ruby client for the [podcastindex.org API](https://podcastindex-org.github.io/docs-api)
 
 ## Installation
 
@@ -14,19 +12,77 @@ If bundler is not being used to manage dependencies, install the gem by executin
 
     $ gem install podcast_index
 
+## Configuration
+
+Configure the [podcastindex.org API credentials](https://podcastindex-org.github.io/docs-api/#overview--authentication-details) before making any requests:
+
+```ruby
+PodcastIndex.configure do |config|
+  config.api_key = "<your api key>"
+  config.api_secret = "<your api secret>"
+end
+```
+
+Additionally, the base url of the API defaults to `https://api.podcastindex.org/api/1.0`, but can be overridden in the configure block if necessary:
+```ruby
+  config.base_url = "<new base url>"
+````
+
+In a Rails app, this configuration would typically be placed in an initializer file.
+
 ## Usage
 
-TODO: Write usage instructions here
+### Examples
+
+Find a podcast by podcastindex id:
+
+```ruby
+podcast = PodcastIndex::Podcast.find(920666)
+podcast.title # => "Podcasting 2.0"
+```
+
+Find an episode by guid:
+
+```ruby
+episode = PodcastIndex::Episode.find_by_guid("PC2084", feedurl: "http://mp3s.nashownotes.com/pc20rss.xml")
+episode.title # => "Episode 84: All Aboard to On-Board!"
+```
+
+Methods that return multiple results are represented as an array of objects:
+
+```ruby
+episodes = PodcastIndex::Episode.find_by_person("Adam Curry")
+episodes.count # => 57
+episodes.first.title # => "Episode #2: A conversation with Adam Curry"
+```
+
+### Supported Methods
+
+This client currently implements most of the API, focusing on searching for Podcasts and Episodes.  For the list of supported methods, see the [Podcast](lib/podcast_index/podcast.rb) and [Episode](lib/podcast_index/episode.rb) models.
+
+The attributes of the response object mirror the names in the API, but have been translated to "underscore" format more closely follow Ruby conventions.  For example, the `lastUpdateTime` attribute for a `Podcast` is renamed to `last_update_time`.
+
+### Exception Handling
+
+If an error occurs, the client will raise a `PodcastIndex::Error` exception.  The `message` field will contain the description returned from the server if available, or the exception message.  For example, some request require one of three optional params:
+
+```ruby
+begin
+  episode = PodcastIndex::Episode.find_by_guid("PC2084")
+rescue PodcastIndex::Error => e
+  puts e.message # => "This call requires either a valid `feedid`, `feedurl` or `podcastguid` argument. "
+end
+```
 
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
 
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and the created tag, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+To install this gem onto your local machine, run `bundle exec rake install`.
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/podcast_index.
+Bug reports and pull requests are welcome on GitHub at https://github.com/jasonyork/podcast_index.
 
 ## License
 

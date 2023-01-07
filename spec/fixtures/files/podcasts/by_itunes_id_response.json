@@ -1,0 +1,44 @@
+{
+  "status": "true",
+  "query": {
+    "id": "1584274529"
+  },
+  "feed": {
+    "id": 920666,
+    "title": "Podcasting 2.0",
+    "url": "http://mp3s.nashownotes.com/pc20rss.xml",
+    "originalUrl": "http://mp3s.nashownotes.com/pc20rss.xml",
+    "link": "http://podcastindex.org",
+    "description": "The Podcast Index presents Podcasting 2.0 - Upgrading Podcasting",
+    "author": "Podcast Index LLC",
+    "ownerName": "Adam Curry",
+    "image": "https://noagendaassets.com/enc/1601061118.678_pciavatar.jpg",
+    "artwork": "https://noagendaassets.com/enc/1601061118.678_pciavatar.jpg",
+    "lastUpdateTime": 1672873240,
+    "lastCrawlTime": 1672873220,
+    "lastParseTime": 1672873252,
+    "lastGoodHttpStatusTime": 1672873220,
+    "lastHttpStatus": 200,
+    "contentType": "text/xml; charset=UTF-8",
+    "itunesId": 1584274529,
+    "generator": "Freedom Controller",
+    "language": "en",
+    "podcastGuid": "917393e3-1b1e-5cef-ace4-edaa54e1f810",
+    "type": 0,
+    "dead": 0,
+    "crawlErrors": 0,
+    "parseErrors": 0,
+    "categories": {
+      "55": "News",
+      "59": "Politics",
+      "102": "Technology"
+    },
+    "locked": 1,
+    "episodeCount": 48,
+    "funding": {
+      "url": "https://paypal.me/podcastindex",
+      "message": "Value 4 Value"
+    }
+  },
+  "description": "Found matching items."
+}

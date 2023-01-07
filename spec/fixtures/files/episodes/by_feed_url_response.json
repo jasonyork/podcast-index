@@ -1,0 +1,4016 @@
+{
+  "status": "true",
+  "items": [
+    {
+      "id": 12384062306,
+      "title": "Episode 115: Boosting in the New Year",
+      "link": "http://adam.curry.com/html/PC2011520221230Podca-pMcT8GzfLKG2lnJwl2wfdbd2SBtDQq.html",
+      "description": "<p>Podcasting 2.0 December 30th 2022 Episode 115: \"Boosting in the New Year\"</p>\n<p>Adam & Dave discuss the week's developments on podcastindex.org -A review of the year and lots of future fun as the board welcomes James Cridland for the last board meeting of 2022</p>\n\n<p>Esteemed Board Member - The Honorable James Cridland</p>\n<p>Podverse bugs fixed</p>\n<p>Breez bug stomping</p>\n<p>Alby conshax premium lsat</p>\n<p>Cross app comments</p>\n<p>Fountain is killing it on marketing</p>\n<p>You can't beat a #1 hit out of wax</p>\n<p>BT Sync DSC</p>\n<p>A...",
+      "guid": "PC20115",
+      "datePublished": 1672451837,
+      "datePublishedPretty": "December 30, 2022 7:57pm",
+      "dateCrawled": 1672453086,
+      "enclosureUrl": "https://op3.dev/e/mp3s.nashownotes.com/PC20-115-2022-12-30-Final.mp3",
+      "enclosureType": "audio/mpeg",
+      "enclosureLength": 95234030,
+      "duration": 7931,
+      "explicit": 0,
+      "episode": null,
+      "episodeType": "full",
+      "season": 0,
+      "image": "https://noagendaassets.com/enc/1601061118.678_pciavatar.jpg",
+      "feedItunesId": 1584274529,
+      "feedImage": "https://noagendaassets.com/enc/1601061118.678_pciavatar.jpg",
+      "feedId": 920666,
+      "feedLanguage": "en",
+      "feedDead": 0,
+      "feedDuplicateOf": null,
+      "chaptersUrl": "http://34.117.70.159/http%3Amp3s.nashownotes.compc20rss.xml/PC20115",
+      "transcriptUrl": "https://mp3s.nashownotes.com/PC20-115-Captions.srt",
+      "persons": [
+        {
+          "id": 16301553,
+          "name": "Adam Curry",
+          "role": "host",
+          "group": "cast",
+          "href": "http://curry.com",
+          "img": "https://feeds.podcastindex.org/adam_avatar.jpg"
+        },
+        {
+          "id": 16301554,
+          "name": "Dave Jones",
+          "role": "host",
+          "group": "cast",
+          "href": "http://dave.sobr.org",
+          "img": "https://feeds.podcastindex.org/dave_avatar.jpg"
+        },
+        {
+          "id": 16301555,
+          "name": "James Cridland",
+          "role": "guest",
+          "group": "cast",
+          "href": "https://james.cridland.net/",
+          "img": "https://james.cridland.net/front-image.jpg"
+        }
+      ],
+      "transcripts": [
+        {
+          "url": "https://mp3s.nashownotes.com/PC20-115-Captions.srt",
+          "type": "application/srt"
+        }
+      ],
+      "value": {
+        "model": {
+          "type": "lightning",
+          "method": "keysend",
+          "suggested": "0.00000005000"
+        },
+        "destinations": [
+          {
+            "name": "Podcastindex.org",
+            "type": "node",
+            "address": "03ae9f91a0cb8ff43840e3c322c4c61f019d8c1c3cea15a25cfc425ac605e61a4a",
+            "split": 72
+          },
+          {
+            "name": "Dreb Scott (Chapters)",
+            "type": "node",
+            "address": "02453e4e93322d60219808c00c2e6d1f1c673420e95b5511a33c40cfb4df5e9148",
+            "split": 5
+          },
+          {
+            "name": "Sovereign Feeds",
+            "type": "node",
+            "address": "02a128c92baf0ede00ed0fc3720a92ba2c6392e0b58aa4decab1d787a666d94cb7",
+            "split": 10,
+            "customKey": "112111100",
+            "customValue": "wal_MB9T45QHGyW"
+          },
+          {
+            "name": "Boostagram Monitor",
+            "type": "node",
+            "address": "038399372001f2741d58d6ec4846fccb78daa1a485e69e2eebc5aadba047d35956",
+            "split": 1
+          },
+          {
+            "name": "Stay Safe Sage",
+            "type": "node",
+            "address": "030a58b8653d32b99200a2334cfe913e51dc7d155aa0116c176657a4f1722677a3",
+            "split": 1,
+            "customKey": "696969",
+            "customValue": "t2vRy8BdZutknl3LYOSG"
+          },
+          {
+            "name": "Saturn Test",
+            "type": "node",
+            "address": "030a58b8653d32b99200a2334cfe913e51dc7d155aa0116c176657a4f1722677a3",
+            "split": 1,
+            "customKey": "696969",
+            "customValue": "gq0Z8b1wEftMkFL4vj7E"
+          },
+          {
+            "name": "james@getalby.com",
+            "type": "node",
+            "address": "030a58b8653d32b99200a2334cfe913e51dc7d155aa0116c176657a4f1722677a3",
+            "split": 10,
+            "customKey": "696969",
+            "customValue": "sMTUI4g4v8hPG7rMfHBj"
+          }
+        ]
+      }
+    },
+    {
+      "id": 12237009502,
+      "title": "Episode 114: Protoflexible",
+      "link": "http://adam.curry.com/html/PC2011320221223Podca-342BQSMppGtBn7hQSJF4Spkz79629h.html",
+      "description": "<p>Podcasting 2.0 December 23d 2022 Episode 114: \"Protoflexible\"</p>\n<p>Adam & Dave discuss the week's developments on podcastindex.org -From Neruo-Insight to Nostr, this board meeting has it all!</p>\n\n<p>ShowNotes</p>\n<p>*** Check Email Folder!</p>\n<p>Hive Cast</p>\n<p>Neuro-Insight</p>\n<p>No Ads</p>\n<p>Spotify Exec Dawn Ostroff on Joe Rogan, Meghan, Podcast Cancelations - Variety</p>\n<p>PM Announces First Round of Evolutions Speakers - Podcast Business Journal</p>\n<p>Lightning Paywalls Versus Value4Value - Bitcoin Magazine - Bitcoin News, Articles and Expert Insights</p>\n<p>Royalty free music and 'free to download' music...",
+      "guid": "PC20114",
+      "datePublished": 1671829111,
+      "datePublishedPretty": "December 23, 2022 2:58pm",
+      "dateCrawled": 1672453086,
+      "enclosureUrl": "https://op3.dev/e/mp3s.nashownotes.com/PC20-114-2022-12-23-Final.mp3",
+      "enclosureType": "audio/mpeg",
+      "enclosureLength": 94578565,
+      "duration": 7876,
+      "explicit": 0,
+      "episode": null,
+      "episodeType": "full",
+      "season": 0,
+      "image": "https://noagendaassets.com/enc/1601061118.678_pciavatar.jpg",
+      "feedItunesId": 1584274529,
+      "feedImage": "https://noagendaassets.com/enc/1601061118.678_pciavatar.jpg",
+      "feedId": 920666,
+      "feedLanguage": "en",
+      "feedDead": 0,
+      "feedDuplicateOf": null,
+      "chaptersUrl": "http://34.117.70.159/http%3Amp3s.nashownotes.compc20rss.xml/PC20114",
+      "transcriptUrl": "https://mp3s.nashownotes.com/PC20-114-Captions.srt",
+      "persons": [
+        {
+          "id": 15979919,
+          "name": "Adam Curry",
+          "role": "host",
+          "group": "cast",
+          "href": "http://curry.com",
+          "img": "https://feeds.podcastindex.org/adam_avatar.jpg"
+        },
+        {
+          "id": 15979920,
+          "name": "Dave Jones",
+          "role": "host",
+          "group": "cast",
+          "href": "http://dave.sobr.org",
+          "img": "https://feeds.podcastindex.org/dave_avatar.jpg"
+        }
+      ],
+      "transcripts": [
+        {
+          "url": "https://mp3s.nashownotes.com/PC20-114-Captions.srt",
+          "type": "application/srt"
+        }
+      ],
+      "value": {
+        "model": {
+          "type": "lightning",
+          "method": "keysend",
+          "suggested": "0.00000005000"
+        },
+        "destinations": [
+          {
+            "name": "Podcastindex.org",
+            "type": "node",
+            "address": "03ae9f91a0cb8ff43840e3c322c4c61f019d8c1c3cea15a25cfc425ac605e61a4a",
+            "split": 82
+          },
+          {
+            "name": "Dreb Scott (Chapters)",
+            "type": "node",
+            "address": "02453e4e93322d60219808c00c2e6d1f1c673420e95b5511a33c40cfb4df5e9148",
+            "split": 5
+          },
+          {
+            "name": "Sovereign Feeds",
+            "type": "node",
+            "address": "02a128c92baf0ede00ed0fc3720a92ba2c6392e0b58aa4decab1d787a666d94cb7",
+            "split": 10,
+            "customKey": "112111100",
+            "customValue": "wal_MB9T45QHGyW"
+          },
+          {
+            "name": "Boostagram Monitor",
+            "type": "node",
+            "address": "038399372001f2741d58d6ec4846fccb78daa1a485e69e2eebc5aadba047d35956",
+            "split": 1
+          },
+          {
+            "name": "Stay Safe Sage",
+            "type": "node",
+            "address": "030a58b8653d32b99200a2334cfe913e51dc7d155aa0116c176657a4f1722677a3",
+            "split": 1,
+            "customKey": "696969",
+            "customValue": "t2vRy8BdZutknl3LYOSG"
+          },
+          {
+            "name": "Saturn Test",
+            "type": "node",
+            "address": "030a58b8653d32b99200a2334cfe913e51dc7d155aa0116c176657a4f1722677a3",
+            "split": 1,
+            "customKey": "696969",
+            "customValue": "gq0Z8b1wEftMkFL4vj7E"
+          }
+        ]
+      }
+    },
+    {
+      "id": 12079530534,
+      "title": "Episode 113: Substance Dualism",
+      "link": "http://adam.curry.com/html/PC2011320221216Podca-1tqXrgSRB45tfNgTDc9ktCbdBgCsnJ.html",
+      "description": "<p>Podcasting 2.0 December 16th 2022 Episode 113: \"Substance Dualism\"</p>\n<p>Adam & Dave discuss the week's developments on podcastindex.org - The ONLY truthful podcast predictions anywhere are discussed in this weekly board meeting</p>\n\n<p>Last years predictions - I was right on every single thing</p>\n<p>FB + YT Podcasts - nope</p>\n<p>Club House etc - Nope</p>\n<p>Companies running out of money</p>\n<p>People getting fired</p>\n<p>Financial de-platforming</p>\n<p>I predict AI will suck and no one will use it in podcasting.</p>\n<p>Safety & Sustainability will make ad funded podcasts boring<...",
+      "guid": "PC20113",
+      "datePublished": 1671224473,
+      "datePublishedPretty": "December 16, 2022 3:01pm",
+      "dateCrawled": 1672453086,
+      "enclosureUrl": "https://op3.dev/e/mp3s.nashownotes.com/PC20-113-2022-12-16-Final.mp3",
+      "enclosureType": "audio/mpeg",
+      "enclosureLength": 87310777,
+      "duration": 7270,
+      "explicit": 0,
+      "episode": null,
+      "episodeType": "full",
+      "season": 0,
+      "image": "https://noagendaassets.com/enc/1601061118.678_pciavatar.jpg",
+      "feedItunesId": 1584274529,
+      "feedImage": "https://noagendaassets.com/enc/1601061118.678_pciavatar.jpg",
+      "feedId": 920666,
+      "feedLanguage": "en",
+      "feedDead": 0,
+      "feedDuplicateOf": null,
+      "chaptersUrl": "http://34.117.70.159/http%3Amp3s.nashownotes.compc20rss.xml/PC20113",
+      "transcriptUrl": "https://mp3s.nashownotes.com/PC20-113-Captions.srt",
+      "persons": [
+        {
+          "id": 15564152,
+          "name": "Adam Curry",
+          "role": "host",
+          "group": "cast",
+          "href": "http://curry.com",
+          "img": "https://feeds.podcastindex.org/adam_avatar.jpg"
+        },
+        {
+          "id": 15564153,
+          "name": "Dave Jones",
+          "role": "host",
+          "group": "cast",
+          "href": "http://dave.sobr.org",
+          "img": "https://feeds.podcastindex.org/dave_avatar.jpg"
+        }
+      ],
+      "transcripts": [
+        {
+          "url": "https://mp3s.nashownotes.com/PC20-113-Captions.srt",
+          "type": "application/srt"
+        }
+      ],
+      "value": {
+        "model": {
+          "type": "lightning",
+          "method": "keysend",
+          "suggested": "0.00000005000"
+        },
+        "destinations": [
+          {
+            "name": "Podcastindex.org",
+            "type": "node",
+            "address": "03ae9f91a0cb8ff43840e3c322c4c61f019d8c1c3cea15a25cfc425ac605e61a4a",
+            "split": 82
+          },
+          {
+            "name": "Dreb Scott (Chapters)",
+            "type": "node",
+            "address": "02453e4e93322d60219808c00c2e6d1f1c673420e95b5511a33c40cfb4df5e9148",
+            "split": 5
+          },
+          {
+            "name": "Sovereign Feeds",
+            "type": "node",
+            "address": "02a128c92baf0ede00ed0fc3720a92ba2c6392e0b58aa4decab1d787a666d94cb7",
+            "split": 10,
+            "customKey": "112111100",
+            "customValue": "wal_MB9T45QHGyW"
+          },
+          {
+            "name": "Boostagram Monitor",
+            "type": "node",
+            "address": "038399372001f2741d58d6ec4846fccb78daa1a485e69e2eebc5aadba047d35956",
+            "split": 1
+          },
+          {
+            "name": "Stay Safe Sage",
+            "type": "node",
+            "address": "030a58b8653d32b99200a2334cfe913e51dc7d155aa0116c176657a4f1722677a3",
+            "split": 1,
+            "customKey": "696969",
+            "customValue": "t2vRy8BdZutknl3LYOSG"
+          },
+          {
+            "name": "Saturn Test",
+            "type": "node",
+            "address": "030a58b8653d32b99200a2334cfe913e51dc7d155aa0116c176657a4f1722677a3",
+            "split": 1,
+            "customKey": "696969",
+            "customValue": "gq0Z8b1wEftMkFL4vj7E"
+          }
+        ]
+      }
+    },
+    {
+      "id": 11919040449,
+      "title": "Episode 112: Respect The Splits",
+      "link": "http://adam.curry.com/html/PC2011220221209Podca-m5fDN940jt2Kq5ctFJ4XvpVN3KhpCj.html",
+      "description": "<p>Podcasting 2.0 December 9th 2022 Episode 112: \"Respect The Splits\"</p>\n<p>Adam & Dave discuss the week's developments on podcastindex.org - The Board is back in session with an update that will fill up your buckets!</p>\n\n<p>PodPing 2.0</p>\n<p>IBEX Meeting Notes</p>\n<p>Subscription expander address idea</p>\n<p>Roy compares v4v with subscription</p>\n<p>Cross app comments!</p>\n<p>Todd ShareMyOPML</p>\n<p>V4V vs Ads</p>\n<p>Trillium FTW!</p>\n<p>Verify your podcast on Apple Podcasts with Verification Code</p>\n<p>App Devs - Todd</p>\n<p>Castle Podcast app</p>\n<p>...",
+      "guid": "PC20112",
+      "datePublished": 1670617696,
+      "datePublishedPretty": "December 09, 2022 2:28pm",
+      "dateCrawled": 1672453086,
+      "enclosureUrl": "https://op3.dev/e/mp3s.nashownotes.com/PC20-112-2022-12-09-Final.mp3",
+      "enclosureType": "audio/mpeg",
+      "enclosureLength": 73985194,
+      "duration": 6160,
+      "explicit": 0,
+      "episode": null,
+      "episodeType": "full",
+      "season": 0,
+      "image": "https://noagendaassets.com/enc/1601061118.678_pciavatar.jpg",
+      "feedItunesId": 1584274529,
+      "feedImage": "https://noagendaassets.com/enc/1601061118.678_pciavatar.jpg",
+      "feedId": 920666,
+      "feedLanguage": "en",
+      "feedDead": 0,
+      "feedDuplicateOf": null,
+      "chaptersUrl": "http://34.117.70.159/http%3Amp3s.nashownotes.compc20rss.xml/PC20112",
+      "transcriptUrl": "https://mp3s.nashownotes.com/PC20-112-Captions.srt",
+      "persons": [
+        {
+          "id": 15132847,
+          "name": "Adam Curry",
+          "role": "host",
+          "group": "cast",
+          "href": "http://curry.com",
+          "img": "https://feeds.podcastindex.org/adam_avatar.jpg"
+        },
+        {
+          "id": 15132848,
+          "name": "Dave Jones",
+          "role": "host",
+          "group": "cast",
+          "href": "http://dave.sobr.org",
+          "img": "https://feeds.podcastindex.org/dave_avatar.jpg"
+        }
+      ],
+      "transcripts": [
+        {
+          "url": "https://mp3s.nashownotes.com/PC20-112-Captions.srt",
+          "type": "application/srt"
+        }
+      ],
+      "value": {
+        "model": {
+          "type": "lightning",
+          "method": "keysend",
+          "suggested": "0.00000005000"
+        },
+        "destinations": [
+          {
+            "name": "Podcastindex.org",
+            "type": "node",
+            "address": "03ae9f91a0cb8ff43840e3c322c4c61f019d8c1c3cea15a25cfc425ac605e61a4a",
+            "split": 72
+          },
+          {
+            "name": "Dreb Scott (Chapters)",
+            "type": "node",
+            "address": "02453e4e93322d60219808c00c2e6d1f1c673420e95b5511a33c40cfb4df5e9148",
+            "split": 5
+          },
+          {
+            "name": "Sovereign Feeds",
+            "type": "node",
+            "address": "02a128c92baf0ede00ed0fc3720a92ba2c6392e0b58aa4decab1d787a666d94cb7",
+            "split": 10,
+            "customKey": "112111100",
+            "customValue": "wal_MB9T45QHGyW"
+          },
+          {
+            "name": "Boostagram Monitor",
+            "type": "node",
+            "address": "038399372001f2741d58d6ec4846fccb78daa1a485e69e2eebc5aadba047d35956",
+            "split": 1
+          },
+          {
+            "name": "Stay Safe Sage",
+            "type": "node",
+            "address": "030a58b8653d32b99200a2334cfe913e51dc7d155aa0116c176657a4f1722677a3",
+            "split": 1,
+            "customKey": "696969",
+            "customValue": "t2vRy8BdZutknl3LYOSG"
+          },
+          {
+            "name": "Saturn Test",
+            "type": "node",
+            "address": "030a58b8653d32b99200a2334cfe913e51dc7d155aa0116c176657a4f1722677a3",
+            "split": 1,
+            "customKey": "696969",
+            "customValue": "gq0Z8b1wEftMkFL4vj7E"
+          },
+          {
+            "name": "Alecks Gates",
+            "type": "node",
+            "address": "02b66d7caae1acb51a95e036fc12b1e6837d9143141fcff520876b04b9d82f36d1",
+            "split": 5
+          },
+          {
+            "name": "Steven Crader",
+            "type": "node",
+            "address": "030a58b8653d32b99200a2334cfe913e51dc7d155aa0116c176657a4f1722677a3",
+            "split": 5,
+            "customKey": "696969",
+            "customValue": "qCCTOIqLg62MR3zgMREU"
+          }
+        ]
+      }
+    },
+    {
+      "id": 11469777440,
+      "title": "Episode 111: Pod Molly",
+      "link": "http://adam.curry.com/html/PC2011120221118Podca-cm6jB94N41x2JNSbdF3wKxw5NgKszf.html",
+      "description": "<p>Podcasting 2.0 November 18th 2022 Episode 111: \"Pod Molly\"</p>\n<p>Adam & Dave discuss the week's </p>\n\n<p>fediverse.space</p>\n<p>Napster</p>\n<p>CSB is actually my angel - post on PodcastIndex Social</p>\n<p>NA file replace broke google podcasts</p>\n<p>What if we were a knitting community podcast asking for value?</p>\n<p>Paulo Coelho - Pirating his own books</p>\n<p>Stats periods from Todd</p>\n<p>DAI transcripts problem</p>\n<p>podping.Cloud.Write</p>\n\nLast Modified 11/18/2022 15:30:52 by Freedom Controller  ",
+      "guid": "PC20111",
+      "datePublished": 1668807103,
+      "datePublishedPretty": "November 18, 2022 3:31pm",
+      "dateCrawled": 1672453086,
+      "enclosureUrl": "https://op3.dev/e/mp3s.nashownotes.com/PC20-111-2022-11-18-Final.mp3",
+      "enclosureType": "audio/mpeg",
+      "enclosureLength": 81844185,
+      "duration": 6815,
+      "explicit": 0,
+      "episode": null,
+      "episodeType": "full",
+      "season": 0,
+      "image": "https://noagendaassets.com/enc/1601061118.678_pciavatar.jpg",
+      "feedItunesId": 1584274529,
+      "feedImage": "https://noagendaassets.com/enc/1601061118.678_pciavatar.jpg",
+      "feedId": 920666,
+      "feedLanguage": "en",
+      "feedDead": 0,
+      "feedDuplicateOf": null,
+      "chaptersUrl": "http://34.117.70.159/http%3Amp3s.nashownotes.compc20rss.xml/PC20111",
+      "transcriptUrl": "https://mp3s.nashownotes.com/PC20-111-Captions.srt",
+      "persons": [
+        {
+          "id": 13860290,
+          "name": "Adam Curry",
+          "role": "host",
+          "group": "cast",
+          "href": "http://curry.com",
+          "img": "https://feeds.podcastindex.org/adam_avatar.jpg"
+        },
+        {
+          "id": 13860291,
+          "name": "Dave Jones",
+          "role": "host",
+          "group": "cast",
+          "href": "http://dave.sobr.org",
+          "img": "https://feeds.podcastindex.org/dave_avatar.jpg"
+        }
+      ],
+      "transcripts": [
+        {
+          "url": "https://mp3s.nashownotes.com/PC20-111-Captions.srt",
+          "type": "application/srt"
+        }
+      ],
+      "value": {
+        "model": {
+          "type": "lightning",
+          "method": "keysend",
+          "suggested": "0.00000005000"
+        },
+        "destinations": [
+          {
+            "name": "Podcastindex.org",
+            "type": "node",
+            "address": "03ae9f91a0cb8ff43840e3c322c4c61f019d8c1c3cea15a25cfc425ac605e61a4a",
+            "split": 82
+          },
+          {
+            "name": "Dreb Scott (Chapters)",
+            "type": "node",
+            "address": "02453e4e93322d60219808c00c2e6d1f1c673420e95b5511a33c40cfb4df5e9148",
+            "split": 5
+          },
+          {
+            "name": "Sovereign Feeds",
+            "type": "node",
+            "address": "02a128c92baf0ede00ed0fc3720a92ba2c6392e0b58aa4decab1d787a666d94cb7",
+            "split": 10,
+            "customKey": "112111100",
+            "customValue": "wal_MB9T45QHGyW"
+          },
+          {
+            "name": "Boostagram Monitor",
+            "type": "node",
+            "address": "038399372001f2741d58d6ec4846fccb78daa1a485e69e2eebc5aadba047d35956",
+            "split": 1
+          },
+          {
+            "name": "Stay Safe Sage",
+            "type": "node",
+            "address": "030a58b8653d32b99200a2334cfe913e51dc7d155aa0116c176657a4f1722677a3",
+            "split": 1,
+            "customKey": "696969",
+            "customValue": "t2vRy8BdZutknl3LYOSG"
+          },
+          {
+            "name": "Saturn Test",
+            "type": "node",
+            "address": "030a58b8653d32b99200a2334cfe913e51dc7d155aa0116c176657a4f1722677a3",
+            "split": 1,
+            "customKey": "696969",
+            "customValue": "gq0Z8b1wEftMkFL4vj7E"
+          }
+        ]
+      }
+    },
+    {
+      "id": 11320024867,
+      "title": "Episode 110: Paws & Claws",
+      "link": "http://adam.curry.com/html/PC2011020221111Podca-zvPFVV0QsKcFMmJ01PjV96CvJSp1Br.html#,27",
+      "description": "<p>Podcasting 2.0 November 11th 2022 Episode 110: \"Paws & Claws\"</p>\n<p>Adam & Dave discuss the week's developments on podcastindex.org - We've got GUID Roulette, Sats-Chat and a lot of momentum in today's Board Meeting!</p>\n\n<p>ShowNotes</p>\n<p>*** Check Email Folder!</p>\n<p>Take a mental snapshot of this moment. You were part of it.</p>\n<p>GUID's - Thank you for the trust</p>\n<p>Off the mic cancelled!</p>\n<p>Alban V4V video</p>\n<p>Conshax Value4Value Dashboard</p>\n<p>Add artist to split1500 PodcastIndex Social</p>\n<p>Mastodon is missing algo vendors</p>\n<p>DAI...",
+      "guid": "PC20110",
+      "datePublished": 1668199540,
+      "datePublishedPretty": "November 11, 2022 2:45pm",
+      "dateCrawled": 1672453086,
+      "enclosureUrl": "https://op3.dev/e/mp3s.nashownotes.com/PC20-110-2022-11-11-Final.mp3",
+      "enclosureType": "audio/mpeg",
+      "enclosureLength": 83661994,
+      "duration": 6966,
+      "explicit": 0,
+      "episode": null,
+      "episodeType": "full",
+      "season": 0,
+      "image": "https://noagendaassets.com/enc/1601061118.678_pciavatar.jpg",
+      "feedItunesId": 1584274529,
+      "feedImage": "https://noagendaassets.com/enc/1601061118.678_pciavatar.jpg",
+      "feedId": 920666,
+      "feedLanguage": "en",
+      "feedDead": 0,
+      "feedDuplicateOf": null,
+      "chaptersUrl": "http://34.117.70.159/http%3Amp3s.nashownotes.compc20rss.xml/PC20110",
+      "transcriptUrl": "https://mp3s.nashownotes.com/PC20-110-Captions.srt",
+      "persons": [
+        {
+          "id": 13415068,
+          "name": "Adam Curry",
+          "role": "host",
+          "group": "cast",
+          "href": "http://curry.com",
+          "img": "https://feeds.podcastindex.org/adam_avatar.jpg"
+        },
+        {
+          "id": 13415069,
+          "name": "Dave Jones",
+          "role": "host",
+          "group": "cast",
+          "href": "http://dave.sobr.org",
+          "img": "https://feeds.podcastindex.org/dave_avatar.jpg"
+        }
+      ],
+      "transcripts": [
+        {
+          "url": "https://mp3s.nashownotes.com/PC20-110-Captions.srt",
+          "type": "application/srt"
+        }
+      ],
+      "value": {
+        "model": {
+          "type": "lightning",
+          "method": "keysend",
+          "suggested": "0.00000005000"
+        },
+        "destinations": [
+          {
+            "name": "Podcastindex.org",
+            "type": "node",
+            "address": "03ae9f91a0cb8ff43840e3c322c4c61f019d8c1c3cea15a25cfc425ac605e61a4a",
+            "split": 82
+          },
+          {
+            "name": "Dreb Scott (Chapters)",
+            "type": "node",
+            "address": "02453e4e93322d60219808c00c2e6d1f1c673420e95b5511a33c40cfb4df5e9148",
+            "split": 5
+          },
+          {
+            "name": "Sovereign Feeds",
+            "type": "node",
+            "address": "02a128c92baf0ede00ed0fc3720a92ba2c6392e0b58aa4decab1d787a666d94cb7",
+            "split": 10,
+            "customKey": "112111100",
+            "customValue": "wal_MB9T45QHGyW"
+          },
+          {
+            "name": "Boostagram Monitor",
+            "type": "node",
+            "address": "038399372001f2741d58d6ec4846fccb78daa1a485e69e2eebc5aadba047d35956",
+            "split": 1
+          },
+          {
+            "name": "Stay Safe Sage",
+            "type": "node",
+            "address": "030a58b8653d32b99200a2334cfe913e51dc7d155aa0116c176657a4f1722677a3",
+            "split": 1,
+            "customKey": "696969",
+            "customValue": "t2vRy8BdZutknl3LYOSG"
+          },
+          {
+            "name": "Saturn Test",
+            "type": "node",
+            "address": "030a58b8653d32b99200a2334cfe913e51dc7d155aa0116c176657a4f1722677a3",
+            "split": 1,
+            "customKey": "696969",
+            "customValue": "gq0Z8b1wEftMkFL4vj7E"
+          }
+        ]
+      }
+    },
+    {
+      "id": 11177920142,
+      "title": "Episode 109: 4 Gigs of Knitting",
+      "link": "http://adam.curry.com/html/PC2010920221104Podca-j5WFdWg2fN5Zw5R13SlGgv7QJ8fGtH.html",
+      "description": "<p>Podcasting 2.0 November 4th 2022 Episode 109: \"4 Gigs of Knitting\"</p>\n<p>Adam & Dave discuss the week's developments on podcastindex.org - Boardroom Guest this week is former silicon valley insider, now retired from public life man of mystery John Spurlock</p>\n\n<p>ShowNotes</p>\n<p>John Spurlock</p>\n<p>conshax.app stats</p>\n<p>IBEX Pay - podcaster service</p>\n\nLast Modified 11/04/2022 14:49:43 by Freedom Controller  ",
+      "guid": "PC20109",
+      "datePublished": 1667591809,
+      "datePublishedPretty": "November 04, 2022 2:56pm",
+      "dateCrawled": 1672453086,
+      "enclosureUrl": "https://op3.dev/e/mp3s.nashownotes.com/PC20-109-2022-11-04-Final.mp3",
+      "enclosureType": "audio/mpeg",
+      "enclosureLength": 84501465,
+      "duration": 7036,
+      "explicit": 0,
+      "episode": null,
+      "episodeType": "full",
+      "season": 0,
+      "image": "https://noagendaassets.com/enc/1601061118.678_pciavatar.jpg",
+      "feedItunesId": 1584274529,
+      "feedImage": "https://noagendaassets.com/enc/1601061118.678_pciavatar.jpg",
+      "feedId": 920666,
+      "feedLanguage": "en",
+      "feedDead": 0,
+      "feedDuplicateOf": null,
+      "chaptersUrl": "http://34.117.70.159/http%3Amp3s.nashownotes.compc20rss.xml/PC20109",
+      "transcriptUrl": "https://mp3s.nashownotes.com/PC20-109-Captions.srt",
+      "persons": [
+        {
+          "id": 12960324,
+          "name": "Adam Curry",
+          "role": "host",
+          "group": "cast",
+          "href": "http://curry.com",
+          "img": "https://feeds.podcastindex.org/adam_avatar.jpg"
+        },
+        {
+          "id": 12960325,
+          "name": "Dave Jones",
+          "role": "host",
+          "group": "cast",
+          "href": "http://dave.sobr.org",
+          "img": "https://feeds.podcastindex.org/dave_avatar.jpg"
+        },
+        {
+          "id": 12960326,
+          "name": "John Spurlock",
+          "role": "guest",
+          "group": "cast",
+          "href": "https://op3.dev",
+          "img": "https://cdn.masto.host/podcastindexsocial/accounts/avatars/000/002/616/original/291302db1e78b81e.jpeg"
+        }
+      ],
+      "transcripts": [
+        {
+          "url": "https://mp3s.nashownotes.com/PC20-109-Captions.srt",
+          "type": "application/srt"
+        }
+      ],
+      "value": {
+        "model": {
+          "type": "lightning",
+          "method": "keysend",
+          "suggested": "0.00000005000"
+        },
+        "destinations": [
+          {
+            "name": "Podcastindex.org",
+            "type": "node",
+            "address": "03ae9f91a0cb8ff43840e3c322c4c61f019d8c1c3cea15a25cfc425ac605e61a4a",
+            "split": 72
+          },
+          {
+            "name": "Dreb Scott (Chapters)",
+            "type": "node",
+            "address": "02453e4e93322d60219808c00c2e6d1f1c673420e95b5511a33c40cfb4df5e9148",
+            "split": 5
+          },
+          {
+            "name": "Sovereign Feeds",
+            "type": "node",
+            "address": "02a128c92baf0ede00ed0fc3720a92ba2c6392e0b58aa4decab1d787a666d94cb7",
+            "split": 10,
+            "customKey": "112111100",
+            "customValue": "wal_MB9T45QHGyW"
+          },
+          {
+            "name": "Boostagram Monitor",
+            "type": "node",
+            "address": "038399372001f2741d58d6ec4846fccb78daa1a485e69e2eebc5aadba047d35956",
+            "split": 1
+          },
+          {
+            "name": "Stay Safe Sage",
+            "type": "node",
+            "address": "030a58b8653d32b99200a2334cfe913e51dc7d155aa0116c176657a4f1722677a3",
+            "split": 1,
+            "customKey": "696969",
+            "customValue": "t2vRy8BdZutknl3LYOSG"
+          },
+          {
+            "name": "Saturn Test",
+            "type": "node",
+            "address": "030a58b8653d32b99200a2334cfe913e51dc7d155aa0116c176657a4f1722677a3",
+            "split": 1,
+            "customKey": "696969",
+            "customValue": "gq0Z8b1wEftMkFL4vj7E"
+          },
+          {
+            "name": "John Spurlock",
+            "type": "node",
+            "address": "02c85c34b89d4f5b16f60fe6f524862669ddc34f8bb7f8ce9ec783c1db6c8da857",
+            "split": 10,
+            "customKey": "7629171",
+            "customValue": "pc20"
+          }
+        ]
+      }
+    },
+    {
+      "id": 11038380147,
+      "title": "Episode 108: Hard Out",
+      "link": "http://adam.curry.com/html/PC2010820221028Podca-48ckkP0TTQv4jNNbMTzNKfGpplBRgm.html",
+      "description": "<p>Podcasting 2.0 October 28th 2022 Episode 108: \"Hard Out\"</p>\n<p> </p>\n\n<p>ShowNotes</p>\n<p>Check Email Folder!</p>\n<p>Podverse live page</p>\n<p>NA live stream feed splits issue</p>\n<p>What I'm getting out of this conversation is the idea to dynamically publish an RSS feed with a new item every time Doug changes what's showing on the NA stream</p>\n<p>V4V NA tough to thank everyone</p>\n<p>Squadcast patent</p>\n<p>Podcast:events</p>\n<p>Breez update - fast</p>\n\nLast Modified 10/28/2022 14:25:17 by Freedom Controller  ",
+      "guid": "PC20108",
+      "datePublished": 1666985766,
+      "datePublishedPretty": "October 28, 2022 2:36pm",
+      "dateCrawled": 1672453086,
+      "enclosureUrl": "https://op3.dev/e/mp3s.nashownotes.com/PC20-108-2022-10-28-Final.mp3",
+      "enclosureType": "audio/mpeg",
+      "enclosureLength": 74713697,
+      "duration": 6221,
+      "explicit": 0,
+      "episode": null,
+      "episodeType": "full",
+      "season": 0,
+      "image": "https://noagendaassets.com/enc/1601061118.678_pciavatar.jpg",
+      "feedItunesId": 1584274529,
+      "feedImage": "https://noagendaassets.com/enc/1601061118.678_pciavatar.jpg",
+      "feedId": 920666,
+      "feedLanguage": "en",
+      "feedDead": 0,
+      "feedDuplicateOf": null,
+      "chaptersUrl": "http://34.117.70.159/http%3Amp3s.nashownotes.compc20rss.xml/PC20108",
+      "transcriptUrl": "https://mp3s.nashownotes.com/PC20-108-Captions.srt",
+      "persons": [
+        {
+          "id": 12497742,
+          "name": "Adam Curry",
+          "role": "host",
+          "group": "cast",
+          "href": "http://curry.com",
+          "img": "https://feeds.podcastindex.org/adam_avatar.jpg"
+        },
+        {
+          "id": 12497743,
+          "name": "Dave Jones",
+          "role": "host",
+          "group": "cast",
+          "href": "http://dave.sobr.org",
+          "img": "https://feeds.podcastindex.org/dave_avatar.jpg"
+        }
+      ],
+      "transcripts": [
+        {
+          "url": "https://mp3s.nashownotes.com/PC20-108-Captions.srt",
+          "type": "application/srt"
+        }
+      ],
+      "value": {
+        "model": {
+          "type": "lightning",
+          "method": "keysend",
+          "suggested": "0.00000005000"
+        },
+        "destinations": [
+          {
+            "name": "Podcastindex.org",
+            "type": "node",
+            "address": "03ae9f91a0cb8ff43840e3c322c4c61f019d8c1c3cea15a25cfc425ac605e61a4a",
+            "split": 82
+          },
+          {
+            "name": "Dreb Scott (Chapters)",
+            "type": "node",
+            "address": "02453e4e93322d60219808c00c2e6d1f1c673420e95b5511a33c40cfb4df5e9148",
+            "split": 5
+          },
+          {
+            "name": "Sovereign Feeds",
+            "type": "node",
+            "address": "02a128c92baf0ede00ed0fc3720a92ba2c6392e0b58aa4decab1d787a666d94cb7",
+            "split": 10,
+            "customKey": "112111100",
+            "customValue": "wal_MB9T45QHGyW"
+          },
+          {
+            "name": "Boostagram Monitor",
+            "type": "node",
+            "address": "038399372001f2741d58d6ec4846fccb78daa1a485e69e2eebc5aadba047d35956",
+            "split": 1
+          },
+          {
+            "name": "Stay Safe Sage",
+            "type": "node",
+            "address": "030a58b8653d32b99200a2334cfe913e51dc7d155aa0116c176657a4f1722677a3",
+            "split": 1,
+            "customKey": "696969",
+            "customValue": "t2vRy8BdZutknl3LYOSG"
+          },
+          {
+            "name": "Saturn Test",
+            "type": "node",
+            "address": "030a58b8653d32b99200a2334cfe913e51dc7d155aa0116c176657a4f1722677a3",
+            "split": 1,
+            "customKey": "696969",
+            "customValue": "gq0Z8b1wEftMkFL4vj7E"
+          }
+        ]
+      }
+    },
+    {
+      "id": 10896803226,
+      "title": "Episode 107: Clippy for Developers!",
+      "link": "http://adam.curry.com/html/PC2010720221021Podca-PHMZjqJCnrKB1mXPHTQ7NHjR78wFlR.html",
+      "description": "<p>Podcasting 2.0 October 21st 2022 Episode 107: \"Clippy For Developers!\"</p>\n<p>Adam & Dave discuss the week's developments on podcastindex.org - Name Space update, open source Pocketcasts and exciting news!</p>\n<p>ShowNotes</p>\n<p>Check Email Folder!</p>\n<p>PocketCast Open source</p>\n<p>100% Retro stream metadata to podping live</p>\n<p>NameSpace!!</p>\n<p>PodLand editing</p>\n<p>Invest in a podcast. Get a split</p>\n<p>An Oral History of Gimlet's Slow Demise - by Skye Pillsbury</p>\n<p>NFC Bitcoin Card Launches In El Salvador - Bitcoin Magazine - Bitcoin News, Articles and Expert Insights</p>",
+      "guid": "PC20107",
+      "datePublished": 1666381453,
+      "datePublishedPretty": "October 21, 2022 2:44pm",
+      "dateCrawled": 1672453086,
+      "enclosureUrl": "https://op3.dev/e/mp3s.nashownotes.com/PC20-107-2022-10-21-Final.mp3",
+      "enclosureType": "audio/mpeg",
+      "enclosureLength": 83109034,
+      "duration": 6920,
+      "explicit": 0,
+      "episode": null,
+      "episodeType": "full",
+      "season": 0,
+      "image": "https://noagendaassets.com/enc/1601061118.678_pciavatar.jpg",
+      "feedItunesId": 1584274529,
+      "feedImage": "https://noagendaassets.com/enc/1601061118.678_pciavatar.jpg",
+      "feedId": 920666,
+      "feedLanguage": "en",
+      "feedDead": 0,
+      "feedDuplicateOf": null,
+      "chaptersUrl": "http://34.117.70.159/http%3Amp3s.nashownotes.compc20rss.xml/PC20107",
+      "transcriptUrl": "https://mp3s.nashownotes.com/PC20-107-Captions.srt",
+      "persons": [
+        {
+          "id": 11983677,
+          "name": "Adam Curry",
+          "role": "host",
+          "group": "cast",
+          "href": "http://curry.com",
+          "img": "https://feeds.podcastindex.org/adam_avatar.jpg"
+        },
+        {
+          "id": 11983678,
+          "name": "Dave Jones",
+          "role": "host",
+          "group": "cast",
+          "href": "http://dave.sobr.org",
+          "img": "https://feeds.podcastindex.org/dave_avatar.jpg"
+        }
+      ],
+      "transcripts": [
+        {
+          "url": "https://mp3s.nashownotes.com/PC20-107-Captions.srt",
+          "type": "application/srt"
+        }
+      ],
+      "value": {
+        "model": {
+          "type": "lightning",
+          "method": "keysend",
+          "suggested": "0.00000005000"
+        },
+        "destinations": [
+          {
+            "name": "Podcastindex.org",
+            "type": "node",
+            "address": "03ae9f91a0cb8ff43840e3c322c4c61f019d8c1c3cea15a25cfc425ac605e61a4a",
+            "split": 82
+          },
+          {
+            "name": "Dreb Scott (Chapters)",
+            "type": "node",
+            "address": "02453e4e93322d60219808c00c2e6d1f1c673420e95b5511a33c40cfb4df5e9148",
+            "split": 5
+          },
+          {
+            "name": "Sovereign Feeds",
+            "type": "node",
+            "address": "02a128c92baf0ede00ed0fc3720a92ba2c6392e0b58aa4decab1d787a666d94cb7",
+            "split": 10,
+            "customKey": "112111100",
+            "customValue": "wal_MB9T45QHGyW"
+          },
+          {
+            "name": "Boostagram Monitor",
+            "type": "node",
+            "address": "038399372001f2741d58d6ec4846fccb78daa1a485e69e2eebc5aadba047d35956",
+            "split": 1
+          },
+          {
+            "name": "Stay Safe Sage",
+            "type": "node",
+            "address": "030a58b8653d32b99200a2334cfe913e51dc7d155aa0116c176657a4f1722677a3",
+            "split": 1,
+            "customKey": "696969",
+            "customValue": "t2vRy8BdZutknl3LYOSG"
+          },
+          {
+            "name": "Saturn Test",
+            "type": "node",
+            "address": "030a58b8653d32b99200a2334cfe913e51dc7d155aa0116c176657a4f1722677a3",
+            "split": 1,
+            "customKey": "696969",
+            "customValue": "gq0Z8b1wEftMkFL4vj7E"
+          }
+        ]
+      }
+    },
+    {
+      "id": 10758440499,
+      "title": "Episode 106: Steak & Eggs!",
+      "link": "http://adam.curry.com/html/PC2010620221014Podca-W9mcpG6HfxTWPkgQqm9rTS6lKQ110s.html",
+      "description": "<p>Podcasting 2.0 October 14th 2022 Episode 106: \"Steak & Eggs!\"</p>\n\n<p>ShowNotes</p>\n<p>Check Email Folder!</p>\n<p>Todd on podland v4v 52 mins</p>\n<p>D-Script edits on podland</p>\n<p>Events tag - podping? Privacy</p>\n<p>Perhaps a way to make podping a method of events?</p>\n<p>Proposal:</p>\n<p>5 ingenious ways Bitcoin miners are recycling heat from ASICs | Lumerin Blog</p>\n<p>V4V based brother Thanks y’all super shout out to my bro @btctwatterpants https://t.co/HQMUvZRr1Z\" / Twitter</p>\n<p>Getmash is disappointing boost button</p>\n<p>Cap'n Proto: Introduction</p>\n<p>Pr...",
+      "guid": "PC20106",
+      "datePublished": 1665775300,
+      "datePublishedPretty": "October 14, 2022 2:21pm",
+      "dateCrawled": 1672453086,
+      "enclosureUrl": "https://op3.dev/e/mp3s.nashownotes.com/PC20-106-2022-10-14-Final.mp3",
+      "enclosureType": "audio/mpeg",
+      "enclosureLength": 67651231,
+      "duration": 5632,
+      "explicit": 0,
+      "episode": null,
+      "episodeType": "full",
+      "season": 0,
+      "image": "https://noagendaassets.com/enc/1601061118.678_pciavatar.jpg",
+      "feedItunesId": 1584274529,
+      "feedImage": "https://noagendaassets.com/enc/1601061118.678_pciavatar.jpg",
+      "feedId": 920666,
+      "feedLanguage": "en",
+      "feedDead": 0,
+      "feedDuplicateOf": null,
+      "chaptersUrl": "http://34.117.70.159/http%3Amp3s.nashownotes.compc20rss.xml/PC20106",
+      "transcriptUrl": "https://mp3s.nashownotes.com/PC20-106-Captions.srt",
+      "persons": [
+        {
+          "id": 11428929,
+          "name": "Adam Curry",
+          "role": "host",
+          "group": "cast",
+          "href": "http://curry.com",
+          "img": "https://feeds.podcastindex.org/adam_avatar.jpg"
+        },
+        {
+          "id": 11428930,
+          "name": "Dave Jones",
+          "role": "host",
+          "group": "cast",
+          "href": "http://dave.sobr.org",
+          "img": "https://feeds.podcastindex.org/dave_avatar.jpg"
+        }
+      ],
+      "transcripts": [
+        {
+          "url": "https://mp3s.nashownotes.com/PC20-106-Captions.srt",
+          "type": "application/srt"
+        }
+      ],
+      "value": {
+        "model": {
+          "type": "lightning",
+          "method": "keysend",
+          "suggested": "0.00000005000"
+        },
+        "destinations": [
+          {
+            "name": "Podcastindex.org",
+            "type": "node",
+            "address": "03ae9f91a0cb8ff43840e3c322c4c61f019d8c1c3cea15a25cfc425ac605e61a4a",
+            "split": 82
+          },
+          {
+            "name": "Dreb Scott (Chapters)",
+            "type": "node",
+            "address": "02453e4e93322d60219808c00c2e6d1f1c673420e95b5511a33c40cfb4df5e9148",
+            "split": 5
+          },
+          {
+            "name": "Sovereign Feeds",
+            "type": "node",
+            "address": "02a128c92baf0ede00ed0fc3720a92ba2c6392e0b58aa4decab1d787a666d94cb7",
+            "split": 10,
+            "customKey": "112111100",
+            "customValue": "wal_MB9T45QHGyW"
+          },
+          {
+            "name": "Boostagram Monitor",
+            "type": "node",
+            "address": "038399372001f2741d58d6ec4846fccb78daa1a485e69e2eebc5aadba047d35956",
+            "split": 1
+          },
+          {
+            "name": "Stay Safe Sage",
+            "type": "node",
+            "address": "030a58b8653d32b99200a2334cfe913e51dc7d155aa0116c176657a4f1722677a3",
+            "split": 1,
+            "customKey": "696969",
+            "customValue": "t2vRy8BdZutknl3LYOSG"
+          },
+          {
+            "name": "Saturn Test",
+            "type": "node",
+            "address": "030a58b8653d32b99200a2334cfe913e51dc7d155aa0116c176657a4f1722677a3",
+            "split": 1,
+            "customKey": "696969",
+            "customValue": "gq0Z8b1wEftMkFL4vj7E"
+          }
+        ]
+      }
+    },
+    {
+      "id": 10625750961,
+      "title": "Episode 105: Bombshell!",
+      "link": "http://adam.curry.com/html/PC2010520221007Podca-TLRvSF2ZxxlBNhfFmTPgwHQxC7vPvb.html",
+      "description": "<p>Podcasting 2.0 October 7th 2022 Episode 105: \"Bombshell!\"</p>\n<p>Adam & Dave discuss the week's developments on podcastindex.org - We show why Value 4 Vallue works, and namespace VI is here!</p>\n<p>ShowNotes</p>\n<p>20 years of podcasting and we still haven't figured out how to measure downloads</p>\n<p>NameSpace</p>\n<p>PeerTube V4V Plugin - Alby</p>\n<p>V4V here's how we do it</p>\n<p>NA upload glitch -> people thing we upload to their app.</p>\n<p>bitko V4V Logo</p>",
+      "guid": "PC20105",
+      "datePublished": 1665190489,
+      "datePublishedPretty": "October 07, 2022 7:54pm",
+      "dateCrawled": 1672453086,
+      "enclosureUrl": "https://op3.dev/e/mp3s.nashownotes.com/PC20-105-2022-10-07-Final.mp3",
+      "enclosureType": "audio/mpeg",
+      "enclosureLength": 72110647,
+      "duration": 6004,
+      "explicit": 0,
+      "episode": null,
+      "episodeType": "full",
+      "season": 0,
+      "image": "https://noagendaassets.com/enc/1601061118.678_pciavatar.jpg",
+      "feedItunesId": 1584274529,
+      "feedImage": "https://noagendaassets.com/enc/1601061118.678_pciavatar.jpg",
+      "feedId": 920666,
+      "feedLanguage": "en",
+      "feedDead": 0,
+      "feedDuplicateOf": null,
+      "chaptersUrl": "http://34.117.70.159/http%3Amp3s.nashownotes.compc20rss.xml/PC20105",
+      "transcriptUrl": "https://mp3s.nashownotes.com/PC20-105-Captions.srt",
+      "persons": [
+        {
+          "id": 10960263,
+          "name": "Adam Curry",
+          "role": "host",
+          "group": "cast",
+          "href": "http://curry.com",
+          "img": "https://feeds.podcastindex.org/adam_avatar.jpg"
+        },
+        {
+          "id": 10960264,
+          "name": "Dave Jones",
+          "role": "host",
+          "group": "cast",
+          "href": "http://dave.sobr.org",
+          "img": "https://feeds.podcastindex.org/dave_avatar.jpg"
+        }
+      ],
+      "transcripts": [
+        {
+          "url": "https://mp3s.nashownotes.com/PC20-105-Captions.srt",
+          "type": "application/srt"
+        }
+      ],
+      "value": {
+        "model": {
+          "type": "lightning",
+          "method": "keysend",
+          "suggested": "0.00000005000"
+        },
+        "destinations": [
+          {
+            "name": "Podcastindex.org",
+            "type": "node",
+            "address": "03ae9f91a0cb8ff43840e3c322c4c61f019d8c1c3cea15a25cfc425ac605e61a4a",
+            "split": 82
+          },
+          {
+            "name": "Dreb Scott (Chapters)",
+            "type": "node",
+            "address": "02453e4e93322d60219808c00c2e6d1f1c673420e95b5511a33c40cfb4df5e9148",
+            "split": 5
+          },
+          {
+            "name": "Sovereign Feeds",
+            "type": "node",
+            "address": "02a128c92baf0ede00ed0fc3720a92ba2c6392e0b58aa4decab1d787a666d94cb7",
+            "split": 10,
+            "customKey": "112111100",
+            "customValue": "wal_MB9T45QHGyW"
+          },
+          {
+            "name": "Boostagram Monitor",
+            "type": "node",
+            "address": "038399372001f2741d58d6ec4846fccb78daa1a485e69e2eebc5aadba047d35956",
+            "split": 1
+          },
+          {
+            "name": "Stay Safe Sage",
+            "type": "node",
+            "address": "030a58b8653d32b99200a2334cfe913e51dc7d155aa0116c176657a4f1722677a3",
+            "split": 1,
+            "customKey": "696969",
+            "customValue": "t2vRy8BdZutknl3LYOSG"
+          },
+          {
+            "name": "Saturn Test",
+            "type": "node",
+            "address": "030a58b8653d32b99200a2334cfe913e51dc7d155aa0116c176657a4f1722677a3",
+            "split": 1,
+            "customKey": "696969",
+            "customValue": "gq0Z8b1wEftMkFL4vj7E"
+          }
+        ]
+      }
+    },
+    {
+      "id": 10477637259,
+      "title": "Episode 104: A New Dump",
+      "link": "http://adam.curry.com/html/PC2010420220930Podca-2ZsXqdQqfTzs52BdgqJ0GP5VtrNJP1.html",
+      "description": "<p>Podcasting 2.0 September 30th 2022 Episode 104: \"A New Dump\"</p>\n<p>Adam & Dave discuss the week's developments on podcastindex.org - Joining the board today is Ivy.Fm Co-Founder Mike van Heyde</p>\n\n<p>ShowNotes</p>\n<p>Mike van Heyde</p>\n<p>Mike Van Heyde | LinkedIn</p>\n<p>Co-Founder of Ivy.fm</p>\n<p>Podcast plays scam</p>\n<p>At this point Apple Podcasts not supporting namespace is embarassing</p>\n<p>The publishers are doing their part</p>\n<p>NA feed op3</p>\n<p>OP3 is not stats. But now I get it</p>\n<p>100% Retro</p>\n<p>LSAT: Authentication and Pa...",
+      "guid": "PC20104",
+      "datePublished": 1664568202,
+      "datePublishedPretty": "September 30, 2022 3:03pm",
+      "dateCrawled": 1672453086,
+      "enclosureUrl": "https://op3.dev/e/mp3s.nashownotes.com/PC20-104-2022-09-30-Final.mp3",
+      "enclosureType": "audio/mpeg",
+      "enclosureLength": 90040155,
+      "duration": 7498,
+      "explicit": 0,
+      "episode": null,
+      "episodeType": "full",
+      "season": 0,
+      "image": "https://noagendaassets.com/enc/1601061118.678_pciavatar.jpg",
+      "feedItunesId": 1584274529,
+      "feedImage": "https://noagendaassets.com/enc/1601061118.678_pciavatar.jpg",
+      "feedId": 920666,
+      "feedLanguage": "en",
+      "feedDead": 0,
+      "feedDuplicateOf": null,
+      "chaptersUrl": "http://34.117.70.159/http%3Amp3s.nashownotes.compc20rss.xml/PC20104",
+      "transcriptUrl": "https://mp3s.nashownotes.com/PC20-104-Captions.srt",
+      "persons": [
+        {
+          "id": 10505269,
+          "name": "Adam Curry",
+          "role": "host",
+          "group": "cast",
+          "href": "http://curry.com",
+          "img": "https://feeds.podcastindex.org/adam_avatar.jpg"
+        },
+        {
+          "id": 10505270,
+          "name": "Dave Jones",
+          "role": "host",
+          "group": "cast",
+          "href": "http://dave.sobr.org",
+          "img": "https://feeds.podcastindex.org/dave_avatar.jpg"
+        },
+        {
+          "id": 10505271,
+          "name": "Mike van Heyde",
+          "role": "guest",
+          "group": "cast",
+          "href": "https://ivy.fm/",
+          "img": "https://media-exp1.licdn.com/dms/image/C5603AQGuJ6iZf0FPMA/profile-displayphoto-shrink_200_200/0/1516311572074?e=1669852800&v=beta&t=0-s-9kv6A0ODMYBNE36NtDdn5DG02J74L7BZqLny7tc"
+        }
+      ],
+      "transcripts": [
+        {
+          "url": "https://mp3s.nashownotes.com/PC20-104-Captions.srt",
+          "type": "application/srt"
+        }
+      ],
+      "value": {
+        "model": {
+          "type": "lightning",
+          "method": "keysend",
+          "suggested": "0.00000005000"
+        },
+        "destinations": [
+          {
+            "name": "Podcastindex.org",
+            "type": "node",
+            "address": "03ae9f91a0cb8ff43840e3c322c4c61f019d8c1c3cea15a25cfc425ac605e61a4a",
+            "split": 82
+          },
+          {
+            "name": "Dreb Scott (Chapters)",
+            "type": "node",
+            "address": "02453e4e93322d60219808c00c2e6d1f1c673420e95b5511a33c40cfb4df5e9148",
+            "split": 5
+          },
+          {
+            "name": "Sovereign Feeds",
+            "type": "node",
+            "address": "02a128c92baf0ede00ed0fc3720a92ba2c6392e0b58aa4decab1d787a666d94cb7",
+            "split": 10,
+            "customKey": "112111100",
+            "customValue": "wal_MB9T45QHGyW"
+          },
+          {
+            "name": "Boostagram Monitor",
+            "type": "node",
+            "address": "038399372001f2741d58d6ec4846fccb78daa1a485e69e2eebc5aadba047d35956",
+            "split": 1
+          },
+          {
+            "name": "Stay Safe Sage",
+            "type": "node",
+            "address": "030a58b8653d32b99200a2334cfe913e51dc7d155aa0116c176657a4f1722677a3",
+            "split": 1,
+            "customKey": "696969",
+            "customValue": "t2vRy8BdZutknl3LYOSG"
+          },
+          {
+            "name": "Saturn Test",
+            "type": "node",
+            "address": "030a58b8653d32b99200a2334cfe913e51dc7d155aa0116c176657a4f1722677a3",
+            "split": 1,
+            "customKey": "696969",
+            "customValue": "gq0Z8b1wEftMkFL4vj7E"
+          }
+        ]
+      }
+    },
+    {
+      "id": 10335540564,
+      "title": "Episode 103: Where's Briana",
+      "link": "http://adam.curry.com/html/PC2010320220923Podca-ftJr7X6CqZJd2FZ0xK141rPJ7MVXLz.html",
+      "description": "<p>Podcasting 2.0 September 23d 2022 Episode 103: \"Where's Briana\"</p>\n<p>Adam & Dave discuss the week's developments on podcastindex.org - Sats or Stats, that is the question!</p>\n<p>ShowNotes</p>\n<p>Stats boost boost boost up front!</p>\n<p>Spurlock is my Hero</p>\n<p>The genesis of the Podcast Industrial Complex</p>\n<p>OP3: The Open Podcast Prefix Project</p>\n<p>Podcast Prefix Analytics Explained</p>\n<p>VPM is higher when audience is small</p>\n<p>IPFS with OP3?</p>\n<p>Podcast brand-safety tools are trying to demystify the space for wary advertisers</p>\n<p>A new data set...",
+      "guid": "PC20103",
+      "datePublished": 1663962856,
+      "datePublishedPretty": "September 23, 2022 2:54pm",
+      "dateCrawled": 1672453086,
+      "enclosureUrl": "https://op3.dev/e/mp3s.nashownotes.com/PC20-103-2022-09-23-Final.mp3",
+      "enclosureType": "audio/mpeg",
+      "enclosureLength": 0,
+      "duration": 7287,
+      "explicit": 0,
+      "episode": null,
+      "episodeType": "full",
+      "season": 0,
+      "image": "https://noagendaassets.com/enc/1601061118.678_pciavatar.jpg",
+      "feedItunesId": 1584274529,
+      "feedImage": "https://noagendaassets.com/enc/1601061118.678_pciavatar.jpg",
+      "feedId": 920666,
+      "feedLanguage": "en",
+      "feedDead": 0,
+      "feedDuplicateOf": null,
+      "chaptersUrl": "http://34.117.70.159/http%3Amp3s.nashownotes.compc20rss.xml/PC20103",
+      "transcriptUrl": "https://mp3s.nashownotes.com/PC20-103-Captions.srt",
+      "persons": [
+        {
+          "id": 10101200,
+          "name": "Adam Curry",
+          "role": "host",
+          "group": "cast",
+          "href": "http://curry.com",
+          "img": "https://feeds.podcastindex.org/adam_avatar.jpg"
+        },
+        {
+          "id": 10101201,
+          "name": "Dave Jones",
+          "role": "host",
+          "group": "cast",
+          "href": "http://dave.sobr.org",
+          "img": "https://feeds.podcastindex.org/dave_avatar.jpg"
+        }
+      ],
+      "transcripts": [
+        {
+          "url": "https://mp3s.nashownotes.com/PC20-103-Captions.srt",
+          "type": "application/srt"
+        }
+      ],
+      "value": {
+        "model": {
+          "type": "lightning",
+          "method": "keysend",
+          "suggested": "0.00000005000"
+        },
+        "destinations": [
+          {
+            "name": "Podcastindex.org",
+            "type": "node",
+            "address": "03ae9f91a0cb8ff43840e3c322c4c61f019d8c1c3cea15a25cfc425ac605e61a4a",
+            "split": 82
+          },
+          {
+            "name": "Dreb Scott (Chapters)",
+            "type": "node",
+            "address": "02453e4e93322d60219808c00c2e6d1f1c673420e95b5511a33c40cfb4df5e9148",
+            "split": 5
+          },
+          {
+            "name": "Sovereign Feeds",
+            "type": "node",
+            "address": "02a128c92baf0ede00ed0fc3720a92ba2c6392e0b58aa4decab1d787a666d94cb7",
+            "split": 10,
+            "customKey": "112111100",
+            "customValue": "wal_MB9T45QHGyW"
+          },
+          {
+            "name": "Boostagram Monitor",
+            "type": "node",
+            "address": "038399372001f2741d58d6ec4846fccb78daa1a485e69e2eebc5aadba047d35956",
+            "split": 1
+          },
+          {
+            "name": "Stay Safe Sage",
+            "type": "node",
+            "address": "030a58b8653d32b99200a2334cfe913e51dc7d155aa0116c176657a4f1722677a3",
+            "split": 1,
+            "customKey": "696969",
+            "customValue": "t2vRy8BdZutknl3LYOSG"
+          },
+          {
+            "name": "Saturn Test",
+            "type": "node",
+            "address": "030a58b8653d32b99200a2334cfe913e51dc7d155aa0116c176657a4f1722677a3",
+            "split": 1,
+            "customKey": "696969",
+            "customValue": "gq0Z8b1wEftMkFL4vj7E"
+          }
+        ]
+      }
+    },
+    {
+      "id": 10194942507,
+      "title": "Episode 102: Down With OP3",
+      "link": "http://adam.curry.com/html/PC2010220220916Podca-7xmJzR6ZgFR0kDcVLTbNSW2h84j3wp.html",
+      "description": "<p>Podcasting 2.0 September 16th 2022 Episode 102: \"Down With OP3\"</p>\n<p>Adam & Dave discuss the week's developments on podcastindex.org and are joined in the board room by Kyle Hebert</p>\n\n<p>ShowNotes</p>\n<p>Kyle Hebert</p>\n<p>Kyle Hebert - Wikipedia</p>\n<p>Kyle on PC20</p>\n<p>Intergalactic Boombox</p>\n<p>Stats boost boost boost up front!</p>\n<p>OP3: The Open Podcast Prefix Project</p>\n<p>Podcast Prefix Analytics Explained</p>\n<p>Swedish podcast company Acast lays off 15% of its staff - Bloomberg</p>\n<p>A Swedish Company Aims to Spend Millions Acquiring Indie Podcast Networks...",
+      "guid": "PC20102",
+      "datePublished": 1663374353,
+      "datePublishedPretty": "September 16, 2022 7:25pm",
+      "dateCrawled": 1672453086,
+      "enclosureUrl": "https://op3.dev/e/mp3s.nashownotes.com/PC20-102-2022-09-16-Final.mp3",
+      "enclosureType": "audio/mpeg",
+      "enclosureLength": 79832338,
+      "duration": 6647,
+      "explicit": 0,
+      "episode": null,
+      "episodeType": "full",
+      "season": 0,
+      "image": "https://noagendaassets.com/enc/1601061118.678_pciavatar.jpg",
+      "feedItunesId": 1584274529,
+      "feedImage": "https://noagendaassets.com/enc/1601061118.678_pciavatar.jpg",
+      "feedId": 920666,
+      "feedLanguage": "en",
+      "feedDead": 0,
+      "feedDuplicateOf": null,
+      "chaptersUrl": "http://34.117.70.159/http%3Amp3s.nashownotes.compc20rss.xml/PC20102",
+      "transcriptUrl": "https://mp3s.nashownotes.com/PC20-102-Captions.srt",
+      "persons": [
+        {
+          "id": 9688766,
+          "name": "Adam Curry",
+          "role": "host",
+          "group": "cast",
+          "href": "http://curry.com",
+          "img": "https://feeds.podcastindex.org/adam_avatar.jpg"
+        },
+        {
+          "id": 9688767,
+          "name": "Dave Jones",
+          "role": "host",
+          "group": "cast",
+          "href": "http://dave.sobr.org",
+          "img": "https://feeds.podcastindex.org/dave_avatar.jpg"
+        },
+        {
+          "id": 9688768,
+          "name": "Kyle Hebert",
+          "role": "guest",
+          "group": "cast",
+          "href": "https://theintergalacticboombox.buzzsprout.com/",
+          "img": "https://cdn.masto.host/podcastindexsocial/accounts/avatars/000/009/676/original/4dcebd451bbfe766.jpeg"
+        }
+      ],
+      "transcripts": [
+        {
+          "url": "https://mp3s.nashownotes.com/PC20-102-Captions.srt",
+          "type": "application/srt"
+        }
+      ],
+      "value": {
+        "model": {
+          "type": "lightning",
+          "method": "keysend",
+          "suggested": "0.00000005000"
+        },
+        "destinations": [
+          {
+            "name": "Podcastindex.org",
+            "type": "node",
+            "address": "03ae9f91a0cb8ff43840e3c322c4c61f019d8c1c3cea15a25cfc425ac605e61a4a",
+            "split": 72
+          },
+          {
+            "name": "Dreb Scott (Chapters)",
+            "type": "node",
+            "address": "02453e4e93322d60219808c00c2e6d1f1c673420e95b5511a33c40cfb4df5e9148",
+            "split": 5
+          },
+          {
+            "name": "Sovereign Feeds",
+            "type": "node",
+            "address": "02a128c92baf0ede00ed0fc3720a92ba2c6392e0b58aa4decab1d787a666d94cb7",
+            "split": 10,
+            "customKey": "112111100",
+            "customValue": "wal_MB9T45QHGyW"
+          },
+          {
+            "name": "Boostagram Monitor",
+            "type": "node",
+            "address": "038399372001f2741d58d6ec4846fccb78daa1a485e69e2eebc5aadba047d35956",
+            "split": 1
+          },
+          {
+            "name": "Stay Safe Sage",
+            "type": "node",
+            "address": "030a58b8653d32b99200a2334cfe913e51dc7d155aa0116c176657a4f1722677a3",
+            "split": 1,
+            "customKey": "696969",
+            "customValue": "t2vRy8BdZutknl3LYOSG"
+          },
+          {
+            "name": "Saturn Test",
+            "type": "node",
+            "address": "030a58b8653d32b99200a2334cfe913e51dc7d155aa0116c176657a4f1722677a3",
+            "split": 1,
+            "customKey": "696969",
+            "customValue": "gq0Z8b1wEftMkFL4vj7E"
+          },
+          {
+            "name": "Kyle Hebert",
+            "type": "node",
+            "address": "0332d57355d673e217238ce3e4be8491aa6b2a13f95494133ee243e57df1653ace",
+            "split": 10,
+            "customKey": "112111100",
+            "customValue": "wal_jRHWebCxWEPcHR"
+          }
+        ]
+      }
+    },
+    {
+      "id": 10047641249,
+      "title": "Episode 101: Loops, not Lists",
+      "link": "http://adam.curry.com/html/PC2010120220909Podca-rRB8ncCVdDkd1SpL84KJxs4LtPn9DM.html",
+      "description": "<p>Podcasting 2.0 for September 9th 2022 Episode 101: \"Loops, not Lists\"</p>\n<p>Adam & Dave discuss the week's developments on podcastindex.org and expose the Podcast industrial Complex</p>\n\n<p>ShowNotes</p>\n<p>Got my first Podverse alert</p>\n<p>GrapheneOs and tailscale</p>\n<p>Alby now soundcloud \"tipping\" - Need Music 2.0 wallets!</p>\n<p>Podcast Industry is now Podcast Industrial Complex</p>\n<p>TikTok</p>\n<p>Vale4Value doesn't need lists</p>\n<p>XMPP bridge to IRC</p>\n<p>XMMP Strike Force - Mitch and Alecks</p>\n<p>Well, Goddammit, Now I Have To... - by Tanner Campbell</p>\n<p>Michael...",
+      "guid": "PC20101",
+      "datePublished": 1662750913,
+      "datePublishedPretty": "September 09, 2022 2:15pm",
+      "dateCrawled": 1672453086,
+      "enclosureUrl": "https://op3.dev/e/mp3s.nashownotes.com/PC20-101-2022-09-09-Final.mp3",
+      "enclosureType": "audio/mpeg",
+      "enclosureLength": 76962526,
+      "duration": 6408,
+      "explicit": 0,
+      "episode": null,
+      "episodeType": "full",
+      "season": 0,
+      "image": "https://noagendaassets.com/enc/1601061118.678_pciavatar.jpg",
+      "feedItunesId": 1584274529,
+      "feedImage": "https://noagendaassets.com/enc/1601061118.678_pciavatar.jpg",
+      "feedId": 920666,
+      "feedLanguage": "en",
+      "feedDead": 0,
+      "feedDuplicateOf": null,
+      "chaptersUrl": "http://34.117.70.159/http%3Amp3s.nashownotes.compc20rss.xml/PC20101",
+      "transcriptUrl": "https://mp3s.nashownotes.com/PC20-101-Captions.srt",
+      "persons": [
+        {
+          "id": 9211643,
+          "name": "Adam Curry",
+          "role": "host",
+          "group": "cast",
+          "href": "http://curry.com",
+          "img": "https://feeds.podcastindex.org/adam_avatar.jpg"
+        },
+        {
+          "id": 9211644,
+          "name": "Dave Jones",
+          "role": "host",
+          "group": "cast",
+          "href": "http://dave.sobr.org",
+          "img": "https://feeds.podcastindex.org/dave_avatar.jpg"
+        }
+      ],
+      "transcripts": [
+        {
+          "url": "https://mp3s.nashownotes.com/PC20-101-Captions.srt",
+          "type": "application/srt"
+        }
+      ],
+      "value": {
+        "model": {
+          "type": "lightning",
+          "method": "keysend",
+          "suggested": "0.00000005000"
+        },
+        "destinations": [
+          {
+            "name": "Podcastindex.org",
+            "type": "node",
+            "address": "03ae9f91a0cb8ff43840e3c322c4c61f019d8c1c3cea15a25cfc425ac605e61a4a",
+            "split": 82
+          },
+          {
+            "name": "Dreb Scott (Chapters)",
+            "type": "node",
+            "address": "02453e4e93322d60219808c00c2e6d1f1c673420e95b5511a33c40cfb4df5e9148",
+            "split": 5
+          },
+          {
+            "name": "Sovereign Feeds",
+            "type": "node",
+            "address": "02a128c92baf0ede00ed0fc3720a92ba2c6392e0b58aa4decab1d787a666d94cb7",
+            "split": 10,
+            "customKey": "112111100",
+            "customValue": "wal_MB9T45QHGyW"
+          },
+          {
+            "name": "Boostagram Monitor",
+            "type": "node",
+            "address": "038399372001f2741d58d6ec4846fccb78daa1a485e69e2eebc5aadba047d35956",
+            "split": 1
+          },
+          {
+            "name": "Stay Safe Sage",
+            "type": "node",
+            "address": "030a58b8653d32b99200a2334cfe913e51dc7d155aa0116c176657a4f1722677a3",
+            "split": 1,
+            "customKey": "696969",
+            "customValue": "t2vRy8BdZutknl3LYOSG"
+          },
+          {
+            "name": "Saturn Test",
+            "type": "node",
+            "address": "030a58b8653d32b99200a2334cfe913e51dc7d155aa0116c176657a4f1722677a3",
+            "split": 1,
+            "customKey": "696969",
+            "customValue": "gq0Z8b1wEftMkFL4vj7E"
+          }
+        ]
+      }
+    },
+    {
+      "id": 9909788167,
+      "title": "Episode 100: Streamers and Dreamers",
+      "link": "http://adam.curry.com/html/PC2010020220902Podca-GcwT2PsGfMBSvG7JwwjKNjVfCsQDnv.html#,39",
+      "description": "<p>Podcasting 2.0 for September 2nd 2022 Episode 100: \"Streamers and Dreamers\"</p>\n<p>Adam & Dave discuss the week's developments on podcastindex.org celebrating 2 years and 100 episodes with guest John Chidgey</p>\n<p>ShowNotes</p>\n<p>John Chidgey</p>\n<p>LinkdIn</p>\n<p>Host of the Causality podcast, owner of The Engineered Network. Wrote the Soundbiter app and several boosting scripts. Has 2.0 integrated across all of his shows. Always early adopter for 2.0 stuff</p>\n<p>VK4EII</p>\n<p>Oma app</p>\n<p>Music wallet - StevenB ui</p>\n<p>Need lyrics to srt converter</p>\n<p>Why I'm having a hard time...",
+      "guid": "PC20100",
+      "datePublished": 1662161051,
+      "datePublishedPretty": "September 02, 2022 6:24pm",
+      "dateCrawled": 1672453086,
+      "enclosureUrl": "https://op3.dev/e/mp3s.nashownotes.com/PC20-100-2022-09-02-Final.mp3",
+      "enclosureType": "audio/mpeg",
+      "enclosureLength": 95954069,
+      "duration": 7991,
+      "explicit": 0,
+      "episode": null,
+      "episodeType": "full",
+      "season": 0,
+      "image": "https://noagendaassets.com/enc/1601061118.678_pciavatar.jpg",
+      "feedItunesId": 1584274529,
+      "feedImage": "https://noagendaassets.com/enc/1601061118.678_pciavatar.jpg",
+      "feedId": 920666,
+      "feedLanguage": "en",
+      "feedDead": 0,
+      "feedDuplicateOf": null,
+      "chaptersUrl": "http://34.117.70.159/http%3Amp3s.nashownotes.compc20rss.xml/PC20100",
+      "transcriptUrl": "https://mp3s.nashownotes.com/PC20-100-Captions.srt",
+      "persons": [
+        {
+          "id": 8887915,
+          "name": "Adam Curry",
+          "role": "host",
+          "group": "cast",
+          "href": "http://curry.com",
+          "img": "https://feeds.podcastindex.org/adam_avatar.jpg"
+        },
+        {
+          "id": 8887916,
+          "name": "Dave Jones",
+          "role": "host",
+          "group": "cast",
+          "href": "http://dave.sobr.org",
+          "img": "https://feeds.podcastindex.org/dave_avatar.jpg"
+        },
+        {
+          "id": 8887917,
+          "name": "John Chidgey",
+          "role": "guest",
+          "group": "cast",
+          "href": "https://www.linkedin.com/in/john-chidgey/?originalSubdomain=au",
+          "img": "https://media-exp1.licdn.com/dms/image/C4D03AQF2jfwidVC7sg/profile-displayphoto-shrink_200_200/0/1517393862175?e=1667433600&v=beta&t=KQrYfooFxX5dEng-I2Y0dYHOmbIjfYTXIpr_VRdBlWc"
+        }
+      ],
+      "transcripts": [
+        {
+          "url": "https://mp3s.nashownotes.com/PC20-100-Captions.srt",
+          "type": "application/srt"
+        }
+      ],
+      "value": {
+        "model": {
+          "type": "lightning",
+          "method": "keysend",
+          "suggested": "0.00000005000"
+        },
+        "destinations": [
+          {
+            "name": "Podcastindex.org",
+            "type": "node",
+            "address": "03ae9f91a0cb8ff43840e3c322c4c61f019d8c1c3cea15a25cfc425ac605e61a4a",
+            "split": 72
+          },
+          {
+            "name": "Dreb Scott (Chapters)",
+            "type": "node",
+            "address": "02453e4e93322d60219808c00c2e6d1f1c673420e95b5511a33c40cfb4df5e9148",
+            "split": 5
+          },
+          {
+            "name": "Sovereign Feeds",
+            "type": "node",
+            "address": "02a128c92baf0ede00ed0fc3720a92ba2c6392e0b58aa4decab1d787a666d94cb7",
+            "split": 10,
+            "customKey": "112111100",
+            "customValue": "wal_MB9T45QHGyW"
+          },
+          {
+            "name": "Boostagram Monitor",
+            "type": "node",
+            "address": "038399372001f2741d58d6ec4846fccb78daa1a485e69e2eebc5aadba047d35956",
+            "split": 1
+          },
+          {
+            "name": "Stay Safe Sage",
+            "type": "node",
+            "address": "03654d55c6bed17571938f1ba46b3b2622c52fe19faff74732eafdd16a1cbe2334",
+            "split": 1
+          },
+          {
+            "name": "John Chidgey",
+            "type": "node",
+            "address": "02ec5c61cff2be8207851d909b72c15ec27d16d5aeeecf74b9170cb1f8ee6e0d64",
+            "split": 10
+          },
+          {
+            "name": "Saturn Test",
+            "type": "node",
+            "address": "030a58b8653d32b99200a2334cfe913e51dc7d155aa0116c176657a4f1722677a3",
+            "split": 1,
+            "customKey": "696969",
+            "customValue": "gq0Z8b1wEftMkFL4vj7E"
+          }
+        ]
+      }
+    },
+    {
+      "id": 9764769930,
+      "title": "Episode 99: Airhorns are LIT!",
+      "link": "http://adam.curry.com/html/PC209920220826Podcas-TG5mV69VJZZtQnwQ6hVFZMRMx9Kldx.html",
+      "description": "<p>Podcasting 2.0 for August 26th 2022 Episode 99: \"Airhorns are LIT!\"</p>\n<p>Adam & Dave discuss the week's developments on podcastindex.org Live from the 'controversial' PodcastMovement</p>\n\n<p>ShowNotes</p>\n<p>PM22</p>\n<p>Controversies - Congratulate yourself. You helped build the escape hatch - timing is perfect</p>\n<p>Phoniness of the 'Industry' - trying to capture, but they can't.</p>\n<p>People we met</p>\n<p>Cleanfeed Mark with Streaming (and eq per channel for me)</p>\n<p>Ask Dave about his V4V experience</p>\n<p>LNUrl mafia</p>\n<p>IPFS Podcasting splits Cameron</p>\n<p>Charts and...",
+      "guid": "PC2099",
+      "datePublished": 1661539629,
+      "datePublishedPretty": "August 26, 2022 1:47pm",
+      "dateCrawled": 1672453086,
+      "enclosureUrl": "https://op3.dev/e/mp3s.nashownotes.com/PC20-99-2022-08-26-Final.mp3",
+      "enclosureType": "audio/mpeg",
+      "enclosureLength": 86170689,
+      "duration": 7175,
+      "explicit": 0,
+      "episode": null,
+      "episodeType": "full",
+      "season": 0,
+      "image": "https://noagendaassets.com/enc/1601061118.678_pciavatar.jpg",
+      "feedItunesId": 1584274529,
+      "feedImage": "https://noagendaassets.com/enc/1601061118.678_pciavatar.jpg",
+      "feedId": 920666,
+      "feedLanguage": "en",
+      "feedDead": 0,
+      "feedDuplicateOf": null,
+      "chaptersUrl": "http://34.117.70.159/http%3Amp3s.nashownotes.compc20rss.xml/PC2099",
+      "transcriptUrl": "https://mp3s.nashownotes.com/PC20-99-Captions.srt",
+      "persons": [
+        {
+          "id": 8549506,
+          "name": "Adam Curry",
+          "role": "host",
+          "group": "cast",
+          "href": "http://curry.com",
+          "img": "https://feeds.podcastindex.org/adam_avatar.jpg"
+        },
+        {
+          "id": 8549507,
+          "name": "Dave Jones",
+          "role": "host",
+          "group": "cast",
+          "href": "http://dave.sobr.org",
+          "img": "https://feeds.podcastindex.org/dave_avatar.jpg"
+        }
+      ],
+      "transcripts": [
+        {
+          "url": "https://mp3s.nashownotes.com/PC20-99-Captions.srt",
+          "type": "application/srt"
+        }
+      ],
+      "value": {
+        "model": {
+          "type": "lightning",
+          "method": "keysend",
+          "suggested": "0.00000005000"
+        },
+        "destinations": [
+          {
+            "name": "Podcastindex.org",
+            "type": "node",
+            "address": "03ae9f91a0cb8ff43840e3c322c4c61f019d8c1c3cea15a25cfc425ac605e61a4a",
+            "split": 83
+          },
+          {
+            "name": "Dreb Scott (Chapters)",
+            "type": "node",
+            "address": "02453e4e93322d60219808c00c2e6d1f1c673420e95b5511a33c40cfb4df5e9148",
+            "split": 5
+          },
+          {
+            "name": "Sovereign Feeds",
+            "type": "node",
+            "address": "02a128c92baf0ede00ed0fc3720a92ba2c6392e0b58aa4decab1d787a666d94cb7",
+            "split": 10,
+            "customKey": "112111100",
+            "customValue": "wal_MB9T45QHGyW"
+          },
+          {
+            "name": "Boostagram Monitor",
+            "type": "node",
+            "address": "038399372001f2741d58d6ec4846fccb78daa1a485e69e2eebc5aadba047d35956",
+            "split": 1
+          },
+          {
+            "name": "Stay Safe Sage",
+            "type": "node",
+            "address": "03654d55c6bed17571938f1ba46b3b2622c52fe19faff74732eafdd16a1cbe2334",
+            "split": 1
+          }
+        ]
+      }
+    },
+    {
+      "id": 9627055211,
+      "title": "Episode 98: Girl Friday",
+      "link": "http://adam.curry.com/html/PC209820220819Podcas-cM8tNw4VX2fgWnwbmGXmG3BHQnjgTM.html",
+      "description": "<p>Podcasting 2.0 for August 19th 2022 Episode 98: \"Girl Friday\"</p>\n<p>Adam & Dave discuss the week's developments on podcastindex.org with special board room auditor Dame Jennifer!</p>\n\n<p>Dame Jennifer of the PIMP Database</p>\n<p>ANA first</p>\n<p>Dame of NA</p>\n<p>What do you do?</p>\n<p>Hackathon</p>\n<p>Pimp database [The Brothel]</p>\n<p>Podcasting 2.0 Hackathon</p>\n<p>Insufficient bandwidth to forward htlc</p>\n<p>Cridland's namespace website</p>\n\nLast Modified 08/19/2022 14:51:13 by Freedom Controller  ",
+      "guid": "PC2098",
+      "datePublished": 1660938754,
+      "datePublishedPretty": "August 19, 2022 2:52pm",
+      "dateCrawled": 1672453086,
+      "enclosureUrl": "https://op3.dev/e/mp3s.nashownotes.com/PC20-98-2022-08-19-Final.mp3",
+      "enclosureType": "audio/mpeg",
+      "enclosureLength": 86925524,
+      "duration": 7238,
+      "explicit": 0,
+      "episode": null,
+      "episodeType": "full",
+      "season": 0,
+      "image": "https://noagendaassets.com/enc/1601061118.678_pciavatar.jpg",
+      "feedItunesId": 1584274529,
+      "feedImage": "https://noagendaassets.com/enc/1601061118.678_pciavatar.jpg",
+      "feedId": 920666,
+      "feedLanguage": "en",
+      "feedDead": 0,
+      "feedDuplicateOf": null,
+      "chaptersUrl": "http://34.117.70.159/http%3Amp3s.nashownotes.compc20rss.xml/PC2098",
+      "transcriptUrl": "https://mp3s.nashownotes.com/PC20-98-Captions.srt",
+      "persons": [
+        {
+          "id": 8233182,
+          "name": "Adam Curry",
+          "role": "host",
+          "group": "cast",
+          "href": "http://curry.com",
+          "img": "https://feeds.podcastindex.org/adam_avatar.jpg"
+        },
+        {
+          "id": 8233184,
+          "name": "Dame Jennifer of the PIMP Database",
+          "role": "guest",
+          "group": "cast",
+          "href": "https://jenniferisaacbuchanan.com/",
+          "img": "https://jenniferisaacbuchanan.com/wp-content/uploads/2022/06/j_buchanan-achandler-30-4-scaled.jpg"
+        },
+        {
+          "id": 8233183,
+          "name": "Dave Jones",
+          "role": "host",
+          "group": "cast",
+          "href": "http://dave.sobr.org",
+          "img": "https://feeds.podcastindex.org/dave_avatar.jpg"
+        }
+      ],
+      "transcripts": [
+        {
+          "url": "https://mp3s.nashownotes.com/PC20-98-Captions.srt",
+          "type": "application/srt"
+        }
+      ],
+      "value": {
+        "model": {
+          "type": "lightning",
+          "method": "keysend",
+          "suggested": "0.00000005000"
+        },
+        "destinations": [
+          {
+            "name": "Podcastindex.org",
+            "type": "node",
+            "address": "03ae9f91a0cb8ff43840e3c322c4c61f019d8c1c3cea15a25cfc425ac605e61a4a",
+            "split": 63
+          },
+          {
+            "name": "Dreb Scott (Chapters)",
+            "type": "node",
+            "address": "02453e4e93322d60219808c00c2e6d1f1c673420e95b5511a33c40cfb4df5e9148",
+            "split": 5
+          },
+          {
+            "name": "Sovereign Feeds",
+            "type": "node",
+            "address": "02a128c92baf0ede00ed0fc3720a92ba2c6392e0b58aa4decab1d787a666d94cb7",
+            "split": 10,
+            "customKey": "112111100",
+            "customValue": "wal_MB9T45QHGyW"
+          },
+          {
+            "name": "Boostagram Monitor",
+            "type": "node",
+            "address": "038399372001f2741d58d6ec4846fccb78daa1a485e69e2eebc5aadba047d35956",
+            "split": 1
+          },
+          {
+            "name": "Stay Safe Sage",
+            "type": "node",
+            "address": "03654d55c6bed17571938f1ba46b3b2622c52fe19faff74732eafdd16a1cbe2334",
+            "split": 1
+          },
+          {
+            "name": "Dame Jennifer of the PIMP Database",
+            "type": "node",
+            "address": "02a128c92baf0ede00ed0fc3720a92ba2c6392e0b58aa4decab1d787a666d94cb7",
+            "split": 20,
+            "customKey": "112111100",
+            "customValue": "wal_Ckl5iU1FyfUfZ"
+          }
+        ]
+      }
+    },
+    {
+      "id": 9485400086,
+      "title": "Episode 97: Forever Fifteen",
+      "link": "http://adam.curry.com/html/PC209620220805Podcas-Kv06gC8nxMcGmPbTVNSxQcR18r91rc.html",
+      "description": "<p>Podcasting 2.0 for August 12th 2022 Episode 97: \"Forever Fifteen\"</p>\n<p>Adam & Dave discuss the week's developments on podcastindex.org with some bold predictions!</p>\n\n<p>ShowNotes</p>\n<p>Apple namespace within a year</p>\n<p>Hosting companies will now move the needle</p>\n<p>Wallets and App Stores</p>\n<p>Marketing</p>\n<p>Announcing Taro: A New Protocol for Multi-Asset Bitcoin and Lightning 🍠💱🌍 | Lightning Labs</p>\n<p>Roy WAS listening in bed</p>\n<p>Block Tag</p>\n<p>Generator Tag</p>\n<p>Verify Tag</p>\n<p>Finally upgraded my Umbrel</p>\n<p>Dame Jennifer hackathon</p>\n<p>Trending API endpoint</p>\n<p>Tre...",
+      "guid": "PC2097",
+      "datePublished": 1660332715,
+      "datePublishedPretty": "August 12, 2022 2:31pm",
+      "dateCrawled": 1672453086,
+      "enclosureUrl": "https://op3.dev/e/mp3s.nashownotes.com/PC20-97-2022-08-12-Final.mp3",
+      "enclosureType": "audio/mpeg",
+      "enclosureLength": 73462327,
+      "duration": 6116,
+      "explicit": 0,
+      "episode": null,
+      "episodeType": "full",
+      "season": 0,
+      "image": "https://noagendaassets.com/enc/1601061118.678_pciavatar.jpg",
+      "feedItunesId": 1584274529,
+      "feedImage": "https://noagendaassets.com/enc/1601061118.678_pciavatar.jpg",
+      "feedId": 920666,
+      "feedLanguage": "en",
+      "feedDead": 0,
+      "feedDuplicateOf": null,
+      "chaptersUrl": "http://34.117.70.159/http%3Amp3s.nashownotes.compc20rss.xml/PC2097",
+      "transcriptUrl": "https://mp3s.nashownotes.com/PC20-97-Captions.srt",
+      "persons": [
+        {
+          "id": 7881861,
+          "name": "Adam Curry",
+          "role": "host",
+          "group": "cast",
+          "href": "http://curry.com",
+          "img": "https://feeds.podcastindex.org/adam_avatar.jpg"
+        },
+        {
+          "id": 7881862,
+          "name": "Dave Jones",
+          "role": "host",
+          "group": "cast",
+          "href": "http://dave.sobr.org",
+          "img": "https://feeds.podcastindex.org/dave_avatar.jpg"
+        }
+      ],
+      "transcripts": [
+        {
+          "url": "https://mp3s.nashownotes.com/PC20-97-Captions.srt",
+          "type": "application/srt"
+        }
+      ],
+      "value": {
+        "model": {
+          "type": "lightning",
+          "method": "keysend",
+          "suggested": "0.00000005000"
+        },
+        "destinations": [
+          {
+            "name": "Podcastindex.org",
+            "type": "node",
+            "address": "03ae9f91a0cb8ff43840e3c322c4c61f019d8c1c3cea15a25cfc425ac605e61a4a",
+            "split": 83
+          },
+          {
+            "name": "Dreb Scott (Chapters)",
+            "type": "node",
+            "address": "02453e4e93322d60219808c00c2e6d1f1c673420e95b5511a33c40cfb4df5e9148",
+            "split": 5
+          },
+          {
+            "name": "Sovereign Feeds",
+            "type": "node",
+            "address": "02a128c92baf0ede00ed0fc3720a92ba2c6392e0b58aa4decab1d787a666d94cb7",
+            "split": 10,
+            "customKey": "112111100",
+            "customValue": "wal_MB9T45QHGyW"
+          },
+          {
+            "name": "Boostagram Monitor",
+            "type": "node",
+            "address": "038399372001f2741d58d6ec4846fccb78daa1a485e69e2eebc5aadba047d35956",
+            "split": 1
+          },
+          {
+            "name": "Stay Safe Sage",
+            "type": "node",
+            "address": "03654d55c6bed17571938f1ba46b3b2622c52fe19faff74732eafdd16a1cbe2334",
+            "split": 1
+          }
+        ]
+      }
+    },
+    {
+      "id": 9348968030,
+      "title": "Episode 96: Foie Gras",
+      "link": "http://adam.curry.com/html/PC209620220805Podcas-Kv06gC8nxMcGmPbTVNSxQcR18r91rc.html",
+      "description": "<p>Podcasting 2.0 for August 5th 2022 Episode 96: \"Foie Gras\"</p>\n<p>Adam & Dave discuss the week's developments on podcastindex.org and are joined by Michael and Moritz from Alby</p>\n\n<p>Michael Bumann & Moritz Kaminski - Alby</p>\n<p>V4V is the new international lifestyle</p>\n<p>Chapter Images full screen</p>\n<p>Rss.com has a solid roadmap</p>\n<p>Alberto ams Sam PIMP for verify tag</p>\n<p>Dame Jennifer hackathon</p>\n<p>Trending by number of streaming transactions.</p>\n<p>Whoops, Peacock added no new paid subscribers over the last quarter</p>\n\nLast Modified 08/05/2022 14:29:41 by Freedom Controller  ",
+      "guid": "PC2096",
+      "datePublished": 1659727833,
+      "datePublishedPretty": "August 05, 2022 2:30pm",
+      "dateCrawled": 1672453086,
+      "enclosureUrl": "https://op3.dev/e/mp3s.nashownotes.com/PC20-96-2022-08-05-Final.mp3",
+      "enclosureType": "audio/mpeg",
+      "enclosureLength": 69065605,
+      "duration": 5750,
+      "explicit": 0,
+      "episode": null,
+      "episodeType": "full",
+      "season": 0,
+      "image": "https://noagendaassets.com/enc/1601061118.678_pciavatar.jpg",
+      "feedItunesId": 1584274529,
+      "feedImage": "https://noagendaassets.com/enc/1601061118.678_pciavatar.jpg",
+      "feedId": 920666,
+      "feedLanguage": "en",
+      "feedDead": 0,
+      "feedDuplicateOf": null,
+      "chaptersUrl": "http://34.117.70.159/http%3Amp3s.nashownotes.compc20rss.xml/PC2096",
+      "transcriptUrl": "https://mp3s.nashownotes.com/PC20-96-Captions.srt",
+      "persons": [
+        {
+          "id": 7542158,
+          "name": "Adam Curry",
+          "role": "host",
+          "group": "cast",
+          "href": "http://curry.com",
+          "img": "https://feeds.podcastindex.org/adam_avatar.jpg"
+        },
+        {
+          "id": 7542160,
+          "name": "Alby",
+          "role": "co-host",
+          "group": "cast",
+          "href": "https://getalby.com/",
+          "img": "https://getalby.com/website/_assets/logo-WIC6GJUP.svg"
+        },
+        {
+          "id": 7542159,
+          "name": "Dave Jones",
+          "role": "host",
+          "group": "cast",
+          "href": "http://dave.sobr.org",
+          "img": "https://feeds.podcastindex.org/dave_avatar.jpg"
+        }
+      ],
+      "transcripts": [
+        {
+          "url": "https://mp3s.nashownotes.com/PC20-96-Captions.srt",
+          "type": "application/srt"
+        }
+      ],
+      "value": {
+        "model": {
+          "type": "lightning",
+          "method": "keysend",
+          "suggested": "0.00000005000"
+        },
+        "destinations": [
+          {
+            "name": "Podcastindex.org",
+            "type": "node",
+            "address": "03ae9f91a0cb8ff43840e3c322c4c61f019d8c1c3cea15a25cfc425ac605e61a4a",
+            "split": 73
+          },
+          {
+            "name": "Dreb Scott (Chapters)",
+            "type": "node",
+            "address": "02453e4e93322d60219808c00c2e6d1f1c673420e95b5511a33c40cfb4df5e9148",
+            "split": 5
+          },
+          {
+            "name": "Sovereign Feeds",
+            "type": "node",
+            "address": "02a128c92baf0ede00ed0fc3720a92ba2c6392e0b58aa4decab1d787a666d94cb7",
+            "split": 10,
+            "customKey": "112111100",
+            "customValue": "wal_MB9T45QHGyW"
+          },
+          {
+            "name": "Boostagram Monitor",
+            "type": "node",
+            "address": "038399372001f2741d58d6ec4846fccb78daa1a485e69e2eebc5aadba047d35956",
+            "split": 1
+          },
+          {
+            "name": "Stay Safe Sage",
+            "type": "node",
+            "address": "03654d55c6bed17571938f1ba46b3b2622c52fe19faff74732eafdd16a1cbe2334",
+            "split": 1
+          },
+          {
+            "name": "Get Alby",
+            "type": "node",
+            "address": "030a58b8653d32b99200a2334cfe913e51dc7d155aa0116c176657a4f1722677a3",
+            "split": 10,
+            "customKey": "696969",
+            "customValue": "017rsl75kNnSke4mMHYE"
+          }
+        ]
+      }
+    },
+    {
+      "id": 9225254495,
+      "title": "Episode 95: We Are The Jazz",
+      "link": "http://adam.curry.com/html/PC209520220729Podcas-6BFcB0JdknfdxrGlsWcMR910HCW1LH.html",
+      "description": "<p>Podcasting 2.0 for July 29th 2022 Episode 95: \"We are The Jazz\"</p>\n<p>Adam & Dave discuss the week's developments on podcastindex.org</p>\n<p>ShowNotes</p>\n<p>Podcast Improving Movement Proposal</p>\n<p>Alberto and Sam PIMP for verify tag</p>\n<p>Rss.com has a solid roadmap</p>\n<p>Chapter Images full screen</p>\n<p>Whoops, Peacock added no new paid subscribers over the last quarter</p>\n<p>Danny Kaye - A Song Is Born (1948) - IMDb</p>\n<p>Thread.Land</p>\n<p>https://thread.land/podcast/7GoP6LC/95</p>",
+      "guid": "PC2095",
+      "datePublished": 1659125449,
+      "datePublishedPretty": "July 29, 2022 3:10pm",
+      "dateCrawled": 1672453086,
+      "enclosureUrl": "https://op3.dev/e/mp3s.nashownotes.com/PC20-95-2022-07-29-Final.mp3",
+      "enclosureType": "audio/mpeg",
+      "enclosureLength": 85576351,
+      "duration": 7126,
+      "explicit": 0,
+      "episode": null,
+      "episodeType": "full",
+      "season": 0,
+      "image": "https://noagendaassets.com/enc/1601061118.678_pciavatar.jpg",
+      "feedItunesId": 1584274529,
+      "feedImage": "https://noagendaassets.com/enc/1601061118.678_pciavatar.jpg",
+      "feedId": 920666,
+      "feedLanguage": "en",
+      "feedDead": 0,
+      "feedDuplicateOf": null,
+      "chaptersUrl": "http://34.117.70.159/http%3Amp3s.nashownotes.compc20rss.xml/PC2095",
+      "transcriptUrl": "https://mp3s.nashownotes.com/PC20-95-Captions.srt",
+      "persons": [
+        {
+          "id": 7229484,
+          "name": "Adam Curry",
+          "role": "host",
+          "group": "cast",
+          "href": "http://curry.com",
+          "img": "https://feeds.podcastindex.org/adam_avatar.jpg"
+        },
+        {
+          "id": 7229485,
+          "name": "Dave Jones",
+          "role": "host",
+          "group": "cast",
+          "href": "http://dave.sobr.org",
+          "img": "https://feeds.podcastindex.org/dave_avatar.jpg"
+        }
+      ],
+      "transcripts": [
+        {
+          "url": "https://mp3s.nashownotes.com/PC20-95-Captions.srt",
+          "type": "application/srt"
+        }
+      ],
+      "value": {
+        "model": {
+          "type": "lightning",
+          "method": "keysend",
+          "suggested": "0.00000005000"
+        },
+        "destinations": [
+          {
+            "name": "Podcastindex.org",
+            "type": "node",
+            "address": "03ae9f91a0cb8ff43840e3c322c4c61f019d8c1c3cea15a25cfc425ac605e61a4a",
+            "split": 83
+          },
+          {
+            "name": "Dreb Scott (Chapters)",
+            "type": "node",
+            "address": "02453e4e93322d60219808c00c2e6d1f1c673420e95b5511a33c40cfb4df5e9148",
+            "split": 5
+          },
+          {
+            "name": "Sovereign Feeds",
+            "type": "node",
+            "address": "02a128c92baf0ede00ed0fc3720a92ba2c6392e0b58aa4decab1d787a666d94cb7",
+            "split": 10,
+            "customKey": "112111100",
+            "customValue": "wal_MB9T45QHGyW"
+          },
+          {
+            "name": "Boostagram Monitor",
+            "type": "node",
+            "address": "038399372001f2741d58d6ec4846fccb78daa1a485e69e2eebc5aadba047d35956",
+            "split": 1
+          },
+          {
+            "name": "Stay Safe Sage",
+            "type": "node",
+            "address": "03654d55c6bed17571938f1ba46b3b2622c52fe19faff74732eafdd16a1cbe2334",
+            "split": 1
+          }
+        ]
+      }
+    },
+    {
+      "id": 9098790353,
+      "title": "Episode 94: Bells Out",
+      "link": "http://adam.curry.com/html/PC209420220722Podcas-Qk7KGKZ4xZHcRh4D7RRJDchqwrVtxf.html",
+      "description": "<p>Podcasting 2.0 for July 22nd 2022 Episode 94: \"Bells Out\"</p>\n<p>Adam & Dave discuss the week's developments on podcastindex.org with Chris Fisher from Jupiter Broadcasting</p>\n\n<p>ShowNotes</p>\n<p>Chris Fisher - Jupiter Broadcasting</p>\n<p>Linkdin</p>\n<p>Jupiter Broadcasting</p>\n<p>V4V Taking off!</p>\n<p>rss.com Alby</p>\n<p>Netflix $0.005 per minute = 20 sats/minutes</p>\n<p>IAB Labs paper - diversity</p>\n<p>Helipad API</p>\n<p>CSB Transcript download</p>\n<p>Podcast Improving Movement Proposal</p>\n<p>Categories export</p>\n\nLast Modified 07/22/2022 14:38:52 by Freedom Controller  ",
+      "guid": "PC2094",
+      "datePublished": 1658518742,
+      "datePublishedPretty": "July 22, 2022 2:39pm",
+      "dateCrawled": 1672453086,
+      "enclosureUrl": "https://op3.dev/e/mp3s.nashownotes.com/PC20-94-2022-07-22-Final.mp3",
+      "enclosureType": "audio/mpeg",
+      "enclosureLength": 83397112,
+      "duration": 6944,
+      "explicit": 0,
+      "episode": null,
+      "episodeType": "full",
+      "season": 0,
+      "image": "https://noagendaassets.com/enc/1601061118.678_pciavatar.jpg",
+      "feedItunesId": 1584274529,
+      "feedImage": "https://noagendaassets.com/enc/1601061118.678_pciavatar.jpg",
+      "feedId": 920666,
+      "feedLanguage": "en",
+      "feedDead": 0,
+      "feedDuplicateOf": null,
+      "chaptersUrl": "http://34.117.70.159/http%3Amp3s.nashownotes.compc20rss.xml/PC2094",
+      "transcriptUrl": "https://mp3s.nashownotes.com/PC20-94-Captions.srt",
+      "persons": [
+        {
+          "id": 6928588,
+          "name": "Adam Curry",
+          "role": "host",
+          "group": "cast",
+          "href": "http://curry.com",
+          "img": "https://feeds.podcastindex.org/adam_avatar.jpg"
+        },
+        {
+          "id": 6928590,
+          "name": "Chris Fisher",
+          "role": "guest",
+          "group": "cast",
+          "href": "https://www.jupiterbroadcasting.net/",
+          "img": "https://assets.fireside.fm/file/fireside-images/podcasts/images/f/f31a453c-fa15-491f-8618-3f71f1d565e5/hosts/f/f0dbd60e-8353-49e8-a0f9-0d45cb4bc432/avatar_small.jpg?v=1"
+        },
+        {
+          "id": 6928589,
+          "name": "Dave Jones",
+          "role": "host",
+          "group": "cast",
+          "href": "http://dave.sobr.org",
+          "img": "https://feeds.podcastindex.org/dave_avatar.jpg"
+        }
+      ],
+      "transcripts": [
+        {
+          "url": "https://mp3s.nashownotes.com/PC20-94-Captions.srt",
+          "type": "application/srt"
+        }
+      ],
+      "value": {
+        "model": {
+          "type": "lightning",
+          "method": "keysend",
+          "suggested": "0.00000005000"
+        },
+        "destinations": [
+          {
+            "name": "Podcastindex.org",
+            "type": "node",
+            "address": "03ae9f91a0cb8ff43840e3c322c4c61f019d8c1c3cea15a25cfc425ac605e61a4a",
+            "split": 73
+          },
+          {
+            "name": "Dreb Scott (Chapters)",
+            "type": "node",
+            "address": "02453e4e93322d60219808c00c2e6d1f1c673420e95b5511a33c40cfb4df5e9148",
+            "split": 5
+          },
+          {
+            "name": "Sovereign Feeds",
+            "type": "node",
+            "address": "02a128c92baf0ede00ed0fc3720a92ba2c6392e0b58aa4decab1d787a666d94cb7",
+            "split": 10,
+            "customKey": "112111100",
+            "customValue": "wal_MB9T45QHGyW"
+          },
+          {
+            "name": "Boostagram Monitor",
+            "type": "node",
+            "address": "038399372001f2741d58d6ec4846fccb78daa1a485e69e2eebc5aadba047d35956",
+            "split": 1
+          },
+          {
+            "name": "Stay Safe Sage",
+            "type": "node",
+            "address": "03654d55c6bed17571938f1ba46b3b2622c52fe19faff74732eafdd16a1cbe2334",
+            "split": 1
+          },
+          {
+            "name": "Chris Fisher - Jupiter Broadcasting Linux Unplugged",
+            "type": "node",
+            "address": "037d284d2d7e6cec7623adbe600450a73b42fb90800989f05a862464b05408df39",
+            "split": 10
+          }
+        ]
+      }
+    },
+    {
+      "id": 8999569007,
+      "title": "Episode 93: Motion of Positivity",
+      "link": "http://adam.curry.com/html/PC209320220715Podcas-HRkzknnrhMsLc3q0LMRPKqR4ZhLjpg.html",
+      "description": "<p>Podcasting 2.0 for July 15th 2022 Episode 93: \"Motion of Positivity\"</p>\n<p>Adam & Dave discuss the week's developments on podcastindex.org with Tom Rossi from Buzzsprout. RSS is discussed briefly :-)</p>\n<p>ShowNotes</p>\n<p>Tom Rossi from Buzzsprout</p>\n<p>LIT</p>\n<p>New Media Show</p>\n<p>Transmitters back in the day</p>\n<p>Helipad is screaming for more features!</p>\n<p>Tell grand master view expo PRO story</p>\n<p>Soundbiter</p>\n<p>Chapter Images full screen</p>\n<p>The term fee is a problem</p>\n<p>Rodecaster pad issues</p>\n<p>Anchor Dude</p>\n<p>Marco's...",
+      "guid": "PC2093",
+      "datePublished": 1657915440,
+      "datePublishedPretty": "July 15, 2022 3:04pm",
+      "dateCrawled": 1672453086,
+      "enclosureUrl": "https://op3.dev/e/mp3s.nashownotes.com/PC20-93-2022-07-15-Final.mp3",
+      "enclosureType": "audio/mpeg",
+      "enclosureLength": 91413465,
+      "duration": 7612,
+      "explicit": 0,
+      "episode": null,
+      "episodeType": "full",
+      "season": 0,
+      "image": "https://noagendaassets.com/enc/1601061118.678_pciavatar.jpg",
+      "feedItunesId": 1584274529,
+      "feedImage": "https://noagendaassets.com/enc/1601061118.678_pciavatar.jpg",
+      "feedId": 920666,
+      "feedLanguage": "en",
+      "feedDead": 0,
+      "feedDuplicateOf": null,
+      "chaptersUrl": "http://34.117.70.159/http%3Amp3s.nashownotes.compc20rss.xml/PC2093",
+      "transcriptUrl": "https://mp3s.nashownotes.com/PC20-93-Captions.srt",
+      "persons": [
+        {
+          "id": 6638040,
+          "name": "Adam Curry",
+          "role": "host",
+          "group": "cast",
+          "href": "http://curry.com",
+          "img": "https://feeds.podcastindex.org/adam_avatar.jpg"
+        },
+        {
+          "id": 6638041,
+          "name": "Dave Jones",
+          "role": "host",
+          "group": "cast",
+          "href": "http://dave.sobr.org",
+          "img": "https://feeds.podcastindex.org/dave_avatar.jpg"
+        },
+        {
+          "id": 6638042,
+          "name": "Tom Rossi",
+          "role": "guest",
+          "group": "cast",
+          "href": "https://buzzsprout.com/",
+          "img": "https://cdn.masto.host/podcastindexsocial/accounts/avatars/000/000/985/original/ffbe1c68e03d3ced.jpg"
+        }
+      ],
+      "transcripts": [
+        {
+          "url": "https://mp3s.nashownotes.com/PC20-93-Captions.srt",
+          "type": "application/srt"
+        }
+      ],
+      "value": {
+        "model": {
+          "type": "lightning",
+          "method": "keysend",
+          "suggested": "0.00000005000"
+        },
+        "destinations": [
+          {
+            "name": "Podcastindex.org",
+            "type": "node",
+            "address": "03ae9f91a0cb8ff43840e3c322c4c61f019d8c1c3cea15a25cfc425ac605e61a4a",
+            "split": 83
+          },
+          {
+            "name": "Dreb Scott (Chapters)",
+            "type": "node",
+            "address": "02453e4e93322d60219808c00c2e6d1f1c673420e95b5511a33c40cfb4df5e9148",
+            "split": 5
+          },
+          {
+            "name": "Sovereign Feeds",
+            "type": "node",
+            "address": "02a128c92baf0ede00ed0fc3720a92ba2c6392e0b58aa4decab1d787a666d94cb7",
+            "split": 10,
+            "customKey": "112111100",
+            "customValue": "wal_MB9T45QHGyW"
+          },
+          {
+            "name": "Boostagram Monitor",
+            "type": "node",
+            "address": "038399372001f2741d58d6ec4846fccb78daa1a485e69e2eebc5aadba047d35956",
+            "split": 1
+          },
+          {
+            "name": "Stay Safe Sage",
+            "type": "node",
+            "address": "03654d55c6bed17571938f1ba46b3b2622c52fe19faff74732eafdd16a1cbe2334",
+            "split": 1
+          }
+        ]
+      }
+    },
+    {
+      "id": 8811425829,
+      "title": "Episode 92: Space Boost",
+      "link": "http://adam.curry.com/html/PC209220220701Podcas-vnW5xB27czHKppKt4WJlzJKLZZVmhN.html",
+      "description": "<p>Podcasting 2.0 for July 1st 2022 Episode 92: \"Space Boost\"</p>\n<p>Adam & Dave discuss the week's developments on podcastindex.org with Special Guest StevenB, the brains behind Curiocaster and SovereignFeeds</p>\n\n<p>ShowNotes</p>\n<p>Steven Bell - Curio Caster</p>\n<p>LinkedIn</p>\n<p>LinkedIn skill badge for Front End Development</p>\n<p>CurioCaster</p>\n<p>Sovereign Feeds</p>\n<p>Spotify's billion-dollar bet on podcasting has yet to pay off - BNN Bloomberg</p>\n<p>Petar Boost</p>\n<p>CSB space boost</p>\n<p>Do we have agreement that fees are on top of the amount and transparent?</p>\n<p>...",
+      "guid": "PC2092",
+      "datePublished": 1656707787,
+      "datePublishedPretty": "July 01, 2022 3:36pm",
+      "dateCrawled": 1672453086,
+      "enclosureUrl": "https://op3.dev/e/mp3s.nashownotes.com/PC20-92-2022-07-01-Final.mp3",
+      "enclosureType": "audio/mpeg",
+      "enclosureLength": 103466990,
+      "duration": 8617,
+      "explicit": 0,
+      "episode": null,
+      "episodeType": "full",
+      "season": 0,
+      "image": "https://noagendaassets.com/enc/1601061118.678_pciavatar.jpg",
+      "feedItunesId": 1584274529,
+      "feedImage": "https://noagendaassets.com/enc/1601061118.678_pciavatar.jpg",
+      "feedId": 920666,
+      "feedLanguage": "en",
+      "feedDead": 0,
+      "feedDuplicateOf": null,
+      "chaptersUrl": "http://34.117.70.159/http%3Amp3s.nashownotes.compc20rss.xml/PC2092",
+      "transcriptUrl": "https://mp3s.nashownotes.com/PC20-92-Captions.srt",
+      "persons": [
+        {
+          "id": 6017550,
+          "name": "Adam Curry",
+          "role": "host",
+          "group": "cast",
+          "href": "http://curry.com",
+          "img": "https://feeds.podcastindex.org/adam_avatar.jpg"
+        },
+        {
+          "id": 6017551,
+          "name": "Dave Jones",
+          "role": "host",
+          "group": "cast",
+          "href": "http://dave.sobr.org",
+          "img": "https://feeds.podcastindex.org/dave_avatar.jpg"
+        },
+        {
+          "id": 6017552,
+          "name": "Steven B",
+          "role": "guest",
+          "group": "cast",
+          "href": "https://curiocaster.com/",
+          "img": "https://cdn.masto.host/podcastindexsocial/accounts/avatars/000/015/466/original/1dcbcde7619f90a7.png"
+        }
+      ],
+      "transcripts": [
+        {
+          "url": "https://mp3s.nashownotes.com/PC20-92-Captions.srt",
+          "type": "application/srt"
+        }
+      ],
+      "value": {
+        "model": {
+          "type": "lightning",
+          "method": "keysend",
+          "suggested": "0.00000005000"
+        },
+        "destinations": [
+          {
+            "name": "Podcastindex.org",
+            "type": "node",
+            "address": "03ae9f91a0cb8ff43840e3c322c4c61f019d8c1c3cea15a25cfc425ac605e61a4a",
+            "split": 73
+          },
+          {
+            "name": "Dreb Scott (Chapters)",
+            "type": "node",
+            "address": "02453e4e93322d60219808c00c2e6d1f1c673420e95b5511a33c40cfb4df5e9148",
+            "split": 5
+          },
+          {
+            "name": "Sovereign Feeds",
+            "type": "node",
+            "address": "02a128c92baf0ede00ed0fc3720a92ba2c6392e0b58aa4decab1d787a666d94cb7",
+            "split": 20,
+            "customKey": "112111100",
+            "customValue": "wal_MB9T45QHGyW"
+          },
+          {
+            "name": "Boostagram Monitor",
+            "type": "node",
+            "address": "038399372001f2741d58d6ec4846fccb78daa1a485e69e2eebc5aadba047d35956",
+            "split": 1
+          },
+          {
+            "name": "Stay Safe Sage",
+            "type": "node",
+            "address": "03654d55c6bed17571938f1ba46b3b2622c52fe19faff74732eafdd16a1cbe2334",
+            "split": 1
+          }
+        ]
+      }
+    },
+    {
+      "id": 8716354840,
+      "title": "Episode 91: Splitting the Tab",
+      "link": "http://adam.curry.com/html/PC209120220624Podcas-wBhPh4xgzB11627lSbgPsW3smN3gp1.html",
+      "description": "<p>Podcasting 2.0 for June 24th 2022 Episode 91: \"Splitting the Tab\"</p>\n<p>Adam & Dave discuss the week's developments on podcastindex.org with new gear and a deep discussion on V4V Splits</p>\n<p>ShowNotes</p>\n<p>The Show Is LIT</p>\n<p>Show 100 coming up soon</p>\n<p>Fountain pays for ads</p>\n<p>Connecting NA Tube to Fountain</p>\n<p>EOS Boost reminder</p>\n<p>Fees vs splits</p>",
+      "guid": "PC2091",
+      "datePublished": 1656104301,
+      "datePublishedPretty": "June 24, 2022 3:58pm",
+      "dateCrawled": 1672453086,
+      "enclosureUrl": "https://op3.dev/e/mp3s.nashownotes.com/PC20-91-2022-06-24-Final.mp3",
+      "enclosureType": "audio/mpeg",
+      "enclosureLength": 91957961,
+      "duration": 7658,
+      "explicit": 0,
+      "episode": null,
+      "episodeType": "full",
+      "season": 0,
+      "image": "https://noagendaassets.com/enc/1601061118.678_pciavatar.jpg",
+      "feedItunesId": 1584274529,
+      "feedImage": "https://noagendaassets.com/enc/1601061118.678_pciavatar.jpg",
+      "feedId": 920666,
+      "feedLanguage": "en",
+      "feedDead": 0,
+      "feedDuplicateOf": null,
+      "chaptersUrl": "http://34.117.70.159/http%3Amp3s.nashownotes.compc20rss.xml/PC2091",
+      "transcriptUrl": "https://mp3s.nashownotes.com/PC20-91-Captions.srt",
+      "persons": [
+        {
+          "id": 5734681,
+          "name": "Adam Curry",
+          "role": "host",
+          "group": "cast",
+          "href": "http://curry.com",
+          "img": "https://feeds.podcastindex.org/adam_avatar.jpg"
+        },
+        {
+          "id": 5734682,
+          "name": "Dave Jones",
+          "role": "host",
+          "group": "cast",
+          "href": "http://dave.sobr.org",
+          "img": "https://feeds.podcastindex.org/dave_avatar.jpg"
+        },
+        {
+          "id": 5734683,
+          "name": "Josh Chen",
+          "role": "guest",
+          "group": "cast",
+          "href": "https://www.justcast.com/",
+          "img": "https://cdn.dribbble.com/users/460962/avatars/normal/22282e0ad37f4640bd64419513ed5465.jpg?1410237815"
+        }
+      ],
+      "transcripts": [
+        {
+          "url": "https://mp3s.nashownotes.com/PC20-91-Captions.srt",
+          "type": "application/srt"
+        }
+      ],
+      "value": {
+        "model": {
+          "type": "lightning",
+          "method": "keysend",
+          "suggested": "0.00000005000"
+        },
+        "destinations": [
+          {
+            "name": "Podcastindex.org",
+            "type": "node",
+            "address": "03ae9f91a0cb8ff43840e3c322c4c61f019d8c1c3cea15a25cfc425ac605e61a4a",
+            "split": 88
+          },
+          {
+            "name": "Dreb Scott (Chapters)",
+            "type": "node",
+            "address": "02453e4e93322d60219808c00c2e6d1f1c673420e95b5511a33c40cfb4df5e9148",
+            "split": 5
+          },
+          {
+            "name": "Sovereign Feeds",
+            "type": "node",
+            "address": "02a128c92baf0ede00ed0fc3720a92ba2c6392e0b58aa4decab1d787a666d94cb7",
+            "split": 5,
+            "customKey": "112111100",
+            "customValue": "wal_MB9T45QHGyW"
+          },
+          {
+            "name": "Boostagram Monitor",
+            "type": "node",
+            "address": "038399372001f2741d58d6ec4846fccb78daa1a485e69e2eebc5aadba047d35956",
+            "split": 1
+          },
+          {
+            "name": "Stay Safe Sage",
+            "type": "node",
+            "address": "03654d55c6bed17571938f1ba46b3b2622c52fe19faff74732eafdd16a1cbe2334",
+            "split": 1
+          }
+        ]
+      }
+    },
+    {
+      "id": 8622836513,
+      "title": "Episode 90: J and K",
+      "link": "http://adam.curry.com/html/PC209020220617Podcas-M5RFkKfQgL5ZH00kHpJgp1lXhpfq8Z.html",
+      "description": "<p>Podcasting 2.0 for June 17th 2022 Episode 90: \"J and K\"</p>\n<p>Adam & Dave discuss the week's developments on podcastindex.org</p>\n\n<p>ShowNotes</p>\n<p>The Show Is LIT</p>\n<p>Show 100 coming up soon</p>\n<p>Behind the sch3mes, I fillowed LIT and subscribed</p>\n<p>Connecting NA Tube to Fountain</p>\n<p>EOS Boost reminder</p>\n<p>musiccasting - Onboarding musicians to Podcasting 2.0 and Value for Value</p>\n<p>New running with scissors from Sir Peet</p>\n\nLast Modified 06/17/2022 15:05:05 by Freedom Controller  ",
+      "guid": "PC2090",
+      "datePublished": 1655496414,
+      "datePublishedPretty": "June 17, 2022 3:06pm",
+      "dateCrawled": 1672453086,
+      "enclosureUrl": "https://op3.dev/e/mp3s.nashownotes.com/PC20-90-2022-06-17-Final.mp3",
+      "enclosureType": "audio/mpeg",
+      "enclosureLength": 103333452,
+      "duration": 8606,
+      "explicit": 0,
+      "episode": null,
+      "episodeType": "full",
+      "season": 0,
+      "image": "https://noagendaassets.com/enc/1601061118.678_pciavatar.jpg",
+      "feedItunesId": 1584274529,
+      "feedImage": "https://noagendaassets.com/enc/1601061118.678_pciavatar.jpg",
+      "feedId": 920666,
+      "feedLanguage": "en",
+      "feedDead": 0,
+      "feedDuplicateOf": null,
+      "chaptersUrl": "http://34.117.70.159/http%3Amp3s.nashownotes.compc20rss.xml/PC2090",
+      "transcriptUrl": "https://mp3s.nashownotes.com/PC20-90-Captions.srt",
+      "persons": [
+        {
+          "id": 5734684,
+          "name": "Adam Curry",
+          "role": "host",
+          "group": "cast",
+          "href": "http://curry.com",
+          "img": "https://feeds.podcastindex.org/adam_avatar.jpg"
+        },
+        {
+          "id": 5734685,
+          "name": "Dave Jones",
+          "role": "host",
+          "group": "cast",
+          "href": "http://dave.sobr.org",
+          "img": "https://feeds.podcastindex.org/dave_avatar.jpg"
+        },
+        {
+          "id": 5734686,
+          "name": "Josh Chen",
+          "role": "guest",
+          "group": "cast",
+          "href": "https://www.justcast.com/",
+          "img": "https://cdn.dribbble.com/users/460962/avatars/normal/22282e0ad37f4640bd64419513ed5465.jpg?1410237815"
+        }
+      ],
+      "transcripts": [
+        {
+          "url": "https://mp3s.nashownotes.com/PC20-90-Captions.srt",
+          "type": "application/srt"
+        }
+      ],
+      "value": {
+        "model": {
+          "type": "lightning",
+          "method": "keysend",
+          "suggested": "0.00000005000"
+        },
+        "destinations": [
+          {
+            "name": "Podcastindex.org",
+            "type": "node",
+            "address": "03ae9f91a0cb8ff43840e3c322c4c61f019d8c1c3cea15a25cfc425ac605e61a4a",
+            "split": 89
+          },
+          {
+            "name": "Dreb Scott (Chapters)",
+            "type": "node",
+            "address": "02453e4e93322d60219808c00c2e6d1f1c673420e95b5511a33c40cfb4df5e9148",
+            "split": 5
+          },
+          {
+            "name": "Sovereign Feeds",
+            "type": "node",
+            "address": "02a128c92baf0ede00ed0fc3720a92ba2c6392e0b58aa4decab1d787a666d94cb7",
+            "split": 5,
+            "customKey": "112111100",
+            "customValue": "wal_MB9T45QHGyW"
+          },
+          {
+            "name": "Boostagram Monitor",
+            "type": "node",
+            "address": "038399372001f2741d58d6ec4846fccb78daa1a485e69e2eebc5aadba047d35956",
+            "split": 1
+          }
+        ]
+      }
+    },
+    {
+      "id": 8526780238,
+      "title": "Episode 89: Poll Juice",
+      "link": "http://adam.curry.com/html/PC208920220610Podcas-1V6wr7Gszp9WR1XHnLjTLNfvmqVz6C.html",
+      "description": "<p>Podcasting 2.0 for June 10th 2022 Episode 89: \"Poll Juice\"</p>\n<p>Adam & Dave discuss the week's developments on podcastindex.org with board room guest Josh Chen from JustCast</p>\n\n<p>ShowNotes</p>\n<p>The Show Is LIT</p>\n<p>Show 100 coming up soon</p>\n<p>On - Air</p>\n<p>Pre-Stream BOOSTS</p>\n<p>Sam Sethi</p>\n<p>Spotify</p>\n<p>Rude and Stupid</p>\n<p>Rude - dissing a lot of people</p>\n<p>Stupid - History shows rss businesses that centralize feed creation fail</p>\n<p>RSS is a Giraffe</p>\n<p>Don't try to tame the giraffe</p>\n<...",
+      "guid": "PC2089",
+      "datePublished": 1654890238,
+      "datePublishedPretty": "June 10, 2022 2:43pm",
+      "dateCrawled": 1672453086,
+      "enclosureUrl": "https://op3.dev/e/mp3s.nashownotes.com/PC20-89-2022-06-10-Final.mp3",
+      "enclosureType": "audio/mpeg",
+      "enclosureLength": 80610683,
+      "duration": 6712,
+      "explicit": 0,
+      "episode": null,
+      "episodeType": "full",
+      "season": 0,
+      "image": "https://noagendaassets.com/enc/1601061118.678_pciavatar.jpg",
+      "feedItunesId": 1584274529,
+      "feedImage": "https://noagendaassets.com/enc/1601061118.678_pciavatar.jpg",
+      "feedId": 920666,
+      "feedLanguage": "en",
+      "feedDead": 0,
+      "feedDuplicateOf": null,
+      "chaptersUrl": "http://34.117.70.159/http%3Amp3s.nashownotes.compc20rss.xml/PC2089",
+      "transcriptUrl": "https://mp3s.nashownotes.com/PC20-89-Captions.srt",
+      "persons": [
+        {
+          "id": 5111516,
+          "name": "Adam Curry",
+          "role": "host",
+          "group": "cast",
+          "href": "http://curry.com",
+          "img": "https://feeds.podcastindex.org/adam_avatar.jpg"
+        },
+        {
+          "id": 5111517,
+          "name": "Dave Jones",
+          "role": "host",
+          "group": "cast",
+          "href": "http://dave.sobr.org",
+          "img": "https://feeds.podcastindex.org/dave_avatar.jpg"
+        },
+        {
+          "id": 5111518,
+          "name": "Josh Chen",
+          "role": "guest",
+          "group": "cast",
+          "href": "https://www.justcast.com/",
+          "img": "https://cdn.dribbble.com/users/460962/avatars/normal/22282e0ad37f4640bd64419513ed5465.jpg?1410237815"
+        }
+      ],
+      "transcripts": [
+        {
+          "url": "https://mp3s.nashownotes.com/PC20-89-Captions.srt",
+          "type": "application/srt"
+        }
+      ],
+      "value": {
+        "model": {
+          "type": "lightning",
+          "method": "keysend",
+          "suggested": "0.00000005000"
+        },
+        "destinations": [
+          {
+            "name": "Podcastindex.org",
+            "type": "node",
+            "address": "03ae9f91a0cb8ff43840e3c322c4c61f019d8c1c3cea15a25cfc425ac605e61a4a",
+            "split": 79
+          },
+          {
+            "name": "Dreb Scott (Chapters)",
+            "type": "node",
+            "address": "02453e4e93322d60219808c00c2e6d1f1c673420e95b5511a33c40cfb4df5e9148",
+            "split": 5
+          },
+          {
+            "name": "Sovereign Feeds",
+            "type": "node",
+            "address": "02a128c92baf0ede00ed0fc3720a92ba2c6392e0b58aa4decab1d787a666d94cb7",
+            "split": 5,
+            "customKey": "112111100",
+            "customValue": "wal_MB9T45QHGyW"
+          },
+          {
+            "name": "Boostagram Monitor",
+            "type": "node",
+            "address": "038399372001f2741d58d6ec4846fccb78daa1a485e69e2eebc5aadba047d35956",
+            "split": 1
+          },
+          {
+            "name": "Alecks - NoAgendaTube.com",
+            "type": "node",
+            "address": "02b66d7caae1acb51a95e036fc12b1e6837d9143141fcff520876b04b9d82f36d1",
+            "split": 10
+          }
+        ]
+      }
+    },
+    {
+      "id": 8436137076,
+      "title": "Episode 88: Hittin' the Hockey Stick",
+      "link": "http://adam.curry.com/html/PC208820220603Podcas-PKCTfbh48cdx8tL1k0CRdzFPb6wFfZ.html",
+      "description": "<p>Podcasting 2.0 for June 3d 2022 Episode 88: \"Hittin' the Hockey Stick\"</p>\n<p>Adam & Dave discuss the week's developments on podcastindex.org with board room guest Nic Ivanov from Vizzy</p>\n\n<p>ShowNotes</p>\n<p>Nic Ivanov - Vizzy</p>\n<p>The Show Is LIT</p>\n<p>Pre-Stream BOOSTS</p>\n<p>7K Podcasts voltage graph tweeted by Kevin Rooke</p>\n<p>Blubrry ad insertions</p>\n<p>Buzzsprout ad insertions</p>\n<p>Spotify podcasters are making $18,000 per month with nothing more than white noise</p>\n<p>Joe Rogan advertising conspiracy theory v4v is more honest</p>\n<p>Good Opinion on broker f...",
+      "guid": "PC2088",
+      "datePublished": 1654312040,
+      "datePublishedPretty": "June 03, 2022 10:07pm",
+      "dateCrawled": 1672453086,
+      "enclosureUrl": "https://op3.dev/e/mp3s.nashownotes.com/PC20-88-2022-06-03-Final.mp3",
+      "enclosureType": "audio/mpeg",
+      "enclosureLength": 73441972,
+      "duration": 6109,
+      "explicit": 0,
+      "episode": null,
+      "episodeType": "full",
+      "season": 0,
+      "image": "https://noagendaassets.com/enc/1601061118.678_pciavatar.jpg",
+      "feedItunesId": 1584274529,
+      "feedImage": "https://noagendaassets.com/enc/1601061118.678_pciavatar.jpg",
+      "feedId": 920666,
+      "feedLanguage": "en",
+      "feedDead": 0,
+      "feedDuplicateOf": null,
+      "chaptersUrl": "http://34.117.70.159/http%3Amp3s.nashownotes.compc20rss.xml/PC2088",
+      "transcriptUrl": "https://mp3s.nashownotes.com/PC20-88-Captions.srt",
+      "persons": [
+        {
+          "id": 4718374,
+          "name": "Adam Curry",
+          "role": "host",
+          "group": "cast",
+          "href": "http://curry.com",
+          "img": "https://feeds.podcastindex.org/adam_avatar.jpg"
+        },
+        {
+          "id": 4718375,
+          "name": "Dave Jones",
+          "role": "host",
+          "group": "cast",
+          "href": "http://dave.sobr.org",
+          "img": "https://feeds.podcastindex.org/dave_avatar.jpg"
+        },
+        {
+          "id": 4718376,
+          "name": "Nic Ivanov",
+          "role": "guest",
+          "group": "cast",
+          "href": "https://vizzy.fm/",
+          "img": "https://media-exp1.licdn.com/dms/image/C5603AQFzG_6uOIaZYQ/profile-displayphoto-shrink_400_400/0/1613348921621?e=1659571200&v=beta&t=zIHpjfyI6dHdLp1wPV4dGOUvEiAvvDdGeDcJXAaFGvA"
+        }
+      ],
+      "transcripts": [
+        {
+          "url": "https://mp3s.nashownotes.com/PC20-88-Captions.srt",
+          "type": "application/srt"
+        }
+      ],
+      "value": {
+        "model": {
+          "type": "lightning",
+          "method": "keysend",
+          "suggested": "0.00000005000"
+        },
+        "destinations": [
+          {
+            "name": "Podcastindex.org",
+            "type": "node",
+            "address": "03ae9f91a0cb8ff43840e3c322c4c61f019d8c1c3cea15a25cfc425ac605e61a4a",
+            "split": 79
+          },
+          {
+            "name": "Dreb Scott (Chapters)",
+            "type": "node",
+            "address": "02453e4e93322d60219808c00c2e6d1f1c673420e95b5511a33c40cfb4df5e9148",
+            "split": 5
+          },
+          {
+            "name": "Sovereign Feeds",
+            "type": "node",
+            "address": "02a128c92baf0ede00ed0fc3720a92ba2c6392e0b58aa4decab1d787a666d94cb7",
+            "split": 5,
+            "customKey": "112111100",
+            "customValue": "wal_MB9T45QHGyW"
+          },
+          {
+            "name": "Boostagram Monitor",
+            "type": "node",
+            "address": "038399372001f2741d58d6ec4846fccb78daa1a485e69e2eebc5aadba047d35956",
+            "split": 1
+          },
+          {
+            "name": "Alecks - NoAgendaTube.com",
+            "type": "node",
+            "address": "02b66d7caae1acb51a95e036fc12b1e6837d9143141fcff520876b04b9d82f36d1",
+            "split": 10
+          }
+        ]
+      }
+    },
+    {
+      "id": 8341563576,
+      "title": "Episode 87: Freerange & Unsupervised",
+      "link": "http://adam.curry.com/html/PC208720220527Podcas-T028QTHlJq3Ftqk8mbbz4SQJSN8s5b.html",
+      "description": "\n<p>Podcasting 2.0 for May 27th 2022 Episode 87: \"Freerange & Unsupervised\"</p>\n<p>Adam & Dave discuss the week's developments on podcastindex.org and Music 2.0!</p>\n<p>ShowNotes</p>\n<p>Pre-Stream BOOST ...</p>\n<p>Alby — Lightning buzz for your Browser!</p>\n<p>Curiocaster social data</p>\n<p>Rode caster pro II</p>\n<p>Live Stream Info</p>\n<p>https://noagendatube.com/videos/watch/b9942339-1d61-47d8-a9c9-2b72234b87eb</p>\n<p>https://noagendatube.com/static/streaming-playlists/hls/b9942339-1d61-47d8-a9c9-2b72234b87eb/master.m3u8</p>\n<p>A listener’s guide to boostagrams</p>\n<...",
+      "guid": "PC2087",
+      "datePublished": 1653681339,
+      "datePublishedPretty": "May 27, 2022 2:55pm",
+      "dateCrawled": 1672453087,
+      "enclosureUrl": "https://op3.dev/e/mp3s.nashownotes.com/PC20-87-2022-05-27-Final.mp3",
+      "enclosureType": "audio/mpeg",
+      "enclosureLength": 90495626,
+      "duration": 7536,
+      "explicit": 0,
+      "episode": null,
+      "episodeType": "full",
+      "season": 0,
+      "image": "https://noagendaassets.com/enc/1601061118.678_pciavatar.jpg",
+      "feedItunesId": 1584274529,
+      "feedImage": "https://noagendaassets.com/enc/1601061118.678_pciavatar.jpg",
+      "feedId": 920666,
+      "feedLanguage": "en",
+      "feedDead": 0,
+      "feedDuplicateOf": null,
+      "chaptersUrl": "http://34.117.70.159/http%3Amp3s.nashownotes.compc20rss.xml/PC2087",
+      "transcriptUrl": "https://mp3s.nashownotes.com/PC20-87-Captions.srt",
+      "persons": [
+        {
+          "id": 4284096,
+          "name": "Adam Curry",
+          "role": "host",
+          "group": "cast",
+          "href": "http://curry.com",
+          "img": "https://feeds.podcastindex.org/adam_avatar.jpg"
+        },
+        {
+          "id": 4284097,
+          "name": "Dave Jones",
+          "role": "host",
+          "group": "cast",
+          "href": "http://dave.sobr.org",
+          "img": "https://feeds.podcastindex.org/dave_avatar.jpg"
+        }
+      ],
+      "transcripts": [
+        {
+          "url": "https://mp3s.nashownotes.com/PC20-87-Captions.srt",
+          "type": "application/srt"
+        }
+      ],
+      "value": {
+        "model": {
+          "type": "lightning",
+          "method": "keysend",
+          "suggested": "0.00000005000"
+        },
+        "destinations": [
+          {
+            "name": "Podcastindex.org",
+            "type": "node",
+            "address": "03ae9f91a0cb8ff43840e3c322c4c61f019d8c1c3cea15a25cfc425ac605e61a4a",
+            "split": 89
+          },
+          {
+            "name": "Dreb Scott (Chapters)",
+            "type": "node",
+            "address": "02453e4e93322d60219808c00c2e6d1f1c673420e95b5511a33c40cfb4df5e9148",
+            "split": 5
+          },
+          {
+            "name": "Sovereign Feeds",
+            "type": "node",
+            "address": "02a128c92baf0ede00ed0fc3720a92ba2c6392e0b58aa4decab1d787a666d94cb7",
+            "split": 5,
+            "customKey": "112111100",
+            "customValue": "wal_MB9T45QHGyW"
+          },
+          {
+            "name": "Boostagram Monitor",
+            "type": "node",
+            "address": "038399372001f2741d58d6ec4846fccb78daa1a485e69e2eebc5aadba047d35956",
+            "split": 1
+          }
+        ]
+      }
+    },
+    {
+      "id": 8244523680,
+      "title": "Episode 86: Stackin' Salad Dressing",
+      "link": "http://adam.curry.com/html/PC208620220520Podcas-77kgZ1SgZWwjb7zcTC5j2t1NCp9R1j.html",
+      "description": "<p>Podcasting 2.0 for May 20th 2022 Episode 86: \"Stacking Salad Dressing</p>\n<p>Adam & Dave discuss the week's developments on podcastindex.org</p>\n\n<p>ShowNotes</p>\n<p>LIT automation (or not) (test)</p>\n<p>Jensen SF</p>\n<p>Manage | IPFS Podcasting</p>\n<p>Alternate Enclosure</p>\n<p>Alby — Lightning buzz for your Browser!</p>\n<p>Nina Jankowicz</p>\n<p>Rode caster pro II</p>\n<p>fiatjaf/nostr: a truly censorship-resistant alternative to Twitter that has a chance of working</p>\n<p>New Hypercatcher</p>\n<p>Podverse web boost library</p>\n<p>Bitcoin Gaming Company ZEBEDEE Announces New Lightning Donation Streaming Tool - Bi...",
+      "guid": "PC2086",
+      "datePublished": 1653079391,
+      "datePublishedPretty": "May 20, 2022 3:43pm",
+      "dateCrawled": 1672453087,
+      "enclosureUrl": "https://op3.dev/e/mp3s.nashownotes.com/PC20-86-2022-05-20-Final.mp3",
+      "enclosureType": "audio/mpeg",
+      "enclosureLength": 102495256,
+      "duration": 8530,
+      "explicit": 0,
+      "episode": null,
+      "episodeType": "full",
+      "season": 0,
+      "image": "https://noagendaassets.com/enc/1601061118.678_pciavatar.jpg",
+      "feedItunesId": 1584274529,
+      "feedImage": "https://noagendaassets.com/enc/1601061118.678_pciavatar.jpg",
+      "feedId": 920666,
+      "feedLanguage": "en",
+      "feedDead": 0,
+      "feedDuplicateOf": null,
+      "chaptersUrl": "http://34.117.70.159/http%3Amp3s.nashownotes.compc20rss.xml/PC2086",
+      "transcriptUrl": "https://mp3s.nashownotes.com/PC20-86-Captions.srt",
+      "persons": [
+        {
+          "id": 3908714,
+          "name": "Adam Curry",
+          "role": "host",
+          "group": "cast",
+          "href": "http://curry.com",
+          "img": "https://feeds.podcastindex.org/adam_avatar.jpg"
+        },
+        {
+          "id": 3908715,
+          "name": "Dave Jones",
+          "role": "host",
+          "group": "cast",
+          "href": "http://dave.sobr.org",
+          "img": "https://feeds.podcastindex.org/dave_avatar.jpg"
+        }
+      ],
+      "transcripts": [
+        {
+          "url": "https://mp3s.nashownotes.com/PC20-86-Captions.srt",
+          "type": "application/srt"
+        }
+      ],
+      "value": {
+        "model": {
+          "type": "lightning",
+          "method": "keysend",
+          "suggested": "0.00000005000"
+        },
+        "destinations": [
+          {
+            "name": "Podcastindex.org",
+            "type": "node",
+            "address": "03ae9f91a0cb8ff43840e3c322c4c61f019d8c1c3cea15a25cfc425ac605e61a4a",
+            "split": 64
+          },
+          {
+            "name": "Dreb Scott (Chapters)",
+            "type": "node",
+            "address": "02453e4e93322d60219808c00c2e6d1f1c673420e95b5511a33c40cfb4df5e9148",
+            "split": 5
+          },
+          {
+            "name": "Sovereign Feeds",
+            "type": "node",
+            "address": "02a128c92baf0ede00ed0fc3720a92ba2c6392e0b58aa4decab1d787a666d94cb7",
+            "split": 5,
+            "customKey": "112111100",
+            "customValue": "wal_MB9T45QHGyW"
+          },
+          {
+            "name": "Boostagram Monitor",
+            "type": "node",
+            "address": "038399372001f2741d58d6ec4846fccb78daa1a485e69e2eebc5aadba047d35956",
+            "split": 1
+          }
+        ]
+      }
+    },
+    {
+      "id": 8145022632,
+      "title": "Episode 85: Loot The Room!",
+      "link": "http://adam.curry.com/html/PC208520220513Podcas-lCjCV7rQsplH0FXDNmqTtP5T8rSslw.html",
+      "description": "<p>Podcasting 2.0 for May 13th 2022 Episode 85: \"Loot The Room!\"</p>\n<p>Adam & Dave discuss the week's developments on podcastindex.org with guest Mitch Downey from Podverse</p>\n\n<p>ShowNotes</p>\n<p>LIT</p>\n<p>Captcha Woes</p>\n<p>IPFS Podcasting</p>\n<p>Podcast Index Case Study - Voltage</p>\n<p>Jensen SF</p>\n<p>DJL - Deplatformed</p>\n<p>Audacy Inc (AUD) CEO David Field on Q1 2022 Results - Earnings Call Transcript | Seeking Alpha</p>\n<p>Boostbot</p>\n<p>Cryptocurrency luna now almost worthless after UST falls below peg</p>\n<p>NOSTR fiatjaf/nostr: a truly censorship-resistant alternative to Twitter...",
+      "guid": "PC2085",
+      "datePublished": 1652472419,
+      "datePublishedPretty": "May 13, 2022 3:06pm",
+      "dateCrawled": 1672453087,
+      "enclosureUrl": "https://op3.dev/e/mp3s.nashownotes.com/PC20-85-2022-05-13-Final.mp3",
+      "enclosureType": "audio/mpeg",
+      "enclosureLength": 0,
+      "duration": 7467,
+      "explicit": 0,
+      "episode": null,
+      "episodeType": "full",
+      "season": 0,
+      "image": "https://noagendaassets.com/enc/1601061118.678_pciavatar.jpg",
+      "feedItunesId": 1584274529,
+      "feedImage": "https://noagendaassets.com/enc/1601061118.678_pciavatar.jpg",
+      "feedId": 920666,
+      "feedLanguage": "en",
+      "feedDead": 0,
+      "feedDuplicateOf": null,
+      "chaptersUrl": "http://34.117.70.159/http%3Amp3s.nashownotes.compc20rss.xml/PC2085",
+      "transcriptUrl": "https://mp3s.nashownotes.com/PC20-85-Captions.srt",
+      "persons": [
+        {
+          "id": 3437541,
+          "name": "Adam Curry",
+          "role": "host",
+          "group": "cast",
+          "href": "http://curry.com",
+          "img": "https://feeds.podcastindex.org/adam_avatar.jpg"
+        },
+        {
+          "id": 3437542,
+          "name": "Dave Jones",
+          "role": "host",
+          "group": "cast",
+          "href": "http://dave.sobr.org",
+          "img": "https://feeds.podcastindex.org/dave_avatar.jpg"
+        },
+        {
+          "id": 3437543,
+          "name": "Mitch Downey - Podverse",
+          "role": "host",
+          "group": "cast",
+          "href": "https://podverse.fm/",
+          "img": "https://cdn.masto.host/podcastindexsocial/accounts/avatars/000/000/806/original/16d4fbda48b4cfee.jpg"
+        }
+      ],
+      "transcripts": [
+        {
+          "url": "https://mp3s.nashownotes.com/PC20-85-Captions.srt",
+          "type": "application/srt"
+        }
+      ],
+      "value": {
+        "model": {
+          "type": "lightning",
+          "method": "keysend",
+          "suggested": "0.00000005000"
+        },
+        "destinations": [
+          {
+            "name": "Podcastindex.org",
+            "type": "node",
+            "address": "03ae9f91a0cb8ff43840e3c322c4c61f019d8c1c3cea15a25cfc425ac605e61a4a",
+            "split": 64
+          },
+          {
+            "name": "Dreb Scott (Chapters)",
+            "type": "node",
+            "address": "02453e4e93322d60219808c00c2e6d1f1c673420e95b5511a33c40cfb4df5e9148",
+            "split": 5
+          },
+          {
+            "name": "Sovereign Feeds",
+            "type": "node",
+            "address": "02a128c92baf0ede00ed0fc3720a92ba2c6392e0b58aa4decab1d787a666d94cb7",
+            "split": 5,
+            "customKey": "112111100",
+            "customValue": "wal_MB9T45QHGyW"
+          },
+          {
+            "name": "Boostagram Monitor",
+            "type": "node",
+            "address": "038399372001f2741d58d6ec4846fccb78daa1a485e69e2eebc5aadba047d35956",
+            "split": 1
+          },
+          {
+            "name": "Podverse - Mitch Downey",
+            "type": "node",
+            "address": "02b92193a4c9d035c81f8076ae4a4aba04b7ea8e04058eb3296f894e6ccd5f2e6e",
+            "split": 25
+          }
+        ]
+      }
+    },
+    {
+      "id": 8031009367,
+      "title": "Episode 84: All Aboard to On-Board!",
+      "link": "http://adam.curry.com/html/PC208420220506Podcas-9vksRH4FlPRKdPB0QqFRHZ1GnmRNbz.html",
+      "description": "<p>Podcasting 2.0 for May 6th 2022 Episode 84: \"All Aboard to On-Board!\"</p>\n<p>Adam & Dave discuss the week's developments on podcastindex.org and we're joined by Fountain's Oscar Merry</p>\n\n<p>Download the mp3</p>\n<p>Podcast Feed</p>\n<p>PodcastIndex.org</p>\n<p>Preservepodcasting.com</p>\n<p>Check out the podcasting 2.0 apps and services newpodcastapps.com</p>\n<p>Support us with your Time Talent and Treasure</p>\n<p>Positioning</p>\n<p>Boost Bait</p>\n<p>ShowNotes</p>\n<p>Put us in your value split</p>\n<p>Oscar Merry Fountain.fm</p>\n<p>Jensen SF</p>\n<p>Khalil Rountree's Bitcoin Awakening</p>\n...",
+      "guid": "PC2084",
+      "datePublished": 1651867250,
+      "datePublishedPretty": "May 06, 2022 3:00pm",
+      "dateCrawled": 1672453087,
+      "enclosureUrl": "https://op3.dev/e/mp3s.nashownotes.com/PC20-84-2022-05-06-Final.mp3",
+      "enclosureType": "audio/mpeg",
+      "enclosureLength": 84757256,
+      "duration": 7058,
+      "explicit": 0,
+      "episode": null,
+      "episodeType": "full",
+      "season": 0,
+      "image": "https://noagendaassets.com/enc/1601061118.678_pciavatar.jpg",
+      "feedItunesId": 1584274529,
+      "feedImage": "https://noagendaassets.com/enc/1601061118.678_pciavatar.jpg",
+      "feedId": 920666,
+      "feedLanguage": "en",
+      "feedDead": 0,
+      "feedDuplicateOf": null,
+      "chaptersUrl": "http://34.117.70.159/http%3Amp3s.nashownotes.compc20rss.xml/PC2084",
+      "transcriptUrl": "https://mp3s.nashownotes.com/PC20-84-Captions.srt",
+      "persons": [
+        {
+          "id": 2887562,
+          "name": "Adam Curry",
+          "role": "host",
+          "group": "cast",
+          "href": "http://curry.com",
+          "img": "https://feeds.podcastindex.org/adam_avatar.jpg"
+        },
+        {
+          "id": 2887563,
+          "name": "Dave Jones",
+          "role": "host",
+          "group": "cast",
+          "href": "http://dave.sobr.org",
+          "img": "https://feeds.podcastindex.org/dave_avatar.jpg"
+        },
+        {
+          "id": 2887564,
+          "name": "Oscar Merry",
+          "role": "guest",
+          "group": "cast",
+          "href": "https://fountain.fm/",
+          "img": "https://cdn.masto.host/podcastindexsocial/accounts/avatars/106/308/425/108/516/919/original/94816333ea4c146a.jpg"
+        }
+      ],
+      "transcripts": [
+        {
+          "url": "https://mp3s.nashownotes.com/PC20-84-Captions.srt",
+          "type": "application/srt"
+        }
+      ],
+      "value": {
+        "model": {
+          "type": "lightning",
+          "method": "keysend",
+          "suggested": "0.00000005000"
+        },
+        "destinations": [
+          {
+            "name": "Podcastindex.org",
+            "type": "node",
+            "address": "03ae9f91a0cb8ff43840e3c322c4c61f019d8c1c3cea15a25cfc425ac605e61a4a",
+            "split": 64
+          },
+          {
+            "name": "Dreb Scott (Chapters)",
+            "type": "node",
+            "address": "02453e4e93322d60219808c00c2e6d1f1c673420e95b5511a33c40cfb4df5e9148",
+            "split": 5
+          },
+          {
+            "name": "Sovereign Feeds",
+            "type": "node",
+            "address": "02a128c92baf0ede00ed0fc3720a92ba2c6392e0b58aa4decab1d787a666d94cb7",
+            "split": 5,
+            "customKey": "112111100",
+            "customValue": "wal_MB9T45QHGyW"
+          },
+          {
+            "name": "Boostagram Monitor",
+            "type": "node",
+            "address": "038399372001f2741d58d6ec4846fccb78daa1a485e69e2eebc5aadba047d35956",
+            "split": 1
+          },
+          {
+            "name": "Oscar Merry - Fountain",
+            "type": "node",
+            "address": "02a128c92baf0ede00ed0fc3720a92ba2c6392e0b58aa4decab1d787a666d94cb7",
+            "split": 25,
+            "customKey": "112111100",
+            "customValue": "wal_ZmqFg13NB31oek"
+          }
+        ]
+      }
+    },
+    {
+      "id": 7925003836,
+      "title": "Episode 83: Pushin' Paper",
+      "link": "http://adam.curry.com/html/PC208320220429Podcas-KTmG0DfQBms2RTW1GP2K8hvLNC96Q2.html",
+      "description": "<p>Podcasting 2.0 for April 29th 2022 Episode 83: \"Pushin' Paper\"</p>\n\n<p>Download the mp3</p>\n<p>Podcast Feed</p>\n<p>PodcastIndex.org</p>\n<p>Preservepodcasting.com</p>\n<p>Check out the podcasting 2.0 apps and services newpodcastapps.com</p>\n<p>Support us with your Time Talent and Treasure</p>\n<p>Positioning</p>\n<p>Boost Bait</p>\n<p>ShowNotes</p>\n<p>Put us in your value split</p>\n<p>03ae9f91a0cb8ff43840e3c322c4c61f019d8c1c3cea15a25cfc425ac605e61a4a</p>\n<p>Two very tired men</p>\n<p>Live item fuck ups</p>\n<p>Bo...",
+      "guid": "PC2083",
+      "datePublished": 1651283279,
+      "datePublishedPretty": "April 29, 2022 8:47pm",
+      "dateCrawled": 1672453087,
+      "enclosureUrl": "https://op3.dev/e/mp3s.nashownotes.com/PC20-83-2022-04-29-Final.mp3",
+      "enclosureType": "audio/mpeg",
+      "enclosureLength": 83186461,
+      "duration": 6927,
+      "explicit": 0,
+      "episode": null,
+      "episodeType": "full",
+      "season": 0,
+      "image": "https://noagendaassets.com/enc/1601061118.678_pciavatar.jpg",
+      "feedItunesId": 1584274529,
+      "feedImage": "https://noagendaassets.com/enc/1601061118.678_pciavatar.jpg",
+      "feedId": 920666,
+      "feedLanguage": "en",
+      "feedDead": 0,
+      "feedDuplicateOf": null,
+      "chaptersUrl": "http://34.117.70.159/http%3Amp3s.nashownotes.compc20rss.xml/PC2083",
+      "transcriptUrl": "https://mp3s.nashownotes.com/PC20-83-Captions.srt",
+      "persons": [
+        {
+          "id": 2343584,
+          "name": "Adam Curry",
+          "role": "host",
+          "group": "cast",
+          "href": "http://curry.com",
+          "img": "https://feeds.podcastindex.org/adam_avatar.jpg"
+        },
+        {
+          "id": 2343585,
+          "name": "Dave Jones",
+          "role": "host",
+          "group": "cast",
+          "href": "http://dave.sobr.org",
+          "img": "https://feeds.podcastindex.org/dave_avatar.jpg"
+        }
+      ],
+      "transcripts": [
+        {
+          "url": "https://mp3s.nashownotes.com/PC20-83-Captions.srt",
+          "type": "application/srt"
+        }
+      ],
+      "value": {
+        "model": {
+          "type": "lightning",
+          "method": "keysend",
+          "suggested": "0.00000005000"
+        },
+        "destinations": [
+          {
+            "name": "Podcastindex.org",
+            "type": "node",
+            "address": "03ae9f91a0cb8ff43840e3c322c4c61f019d8c1c3cea15a25cfc425ac605e61a4a",
+            "split": 89
+          },
+          {
+            "name": "Dreb Scott (Chapters)",
+            "type": "node",
+            "address": "02453e4e93322d60219808c00c2e6d1f1c673420e95b5511a33c40cfb4df5e9148",
+            "split": 5
+          },
+          {
+            "name": "Sovereign Feeds",
+            "type": "node",
+            "address": "02a128c92baf0ede00ed0fc3720a92ba2c6392e0b58aa4decab1d787a666d94cb7",
+            "split": 5,
+            "customKey": "112111100",
+            "customValue": "wal_MB9T45QHGyW"
+          },
+          {
+            "name": "Boostagram Monitor",
+            "type": "node",
+            "address": "038399372001f2741d58d6ec4846fccb78daa1a485e69e2eebc5aadba047d35956",
+            "split": 1
+          }
+        ]
+      }
+    },
+    {
+      "id": 7828486214,
+      "title": "Episode 82: Ranking the Stars",
+      "link": "http://adam.curry.com/html/PC208220220422Podcas-mSdKLPlXxWKSqTZmxncDkP8McK03hx.html",
+      "description": "<p>Podcasting 2.0 for April 22nd 2022 Episode 82: \"Ranking the Stars\"</p>\n<p>Adam & Dave discuss the week's developments on podcastindex.org in a extra long edition to catch up on the events of the past 14 days!</p>\n\n<p>Download the mp3</p>\n<p>Podcast Feed</p>\n<p>PodcastIndex.org</p>\n<p>Preservepodcasting.com</p>\n<p>Check out the podcasting 2.0 apps and services newpodcastapps.com</p>\n<p>Support us with your Time Talent and Treasure</p>\n<p>Positioning</p>\n<p>Boost Bait</p>\n<p>ShowNotes</p>\n<p>Put us in your value split</p>\n<p>03ae9f91a0cb8ff43840e3c322c4...",
+      "guid": "PC2082",
+      "datePublished": 1650594096,
+      "datePublishedPretty": "April 21, 2022 9:21pm",
+      "dateCrawled": 1672453087,
+      "enclosureUrl": "https://op3.dev/e/mp3s.nashownotes.com/PC20-82-2022-04-21-Final.mp3",
+      "enclosureType": "audio/mpeg",
+      "enclosureLength": 96759058,
+      "duration": 8058,
+      "explicit": 0,
+      "episode": null,
+      "episodeType": "full",
+      "season": 0,
+      "image": "https://noagendaassets.com/enc/1601061118.678_pciavatar.jpg",
+      "feedItunesId": 1584274529,
+      "feedImage": "https://noagendaassets.com/enc/1601061118.678_pciavatar.jpg",
+      "feedId": 920666,
+      "feedLanguage": "en",
+      "feedDead": 0,
+      "feedDuplicateOf": null,
+      "chaptersUrl": "http://34.117.70.159/http%3Amp3s.nashownotes.compc20rss.xml/PC2082",
+      "transcriptUrl": "https://mp3s.nashownotes.com/PC20-82-Captions.srt",
+      "persons": [
+        {
+          "id": 1877511,
+          "name": "Adam Curry",
+          "role": "host",
+          "group": "cast",
+          "href": "http://curry.com",
+          "img": "https://feeds.podcastindex.org/adam_avatar.jpg"
+        },
+        {
+          "id": 1877512,
+          "name": "Dave Jones",
+          "role": "host",
+          "group": "cast",
+          "href": "http://dave.sobr.org",
+          "img": "https://feeds.podcastindex.org/dave_avatar.jpg"
+        }
+      ],
+      "transcripts": [
+        {
+          "url": "https://mp3s.nashownotes.com/PC20-82-Captions.srt",
+          "type": "application/srt"
+        }
+      ],
+      "value": {
+        "model": {
+          "type": "lightning",
+          "method": "keysend",
+          "suggested": "0.00000005000"
+        },
+        "destinations": [
+          {
+            "name": "Podcastindex.org",
+            "type": "node",
+            "address": "03ae9f91a0cb8ff43840e3c322c4c61f019d8c1c3cea15a25cfc425ac605e61a4a",
+            "split": 89
+          },
+          {
+            "name": "Dreb Scott (Chapters)",
+            "type": "node",
+            "address": "02453e4e93322d60219808c00c2e6d1f1c673420e95b5511a33c40cfb4df5e9148",
+            "split": 5
+          },
+          {
+            "name": "Sovereign Feeds",
+            "type": "node",
+            "address": "02a128c92baf0ede00ed0fc3720a92ba2c6392e0b58aa4decab1d787a666d94cb7",
+            "split": 5,
+            "customKey": "112111100",
+            "customValue": "wal_MB9T45QHGyW"
+          },
+          {
+            "name": "Boostagram Monitor",
+            "type": "node",
+            "address": "038399372001f2741d58d6ec4846fccb78daa1a485e69e2eebc5aadba047d35956",
+            "split": 1
+          }
+        ]
+      }
+    },
+    {
+      "id": 7664496105,
+      "title": "Episode 81: Nodes of Joy",
+      "link": "http://adam.curry.com/html/PC207820220401Podcas-Gz34G7lTF22mWxq6bZ3bxvnMFqpnvh.html",
+      "description": "<p>Podcasting 2.0 for April 9th 2022 Episode 81: \"Nodes of Joy\"</p>\n<p>Adam & Dave discuss the week's developments on podcastindex.org with a big update of all the week's events</p>\n\n<p>Download the mp3</p>\n<p>Podcast Feed</p>\n<p>PodcastIndex.org</p>\n<p>Preservepodcasting.com</p>\n<p>Check out the podcasting 2.0 apps and services newpodcastapps.com</p>\n<p>Support us with your Time Talent and Treasure</p>\n<p>Positioning</p>\n<p>Boost Bait</p>\n<p>ShowNotes</p>\n<p>Put us in your value split</p>\n<p>03ae9f91a0cb8ff43840e3c322c4c61f019d8c1c3ce...",
+      "guid": "PC2081",
+      "datePublished": 1649526263,
+      "datePublishedPretty": "April 09, 2022 12:44pm",
+      "dateCrawled": 1672453087,
+      "enclosureUrl": "https://op3.dev/e/mp3s.nashownotes.com/PC20-81-2022-04-09-Final.mp3",
+      "enclosureType": "audio/mpeg",
+      "enclosureLength": 106648391,
+      "duration": 8882,
+      "explicit": 0,
+      "episode": null,
+      "episodeType": "full",
+      "season": 0,
+      "image": "https://noagendaassets.com/enc/1601061118.678_pciavatar.jpg",
+      "feedItunesId": 1584274529,
+      "feedImage": "https://noagendaassets.com/enc/1601061118.678_pciavatar.jpg",
+      "feedId": 920666,
+      "feedLanguage": "en",
+      "feedDead": 0,
+      "feedDuplicateOf": null,
+      "chaptersUrl": "http://34.117.70.159/http%3Amp3s.nashownotes.compc20rss.xml/PC2081",
+      "transcriptUrl": "https://mp3s.nashownotes.com/PC20-81-Captions.srt",
+      "persons": [
+        {
+          "id": 1025339,
+          "name": "Adam Curry",
+          "role": "host",
+          "group": "cast",
+          "href": "http://curry.com",
+          "img": "https://feeds.podcastindex.org/adam_avatar.jpg"
+        },
+        {
+          "id": 1025340,
+          "name": "Dave Jones",
+          "role": "host",
+          "group": "cast",
+          "href": "http://dave.sobr.org",
+          "img": "https://feeds.podcastindex.org/dave_avatar.jpg"
+        }
+      ],
+      "transcripts": [
+        {
+          "url": "https://mp3s.nashownotes.com/PC20-81-Captions.srt",
+          "type": "application/srt"
+        }
+      ],
+      "value": {
+        "model": {
+          "type": "lightning",
+          "method": "keysend",
+          "suggested": "0.00000005000"
+        },
+        "destinations": [
+          {
+            "name": "Podcastindex.org",
+            "type": "node",
+            "address": "03ae9f91a0cb8ff43840e3c322c4c61f019d8c1c3cea15a25cfc425ac605e61a4a",
+            "split": 89
+          },
+          {
+            "name": "Dreb Scott (Chapters)",
+            "type": "node",
+            "address": "02453e4e93322d60219808c00c2e6d1f1c673420e95b5511a33c40cfb4df5e9148",
+            "split": 5
+          },
+          {
+            "name": "Sovereign Feeds",
+            "type": "node",
+            "address": "02a128c92baf0ede00ed0fc3720a92ba2c6392e0b58aa4decab1d787a666d94cb7",
+            "split": 5,
+            "customKey": "112111100",
+            "customValue": "wal_MB9T45QHGyW"
+          },
+          {
+            "name": "Boostagram Monitor",
+            "type": "node",
+            "address": "038399372001f2741d58d6ec4846fccb78daa1a485e69e2eebc5aadba047d35956",
+            "split": 1
+          }
+        ]
+      }
+    },
+    {
+      "id": 7517315255,
+      "title": "Episode 80: Wheels Up",
+      "link": "http://adam.curry.com/html/PC207820220401Podcas-Gz34G7lTF22mWxq6bZ3bxvnMFqpnvh.html",
+      "description": "<p>Podcasting 2.0 for April 1st 2022 Episode 80: \"Wheels Up!\"</p>\n<p>Adam & Dave discuss the week's developments on podcastindex.org with more Pod Sage Philosophy!</p>\n\n<p>Download the mp3</p>\n<p>Podcast Feed</p>\n<p>PodcastIndex.org</p>\n<p>Preservepodcasting.com</p>\n<p>Check out the podcasting 2.0 apps and services newpodcastapps.com</p>\n<p>Support us with your Time Talent and Treasure</p>\n<p>Positioning</p>\n<p>Boost Bait</p>\n<p>ShowNotes</p>\n<p>Put us in your value split</p>\n<p>03ae9f91a0cb8ff43840e3c322c4c61f019d8c1c3cea15a25cfc425ac605e61a4...",
+      "guid": "PC2080",
+      "datePublished": 1648781629,
+      "datePublishedPretty": "March 31, 2022 9:53pm",
+      "dateCrawled": 1672453087,
+      "enclosureUrl": "https://op3.dev/e/mp3s.nashownotes.com/PC20-80-2022-04-01-Final.mp3",
+      "enclosureType": "audio/mpeg",
+      "enclosureLength": 71142653,
+      "duration": 5923,
+      "explicit": 0,
+      "episode": null,
+      "episodeType": "full",
+      "season": 0,
+      "image": "https://noagendaassets.com/enc/1601061118.678_pciavatar.jpg",
+      "feedItunesId": 1584274529,
+      "feedImage": "https://noagendaassets.com/enc/1601061118.678_pciavatar.jpg",
+      "feedId": 920666,
+      "feedLanguage": "en",
+      "feedDead": 0,
+      "feedDuplicateOf": null,
+      "chaptersUrl": "http://34.117.70.159/http%3Amp3s.nashownotes.compc20rss.xml/PC2080",
+      "transcriptUrl": "https://mp3s.nashownotes.com/PC20-80-Captions.srt",
+      "persons": [
+        {
+          "id": 729860,
+          "name": "Adam Curry",
+          "role": "host",
+          "group": "cast",
+          "href": "http://curry.com",
+          "img": "https://feeds.podcastindex.org/adam_avatar.jpg"
+        },
+        {
+          "id": 729861,
+          "name": "Dave Jones",
+          "role": "host",
+          "group": "cast",
+          "href": "http://dave.sobr.org",
+          "img": "https://feeds.podcastindex.org/dave_avatar.jpg"
+        }
+      ],
+      "transcripts": [
+        {
+          "url": "https://mp3s.nashownotes.com/PC20-80-Captions.srt",
+          "type": "application/srt"
+        }
+      ],
+      "value": {
+        "model": {
+          "type": "lightning",
+          "method": "keysend",
+          "suggested": "0.00000005000"
+        },
+        "destinations": [
+          {
+            "name": "Podcastindex.org",
+            "type": "node",
+            "address": "03ae9f91a0cb8ff43840e3c322c4c61f019d8c1c3cea15a25cfc425ac605e61a4a",
+            "split": 89
+          },
+          {
+            "name": "Dreb Scott (Chapters)",
+            "type": "node",
+            "address": "02453e4e93322d60219808c00c2e6d1f1c673420e95b5511a33c40cfb4df5e9148",
+            "split": 5
+          },
+          {
+            "name": "Sovereign Feeds",
+            "type": "node",
+            "address": "02a128c92baf0ede00ed0fc3720a92ba2c6392e0b58aa4decab1d787a666d94cb7",
+            "split": 5,
+            "customKey": "112111100",
+            "customValue": "wal_MB9T45QHGyW"
+          },
+          {
+            "name": "Boostagram Monitor",
+            "type": "node",
+            "address": "038399372001f2741d58d6ec4846fccb78daa1a485e69e2eebc5aadba047d35956",
+            "split": 1
+          }
+        ]
+      }
+    },
+    {
+      "id": 7386778140,
+      "title": "Episode 79: Users and Developers Partying Together",
+      "link": "http://adam.curry.com/html/PC207920220325Podcas-Vcs52CgVHslsm0Phx9MppZJGtSpmn7.html",
+      "description": "<p>Podcasting 2.0 for March 25th 2022 Episode 79: \"Users and Developers Partying Together</p>\n<p>Adam & Dave discuss the week's developments on podcastindex.org and the value of 'things'</p>\n\n<p>Download the mp3</p>\n<p>Podcast Feed</p>\n<p>PodcastIndex.org</p>\n<p>Preservepodcasting.com</p>\n<p>Check out the podcasting 2.0 apps and services newpodcastapps.com</p>\n<p>Support us with your Time Talent and Treasure</p>\n<p>Positioning</p>\n<p>Boost Bait</p>\n<p>ShowNotes</p>\n<p>Put us in your value split</p>\n<p>03ae9f91a0cb8ff43840e3c322c4c61f019d8c1c3cea15a25cf...",
+      "guid": "PC2079",
+      "datePublished": 1648235739,
+      "datePublishedPretty": "March 25, 2022 2:15pm",
+      "dateCrawled": 1672453087,
+      "enclosureUrl": "https://op3.dev/e/mp3s.nashownotes.com/PC20-79-2022-03-25-Final.mp3",
+      "enclosureType": "audio/mpeg",
+      "enclosureLength": 83617481,
+      "duration": 6963,
+      "explicit": 0,
+      "episode": null,
+      "episodeType": "full",
+      "season": 0,
+      "image": "https://noagendaassets.com/enc/1601061118.678_pciavatar.jpg",
+      "feedItunesId": 1584274529,
+      "feedImage": "https://noagendaassets.com/enc/1601061118.678_pciavatar.jpg",
+      "feedId": 920666,
+      "feedLanguage": "en",
+      "feedDead": 0,
+      "feedDuplicateOf": null,
+      "chaptersUrl": "http://34.117.70.159/http%3Amp3s.nashownotes.compc20rss.xml/PC2079",
+      "transcriptUrl": "https://mp3s.nashownotes.com/PC20-79-Captions.srt",
+      "persons": [
+        {
+          "id": 617750,
+          "name": "Adam Curry",
+          "role": "host",
+          "group": "cast",
+          "href": "http://curry.com",
+          "img": "https://feeds.podcastindex.org/adam_avatar.jpg"
+        },
+        {
+          "id": 617751,
+          "name": "Dave Jones",
+          "role": "host",
+          "group": "cast",
+          "href": "http://dave.sobr.org",
+          "img": "https://feeds.podcastindex.org/dave_avatar.jpg"
+        }
+      ],
+      "transcripts": [
+        {
+          "url": "https://mp3s.nashownotes.com/PC20-79-Captions.srt",
+          "type": "application/srt"
+        }
+      ],
+      "value": {
+        "model": {
+          "type": "lightning",
+          "method": "keysend",
+          "suggested": "0.00000005000"
+        },
+        "destinations": [
+          {
+            "name": "Podcastindex.org",
+            "type": "node",
+            "address": "03ae9f91a0cb8ff43840e3c322c4c61f019d8c1c3cea15a25cfc425ac605e61a4a",
+            "split": 89
+          },
+          {
+            "name": "Dreb Scott (Chapters)",
+            "type": "node",
+            "address": "02453e4e93322d60219808c00c2e6d1f1c673420e95b5511a33c40cfb4df5e9148",
+            "split": 5
+          },
+          {
+            "name": "Sovereign Feeds",
+            "type": "node",
+            "address": "02a128c92baf0ede00ed0fc3720a92ba2c6392e0b58aa4decab1d787a666d94cb7",
+            "split": 5,
+            "customKey": "112111100",
+            "customValue": "wal_MB9T45QHGyW"
+          },
+          {
+            "name": "Boostagram Monitor",
+            "type": "node",
+            "address": "038399372001f2741d58d6ec4846fccb78daa1a485e69e2eebc5aadba047d35956",
+            "split": 1
+          }
+        ]
+      }
+    },
+    {
+      "id": 7257074041,
+      "title": "Episode 78: Dice in the Can",
+      "link": "http://adam.curry.com/html/PC207720220318Podcas-c6tB5Z513kQBm75Gq0hXc5ThbXjPhF.html",
+      "description": "<p>Podcasting 2.0 for March 18th 2022 Episode 78: \"Dice in the Can\"</p>\n<p>Adam & Dave discuss the week's developments on podcastindex.org with guest Der Gigi</p>\n\n<p>Download the mp3</p>\n<p>Podcast Feed</p>\n<p>PodcastIndex.org</p>\n<p>Preservepodcasting.com</p>\n<p>Check out the podcasting 2.0 apps and services newpodcastapps.com</p>\n<p>Support us with your Time Talent and Treasure</p>\n<p>Positioning</p>\n<p>Boost Bait</p>\n<p>ShowNotes</p>\n<p>Put us in your value split</p>\n<p>03ae9f91a0cb8ff43840e3c322c4c61f019d8c1c3cea15a25cfc425ac605e6...",
+      "guid": "PC2078",
+      "datePublished": 1647630330,
+      "datePublishedPretty": "March 18, 2022 2:05pm",
+      "dateCrawled": 1672453087,
+      "enclosureUrl": "https://op3.dev/e/mp3s.nashownotes.com/PC20-78-2022-03-18-Final.mp3",
+      "enclosureType": "audio/mpeg",
+      "enclosureLength": 79833279,
+      "duration": 6647,
+      "explicit": 0,
+      "episode": null,
+      "episodeType": "full",
+      "season": 0,
+      "image": "https://noagendaassets.com/enc/1601061118.678_pciavatar.jpg",
+      "feedItunesId": 1584274529,
+      "feedImage": "https://noagendaassets.com/enc/1601061118.678_pciavatar.jpg",
+      "feedId": 920666,
+      "feedLanguage": "en",
+      "feedDead": 0,
+      "feedDuplicateOf": null,
+      "chaptersUrl": "http://34.117.70.159/http%3Amp3s.nashownotes.compc20rss.xml/PC2078",
+      "transcriptUrl": "https://mp3s.nashownotes.com/PC20-78-Captions.srt",
+      "persons": [
+        {
+          "id": 545146,
+          "name": "Adam Curry",
+          "role": "host",
+          "group": "cast",
+          "href": "http://curry.com",
+          "img": "https://feeds.podcastindex.org/adam_avatar.jpg"
+        },
+        {
+          "id": 545147,
+          "name": "Dave Jones",
+          "role": "host",
+          "group": "cast",
+          "href": "http://dave.sobr.org",
+          "img": "https://feeds.podcastindex.org/dave_avatar.jpg"
+        },
+        {
+          "id": 545148,
+          "name": "Der Gigi",
+          "role": "host",
+          "group": "cast",
+          "href": "https://dergigi.com/",
+          "img": "https://dergigi.com/assets/images/avatar.jpg"
+        }
+      ],
+      "transcripts": [
+        {
+          "url": "https://mp3s.nashownotes.com/PC20-78-Captions.srt",
+          "type": "application/srt"
+        }
+      ],
+      "value": {
+        "model": {
+          "type": "lightning",
+          "method": "keysend",
+          "suggested": "0.00000005000"
+        },
+        "destinations": [
+          {
+            "name": "Podcastindex.org",
+            "type": "node",
+            "address": "03ae9f91a0cb8ff43840e3c322c4c61f019d8c1c3cea15a25cfc425ac605e61a4a",
+            "split": 79
+          },
+          {
+            "name": "Dreb Scott (Chapters)",
+            "type": "node",
+            "address": "02453e4e93322d60219808c00c2e6d1f1c673420e95b5511a33c40cfb4df5e9148",
+            "split": 5
+          },
+          {
+            "name": "Sovereign Feeds",
+            "type": "node",
+            "address": "02a128c92baf0ede00ed0fc3720a92ba2c6392e0b58aa4decab1d787a666d94cb7",
+            "split": 5,
+            "customKey": "112111100",
+            "customValue": "wal_MB9T45QHGyW"
+          },
+          {
+            "name": "Boostagram Monitor",
+            "type": "node",
+            "address": "038399372001f2741d58d6ec4846fccb78daa1a485e69e2eebc5aadba047d35956",
+            "split": 1
+          },
+          {
+            "name": "Der Gigi",
+            "type": "node",
+            "address": "02e12fea95f576a680ec1938b7ed98ef0855eadeced493566877d404e404bfbf52",
+            "split": 10,
+            "customKey": "7629171",
+            "customValue": "pc20"
+          }
+        ]
+      }
+    },
+    {
+      "id": 7138915460,
+      "title": "Episode 77: Is that a minipub in your pocket?",
+      "link": "http://adam.curry.com/html/PC207720220311Podcas-GV5SqdxhMWcCtR4lKJSglll4gKK4JG.html",
+      "description": "<p>Podcasting 2.0 for March 11th 2022 Episode 77: \"Is that a minipub in your pocket?</p>\n<p>Adam & Dave discuss the week's developments on podcastindex.org with guest John Spurlock</p>\n\n<p>Download the mp3</p>\n<p>Podcast Feed</p>\n<p>PodcastIndex.org</p>\n<p>Preservepodcasting.com</p>\n<p>Check out the podcasting 2.0 apps and services newpodcastapps.com</p>\n<p>Support us with your Time Talent and Treasure</p>\n<p>Positioning</p>\n<p>Boost Bait</p>\n<p>ShowNotes</p>\n<p>Put us in your value split</p>\n<p>03ae9f91a0cb8ff43840e3c322c4c61f019d8c1c3cea15a2...",
+      "guid": "PC2077",
+      "datePublished": 1647032246,
+      "datePublishedPretty": "March 11, 2022 2:57pm",
+      "dateCrawled": 1672453087,
+      "enclosureUrl": "https://op3.dev/e/mp3s.nashownotes.com/PC20-77-2022-03-11-Final.mp3",
+      "enclosureType": "audio/mpeg",
+      "enclosureLength": 84978252,
+      "duration": 7076,
+      "explicit": 0,
+      "episode": null,
+      "episodeType": "full",
+      "season": 0,
+      "image": "https://noagendaassets.com/enc/1601061118.678_pciavatar.jpg",
+      "feedItunesId": 1584274529,
+      "feedImage": "https://noagendaassets.com/enc/1601061118.678_pciavatar.jpg",
+      "feedId": 920666,
+      "feedLanguage": "en",
+      "feedDead": 0,
+      "feedDuplicateOf": null,
+      "chaptersUrl": "http://34.117.70.159/http%3Amp3s.nashownotes.compc20rss.xml/PC2077",
+      "transcriptUrl": "https://mp3s.nashownotes.com/PC20-77-Captions.srt",
+      "persons": [
+        {
+          "id": 463825,
+          "name": "Adam Curry",
+          "role": "host",
+          "group": "cast",
+          "href": "http://curry.com",
+          "img": "https://feeds.podcastindex.org/adam_avatar.jpg"
+        },
+        {
+          "id": 463826,
+          "name": "Dave Jones",
+          "role": "host",
+          "group": "cast",
+          "href": "http://dave.sobr.org",
+          "img": "https://feeds.podcastindex.org/dave_avatar.jpg"
+        },
+        {
+          "id": 463827,
+          "name": "John Spurlock",
+          "role": "host",
+          "group": "cast",
+          "href": "https://podcastsocial.org/",
+          "img": "https://cdn.masto.host/podcastindexsocial/accounts/avatars/000/002/616/original/291302db1e78b81e.jpeg"
+        }
+      ],
+      "transcripts": [
+        {
+          "url": "https://mp3s.nashownotes.com/PC20-77-Captions.srt",
+          "type": "application/srt"
+        }
+      ],
+      "value": {
+        "model": {
+          "type": "lightning",
+          "method": "keysend",
+          "suggested": "0.00000005000"
+        },
+        "destinations": [
+          {
+            "name": "Podcastindex.org",
+            "type": "node",
+            "address": "03ae9f91a0cb8ff43840e3c322c4c61f019d8c1c3cea15a25cfc425ac605e61a4a",
+            "split": 79
+          },
+          {
+            "name": "Dreb Scott (Chapters)",
+            "type": "node",
+            "address": "02453e4e93322d60219808c00c2e6d1f1c673420e95b5511a33c40cfb4df5e9148",
+            "split": 5
+          },
+          {
+            "name": "Sovereign Feeds",
+            "type": "node",
+            "address": "02a128c92baf0ede00ed0fc3720a92ba2c6392e0b58aa4decab1d787a666d94cb7",
+            "split": 5,
+            "customKey": "112111100",
+            "customValue": "wal_MB9T45QHGyW"
+          },
+          {
+            "name": "Boostagram Monitor",
+            "type": "node",
+            "address": "038399372001f2741d58d6ec4846fccb78daa1a485e69e2eebc5aadba047d35956",
+            "split": 1
+          },
+          {
+            "name": "John Spurlock",
+            "type": "node",
+            "address": "02c85c34b89d4f5b16f60fe6f524862669ddc34f8bb7f8ce9ec783c1db6c8da857",
+            "split": 10,
+            "customKey": "7629171",
+            "customValue": "pc20"
+          }
+        ]
+      }
+    },
+    {
+      "id": 7018933879,
+      "title": "Episode 76: Pining for PodPing",
+      "link": "http://adam.curry.com/html/PC207620220304Podcas-W2FTrnXglvd1rnKlSp4dq0sGTR7DWR.html",
+      "description": "<p>Podcasting 2.0 for March 4th 2022 Episode 76: \"Pining for PodPing\"</p>\n<p>Adam & Dave discuss the week's developments on podcastindex.org with guest Dan Benjamin CEO of Fireside.FM</p>\n\n<p>Download the mp3</p>\n<p>Podcast Feed</p>\n<p>PodcastIndex.org</p>\n<p>Preservepodcasting.com</p>\n<p>Check out the podcasting 2.0 apps and services newpodcastapps.com</p>\n<p>Support us with your Time Talent and Treasure</p>\n<p>Positioning</p>\n<p>Boost Bait</p>\n<p>ShowNotes</p>\n<p>Dan Benjamin</p>\n<p>Spooler</p>\n<p>Fireside.FM</p>\n<p>Todd Cochran node</p>\n<p>Liquidity and fees</p>\n<p>Claim co...",
+      "guid": "PC2076",
+      "datePublished": 1646425632,
+      "datePublishedPretty": "March 04, 2022 2:27pm",
+      "dateCrawled": 1672453087,
+      "enclosureUrl": "https://op3.dev/e/mp3s.nashownotes.com/PC20-76-2022-03-04-Final.mp3",
+      "enclosureType": "audio/mpeg",
+      "enclosureLength": 72504678,
+      "duration": 6037,
+      "explicit": 0,
+      "episode": null,
+      "episodeType": "full",
+      "season": 0,
+      "image": "https://noagendaassets.com/enc/1601061118.678_pciavatar.jpg",
+      "feedItunesId": 1584274529,
+      "feedImage": "https://noagendaassets.com/enc/1601061118.678_pciavatar.jpg",
+      "feedId": 920666,
+      "feedLanguage": "en",
+      "feedDead": 0,
+      "feedDuplicateOf": null,
+      "chaptersUrl": "http://34.117.70.159/http%3Amp3s.nashownotes.compc20rss.xml/PC2076",
+      "transcriptUrl": "https://mp3s.nashownotes.com/PC20-76-Captions.srt",
+      "persons": [
+        {
+          "id": 382407,
+          "name": "Adam Curry",
+          "role": "host",
+          "group": "cast",
+          "href": "http://curry.com",
+          "img": "https://feeds.podcastindex.org/adam_avatar.jpg"
+        },
+        {
+          "id": 382409,
+          "name": "Dan Benjamin",
+          "role": "guest",
+          "group": "cast",
+          "href": "https://fireside.fm/",
+          "img": "https://cdn.masto.host/podcastindexsocial/accounts/headers/000/007/481/original/9c7924f2313bfcc6.jpg"
+        },
+        {
+          "id": 382408,
+          "name": "Dave Jones",
+          "role": "host",
+          "group": "cast",
+          "href": "http://dave.sobr.org",
+          "img": "https://feeds.podcastindex.org/dave_avatar.jpg"
+        }
+      ],
+      "transcripts": [
+        {
+          "url": "https://mp3s.nashownotes.com/PC20-76-Captions.srt",
+          "type": "application/srt"
+        }
+      ],
+      "value": {
+        "model": {
+          "type": "lightning",
+          "method": "keysend",
+          "suggested": "0.00000005000"
+        },
+        "destinations": [
+          {
+            "name": "Podcastindex.org",
+            "type": "node",
+            "address": "03ae9f91a0cb8ff43840e3c322c4c61f019d8c1c3cea15a25cfc425ac605e61a4a",
+            "split": 89
+          },
+          {
+            "name": "Dreb Scott (Chapters)",
+            "type": "node",
+            "address": "02453e4e93322d60219808c00c2e6d1f1c673420e95b5511a33c40cfb4df5e9148",
+            "split": 5
+          },
+          {
+            "name": "Sovereign Feeds",
+            "type": "node",
+            "address": "02a128c92baf0ede00ed0fc3720a92ba2c6392e0b58aa4decab1d787a666d94cb7",
+            "split": 5,
+            "customKey": "112111100",
+            "customValue": "wal_MB9T45QHGyW"
+          },
+          {
+            "name": "Boostagram Monitor",
+            "type": "node",
+            "address": "038399372001f2741d58d6ec4846fccb78daa1a485e69e2eebc5aadba047d35956",
+            "split": 1
+          }
+        ]
+      }
+    }
+  ],
+  "count": 40,
+  "query": "http://mp3s.nashownotes.com/pc20rss.xml",
+  "description": "Found matching items."
+}

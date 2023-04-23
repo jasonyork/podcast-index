@@ -49,6 +49,22 @@ RSpec.describe PodcastIndex::Episode do
     end
   end
 
+  describe ".find_by_podcast_guid" do
+    subject(:episodes) { described_class.find_by_podcast_guid(podcast_guid) }
+
+    let(:podcast_guid) { "917393e3-1b1e-5cef-ace4-edaa54e1f810" }
+    let(:fixture) { file_fixture("episodes/by_podcast_guid_response.json").read }
+    let(:response) { JSON.parse(fixture) }
+
+    before { allow(PodcastIndex::Api::Episodes).to receive(:by_podcast_guid).and_return(response) }
+
+    it { is_expected.to be_an Array }
+
+    it "contains episodes" do
+      expect(episodes.first.id).to eq(15033445987)
+    end
+  end
+
   describe ".find_by_guid" do
     subject { described_class.find_by_guid(guid, feedurl: "http://mp3s.nashownotes.com/pc20rss.xml") }
 

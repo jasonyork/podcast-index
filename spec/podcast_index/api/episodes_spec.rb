@@ -49,6 +49,32 @@ RSpec.describe PodcastIndex::Api::Episodes do
     end
   end
 
+  describe ".by_podcast_guid" do
+    subject(:response) { described_class.by_podcast_guid(podcast_guid: podcast_guid) }
+
+    let(:fixture) { file_fixture("episodes/by_podcast_guid_response.json").read }
+    let(:podcast_guid) { "917393e3-1b1e-5cef-ace4-edaa54e1f810" }
+
+    before do
+      stub_request(:get, %r{/episodes/bypodcastguid})
+        .to_return(body: fixture, status: 200)
+    end
+
+    it "returns the body of the response" do
+      expect(response["items"][0]["feedId"]).to eq 920666
+    end
+
+    context "when no results were found" do
+      let(:fixture) do
+        { status: true, query: { id: 0 }, items: [], description: "No episodes found for this feed." }.to_json
+      end
+
+      it "returns an empty array for the items" do
+        expect(response["items"]).to eq []
+      end
+    end
+  end
+
   describe ".by_itunes_id" do
     subject(:response) { described_class.by_itunes_id(id: itunes_id) }
 

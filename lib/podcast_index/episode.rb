@@ -19,6 +19,11 @@ module PodcastIndex
         from_response_collection(response)
       end
 
+      def find_by_podcast_guid(podcast_guid, since: nil, max: nil, fulltext: nil )
+        response = Api::Episodes.by_podcast_guid(podcast_guid: podcast_guid, since: since, max: max, fulltext: fulltext)
+        from_response_collection(response)
+      end
+
       def find_by_guid(guid, feedurl: nil, feedid: nil, fulltext: nil)
         response = Api::Episodes.by_guid(guid: guid, feedurl: feedurl, feedid: feedid, fulltext: fulltext)
         from_response(response)

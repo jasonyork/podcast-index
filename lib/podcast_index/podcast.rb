@@ -24,6 +24,11 @@ module PodcastIndex
         from_response(response)
       end
 
+      def find_by_tag(tag)
+        response = Api::Podcasts.by_tag(tag: tag)
+        from_response_collection(response)
+      end
+
       def find_by_term(term, val: nil, aponly: nil, clean: nil, fulltext: nil)
         response = Api::Search.by_term(term: term, val: val, aponly: aponly, clean: clean, fulltext: fulltext)
         from_response_collection(response)

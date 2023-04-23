@@ -98,4 +98,30 @@ RSpec.describe PodcastIndex::Api::Podcasts do
       end
     end
   end
+
+  describe ".by_tag" do
+    subject(:response) { described_class.by_tag(tag: tag) }
+
+    let(:fixture) { file_fixture("podcasts/by_tag_response.json").read }
+    let(:tag) { "podcast-value" }
+
+    before do
+      stub_request(:get, %r{/podcasts/bytag})
+        .to_return(body: fixture, status: 200)
+    end
+
+    it "returns the body of the response" do
+      expect(response["feeds"][0]["title"]).to eq "No Agenda"
+    end
+
+    context "when no results were found" do
+      let(:fixture) do
+        { status: true, query: { guid: "1" }, feed: [], description: "No feeds match this guid." }.to_json
+      end
+
+      it "returns an empty array for the feed" do
+        expect(response["feed"]).to eq []
+      end
+    end
+  end
 end

@@ -23,6 +23,12 @@ module PodcastIndex
           response = get("/podcasts/byguid", guid: guid)
           JSON.parse(response.body)
         end
+
+        def by_tag(tag:)
+          params = {}.tap { |p| p[tag] = true }
+          response = get("/podcasts/bytag", params)
+          JSON.parse(response.body)
+        end
       end
     end
   end

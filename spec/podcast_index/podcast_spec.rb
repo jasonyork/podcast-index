@@ -53,6 +53,22 @@ RSpec.describe PodcastIndex::Podcast do
     its(:itunes_id) { is_expected.to eq(itunes_id) }
   end
 
+  describe ".find_by_tag" do
+    subject(:podcasts) { described_class.find_by_tag(tag) }
+
+    let(:tag) { "podcast-value" }
+    let(:fixture) { file_fixture("podcasts/by_tag_response.json").read }
+    let(:response) { JSON.parse(fixture) }
+
+    before { allow(PodcastIndex::Api::Podcasts).to receive(:by_tag).and_return(response) }
+
+    it { is_expected.to be_an Array }
+
+    it "contains podcasts" do
+      expect(podcasts.first.title).to eq("No Agenda")
+    end
+  end
+
   describe ".find_by_term" do
     subject(:podcasts) { described_class.find_by_term(term) }
 

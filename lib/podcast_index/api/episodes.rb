@@ -45,6 +45,12 @@ module PodcastIndex
           response = get("/episodes/live", max: max)
           JSON.parse(response.body)
         end
+
+        # https://podcastindex-org.github.io/docs-api/#get-/episodes/random
+        def random(max: nil, lang: nil, cat: nil, notcat: nil, fulltext: nil)
+          response = get("/episodes/random", max: max, lang: lang, cat: cat, notcat: notcat, fulltext: fulltext)
+          JSON.parse(response.body)
+        end
       end
     end
   end

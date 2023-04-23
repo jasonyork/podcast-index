@@ -110,6 +110,21 @@ RSpec.describe PodcastIndex::Episode do
     end
   end
 
+  describe ".sample" do
+    subject(:episodes) { described_class.sample }
+
+    let(:fixture) { file_fixture("episodes/random_response.json").read }
+    let(:response) { JSON.parse(fixture) }
+
+    before { allow(PodcastIndex::Api::Episodes).to receive(:random).and_return(response) }
+
+    it { is_expected.to be_an Array }
+
+    it "contains episodes" do
+      expect(episodes.first.title).to eq("10 Surprising Stats and What They Mean")
+    end
+  end
+
   describe ".find_by_person" do
     subject(:episodes) { described_class.find_by_person(person) }
 

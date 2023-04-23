@@ -39,6 +39,12 @@ module PodcastIndex
         from_response_collection(response)
       end
 
+      def sample(max: nil, lang: nil, categories: [], exclude_categories: [], fulltext: nil)
+        response = Api::Episodes.random(max: max, lang: lang, cat: categories.join(","),
+                                        notcat: exclude_categories.join(","), fulltext: fulltext)
+        from_response_collection(response, "episodes")
+      end
+
       def find_by_person(person, fulltext: nil)
         response = Api::Search.by_person(person: person, fulltext: fulltext)
         from_response_collection(response)
@@ -51,8 +57,8 @@ module PodcastIndex
         new(JSON.parse(feed.to_json, object_class: OpenStruct)) # rubocop:disable Style/OpenStructUse
       end
 
-      def from_response_collection(response)
-        response["items"].map do |item|
+      def from_response_collection(response, collection_key = "items")
+        response[collection_key].map do |item|
           episode = item.transform_keys(&:underscore)
           new(JSON.parse(episode.to_json, object_class: OpenStruct)) # rubocop:disable Style/OpenStructUse
         end

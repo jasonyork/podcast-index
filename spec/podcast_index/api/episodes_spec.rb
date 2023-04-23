@@ -1,4 +1,30 @@
 RSpec.describe PodcastIndex::Api::Episodes do
+  describe ".by_id" do
+    subject(:response) { described_class.by_id(id: id) }
+
+    let(:fixture) { file_fixture("episodes/by_id_response.json").read }
+    let(:id) { 8031009367 }
+
+    before do
+      stub_request(:get, %r{/episodes/byid})
+        .to_return(body: fixture, status: 200)
+    end
+
+    it "returns the body of the response" do
+      expect(response["episode"]["id"]).to eq id
+    end
+
+    context "when no results were found" do
+      let(:fixture) do
+        { status: true, episode: [], description: "Episode not found." }.to_json
+      end
+
+      it "returns an empty array for the episode" do
+        expect(response["episode"]).to eq []
+      end
+    end
+  end
+
   describe ".by_feed_id" do
     subject(:response) { described_class.by_feed_id(id: feed_id) }
 
@@ -75,6 +101,32 @@ RSpec.describe PodcastIndex::Api::Episodes do
     end
   end
 
+  describe ".by_guid" do
+    subject(:response) { described_class.by_guid(guid: guid) }
+
+    let(:fixture) { file_fixture("episodes/by_guid_response.json").read }
+    let(:guid) { "PC2084" }
+
+    before do
+      stub_request(:get, %r{/episodes/byguid})
+        .to_return(body: fixture, status: 200)
+    end
+
+    it "returns the body of the response" do
+      expect(response["episode"]["guid"]).to eq guid
+    end
+
+    context "when no results were found" do
+      let(:fixture) do
+        { status: true, episode: [], description: "Episode not found." }.to_json
+      end
+
+      it "returns an empty array for the episode" do
+        expect(response["episode"]).to eq []
+      end
+    end
+  end
+
   describe ".by_itunes_id" do
     subject(:response) { described_class.by_itunes_id(id: itunes_id) }
 
@@ -127,54 +179,27 @@ RSpec.describe PodcastIndex::Api::Episodes do
     end
   end
 
-  describe ".by_guid" do
-    subject(:response) { described_class.by_guid(guid: guid) }
+  describe ".random" do
+    subject(:response) { described_class.random }
 
-    let(:fixture) { file_fixture("episodes/by_guid_response.json").read }
-    let(:guid) { "PC2084" }
+    let(:fixture) { file_fixture("episodes/random_response.json").read }
 
     before do
-      stub_request(:get, %r{/episodes/byguid})
+      stub_request(:get, %r{/episodes/random})
         .to_return(body: fixture, status: 200)
     end
 
     it "returns the body of the response" do
-      expect(response["episode"]["guid"]).to eq guid
+      expect(response["episodes"][0]["title"]).to eq "10 Surprising Stats and What They Mean"
     end
 
     context "when no results were found" do
       let(:fixture) do
-        { status: true, episode: [], description: "Episode not found." }.to_json
+        { status: true, query: { id: 0 }, items: [], description: "No episodes found for this feed." }.to_json
       end
 
-      it "returns an empty array for the episode" do
-        expect(response["episode"]).to eq []
-      end
-    end
-  end
-
-  describe ".by_id" do
-    subject(:response) { described_class.by_id(id: id) }
-
-    let(:fixture) { file_fixture("episodes/by_id_response.json").read }
-    let(:id) { 8031009367 }
-
-    before do
-      stub_request(:get, %r{/episodes/byid})
-        .to_return(body: fixture, status: 200)
-    end
-
-    it "returns the body of the response" do
-      expect(response["episode"]["id"]).to eq id
-    end
-
-    context "when no results were found" do
-      let(:fixture) do
-        { status: true, episode: [], description: "Episode not found." }.to_json
-      end
-
-      it "returns an empty array for the episode" do
-        expect(response["episode"]).to eq []
+      it "returns an empty array for the items" do
+        expect(response["items"]).to eq []
       end
     end
   end

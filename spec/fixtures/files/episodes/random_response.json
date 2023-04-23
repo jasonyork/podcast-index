@@ -1,0 +1,36 @@
+{
+  "status": "true",
+  "episodes": [
+    {
+      "id": 14435366095,
+      "title": "10 Surprising Stats and What They Mean",
+      "link": "https://shows.acast.com/dropping-the-gloves/episodes/10-surprising-stats-and-what-they-mean",
+      "description": "<p>Twitter: @dropping_gloves - https://twitter.com/dropping_gloves?s=20</p><p>Instagram: @dropping_gloves </p><p>John's Twitter: @johnscott_32 - https://twitter.com/johnscott_32?s=20</p><p>Website: https://www.hockeyfights.com/</p><p>Follow: @dropping_gloves</p><p>Subscribe: youtube.com/johnscotthockey</p><br /><p > Hosted on Acast. See acast.com/privacy for more information.</p>",
+      "guid": "6421f1cbc3bc8700111f2c1b",
+      "datePublished": 1679946314,
+      "datePublishedPretty": "March 27, 2023 2:45pm",
+      "dateCrawled": 1682032745,
+      "enclosureUrl": "https://sphinx.acast.com/p/open/s/62a74791b944ff00114caf06/e/6421f1cbc3bc8700111f2c1b/media.mp3",
+      "enclosureType": "audio/mpeg",
+      "enclosureLength": 68124753,
+      "explicit": 0,
+      "episode": 489,
+      "episodeType": "full",
+      "season": 0,
+      "image": "https://assets.pippa.io/shows/62a74791b944ff00114caf06/show-cover.png",
+      "feedItunesId": 1419742734,
+      "feedImage": "https://assets.pippa.io/shows/62a74791b944ff00114caf06/show-cover.png",
+      "feedId": 925765,
+      "feedTitle": "Dropping the Gloves",
+      "feedLanguage": "en",
+      "categories": {
+        "86": "Sports",
+        "93": "Hockey"
+      },
+      "chaptersUrl": null
+    }
+  ],
+  "count": 1,
+  "max": 1,
+  "description": "Found matching episodes."
+}

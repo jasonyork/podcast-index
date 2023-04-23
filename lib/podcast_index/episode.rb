@@ -34,6 +34,11 @@ module PodcastIndex
         from_response_collection(response)
       end
 
+      def find_by_live_item(max: nil)
+        response = Api::Episodes.live(max: max)
+        from_response_collection(response)
+      end
+
       def find_by_person(person, fulltext: nil)
         response = Api::Search.by_person(person: person, fulltext: fulltext)
         from_response_collection(response)

@@ -95,6 +95,21 @@ RSpec.describe PodcastIndex::Episode do
     end
   end
 
+  describe ".find_by_live_item" do
+    subject(:episodes) { described_class.find_by_live_item }
+
+    let(:fixture) { file_fixture("episodes/live_response.json").read }
+    let(:response) { JSON.parse(fixture) }
+
+    before { allow(PodcastIndex::Api::Episodes).to receive(:live).and_return(response) }
+
+    it { is_expected.to be_an Array }
+
+    it "contains episodes" do
+      expect(episodes.first.feed_title).to eq("100% Retro - Live 24/7")
+    end
+  end
+
   describe ".find_by_person" do
     subject(:episodes) { described_class.find_by_person(person) }
 

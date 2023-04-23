@@ -39,6 +39,12 @@ module PodcastIndex
           response = get("/episodes/byitunesid", id: id, since: since, max: max, fulltext: fulltext)
           JSON.parse(response.body)
         end
+
+        # https://podcastindex-org.github.io/docs-api/#get-/episodes/live
+        def live(max: nil)
+          response = get("/episodes/live", max: max)
+          JSON.parse(response.body)
+        end
       end
     end
   end

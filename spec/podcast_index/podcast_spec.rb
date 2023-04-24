@@ -100,6 +100,20 @@ RSpec.describe PodcastIndex::Podcast do
       end
     end
 
+    context "with trending attribute" do
+      let(:attributes) { { trending: true } }
+      let(:fixture) { file_fixture("podcasts/trending_response.json").read }
+      let(:response) { JSON.parse(fixture) }
+
+      before { allow(PodcastIndex::Api::Podcasts).to receive(:trending).and_return(response) }
+
+      it { is_expected.to be_an Array }
+
+      it "contains podcasts" do
+        expect(podcasts.first.title).to eq("This Week in Tech (Audio)")
+      end
+    end
+
     context "with term attribute" do
       let(:term) { "Podcasting 2.0" }
       let(:attributes) { { term: term } }

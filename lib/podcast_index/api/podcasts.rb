@@ -34,6 +34,11 @@ module PodcastIndex
           response = get("/podcasts/bymedium", medium: medium)
           JSON.parse(response.body)
         end
+
+        def trending(max: nil, since: nil, lang: nil, cat: nil, nocat: nil)
+          response = get("/podcasts/trending", max: max, since: since, lang: lang, cat: cat, nocat: nocat)
+          JSON.parse(response.body)
+        end
       end
     end
   end

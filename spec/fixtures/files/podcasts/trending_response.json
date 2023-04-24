@@ -1,0 +1,712 @@
+{
+  "status": "true",
+  "feeds": [
+    {
+      "id": 555343,
+      "url": "https://feeds.twit.tv/twit.xml",
+      "title": "This Week in Tech (Audio)",
+      "description": "Your first podcast of the week is the last word in tech news. Join the top tech journalists and pundits in a roundtable discussion of the latest trends in tech.\nRecords live every Sunday at 5:15pm Eastern / 2:15pm Pacific / 21:15 UTC.",
+      "author": "TWiT",
+      "image": "https://elroy.twit.tv/sites/default/files/styles/twit_album_art_2048x2048/public/images/shows/this_week_in_tech/album_art/audio/twit_2022albumart_standard_2048.jpg?itok=NNZEJLnI",
+      "artwork": "https://elroy.twit.tv/sites/default/files/styles/twit_album_art_2048x2048/public/images/shows/this_week_in_tech/album_art/audio/twit_2022albumart_standard_2048.jpg?itok=NNZEJLnI",
+      "newestItemPublishTime": 1682293983,
+      "itunesId": 73329404,
+      "trendScore": 251,
+      "language": "en-US",
+      "categories": {
+        "102": "Technology"
+      }
+    },
+    {
+      "id": 41504,
+      "url": "http://feed.nashownotes.com/rss.xml",
+      "title": "No Agenda",
+      "description": "A show about politics with No Agenda, by Adam Curry and John C. Dvorak",
+      "author": "Adam Curry & John C. Dvorak",
+      "image": "https://noagendaassets.com/enc/1682285800.005_na-1549-art-feed.png",
+      "artwork": "https://noagendaassets.com/enc/1682285800.005_na-1549-art-feed.png",
+      "newestItemPublishTime": 1682286300,
+      "itunesId": 269169796,
+      "trendScore": 227,
+      "language": "en",
+      "categories": {
+        "55": "News",
+        "59": "Politics",
+        "16": "Comedy"
+      }
+    },
+    {
+      "id": 227573,
+      "url": "https://podnews.net/rss",
+      "title": "Podnews Daily",
+      "description": "Daily news about the global podcasting and on-demand audio industry. Curated by James Cridland editor@podnews.net - visit https://podnews.net to get our free newsletter for all the links and more. [Podcast Index/mp3]",
+      "author": "Podnews LLC",
+      "image": "https://podnews.net/static/podnews-2000x2000.png",
+      "artwork": "https://podnews.net/static/podnews-2000x2000.png",
+      "newestItemPublishTime": 1682330435,
+      "itunesId": 1325018583,
+      "trendScore": 131,
+      "language": "en",
+      "categories": {
+        "55": "News",
+        "56": "Daily",
+        "102": "Technology"
+      }
+    },
+    {
+      "id": 743229,
+      "url": "https://feeds.simplecast.com/54nAGcIl",
+      "title": "The Daily",
+      "description": "This is what the news should sound like. The biggest stories of our time, told by the best journalists in the world. Hosted by Michael Barbaro and Sabrina Tavernise. Twenty minutes a day, five days a week, ready by 6 a.m.",
+      "author": "The New York Times",
+      "image": "https://image.simplecastcdn.com/images/03d8b493-87fc-4bd1-931f-8a8e9b945d8a/2cce5659-f647-4366-b318-46e4b67afcfa/3000x3000/c81936f538106550b804e7e4fe2c236319bab7fba37941a6e8f7e5c3d3048b88fc5b2182fb790f7d446bdc820406456c94287f245db89d8656c105d5511ec3de.jpeg?aid=rss_feed",
+      "artwork": "https://image.simplecastcdn.com/images/03d8b493-87fc-4bd1-931f-8a8e9b945d8a/2cce5659-f647-4366-b318-46e4b67afcfa/3000x3000/c81936f538106550b804e7e4fe2c236319bab7fba37941a6e8f7e5c3d3048b88fc5b2182fb790f7d446bdc820406456c94287f245db89d8656c105d5511ec3de.jpeg?aid=rss_feed",
+      "newestItemPublishTime": 1682329500,
+      "itunesId": 1200361736,
+      "trendScore": 100,
+      "language": "en",
+      "categories": {
+        "55": "News",
+        "56": "Daily"
+      }
+    },
+    {
+      "id": 551506,
+      "url": "https://rss.art19.com/erm-mfm",
+      "title": "My Favorite Murder with Karen Kilgariff and Georgia Hardstark",
+      "description": "Lifelong fans of true crime stories Karen Kilgariff and Georgia Hardstark tell each other their favorite tales of murder and hear hometown crime stories from friends and fans.",
+      "author": "Exactly Right",
+      "image": "https://content.production.cdn.art19.com/images/a0/41/3a/14/a0413a14-d1e5-4504-bc80-536db1f74ad9/f89549f7a47bd7b39fda30cfc5636b72dd3103592fe5bc3e19d3b50845720c3215dc336b34fe868a3e04a979835b526a17f57847ac83c77252861d6ea581e531.jpeg",
+      "artwork": "https://content.production.cdn.art19.com/images/a0/41/3a/14/a0413a14-d1e5-4504-bc80-536db1f74ad9/f89549f7a47bd7b39fda30cfc5636b72dd3103592fe5bc3e19d3b50845720c3215dc336b34fe868a3e04a979835b526a17f57847ac83c77252861d6ea581e531.jpeg",
+      "newestItemPublishTime": 1682319660,
+      "itunesId": 1074507850,
+      "trendScore": 17,
+      "language": "en",
+      "categories": {
+        "103": "True Crime"
+      }
+    },
+    {
+      "id": 984202,
+      "url": "https://lifespringmedia.com/category/family-bible/feed/",
+      "title": "Lifespring! One Year Bible",
+      "description": "Hosted by the O.G. Godcaster, Steve Webb, this is the podcast that helps you achieve consistency in reading the Bible, and we have a new episode for you every day of the week. We will read the entire Bible in one year. Follow now so you won't miss an episode!<br />\n<br />\nOn Sunday we read from the Epistles, Monday we read from the Law, Tuesday from one of the books of History, Wednesday are readings from the Psalms, Thursday we read from one of the Poetry books, Friday we read from one of the books of Prophecy, and Saturday we read from the Gospels. Show length varies between 10 and 30 minutes.<br />\n<br />\nAfter completing the day's chapters, host Steve Webb shares a short commentary on that day's reading.<br />\n<br />\nLove to have you along!",
+      "author": "Steve Webb",
+      "image": "https://lifespringmedia.com/wp-content/uploads/2023/04/S13E204ArtJLP1400-1.jpg",
+      "artwork": "https://lifespringmedia.com/wp-content/uploads/2023/04/S13E204ArtJLP1400-1.jpg",
+      "newestItemPublishTime": 1682312400,
+      "itunesId": 557281317,
+      "trendScore": 14,
+      "language": "en-US",
+      "categories": {
+        "65": "Religion",
+        "66": "Spirituality",
+        "61": "Christianity"
+      }
+    },
+    {
+      "id": 851754,
+      "url": "https://pastoroti.org/audiodevotional/feed/podcast/",
+      "title": "5 Minutes with Pastor Oti",
+      "description": "A Daily Audio Devotional",
+      "author": "5 Minutes with Pastor Oti",
+      "image": "https://pastoroti.org/audiodevotional/wp-content/uploads/sites/4/2017/03/5min_1400.jpg",
+      "artwork": "https://pastoroti.org/audiodevotional/wp-content/uploads/sites/4/2017/03/5min_1400.jpg",
+      "newestItemPublishTime": 1682318046,
+      "itunesId": 1216078537,
+      "trendScore": 11,
+      "language": "en-US",
+      "categories": {
+        "65": "Religion",
+        "66": "Spirituality",
+        "61": "Christianity"
+      }
+    },
+    {
+      "id": 42441,
+      "url": "http://radiofrance-podcast.net/podcast09/rss_13305.xml",
+      "title": "Les Enjeux internationaux",
+      "description": "Un éclairage quotidien sur les événements de l'actualité Rendez-vous sur l'application Radio France pour découvrir tous les autres épisodes.",
+      "author": "France Culture",
+      "image": "https://www.radiofrance.fr/s3/cruiser-production/2022/10/90c029be-a623-4dfa-8874-a19e6fe4d759/1400x1400_rf_omm_0000036896_ite.jpg",
+      "artwork": "https://www.radiofrance.fr/s3/cruiser-production/2022/10/90c029be-a623-4dfa-8874-a19e6fe4d759/1400x1400_rf_omm_0000036896_ite.jpg",
+      "newestItemPublishTime": 1682312160,
+      "itunesId": 390165181,
+      "trendScore": 8,
+      "language": "fr",
+      "categories": {
+        "55": "News",
+        "56": "Daily"
+      }
+    },
+    {
+      "id": 199138,
+      "url": "https://audioboom.com/channels/4954758.rss",
+      "title": "Duncan Trussell Family Hour",
+      "description": "A weekly salon-style supershow, where comedian Duncan Trussell and guests explore the outer reaches of the multiverse. And on April 20th 2020, the Duncan Trussell Family Hour podcast will be coming to Netflix in the form of \"The Midnight Gospel\", created by Duncan Trussell and Pendleton Ward. The adult animated Netflix series is set in a fantastical universe and will use interview clips from the podcast.",
+      "author": "Duncan Trussell Family Hour",
+      "image": "https://images.theabcdn.com/i/32766736.jpg",
+      "artwork": "https://images.theabcdn.com/i/32766736.jpg",
+      "newestItemPublishTime": 1682280918,
+      "itunesId": 350580455,
+      "trendScore": 8,
+      "language": "en",
+      "categories": {
+        "16": "Comedy",
+        "17": "Interviews",
+        "77": "Society",
+        "78": "Culture",
+        "82": "Philosophy",
+        "65": "Religion",
+        "66": "Spirituality"
+      }
+    },
+    {
+      "id": 881640,
+      "url": "https://rss.acast.com/findingannie",
+      "title": "Changes with Annie Macmanus",
+      "description": "DJ Annie Macmanus chats to artists, writers, musicians and a host of fascinating people about CHANGE. Each guest talks through the biggest changes they have overcome in childhood and adulthood, and how they effect change. The podcast explores how change punctuates our lives, how it can totally derail us and define who we are. How we confront it, react to it and how we try to activate change has never been more important than in this moment.<br /><hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>",
+      "author": "Annie Macmanus",
+      "image": "https://assets.pippa.io/shows/611e405606c05e18e1f40786/1662133196357-b14cbd29940ddba6b7769ec5b9492122.jpeg",
+      "artwork": "https://assets.pippa.io/shows/611e405606c05e18e1f40786/1662133196357-b14cbd29940ddba6b7769ec5b9492122.jpeg",
+      "newestItemPublishTime": 1682294419,
+      "itunesId": 1465937091,
+      "trendScore": 7,
+      "language": "en",
+      "categories": {
+        "77": "Society",
+        "78": "Culture"
+      }
+    },
+    {
+      "id": 921161,
+      "url": "https://hearthis.at/housevolution/podcast/?limit=500",
+      "title": "Housevolution",
+      "description": "\"Housevolution\" represents a group of artists and record labels including a large number of productions and musical ideas from the world house music scene.\nA selection of quality contained in musical genres that start from the deep - tech - soulful - house.\nOfficial Page\nINSTAGRAM\nSend Your Demo",
+      "author": "Nick Martira",
+      "image": "https://img.hearthis.at/c/r/o/_/uploads/417685/image_user/w1400_h1400_q70_m1477339420----cropped_3afc0fb06f14d4e46bc871d10f0efe71logo-hev500x.jpg",
+      "artwork": "https://img.hearthis.at/c/r/o/_/uploads/417685/image_user/w1400_h1400_q70_m1477339420----cropped_3afc0fb06f14d4e46bc871d10f0efe71logo-hev500x.jpg",
+      "newestItemPublishTime": 1682327098,
+      "itunesId": 1496113036,
+      "trendScore": 6,
+      "language": "en-EN",
+      "categories": {
+        "53": "Music"
+      }
+    },
+    {
+      "id": 956465,
+      "url": "https://hanashi.koelab.net/feed/podcast/",
+      "title": "「話し方」のハナシ",
+      "description": "話し方は、才能でも特殊能力でもありません。練習と実践を重ねることで必ず上達します。<br />\nそこでこの番組では、今日からすぐに実践できるトレーニング方法など、あなたの話し方が更に良くなるヒントをお届けします。<br />\n<br />\n・人前で話すことが苦手<br />\n・自分の声や話し方にコンプレックスがある<br />\n・プレゼンやスピーチ力を向上させたい<br />\n<br />\nそんなあなたのお力になれたら嬉しいです。<br />\n<br />\n＊2019年「必聴Podcast　もっっとも聞かれた新番組」のひとつに選んでいただきました<br />\n＊2021年2月現在、累計590万回ダウンロードしていただいています<br />\n<br />\n<br />\n＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊<br />\n<br />\n<br />\n【配信者プロフィール】<br />\n高山ゆかり<br />\n<br />\n話し方講師、ナレーター。<br />\n<br />\n大学卒業後、地方ラジオ局にてアナウンサーとして勤務。<br />\n自分の思いを言葉にできずアナウンサー試験の書類選考で30社落選した経験や、<br />\n緊張のためうわずった声でニュースを読んでいた新人アナ時代を経て、「話し方はトレーニングで変えられる」と実感。<br />\n<br />\n2018年、話し方講師として活動開始。<br />\n経営者、個人事業主、企業管理職の方などに向け、ビジネスシーンに役立つ話し方を教えている。<br />\nクライアントからは「個別アドバイスが細やかで的確」「面接対策をし、希望の会社に内定をいただいた」<br />\n「プレゼンテーションのコンテストで受賞した」等の声が寄せられている。<br />\n<br />\n<br />\n<br />\nVoicy版「話し方のハナシ」　https://voicy.jp/channel/1681<br />\nTwitter　 https://twitter.com/takayama_yukari<br />\nInstagram　https://www.instagram.com/yukari_takayama/<br />\nナレーションボイスサンプル　https://youtu.be/xKLkzCAtTRQ<br />\n<br />\n話し方講座、企業研修、講演などお仕事のお問合せは、<br />\nオフィスコトノハ　kotonoha.aroma@gmail.com までどうぞ",
+      "author": "高山ゆかり（話し方講師）",
+      "image": "https://hanashi.koelab.net/wp-content/uploads/artwork.jpg",
+      "artwork": "https://hanashi.koelab.net/wp-content/uploads/artwork.jpg",
+      "newestItemPublishTime": 1682280029,
+      "itunesId": 1471080074,
+      "trendScore": 6,
+      "language": "ja",
+      "categories": {
+        "9": "Business",
+        "10": "Careers",
+        "20": "Education",
+        "25": "Self Improvement",
+        "77": "Society",
+        "78": "Culture",
+        "80": "Personal"
+      }
+    },
+    {
+      "id": 900616,
+      "url": "https://rss.acast.com/creepy-1",
+      "title": "Creepy",
+      "description": "From creator Jon Grilz, a collection of the most famous and disturbing creepypastas and urban legends in the world. Listener discretion is advised. Stories requests can be made on twitter @creepypod or via email at creepypod@gmail.com<br /><hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>",
+      "author": "Bloody FM",
+      "image": "https://assets.pippa.io/shows/61b9899342e8564030985747/show-cover.jpg",
+      "artwork": "https://assets.pippa.io/shows/61b9899342e8564030985747/show-cover.jpg",
+      "newestItemPublishTime": 1682294423,
+      "itunesId": 1205352558,
+      "trendScore": 5,
+      "language": "en",
+      "categories": {
+        "26": "Fiction",
+        "27": "Drama",
+        "1": "Arts",
+        "7": "Performing"
+      }
+    },
+    {
+      "id": 5718023,
+      "url": "https://feeds.podcastindex.org/100retro.xml",
+      "title": "100% Retro - Live 24/7",
+      "description": "100% Retro is a 24/7 Live Radio stream with hosts broadcasting live from all over the globe with \n                       music that makes you feel young again! Now live in the Podverse App with Live Chat and Boosts \n                       and on Dektop in Curiocaster.",
+      "author": "info@100percentretro.com",
+      "image": "https://100percentretro.com/wp-content/uploads/2022/09/Steph-Andy-Mon-Fri.jpg",
+      "artwork": "https://100percentretro.com/wp-content/uploads/2022/09/Steph-Andy-Mon-Fri.jpg",
+      "newestItemPublishTime": 1682344802,
+      "itunesId": null,
+      "trendScore": 5,
+      "language": "en",
+      "categories": {
+        "53": "Music",
+        "28": "History"
+      }
+    },
+    {
+      "id": 55810,
+      "url": "https://feeds.npr.org/500005/podcast.xml",
+      "title": "NPR News Now",
+      "description": "The latest news in five minutes. Updated hourly.",
+      "author": "NPR",
+      "image": "https://media.npr.org/assets/img/2023/03/01/npr-news-now_square.png?s=1400&c=66",
+      "artwork": "https://media.npr.org/assets/img/2023/03/01/npr-news-now_square.png?s=1400&c=66",
+      "newestItemPublishTime": 1682348400,
+      "itunesId": 121493675,
+      "trendScore": 5,
+      "language": "en-us",
+      "categories": {
+        "55": "News",
+        "56": "Daily"
+      }
+    },
+    {
+      "id": 714258,
+      "url": "https://rss.art19.com/how-i-built-this",
+      "title": "How I Built This with Guy Raz",
+      "description": "<p>Guy Raz interviews the world’s best-known entrepreneurs to learn how they built their iconic brands. In each episode, founders reveal deep, intimate moments of doubt and failure, and share insights on their eventual success. <em>How I Built This </em>is a master-class on innovation, creativity, leadership and how to navigate challenges of all kinds.</p><p>New episodes on Mondays and Thursdays for free. Listen 1-week early and to all episodes ad-free with Wondery+ or Amazon Music with a Prime membership or Amazon Music Unlimited subscription.</p><p>Get your How I Built This merch at <a href=\"https://wonderyshop.com/pages/howibuiltthis ?utm_source=hibt-podcast&utm_medium=referral&utm_campaign=hibt-description\" rel=\"noopener noreferrer\" target=\"_blank\">WonderyShop.com/HowIBuiltThis</a></p>",
+      "author": "Guy Raz | Wondery",
+      "image": "https://content.production.cdn.art19.com/images/43/42/49/ec/434249ec-a29e-4cb7-a881-2ee2c919769a/3f919f16486fe8fe1a035a1ed9cbaf4c3f58d897fcd0f313bceb609efd33639f30172b69ee01f9cc653504af9a9e84d896ea24c55f65965124313c7365c6b17a.jpeg",
+      "artwork": "https://content.production.cdn.art19.com/images/43/42/49/ec/434249ec-a29e-4cb7-a881-2ee2c919769a/3f919f16486fe8fe1a035a1ed9cbaf4c3f58d897fcd0f313bceb609efd33639f30172b69ee01f9cc653504af9a9e84d896ea24c55f65965124313c7365c6b17a.jpeg",
+      "newestItemPublishTime": 1682320200,
+      "itunesId": 1150510297,
+      "trendScore": 5,
+      "language": "en",
+      "categories": {
+        "9": "Business"
+      }
+    },
+    {
+      "id": 575694,
+      "url": "https://feeds.fireside.fm/linuxunplugged/rss",
+      "title": "LINUX Unplugged",
+      "description": "An open show powered by community LINUX Unplugged takes the best attributes of open collaboration and turns it into a weekly show about Linux.",
+      "author": "Jupiter Broadcasting",
+      "image": "https://assets.fireside.fm/file/fireside-images/podcasts/images/f/f31a453c-fa15-491f-8618-3f71f1d565e5/cover.jpg",
+      "artwork": "https://assets.fireside.fm/file/fireside-images/podcasts/images/f/f31a453c-fa15-491f-8618-3f71f1d565e5/cover.jpg",
+      "newestItemPublishTime": 1682300700,
+      "itunesId": 687598126,
+      "trendScore": 4,
+      "language": "en-us",
+      "categories": {
+        "102": "Technology",
+        "55": "News"
+      }
+    },
+    {
+      "id": 658163,
+      "url": "https://feeds.megaphone.fm/FOXM8305830891",
+      "title": "Fox News Sunday Audio",
+      "description": "<p>From the policy debates to the political fights, today's top newsmakers on Fox News Sunday, which airs weekly on Fox News Channel.</p>",
+      "author": "Fox News Sunday Audio Podcast",
+      "image": "https://megaphone.imgix.net/podcasts/c59ed638-1c9b-11ec-8af4-fbd3d8b0fe20/image/fox-news-sunday-cover.jpg?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress",
+      "artwork": "https://megaphone.imgix.net/podcasts/c59ed638-1c9b-11ec-8af4-fbd3d8b0fe20/image/fox-news-sunday-cover.jpg?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress",
+      "newestItemPublishTime": 1682282722,
+      "itunesId": 418152882,
+      "trendScore": 4,
+      "language": "en",
+      "categories": {
+        "55": "News"
+      }
+    },
+    {
+      "id": 6964,
+      "url": "https://theemistyle.libsyn.com/rss",
+      "title": "Her Confidence Her Way |制限を手放してLimitlessに生きる女性のストーリー",
+      "description": "Her Confidence Her Wayポッドキャスト\n自分に自信がない、自分を好きになれない、本当にやりたい事をいつの間にか制限して、やりがいのない生活を送っている女性のために、Her Confidence Her Wayポッドキャストではアメリカから、女性のエンパワメント、自信について、ワークライフ、プロフェッショナルデベロプメント、リーダーシップなどの情報をアメリカから一早く、Emiの悲しい、悔しい、恥ずかしいアメリカでの職場経験、ワーキングマザーとしてのストーリーと共に、今までにはない考え方、新しいワークライフの考えかたを日本人女性にお届けします。\nこのポッドキャストを聞いて\n『あ、こんな考え方でもいいんだ』\n『Wow,今までこんな風に思った事なかった』\n『なんか私にもできそう』\n『私ももっと自分の可能性を信じて充実感、生きがいのある毎日を過ごしたい』\nとインスパイヤし、あなたの原動力になっていきたいです。\n\nThis show is about Japanese women’s empowerment.\nEach week, host Emiko Rasmussen brings inspirational stories and shares lessons she learned from her own experiences of working and living in the U.S. for over 10 years. Emi is here to help Japanese working women to live a meaningful and purposeful life they love without limiting themselves. \n*This is an English/Japanese Bilingual podcast. If the title is written in English, all the content is in English. If the title is written in Japanese, the interview is done in Japanese. \nFor more details, and to subscribe to the show, please visit \nwww.herconfidenceherway.com",
+      "author": "Emiko Rasmussen",
+      "image": "https://ssl-static.libsyn.com/p/assets/4/4/1/9/4419f23df33b5abae5bbc093207a2619/Podcast_Cover_April_2022.png",
+      "artwork": "https://ssl-static.libsyn.com/p/assets/4/4/1/9/4419f23df33b5abae5bbc093207a2619/Podcast_Cover_April_2022.png",
+      "newestItemPublishTime": 1682283600,
+      "itunesId": 1176412927,
+      "trendScore": 4,
+      "language": "en",
+      "categories": {
+        "20": "Education",
+        "25": "Self Improvement",
+        "9": "Business",
+        "11": "Entrepreneurship"
+      }
+    },
+    {
+      "id": 784581,
+      "url": "https://penanghokkien.com/feed.xml",
+      "title": "Penang Hokkien Podcast 庇能福建",
+      "description": "The very first podcast entirely in Penang style Hokkien. A fun show for Penangites and all who understand the Chinese Hokkien language or 閩南語 (Min Nan). Funny and casual chats with no topic restrictions. We talk about things that you will only share with your closest friends. 這是播客里的首個檳城福建話節目。無所不談。話題精彩。大膽突破。又超搞笑。這个是全世界兮頭一个庇能福建播客。有講有俏，有啉有放尿。",
+      "author": "John Ong and friends",
+      "image": "http://penanghokkien.com/images/PenangHokkien1400.jpg",
+      "artwork": "http://PenangHokkien.com/images/PenangHokkien3000.png",
+      "newestItemPublishTime": 1682288586,
+      "itunesId": 79033990,
+      "trendScore": 4,
+      "language": "zh-tw",
+      "categories": {
+        "16": "Comedy"
+      }
+    },
+    {
+      "id": 766996,
+      "url": "https://www.sayuri-sense.jp/?feed=podcast",
+      "title": "世界に自分軸を輝かせよう！\"Who you are\" makes the world a better place! by Sayuri Sense",
+      "description": "Hi, this is Sayuri! I used to be a bilingual radio DJ and now run an education training program company and is a mother of 2 sons. I talk about how to shine your identity, how to express your global identity and improve global communicating skills for your wellbeing and happy success amidst this rapidly changing world! 元ラジオDJ・現サユリセンス代表Sayuriです！アイデンティティー（自分軸・使命）を輝かせて、世界基準の表現力とコミュニケーション力をアップすることで、新しいグローバル時代に、キャリア・人間関係・パートナーシップなど豊かなライフスタイルを送る情報とエッセンスを、世界のトップリーダー・国内外リスナーのリアルな声とともにお届けしています。日本語の情報収集だけでは、もう生き抜くことはできません。「グローバル育児®︎」「アイデンティティービジネスブランディング®︎」を通して、リスナーの皆様の幸せと成功を応援します！#グローバル育児®︎　＃サユリセンス 　＃ダイバーシティーコミュニケーション",
+      "author": "Sayuri",
+      "image": "https://www.sayuri-sense.jp/wp-content/uploads/2023/03/Podcast_Artwork_2023_2000-2000px72ppi_.jpg",
+      "artwork": "https://www.sayuri-sense.jp/wp-content/uploads/2023/03/Podcast_Artwork_2023_2000-2000px72ppi_.jpg",
+      "newestItemPublishTime": 1682290236,
+      "itunesId": 1405940048,
+      "trendScore": 4,
+      "language": "ja",
+      "categories": {
+        "20": "Education",
+        "25": "Self Improvement",
+        "9": "Business",
+        "11": "Entrepreneurship"
+      }
+    },
+    {
+      "id": 165812,
+      "url": "http://takanoatsushi.seesaa.net/index20.rdf",
+      "title": "「青空文庫」の作家、高野敦志の世界",
+      "description": "インターネット図書館「青空文庫」に作品が収録されている作者が、自作の小説やエッセイなどを、iPadやiPhone、アドインをインストールしたchromeやfirefoxなどで表示できる電子書籍ePub（縦書き）と、パソコンですぐに表示できるpdfで配信していきます。なお、iTunesでダウンロードする場合は、パソコンの「ミュージック」フォルダの下部フォルダに入ります。iOSのアプリpodcastの場合は、「エピソードのWebサイト」に移動すればダウンロードできます。",
+      "author": "高野敦志",
+      "image": "https://takanoatsushi.up.seesaa.net/image/podcast_artwork.jpg",
+      "artwork": "https://takanoatsushi.up.seesaa.net/image/podcast_artwork.jpg",
+      "newestItemPublishTime": 1682271287,
+      "itunesId": 504177440,
+      "trendScore": 3,
+      "language": "ja",
+      "categories": {
+        "1": "Arts",
+        "2": "Books",
+        "77": "Society",
+        "78": "Culture",
+        "83": "Places",
+        "84": "Travel"
+      }
+    },
+    {
+      "id": 1958,
+      "url": "https://rss.art19.com/cbs-sunday-morning",
+      "title": "CBS Sunday Morning with Jane Pauley",
+      "description": "<p>CBS SUNDAY MORNING is the top-rated Sunday morning news program in all the key demos, and features stories on the arts, music, nature, entertainment, sports, history, science, Americana and highlights unique human accomplishments and achievements. </p>",
+      "author": "CBS News Radio",
+      "image": "https://content.production.cdn.art19.com/images/e5/fe/06/6d/e5fe066d-46b9-4405-ae51-3a6afaa55ecd/1e7bca78bd35f1738fdf9a93cbb66910e596b481dcc16fab0ff69628fe52c6a58a0f4060789166c8845bc77860b1f5236b4c939016a614308e02b62189e5bbc2.jpeg",
+      "artwork": "https://content.production.cdn.art19.com/images/e5/fe/06/6d/e5fe066d-46b9-4405-ae51-3a6afaa55ecd/1e7bca78bd35f1738fdf9a93cbb66910e596b481dcc16fab0ff69628fe52c6a58a0f4060789166c8845bc77860b1f5236b4c939016a614308e02b62189e5bbc2.jpeg",
+      "newestItemPublishTime": 1682272869,
+      "itunesId": 1010738108,
+      "trendScore": 3,
+      "language": "en",
+      "categories": {
+        "55": "News"
+      }
+    },
+    {
+      "id": 468152,
+      "url": "https://www.ivoox.com/mixtures_fg_f1389045_filtro_1.xml",
+      "title": "Mixtures",
+      "description": "Mixtures és un programa d’agitació musical que vol fomentar la curiositat per les músiques del món i redescobrir els clàssics de la música popular. \nCada setmana Mixtures presenta quatre seccions fixes: la novetat, la descoberta, el concert i el record; on tot buscant la diversitat vol donar a conèixer el context que envolta cada proposta musical. \nMixtures és un programa on totes les músiques són possibles. Un programa presentat i dirigit per Gaspar Tarrida.",
+      "author": "La Veu de Sant Joan",
+      "image": "https://static-1.ivoox.com/canales/f/b/c/1/fbc1b30534b395acae168eeb3ddad622_XXL.jpg",
+      "artwork": "https://static-1.ivoox.com/canales/f/b/c/1/fbc1b30534b395acae168eeb3ddad622_XXL.jpg",
+      "newestItemPublishTime": 1682273265,
+      "itunesId": 1375971444,
+      "trendScore": 3,
+      "language": "ca",
+      "categories": {
+        "53": "Music"
+      }
+    },
+    {
+      "id": 1063387,
+      "url": "https://awesomefriday.podomatic.com/rss2.xml",
+      "title": "Awesome Friday Podcast",
+      "description": "A podcast for film lovers! Join us each week for an in-depth discussion of two new films (or TV series), plus filmmaker interviews and special episodes.     Here is where you can connect with us: Homepage: https://awesomefriday.ca || Twitter: @AwesomeFridayCa || Facebook: Awesome Friday || Instagram: @AwesomeFridayCa || YouTube: Awesome Friday || Email: Contact UsIf you like what you hear, please consider supporting us via Patreon or Ko-Fi, and please visit the blog at AwesomeFriday.ca for more reviews and features. ",
+      "author": "Matthew Simpson & Simon Best",
+      "image": "https://assets.podomatic.net/ts/ae/b1/62/matthew56166/1400x1400_16002795.jpg",
+      "artwork": "https://assets.podomatic.net/ts/ae/b1/62/matthew56166/1400x1400_16002795.jpg",
+      "newestItemPublishTime": 1682284591,
+      "itunesId": 480100293,
+      "trendScore": 3,
+      "language": "en-ca",
+      "categories": {
+        "104": "Tv",
+        "105": "Film",
+        "107": "Reviews"
+      }
+    },
+    {
+      "id": 541618,
+      "url": "https://anchor.fm/s/13248e30/podcast/rss",
+      "title": "Congresso Botânico",
+      "description": "monólogos que prometem levar a lugar nenhum, senão a um caos mais organizado. garantidamente, a participação especial vai para o chá, as plantas...e um ou outro amigo que aceite viajar na maionese comigo 🌱",
+      "author": "Carolayne Ramos",
+      "image": "https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded/3111628/3111628-1667606177628-8ac4288fa64a8.jpg",
+      "artwork": "https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded/3111628/3111628-1667606177628-8ac4288fa64a8.jpg",
+      "newestItemPublishTime": 1682284635,
+      "itunesId": 1496666308,
+      "trendScore": 3,
+      "language": "pt",
+      "categories": {
+        "77": "Society",
+        "78": "Culture"
+      }
+    },
+    {
+      "id": 641924,
+      "url": "https://ieltsjason.libsyn.com/ieltsweekly",
+      "title": "雅思口语IELTS English2023",
+      "description": "关注VX：b176939107\n公众号和视频号：家森Jason\n品质原创雅思口语内容；每日更新",
+      "author": "英语口语家森Jason",
+      "image": "https://ssl-static.libsyn.com/p/assets/b/5/e/2/b5e273616ccc8e835f2e77a3093c12a1/.jpeg",
+      "artwork": "https://ssl-static.libsyn.com/p/assets/b/5/e/2/b5e273616ccc8e835f2e77a3093c12a1/.jpeg",
+      "newestItemPublishTime": 1682287200,
+      "itunesId": 1463141074,
+      "trendScore": 3,
+      "language": "zh-cn",
+      "categories": {
+        "20": "Education",
+        "23": "Language",
+        "24": "Learning"
+      }
+    },
+    {
+      "id": 787124,
+      "url": "http://rss.infowars.com/Alex.rss",
+      "title": "Alex Jones Show - Infowars.com",
+      "description": "Because there's a war on for your mind; veteran broadcaster, filmmaker and media analyst Alex Jones brings you incredible interviews with people on the frontlines of the Infowar and takes an in-depth look at the news between the day's headlines.",
+      "author": "",
+      "image": "https://rss.infowars.com/Alex.jpg",
+      "artwork": "https://rss.infowars.com/Alex.jpg",
+      "newestItemPublishTime": 1682287200,
+      "itunesId": 0,
+      "trendScore": 3,
+      "language": "en-us",
+      "categories": {
+        "55": "News",
+        "59": "Politics"
+      }
+    },
+    {
+      "id": 550467,
+      "url": "https://open.firstory.me/rss/user/cjyqpf4a72q6v0743tfjdxhbg",
+      "title": "Sex Chat 談性說愛",
+      "description": "<p>歡迎來到 Sex Chat 談性說愛，我是揚。 <br />這是一個平凡女子為了找個好藉口學習性知識同時探索自我而開的 podcast 節目。 <br /> <br />- <br />新書《來談性說愛吧！》 <br />🍌 誠品獨家限量套蕉情版 ：https://lihi2.cc/TD7mn​ <br />✦ 誠品首刷一般版：https://lihi2.cc/wPsAH <br />✦ 博客來首刷一般版：https://lihi2.cc/vOYHy <br /> <br />✨ IG➡️ https://www.instagram.com/sexchatpodcast3/ <br />✨ 性技巧課程與情趣用品推薦、小額斗內、訂閱式贊助、#寫性給我 投稿連結➡️ https://portaly.cc/sexchatpodcast <br /> <br/>Powered by <a href=\"https://firstory.me\">Firstory Hosting</a></p>",
+      "author": "Yang 揚",
+      "image": "https://d3mww1g1pfq2pt.cloudfront.net/Avatar/cjyqpf4a72q6v0743tfjdxhbg/1584946045236.jpeg",
+      "artwork": "https://d3mww1g1pfq2pt.cloudfront.net/Avatar/cjyqpf4a72q6v0743tfjdxhbg/1584946045236.jpeg",
+      "newestItemPublishTime": 1682294476,
+      "itunesId": 1460651216,
+      "trendScore": 3,
+      "language": "zh",
+      "categories": {
+        "29": "Health",
+        "30": "Fitness",
+        "35": "Sexuality"
+      }
+    },
+    {
+      "id": 571906,
+      "url": "https://isc.sans.edu/dailypodcast.xml",
+      "title": "SANS Internet Stormcenter Daily Cyber Security Podcast (Stormcast)",
+      "description": "A brief daily summary of what is important in cyber security. The podcast is published every weekday and designed to get you ready for the day with a brief, usually about 5 minute long, summary of current network security related events. The content is late breaking, educational and based on listener input as well as on input received by the SANS Internet Stormcenter. You may submit questions and comments via our contact form at https://isc.sans.edu/contact.html .",
+      "author": "Johannes B. Ullrich",
+      "image": "https://isc.sans.edu/images/podcast3000.jpg",
+      "artwork": "https://isc.sans.edu/images/twitter/podcast.jpg",
+      "newestItemPublishTime": 1682301602,
+      "itunesId": 304863991,
+      "trendScore": 3,
+      "language": "en-us",
+      "categories": {
+        "55": "News",
+        "102": "Technology",
+        "56": "Daily"
+      }
+    },
+    {
+      "id": 869521,
+      "url": "https://flyfishingjourneys.com/feed/podcast/",
+      "title": "Fly Fishing Journeys",
+      "description": "The Fly Fishing Journeys Podcast's mission is have you join us in the journey.  We speak to industry professionals on a grass roots level to bring you fun, entertaining and informative podcasts.  We want you on the journey with us.",
+      "author": "Rob Giannino",
+      "image": "https://flyfishingjourneys.com/wp-content/uploads/2022/03/Podcast_smallimage_1.png",
+      "artwork": "https://flyfishingjourneys.com/wp-content/uploads/2022/03/Podcast_smallimage_1.png",
+      "newestItemPublishTime": 1682305140,
+      "itunesId": 1353025970,
+      "trendScore": 3,
+      "language": "en-US",
+      "categories": {
+        "86": "Sports",
+        "100": "Wilderness"
+      }
+    },
+    {
+      "id": 332517,
+      "url": "https://www.omnycontent.com/d/playlist/26708dff-8243-49e4-a5b6-adb700ec9cae/a7906eb0-d14b-4bc1-a048-ae30009a0e51/3ec1b1fa-5520-4b11-b8f2-ae30009a0e77/podcast.rss",
+      "title": "Hoy en EL PAÍS",
+      "description": "En este podcast diario de EL PAIS te contamos los hechos y cómo los contamos. Una nueva manera de disfrutar del periódico y de sus periodistas, con una historia cada día. Presentado por Ana Fuentes e Iñigo Domínguez.",
+      "author": "EL PAÍS",
+      "image": "https://www.omnycontent.com/d/playlist/26708dff-8243-49e4-a5b6-adb700ec9cae/a7906eb0-d14b-4bc1-a048-ae30009a0e51/3ec1b1fa-5520-4b11-b8f2-ae30009a0e77/image.jpg?t=1645900842&size=Large",
+      "artwork": "https://www.omnycontent.com/d/playlist/26708dff-8243-49e4-a5b6-adb700ec9cae/a7906eb0-d14b-4bc1-a048-ae30009a0e51/3ec1b1fa-5520-4b11-b8f2-ae30009a0e77/image.jpg?t=1645900842&size=Large",
+      "newestItemPublishTime": 1682307000,
+      "itunesId": 1376446768,
+      "trendScore": 3,
+      "language": "es-ES",
+      "categories": {
+        "55": "News",
+        "56": "Daily"
+      }
+    },
+    {
+      "id": 743448,
+      "url": "https://omnycontent.com/d/playlist/e73c998e-6e60-432f-8610-ae210140c5b1/E5E49F91-BE9B-42F1-A426-AE3C00026E8B/04B51C34-8028-49A3-B42F-AE3C00026E95/podcast.rss",
+      "title": "The Daily Show: Ears Edition",
+      "description": "Listen to highlights and extended interviews in the \"Ears Edition\" of The Daily Show. From Comedy Central’s Podcast Network.",
+      "author": "Comedy Central & iHeartPodcasts",
+      "image": "https://www.omnycontent.com/d/playlist/e73c998e-6e60-432f-8610-ae210140c5b1/e5e49f91-be9b-42f1-a426-ae3c00026e8b/04b51c34-8028-49a3-b42f-ae3c00026e95/image.jpg?t=1673375915&size=Large",
+      "artwork": "https://www.omnycontent.com/d/playlist/e73c998e-6e60-432f-8610-ae210140c5b1/e5e49f91-be9b-42f1-a426-ae3c00026e8b/04b51c34-8028-49a3-b42f-ae3c00026e95/image.jpg?t=1673375915&size=Large",
+      "newestItemPublishTime": 1682307000,
+      "itunesId": 1334878780,
+      "trendScore": 3,
+      "language": "en-US",
+      "categories": {
+        "16": "Comedy",
+        "55": "News",
+        "56": "Daily"
+      }
+    },
+    {
+      "id": 4991364,
+      "url": "https://feeds.megaphone.fm/the-story-of-woman",
+      "title": "The Story of Woman",
+      "description": "<p>They say it’s a man’s world... so what does that mean for the rest of us? This podcast is on a mission to find out. </p><p>The consequences of woman's exclusion from our world are so deeply embedded that they are all but impossible to see... unless you are looking.</p><p>Featuring interviews with those who explore our world through the female gaze, The Story of Woman looks at everything from the economy, healthcare, gender roles, and more. Each episode dives deep into where we are, how we got here, and what still needs to be changed in order to (finally) rewrite the story of mankind to become the story of humankind.</p><p>To us, ‘woman’ means all those who presently identify as such - regardless of which body they were born with. This includes other marginalized genders such as those who identify as non-binary, gender fluid, or anywhere else on the spectrum of gender.</p>",
+      "author": "Anna Stoecklein",
+      "image": "https://megaphone.imgix.net/podcasts/1e59e1ec-d2a8-11ec-9259-a7cf9bc731df/image/3000x3000_Cover_art.jpg?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress",
+      "artwork": "https://megaphone.imgix.net/podcasts/1e59e1ec-d2a8-11ec-9259-a7cf9bc731df/image/3000x3000_Cover_art.jpg?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress",
+      "newestItemPublishTime": 1682308800,
+      "itunesId": 1610515650,
+      "trendScore": 3,
+      "language": "en-us",
+      "categories": {
+        "77": "Society",
+        "78": "Culture"
+      }
+    },
+    {
+      "id": 505901,
+      "url": "https://schoolofpodcasting.libsyn.com/rss",
+      "title": "School of Podcasting - Plan, Launch, Grow and Montize Your Podcast",
+      "description": "You want to start a podcast, but you’re unsure where to start. You need advice on how to grow or monetize your show, and stop being so scared that it won’t work! I can help by showing you what mistakes NOT TO MAKE and much more. Subscribe to the show and soak in the 18+ years of podcasting experience from Podcaster Hall of Fame Inductee Dave Jackson.",
+      "author": "Dave Jackson",
+      "image": "https://ssl-static.libsyn.com/p/assets/d/8/a/8/d8a85bda19594b9de55e3c100dce7605/sopalbumart2020-white-20230402-emhtx68qui.jpg",
+      "artwork": "https://ssl-static.libsyn.com/p/assets/d/8/a/8/d8a85bda19594b9de55e3c100dce7605/sopalbumart2020-white-20230402-emhtx68qui.jpg",
+      "newestItemPublishTime": 1682309100,
+      "itunesId": 83653087,
+      "trendScore": 3,
+      "language": "en",
+      "categories": {
+        "9": "Business",
+        "14": "Marketing",
+        "102": "Technology"
+      }
+    },
+    {
+      "id": 75761,
+      "url": "https://feed.ausha.co/blDjes1L9aWL",
+      "title": "J'peux Pas J'ai Business par TheBBoost",
+      "description": "Comment développer son business ? Augmenter rapidement son chiffre d'affaires ? Trouver des  clients sans prospecter ? \"Le podcast J'peux pas j'ai business\" aborde les meilleures stratégies business, expliquées pas-à-pas et vous livre le plan d'action étape par étape pour construire le business et la vie de vos rêves.\nPour qui souhaite vivre de sa passion et découvrir la liberté financière, ce podcast creuse des sujets comme le marketing, l'entrepreneuriat, la prospection, l'état d'esprit, l'organisation et bien plus encore.\nÉnergie, stratégies, astuces et conseils d'une coach business certifiée sont au rendez-vous.\nPar Aline Bartoli, coach d'affaires chez TheBBoost.",
+      "author": "TheBBoost",
+      "image": "https://image.ausha.co/P0TYweU74SHBPcq5XiSwAEa1QzMUjsXfkX8YL2fq_1400x1400.jpeg?t=1616175875",
+      "artwork": "https://image.ausha.co/P0TYweU74SHBPcq5XiSwAEa1QzMUjsXfkX8YL2fq_1400x1400.jpeg?t=1616175875",
+      "newestItemPublishTime": 1682309700,
+      "itunesId": 1444922726,
+      "trendScore": 3,
+      "language": "fr",
+      "categories": {
+        "9": "Business"
+      }
+    },
+    {
+      "id": 958956,
+      "url": "https://lifespringmedia.com/feed/podcast/",
+      "title": "Lifespring! Media All Shows",
+      "description": "This is where you will hear all the content produced by Lifespring! Media. The flagship show is \"LIfespring!\", which was the world's first Christian podcast not based on repurposed church sermons. Host Steve Webb, the O.G. Godcaster, discusses a varied mix of subjects from \"If there is really a God, why do horrible things happen in the world?\" to \"Does God hate gays?\". In addition, there are interviews, music and lots more fun. Other shows in the Lifespring! Media family are \"Lifespring! HymnStories\", \"In Touch With God's Character\", \"Lifespring! One Year Bible\", and \"The Lifespring! Weekend Music Show\".",
+      "author": "Steve Webb",
+      "image": "https://lifespringmedia.com/wp-content/uploads/2023/04/S13E204ArtJLP1400-1.jpg",
+      "artwork": "https://lifespringmedia.com/wp-content/uploads/2023/04/S13E204ArtJLP1400-1.jpg",
+      "newestItemPublishTime": 1682312400,
+      "itunesId": 549930571,
+      "trendScore": 3,
+      "language": "en-US",
+      "categories": {
+        "65": "Religion",
+        "66": "Spirituality",
+        "61": "Christianity"
+      }
+    },
+    {
+      "id": 1055646,
+      "url": "https://openargs.libsyn.com/",
+      "title": "Opening Arguments",
+      "description": "Every episode, legal expert Andrew and comic relief Thomas will tackle a popular legal topic and give you all the tools you need to understand the issue and win every argument you have on Facebook, with your Uncle Frank, or wherever someone is wrong on the Internet. It's law.  It's politics.  It's fun.  We don't tell you what to think, we just set up the Opening Arguments.",
+      "author": "Opening Arguments Media LLC",
+      "image": "https://ssl-static.libsyn.com/p/assets/7/4/2/3/742385e9b736f6aa/Open_Args_Logo.jpg",
+      "artwork": "https://ssl-static.libsyn.com/p/assets/7/4/2/3/742385e9b736f6aa/Open_Args_Logo.jpg",
+      "newestItemPublishTime": 1682316120,
+      "itunesId": 1147092464,
+      "trendScore": 3,
+      "language": "en",
+      "categories": {
+        "55": "News",
+        "59": "Politics"
+      }
+    },
+    {
+      "id": 3983,
+      "url": "https://muslimcentral.com/audio/zakir-naik/feed/",
+      "title": "Zakir Naik",
+      "description": "Zakir Naik, FREE Audio Podcast brought to you by Muslim Central. Muslim Central is a private Audio Podcast Publisher. Our Audio Library consists of Islamic Lectures, Interviews, Debates and more, with over 100 Speakers and Shows from around the World.",
+      "author": "Muslim Central",
+      "image": "https://muslimcentral.com/wp-content/uploads/zakir-naik.jpg",
+      "artwork": "https://muslimcentral.com/wp-content/uploads/zakir-naik.jpg",
+      "newestItemPublishTime": 1682316847,
+      "itunesId": 1020147522,
+      "trendScore": 3,
+      "language": "en-US",
+      "categories": {
+        "65": "Religion",
+        "66": "Spirituality",
+        "63": "Islam",
+        "28": "History"
+      }
+    },
+    {
+      "id": 743874,
+      "url": "https://feeds.soundon.fm/podcasts/e0baca98-490d-4f44-83c9-32f8ec8eec45.xml",
+      "title": "聽天下：天下雜誌Podcast",
+      "description": "【聽天下】天下雜誌精闢觀點、深度解析，不只用看的也可以用聽的！\n提供聚焦財經、國際、趨勢的優質新聞、訪談與評論，天天更新。\n【天下零時差】早上8點聽天下，掌握國際、財經趨勢零時差。\n【決策者・聽天下】天下總編輯對話決策朋友圈，導讀天下封面故事。\n【阿榕伯胡說科技】科技輕鬆聊，天下總主筆陳良榕暢談半導體產業趨勢與科技時事。\n【經濟學人＠天下】每週導讀最新一期《經濟學人》，掌握世界政經趨勢。\n【永續會】投資新準則，企業好公民，永續會不會，收聽掌握ESG大機會。\n【未來城市】科技、經濟和永續的總和，城市的未來，充滿無限想像。\n【管理同學會】天下雜誌出版總編輯為你解析管理實務與應用。\n【林之晨專欄】AppWorks創辦人林之晨的數位轉型專欄。\n【Off學】星期天用聽的美好時尚生活提案。\n【微笑台灣】以深度旅遊和人情故事，體驗台灣鄉鎮魅力。（完整節目表：https://bit.ly/3HSN7T2）\n【聰明慢老】陪你從日常養成保持活力不顯老的習慣。\n【癌症問康健】解讀癌症精準醫療大趨勢，提供正確安心的預防治療和照護解方。\n【天下經濟論壇】CWEF天下經濟論壇，搭建產官學菁英對話平台。\n＊姊妹頻道「闖天下」，歡迎搜尋收聽。\n＊訂閱天下全閱讀：https://reurl.cc/g7g0EN\n＊意見信箱：bill@cw.com.tw\n＊「聽天下」清楚分類更好聽，下載天下雜誌App：https://topic.cw.com.tw/cwapp/applink/cwapp.html\n--\nHosting provided by SoundOn",
+      "author": "天下雜誌",
+      "image": "https://files.soundon.fm/1587543129627-b3088460-1b46-43f5-af62-384872149b63.jpg",
+      "artwork": "https://files.soundon.fm/1587543129627-b3088460-1b46-43f5-af62-384872149b63.jpg",
+      "newestItemPublishTime": 1682319600,
+      "itunesId": 1486227803,
+      "trendScore": 3,
+      "language": "zh-tw",
+      "categories": {
+        "55": "News"
+      }
+    }
+  ],
+  "count": 40,
+  "max": null,
+  "since": 1682269834,
+  "description": "Found trending feeds."
+}

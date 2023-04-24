@@ -150,4 +150,29 @@ RSpec.describe PodcastIndex::Api::Podcasts do
       end
     end
   end
+
+  describe ".trending" do
+    subject(:response) { described_class.trending }
+
+    let(:fixture) { file_fixture("podcasts/trending_response.json").read }
+
+    before do
+      stub_request(:get, %r{/podcasts/trending})
+        .to_return(body: fixture, status: 200)
+    end
+
+    it "returns the body of the response" do
+      expect(response["feeds"][0]["title"]).to eq "This Week in Tech (Audio)"
+    end
+
+    context "when no results were found" do
+      let(:fixture) do
+        { status: true, feeds: [], description: "Not found" }.to_json
+      end
+
+      it "returns an empty array for the feed" do
+        expect(response["feeds"]).to eq []
+      end
+    end
+  end
 end

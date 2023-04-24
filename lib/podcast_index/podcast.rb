@@ -5,7 +5,7 @@ module PodcastIndex
   class Podcast < SimpleDelegator
     class << self
       FIND_ONE_ATTRIBUTES = %i(feed_url guid itunes_id)
-      FIND_MANY_ATTRIBUTES = %i(tag medium term title)
+      FIND_MANY_ATTRIBUTES = %i(tag medium term title trending)
 
       def find(id)
         response = Api::Podcasts.by_feed_id(id: id)
@@ -52,6 +52,12 @@ module PodcastIndex
 
       def find_all_by_medium(medium:)
         response = Api::Podcasts.by_medium(medium: medium)
+        from_response_collection(response)
+      end
+
+      def find_all_by_trending(trending:, max: nil, since: nil, lang: nil, categories: [], exclude_categories: [])
+        response = Api::Podcasts.trending(max: max, since: since, lang: lang, cat: categories.join(","),
+                                          notcat: exclude_categories.join(","))
         from_response_collection(response)
       end
 

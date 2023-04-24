@@ -9,6 +9,11 @@ module PodcastIndex
                                              fulltext: fulltext)
           JSON.parse(response.body)
         end
+
+        def feeds(max: nil, since: nil, lang: nil, cat: nil, notcat: nil)
+          response = get("/recent/feeds", max: max, since: since, lang: lang, cat: cat, notcat: notcat)
+          JSON.parse(response.body)
+        end
       end
     end
   end

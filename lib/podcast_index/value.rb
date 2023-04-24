@@ -5,7 +5,7 @@ module PodcastIndex
   class Value < SimpleDelegator
     class << self
 
-      FIND_ONE_ATTRIBUTES = %i[feed_id].freeze
+      FIND_ONE_ATTRIBUTES = %i[feed_id feed_url].freeze
 
       def find_by(attributes)
         match = (attributes.keys & FIND_ONE_ATTRIBUTES)
@@ -19,6 +19,11 @@ module PodcastIndex
 
       def find_by_feed_id(feed_id)
         response = Api::Value.by_feed_id(id: feed_id)
+        from_response(response)
+      end
+
+      def find_by_feed_url(feed_url)
+        response = Api::Value.by_feed_url(url: feed_url)
         from_response(response)
       end
 

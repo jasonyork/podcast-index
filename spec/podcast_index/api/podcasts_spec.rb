@@ -116,11 +116,37 @@ RSpec.describe PodcastIndex::Api::Podcasts do
 
     context "when no results were found" do
       let(:fixture) do
-        { status: true, query: { guid: "1" }, feed: [], description: "No feeds match this guid." }.to_json
+        { status: true, feeds: [], description: "No feeds match this guid." }.to_json
       end
 
       it "returns an empty array for the feed" do
-        expect(response["feed"]).to eq []
+        expect(response["feeds"]).to eq []
+      end
+    end
+  end
+
+  describe ".by_medium" do
+    subject(:response) { described_class.by_medium(medium: medium) }
+
+    let(:fixture) { file_fixture("podcasts/by_medium_response.json").read }
+    let(:medium) { "podcast-value" }
+
+    before do
+      stub_request(:get, %r{/podcasts/bymedium})
+        .to_return(body: fixture, status: 200)
+    end
+
+    it "returns the body of the response" do
+      expect(response["feeds"][0]["title"]).to eq "100% Retro - Live 24/7"
+    end
+
+    context "when no results were found" do
+      let(:fixture) do
+        { status: true, feeds: [], description: "Not found" }.to_json
+      end
+
+      it "returns an empty array for the feed" do
+        expect(response["feeds"]).to eq []
       end
     end
   end

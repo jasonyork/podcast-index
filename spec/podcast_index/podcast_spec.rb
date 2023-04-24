@@ -69,6 +69,22 @@ RSpec.describe PodcastIndex::Podcast do
     end
   end
 
+  describe ".find_by_medium" do
+    subject(:podcasts) { described_class.find_by_medium(medium) }
+
+    let(:medium) { "music" }
+    let(:fixture) { file_fixture("podcasts/by_medium_response.json").read }
+    let(:response) { JSON.parse(fixture) }
+
+    before { allow(PodcastIndex::Api::Podcasts).to receive(:by_medium).and_return(response) }
+
+    it { is_expected.to be_an Array }
+
+    it "contains podcasts" do
+      expect(podcasts.first.title).to eq("100% Retro - Live 24/7")
+    end
+  end
+
   describe ".find_by_term" do
     subject(:podcasts) { described_class.find_by_term(term) }
 

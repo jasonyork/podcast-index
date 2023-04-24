@@ -29,6 +29,11 @@ module PodcastIndex
           response = get("/podcasts/bytag", params)
           JSON.parse(response.body)
         end
+
+        def by_medium(medium:)
+          response = get("/podcasts/bymedium", medium: medium)
+          JSON.parse(response.body)
+        end
       end
     end
   end

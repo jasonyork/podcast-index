@@ -14,7 +14,8 @@ RSpec.describe PodcastIndex::Soundbite do
       it { is_expected.to be_an Array }
 
       it "contains soundbites" do
-        expect(soundbites.first.episode_title).to eq("35: 22 Wedding Budget Ideas That Don't Discount Your Style Or Values")
+        expect(soundbites.first.episode_title)
+          .to eq("35: 22 Wedding Budget Ideas That Don't Discount Your Style Or Values")
       end
     end
   end

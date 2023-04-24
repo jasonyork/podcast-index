@@ -4,8 +4,7 @@ require "delegate"
 module PodcastIndex
   class Soundbite < SimpleDelegator
     class << self
-
-      FIND_MANY_ATTRIBUTES = %i(recent)
+      FIND_MANY_ATTRIBUTES = %i[recent].freeze
 
       def where(attributes)
         match = (attributes.keys & FIND_MANY_ATTRIBUTES)
@@ -15,7 +14,7 @@ module PodcastIndex
         send("find_all_by_#{match.first}", **attributes)
       end
 
-      def find_all_by_recent(recent:, max: nil)
+      def find_all_by_recent(recent:, max: nil) # rubocop:disable Lint/UnusedMethodArgument
         response = Api::Recent.soundbites(max: max)
         from_response_collection(response)
       end

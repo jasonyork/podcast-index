@@ -10,8 +10,11 @@ RSpec.describe PodcastIndex::Api::Value do
         .to_return(body: fixture, status: 200)
     end
 
-    it "returns the body of the response" do
+    it "contains the model type" do
       expect(result["value"]["model"]["type"]).to eq "lightning"
+    end
+
+    it "contains the destination name" do
       expect(result["value"]["destinations"][0]["name"]).to eq "Podcastindex.org"
     end
 
@@ -35,8 +38,11 @@ RSpec.describe PodcastIndex::Api::Value do
         .to_return(body: fixture, status: 200)
     end
 
-    it "returns the body of the response" do
+    it "returns the model type" do
       expect(result["value"]["model"]["type"]).to eq "lightning"
+    end
+
+    it "returns the destination name" do
       expect(result["value"]["destinations"][0]["name"]).to eq "Podcastindex.org"
     end
 

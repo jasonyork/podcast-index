@@ -83,7 +83,9 @@ RSpec.describe PodcastIndex::Api::Recent do
     end
 
     context "when no results were found" do
-      let(:fixture) { { status: true, query: { id: 0 }, data: { feeds: [] }, description: "No results found." }.to_json }
+      let(:fixture) do
+        { status: true, query: { id: 0 }, data: { feeds: [] }, description: "No results found." }.to_json
+      end
 
       it "returns an empty array for the items" do
         expect(result["data"]["feeds"]).to eq []

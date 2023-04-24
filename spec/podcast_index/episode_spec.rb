@@ -20,7 +20,7 @@ RSpec.describe PodcastIndex::Episode do
   describe ".find_by" do
     subject { described_class.find_by(attribute) }
 
-    context "guid attribute" do
+    context "with guid attribute" do
       let(:guid) { "PC2084" }
       let(:attribute) { { guid: guid } }
       let(:fixture) { file_fixture("episodes/by_guid_response.json").read }

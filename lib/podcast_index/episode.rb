@@ -4,9 +4,8 @@ require "delegate"
 module PodcastIndex
   class Episode < SimpleDelegator
     class << self
-
-      FIND_ONE_ATTRIBUTES = %i(guid)
-      FIND_MANY_ATTRIBUTES = %i(feed_id feed_url podcast_guid live itunes_id person recent)
+      FIND_ONE_ATTRIBUTES = %i[guid].freeze
+      FIND_MANY_ATTRIBUTES = %i[feed_id feed_url podcast_guid live itunes_id person recent].freeze
 
       def find(id, fulltext: nil)
         response = Api::Episodes.by_id(id: id, fulltext: fulltext)
@@ -57,7 +56,7 @@ module PodcastIndex
         from_response(response)
       end
 
-      def find_all_by_live(live:, max: nil)
+      def find_all_by_live(live:, max: nil) # rubocop:disable Lint/UnusedMethodArgument
         response = Api::Episodes.live(max: max)
         from_response_collection(response)
       end
@@ -72,7 +71,7 @@ module PodcastIndex
         from_response_collection(response)
       end
 
-      def find_all_by_recent(recent:, max: nil, exclude_string: nil, before: nil, fulltext: nil)
+      def find_all_by_recent(recent:, max: nil, exclude_string: nil, before: nil, fulltext: nil) # rubocop:disable Lint/UnusedMethodArgument
         response = Api::Recent.episodes(max: max, exclude_string: exclude_string, before: before, fulltext: fulltext)
         from_response_collection(response)
       end

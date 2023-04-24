@@ -4,7 +4,6 @@ require "delegate"
 module PodcastIndex
   class Value < SimpleDelegator
     class << self
-
       FIND_ONE_ATTRIBUTES = %i[feed_id feed_url].freeze
 
       def find_by(attributes)

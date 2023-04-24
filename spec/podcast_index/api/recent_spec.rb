@@ -90,4 +90,27 @@ RSpec.describe PodcastIndex::Api::Recent do
       end
     end
   end
+
+  describe ".soundbites" do
+    subject(:result) { described_class.soundbites }
+
+    let(:fixture) { file_fixture("recent/soundbites_response.json").read }
+
+    before do
+      stub_request(:get, %r{/recent/soundbites})
+        .to_return(body: fixture, status: 200)
+    end
+
+    it "returns the body of the response" do
+      expect(result["items"][0]["feedId"]).to eq 5583784
+    end
+
+    context "when no results were found" do
+      let(:fixture) { { status: true, query: { id: 0 }, items: [], description: "No results found." }.to_json }
+
+      it "returns an empty array for the items" do
+        expect(result["items"]).to eq []
+      end
+    end
+  end
 end

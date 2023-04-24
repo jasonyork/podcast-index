@@ -10,6 +10,7 @@ require_relative "podcast_index/api/search"
 require_relative "podcast_index/api/recent"
 require_relative "podcast_index/podcast"
 require_relative "podcast_index/episode"
+require_relative "podcast_index/soundbite"
 
 module PodcastIndex
   include ActiveSupport::Configurable

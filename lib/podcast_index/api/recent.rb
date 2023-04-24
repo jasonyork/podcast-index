@@ -24,6 +24,11 @@ module PodcastIndex
           response = get("/recent/data", max: max, since: since)
           JSON.parse(response.body)
         end
+
+        def soundbites(max: nil)
+          response = get("/recent/soundbites", max: max)
+          JSON.parse(response.body)
+        end
       end
     end
   end

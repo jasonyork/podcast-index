@@ -33,8 +33,8 @@ module PodcastIndex
 
     private
 
-      def find_by_feed_url(url)
-        response = Api::Podcasts.by_feed_url(url: url)
+      def find_by_feed_url(feed_url)
+        response = Api::Podcasts.by_feed_url(url: feed_url)
         from_response(response)
       end
 
@@ -43,8 +43,8 @@ module PodcastIndex
         from_response(response)
       end
 
-      def find_by_itunes_id(id)
-        response = Api::Podcasts.by_itunes_id(id: id)
+      def find_by_itunes_id(itunes_id)
+        response = Api::Podcasts.by_itunes_id(id: itunes_id)
         from_response(response)
       end
 

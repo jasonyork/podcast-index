@@ -98,6 +98,24 @@ RSpec.describe PodcastIndex::Podcast do
       it "contains podcasts" do
         expect(podcasts.first.title).to eq("100% Retro - Live 24/7")
       end
+
+      context "when medium is music and a search term is supplied" do
+        let(:term) { "able kirby" }
+
+        let(:attributes) { { medium: "music", term: term } }
+        let(:fixture) { file_fixture("search/music_by_term_response.json").read }
+
+        before do
+          allow(PodcastIndex::Api::Search).to receive(:music_by_term).with(hash_including(term: term))
+                                                                     .and_return(response)
+        end
+
+        it { is_expected.to be_an Array }
+
+        it "contains podcasts" do
+          expect(podcasts.first.title).to eq("November EP")
+        end
+      end
     end
 
     context "with trending attribute" do

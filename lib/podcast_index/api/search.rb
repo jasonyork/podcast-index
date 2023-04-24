@@ -19,10 +19,10 @@ module PodcastIndex
           JSON.parse(response.body)
         end
 
-        # def music_by_term(term, val: nil, aponly: nil, clean: nil, fulltext: nil)
-        #   response = get("/search/music/byterm", q: term, val:, aponly:, clean:, fulltext:)
-        #   JSON.parse(response.body)
-        # end
+        def music_by_term(term:, val: nil, aponly: nil, clean: nil, fulltext: nil)
+          response = get("/search/music/byterm", q: term, val: val, aponly: aponly, clean: clean, fulltext: fulltext)
+          JSON.parse(response.body)
+        end
       end
     end
   end

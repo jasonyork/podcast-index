@@ -1,6 +1,7 @@
 require "ostruct"
 require "delegate"
 
+# rubocop:disable Metrics/ParameterLists, Lint/UnusedMethodArgument
 module PodcastIndex
   class Podcast < SimpleDelegator
     class << self
@@ -21,6 +22,8 @@ module PodcastIndex
       end
 
       def where(attributes)
+        return find_all_music_by_term(**attributes) if attributes[:medium] == "music" && attributes[:term].present?
+
         match = (attributes.keys & FIND_MANY_ATTRIBUTES)
         raise ArgumentError, "Must supply one of the attributes: #{FIND_MANY_ATTRIBUTES}" unless match.present?
         raise ArgumentError, "Must supply only one of the attributes: #{FIND_MANY_ATTRIBUTES}" if match.length > 1
@@ -50,18 +53,23 @@ module PodcastIndex
         from_response_collection(response)
       end
 
+      def find_all_music_by_term(medium:, term:, val: nil, aponly: nil, clean: nil, fulltext: nil)
+        response = Api::Search.music_by_term(term: term, val: val, aponly: aponly, clean: clean, fulltext: fulltext)
+        from_response_collection(response)
+      end
+
       def find_all_by_medium(medium:)
         response = Api::Podcasts.by_medium(medium: medium)
         from_response_collection(response)
       end
 
-      def find_all_by_trending(trending:, max: nil, since: nil, lang: nil, categories: [], exclude_categories: []) # rubocop:disable Metrics/ParameterLists
+      def find_all_by_trending(trending:, max: nil, since: nil, lang: nil, categories: [], exclude_categories: [])
         response = Api::Podcasts.trending(max: max, since: since, lang: lang, cat: categories.join(","),
                                           notcat: exclude_categories.join(","))
         from_response_collection(response)
       end
 
-      def find_all_by_dead(dead:)
+      def find_all_by_dead(*)
         response = Api::Podcasts.dead
         from_response_collection(response)
       end
@@ -90,3 +98,4 @@ module PodcastIndex
     end
   end
 end
+# rubocop:enable Metrics/ParameterLists, Lint/UnusedMethodArgument

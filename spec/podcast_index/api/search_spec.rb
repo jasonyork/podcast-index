@@ -70,4 +70,28 @@ RSpec.describe PodcastIndex::Api::Search do
       end
     end
   end
+
+  describe ".music_by_term" do
+    subject(:result) { described_class.music_by_term(term: term) }
+
+    let(:fixture) { file_fixture("search/music_by_term_response.json").read }
+    let(:term) { "able kirby" }
+
+    before do
+      stub_request(:get, %r{/search/music/byterm})
+        .to_return(body: fixture, status: 200)
+    end
+
+    it "returns the body of the response" do
+      expect(result["feeds"][0]["title"]).to eq "November EP"
+    end
+
+    context "when no results were found" do
+      let(:fixture) { { status: true, query: "", items: [], description: "No results found." }.to_json }
+
+      it "returns an empty array for the items" do
+        expect(result["items"]).to eq []
+      end
+    end
+  end
 end

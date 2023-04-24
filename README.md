@@ -32,6 +32,21 @@ In a Rails app, this configuration would typically be placed in an initializer f
 
 ## Usage
 
+This client currently implements the following sections of the API:
+* [Search](https://podcastindex-org.github.io/docs-api/#tag--Search)
+* [Podcasts](https://podcastindex-org.github.io/docs-api/#tag--Podcasts)
+* [Episodes](https://podcastindex-org.github.io/docs-api/#tag--Episodes)
+* [Recent](https://podcastindex-org.github.io/docs-api/#tag--Recent)
+* [Value](https://podcastindex-org.github.io/docs-api/#tag--Value)
+
+These are exposed through the following domain models:
+* [Episode](lib/podcast_index/episode.rb)
+* [Podcast](lib/podcast_index/podcast.rb)
+* [Soundbite](lib/podcast_index/soundbite.rb)
+* [Value](lib/podcast_index/value.rb)
+
+The intent is to follow ActiveRecord conventions as reasonably possible.  Therefore, most of the requests are accessed through the model's `.find_by` and `.where` methods.
+
 ### Examples
 
 Find a podcast by podcastindex id:
@@ -44,23 +59,73 @@ podcast.title # => "Podcasting 2.0"
 Find an episode by guid:
 
 ```ruby
-episode = PodcastIndex::Episode.find_by_guid("PC2084", feedurl: "http://mp3s.nashownotes.com/pc20rss.xml")
+episode = PodcastIndex::Episode.find_by(guid: "PC2084", feedurl: "http://mp3s.nashownotes.com/pc20rss.xml")
 episode.title # => "Episode 84: All Aboard to On-Board!"
+```
+
+Find a Value block by feed_id:
+
+```ruby
+value = PodcastIndex::Value.find_by(feed_id: 920666)
+value.model.type # => "lightning"
 ```
 
 Methods that return multiple results are represented as an array of objects:
 
 ```ruby
-episodes = PodcastIndex::Episode.find_by_person("Adam Curry")
+episodes = PodcastIndex::Episode.where(person: "Adam Curry")
 episodes.count # => 57
 episodes.first.title # => "Episode #2: A conversation with Adam Curry"
 ```
 
+```ruby
+soundbite = PodcastIndex::Soundbite.where(recent: true)
+soundbite.first.episode_id # => 15082076307
+```
+
+
+
 ### Supported Methods
 
-This client currently implements most of the API, focusing on searching for Podcasts and Episodes.  For the list of supported methods, see the [Podcast](lib/podcast_index/podcast.rb) and [Episode](lib/podcast_index/episode.rb) models.
+```ruby
+# Episode
+Episode.find(id, fulltext: nil)
+Episode.find_by(guid, feedurl: nil, feedid: nil, fulltext: nil)
+Episode.where(feed_id:, since: nil, max: nil, fulltext: nil)
+Episode.where(feed_url:, since: nil, max: nil, fulltext: nil)
+Episode.where(podcast_guid:, since: nil, max: nil, fulltext: nil)
+Episode.where(live: true, max: nil)
+Episode.where(itunes_id:, since: nil, max: nil, fulltext: nil)
+Episode.where(person:, fulltext: nil)
+Episode.where(recent: true, max: nil, exclude_string: nil, before: nil, fulltext: nil)
+Episode.sample(max: nil, lang: nil, categories: [], exclude_categories: [], fulltext: nil) # Find a random episode
 
-The attributes of the response object mirror the names in the API, but have been translated to "underscore" format more closely follow Ruby conventions.  For example, the `lastUpdateTime` attribute for a `Podcast` is renamed to `last_update_time`.
+# Podcast
+Podcast.find(id)
+Podcast.find_by(feed_url)
+Podcast.find_by(guid)
+Podcast.find_by(itunes_id)
+Podcast.where(tag:)
+Podcast.where(medium:)
+# Additional parameters only for searching with "music" medium
+Podcast.where(medium: "music", term:, val: nil, aponly: nil, clean: nil, fulltext: nil) 
+Podcast.where(term:, val: nil, aponly: nil, clean: nil, fulltext: nil)
+Podcast.where(title:, val: nil, clean: nil, fulltext: nil)
+Podcast.where(trending: true, max: nil, since: nil, lang: nil, categories: [], exclude_categories: [])
+Podcast.where(dead: true)
+Podcast.where(recent: true, max: nil, since: nil, lang: nil, categories: [], exclude_categories: [])
+Podcast.where(new: true, max: nil, since: nil, feedid: nil, desc: nil)
+Podcast.where(newly_found: true, max: nil, since: nil)
+
+# Soundbite
+Soundbite.where(recent: true, max: nil)
+
+# Value
+Value.find_by(feed_id)
+Value.find_by(feed_url)
+```
+
+The attributes of the models mirror the names in the API, but have been translated to "underscore" format to more closely follow Ruby conventions.  For example, the `lastUpdateTime` attribute for a `Podcast` is exposed as `last_update_time`.
 
 ### Exception Handling
 

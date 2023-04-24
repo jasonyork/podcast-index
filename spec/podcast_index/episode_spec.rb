@@ -143,6 +143,20 @@ RSpec.describe PodcastIndex::Episode do
         expect(episodes.first.title).to eq("Episode #2: A conversation with Adam Curry")
       end
     end
+
+    context "with recent attribute" do
+      let(:attributes) { { recent: true } }
+      let(:fixture) { file_fixture("recent/episodes_response.json").read }
+      let(:response) { JSON.parse(fixture) }
+
+      before { allow(PodcastIndex::Api::Recent).to receive(:episodes).and_return(response) }
+
+      it { is_expected.to be_an Array }
+
+      it "contains episodes" do
+        expect(episodes.first.feed_title).to eq("Petites musiques d'une grande guerre")
+      end
+    end
   end
 
   describe ".sample" do

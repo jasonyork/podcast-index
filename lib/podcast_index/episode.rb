@@ -6,7 +6,7 @@ module PodcastIndex
     class << self
 
       FIND_ONE_ATTRIBUTES = %i(guid)
-      FIND_MANY_ATTRIBUTES = %i(feed_id feed_url podcast_guid live itunes_id person)
+      FIND_MANY_ATTRIBUTES = %i(feed_id feed_url podcast_guid live itunes_id person recent)
 
       def find(id, fulltext: nil)
         response = Api::Episodes.by_id(id: id, fulltext: fulltext)
@@ -69,6 +69,11 @@ module PodcastIndex
 
       def find_all_by_person(person:, fulltext: nil)
         response = Api::Search.by_person(person: person, fulltext: fulltext)
+        from_response_collection(response)
+      end
+
+      def find_all_by_recent(recent:, max: nil, exclude_string: nil, before: nil, fulltext: nil)
+        response = Api::Recent.episodes(max: max, exclude_string: exclude_string, before: before, fulltext: fulltext)
         from_response_collection(response)
       end
 

@@ -7,6 +7,7 @@ require_relative "podcast_index/api/request"
 require_relative "podcast_index/api/podcasts"
 require_relative "podcast_index/api/episodes"
 require_relative "podcast_index/api/search"
+require_relative "podcast_index/api/recent"
 require_relative "podcast_index/podcast"
 require_relative "podcast_index/episode"
 

@@ -195,5 +195,21 @@ RSpec.describe PodcastIndex::Podcast do
         expect(podcasts.first.id).to eq(3898903)
       end
     end
+
+    context "with new attribute" do
+      let(:attributes) { { new: true } }
+      let(:fixture) { file_fixture("recent/new_feeds_response.json").read }
+      let(:response) { JSON.parse(fixture) }
+
+      before do
+        allow(PodcastIndex::Api::Recent).to receive(:new_feeds).and_return(response)
+      end
+
+      it { is_expected.to be_an Array }
+
+      it "contains feeds" do
+        expect(podcasts.first.id).to eq(6330058)
+      end
+    end
   end
 end

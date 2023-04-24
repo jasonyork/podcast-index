@@ -175,4 +175,29 @@ RSpec.describe PodcastIndex::Api::Podcasts do
       end
     end
   end
+
+  describe ".dead" do
+    subject(:response) { described_class.dead }
+
+    let(:fixture) { file_fixture("podcasts/dead_response.json").read }
+
+    before do
+      stub_request(:get, %r{/podcasts/dead})
+        .to_return(body: fixture, status: 200)
+    end
+
+    it "returns the body of the response" do
+      expect(response["feeds"][0]["title"]).to eq "St Neots Evangelical Church Sermons"
+    end
+
+    context "when no results were found" do
+      let(:fixture) do
+        { status: true, feeds: [], description: "Not found" }.to_json
+      end
+
+      it "returns an empty array for the feed" do
+        expect(response["feeds"]).to eq []
+      end
+    end
+  end
 end

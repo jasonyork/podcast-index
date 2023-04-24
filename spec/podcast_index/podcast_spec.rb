@@ -114,6 +114,20 @@ RSpec.describe PodcastIndex::Podcast do
       end
     end
 
+    context "with dead attribute" do
+      let(:attributes) { { dead: true } }
+      let(:fixture) { file_fixture("podcasts/dead_response.json").read }
+      let(:response) { JSON.parse(fixture) }
+
+      before { allow(PodcastIndex::Api::Podcasts).to receive(:dead).and_return(response) }
+
+      it { is_expected.to be_an Array }
+
+      it "contains podcasts" do
+        expect(podcasts.first.title).to eq("St Neots Evangelical Church Sermons")
+      end
+    end
+
     context "with term attribute" do
       let(:term) { "Podcasting 2.0" }
       let(:attributes) { { term: term } }

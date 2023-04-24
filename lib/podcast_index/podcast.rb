@@ -4,8 +4,8 @@ require "delegate"
 module PodcastIndex
   class Podcast < SimpleDelegator
     class << self
-      FIND_ONE_ATTRIBUTES = %i(feed_url guid itunes_id)
-      FIND_MANY_ATTRIBUTES = %i(tag medium term title trending)
+      FIND_ONE_ATTRIBUTES = %i[feed_url guid itunes_id].freeze
+      FIND_MANY_ATTRIBUTES = %i[tag medium term title trending dead].freeze
 
       def find(id)
         response = Api::Podcasts.by_feed_id(id: id)
@@ -55,9 +55,14 @@ module PodcastIndex
         from_response_collection(response)
       end
 
-      def find_all_by_trending(trending:, max: nil, since: nil, lang: nil, categories: [], exclude_categories: [])
+      def find_all_by_trending(trending:, max: nil, since: nil, lang: nil, categories: [], exclude_categories: []) # rubocop:disable Metrics/ParameterLists
         response = Api::Podcasts.trending(max: max, since: since, lang: lang, cat: categories.join(","),
                                           notcat: exclude_categories.join(","))
+        from_response_collection(response)
+      end
+
+      def find_all_by_dead(dead:)
+        response = Api::Podcasts.dead
         from_response_collection(response)
       end
 

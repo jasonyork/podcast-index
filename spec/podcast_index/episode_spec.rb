@@ -17,96 +17,131 @@ RSpec.describe PodcastIndex::Episode do
     end
   end
 
-  describe ".find_by_feed_id" do
-    subject(:episodes) { described_class.find_by_feed_id(feed_id) }
+  describe ".find_by" do
+    subject { described_class.find_by(attribute) }
 
-    let(:feed_id) { 8031009367 }
-    let(:fixture) { file_fixture("episodes/by_feed_id_response.json").read }
-    let(:response) { JSON.parse(fixture) }
+    context "guid attribute" do
+      let(:guid) { "PC2084" }
+      let(:attribute) { { guid: guid } }
+      let(:fixture) { file_fixture("episodes/by_guid_response.json").read }
+      let(:response) { JSON.parse(fixture) }
 
-    before { allow(PodcastIndex::Api::Episodes).to receive(:by_feed_id).and_return(response) }
+      before do
+        allow(PodcastIndex::Api::Episodes).to receive(:by_guid).with(hash_including(attribute)).and_return(response)
+      end
 
-    it { is_expected.to be_an Array }
-
-    it "contains episodes" do
-      expect(episodes.first.id).to eq(12384062306)
+      its(:guid) { is_expected.to eq(guid) }
+      its(:title) { is_expected.to eq("Episode 84: All Aboard to On-Board!") }
+      its(:guid) { is_expected.to eq("PC2084") }
     end
   end
 
-  describe ".find_by_feed_url" do
-    subject(:episodes) { described_class.find_by_feed_url(feed_url) }
+  describe ".where" do
+    subject(:episodes) { described_class.where(attributes) }
 
-    let(:feed_url) { 8031009367 }
-    let(:fixture) { file_fixture("episodes/by_feed_url_response.json").read }
-    let(:response) { JSON.parse(fixture) }
+    context "with feed_id attribute" do
+      let(:feed_id) { 8031009367 }
+      let(:attributes) { { feed_id: feed_id } }
+      let(:fixture) { file_fixture("episodes/by_feed_id_response.json").read }
+      let(:response) { JSON.parse(fixture) }
 
-    before { allow(PodcastIndex::Api::Episodes).to receive(:by_feed_url).and_return(response) }
+      before do
+        allow(PodcastIndex::Api::Episodes).to receive(:by_feed_id).with(hash_including(id: feed_id))
+                                                                  .and_return(response)
+      end
 
-    it { is_expected.to be_an Array }
+      it { is_expected.to be_an Array }
 
-    it "contains episodes" do
-      expect(episodes.first.id).to eq(12384062306)
+      it "contains episodes" do
+        expect(episodes.first.id).to eq(12384062306)
+      end
     end
-  end
 
-  describe ".find_by_podcast_guid" do
-    subject(:episodes) { described_class.find_by_podcast_guid(podcast_guid) }
+    context "with feed_url attribute" do
+      let(:feed_url) { 8031009367 }
+      let(:attributes) { { feed_url: feed_url } }
+      let(:fixture) { file_fixture("episodes/by_feed_url_response.json").read }
+      let(:response) { JSON.parse(fixture) }
 
-    let(:podcast_guid) { "917393e3-1b1e-5cef-ace4-edaa54e1f810" }
-    let(:fixture) { file_fixture("episodes/by_podcast_guid_response.json").read }
-    let(:response) { JSON.parse(fixture) }
+      before do
+        allow(PodcastIndex::Api::Episodes).to receive(:by_feed_url).with(hash_including(url: feed_url))
+                                                                   .and_return(response)
+      end
 
-    before { allow(PodcastIndex::Api::Episodes).to receive(:by_podcast_guid).and_return(response) }
+      it { is_expected.to be_an Array }
 
-    it { is_expected.to be_an Array }
-
-    it "contains episodes" do
-      expect(episodes.first.id).to eq(15033445987)
+      it "contains episodes" do
+        expect(episodes.first.id).to eq(12384062306)
+      end
     end
-  end
 
-  describe ".find_by_guid" do
-    subject { described_class.find_by_guid(guid, feedurl: "http://mp3s.nashownotes.com/pc20rss.xml") }
+    context "with podcast_guid attribute" do
+      let(:podcast_guid) { "917393e3-1b1e-5cef-ace4-edaa54e1f810" }
+      let(:attributes) { { podcast_guid: podcast_guid } }
+      let(:fixture) { file_fixture("episodes/by_podcast_guid_response.json").read }
+      let(:response) { JSON.parse(fixture) }
 
-    let(:guid) { "PC2084" }
-    let(:fixture) { file_fixture("episodes/by_guid_response.json").read }
-    let(:response) { JSON.parse(fixture) }
+      before do
+        allow(PodcastIndex::Api::Episodes).to receive(:by_podcast_guid).with(hash_including(attributes))
+                                                                       .and_return(response)
+      end
 
-    before { allow(PodcastIndex::Api::Episodes).to receive(:by_guid).and_return(response) }
+      it { is_expected.to be_an Array }
 
-    its(:guid) { is_expected.to eq(guid) }
-    its(:title) { is_expected.to eq("Episode 84: All Aboard to On-Board!") }
-    its(:guid) { is_expected.to eq("PC2084") }
-  end
-
-  describe ".find_by_itunes_id" do
-    subject(:episode) { described_class.find_by_itunes_id(itunes_id) }
-
-    let(:itunes_id) { 1584274529 }
-    let(:fixture) { file_fixture("episodes/by_itunes_id_response.json").read }
-    let(:response) { JSON.parse(fixture) }
-
-    before { allow(PodcastIndex::Api::Episodes).to receive(:by_itunes_id).and_return(response) }
-
-    it { is_expected.to be_an Array }
-
-    it "contains episodes" do
-      expect(episode.first.id).to eq(12384062306)
+      it "contains episodes" do
+        expect(episodes.first.id).to eq(15033445987)
+      end
     end
-  end
 
-  describe ".find_by_live_item" do
-    subject(:episodes) { described_class.find_by_live_item }
+    context "with itunes_id attribute" do
+      let(:itunes_id) { 1584274529 }
+      let(:attributes) { { itunes_id: itunes_id } }
+      let(:fixture) { file_fixture("episodes/by_itunes_id_response.json").read }
+      let(:response) { JSON.parse(fixture) }
 
-    let(:fixture) { file_fixture("episodes/live_response.json").read }
-    let(:response) { JSON.parse(fixture) }
+      before do
+        allow(PodcastIndex::Api::Episodes).to receive(:by_itunes_id).with(hash_including(id: itunes_id))
+                                                                    .and_return(response)
+      end
 
-    before { allow(PodcastIndex::Api::Episodes).to receive(:live).and_return(response) }
+      it { is_expected.to be_an Array }
 
-    it { is_expected.to be_an Array }
+      it "contains episodes" do
+        expect(episodes.first.id).to eq(12384062306)
+      end
+    end
 
-    it "contains episodes" do
-      expect(episodes.first.feed_title).to eq("100% Retro - Live 24/7")
+    context "with live attribute" do
+      let(:attributes) { { live: true } }
+      let(:fixture) { file_fixture("episodes/live_response.json").read }
+      let(:response) { JSON.parse(fixture) }
+
+      before { allow(PodcastIndex::Api::Episodes).to receive(:live).and_return(response) }
+
+      it { is_expected.to be_an Array }
+
+      it "contains episodes" do
+        expect(episodes.first.feed_title).to eq("100% Retro - Live 24/7")
+      end
+    end
+
+    context "with person attributes" do
+      let(:person) { "Adam Curry" }
+      let(:attributes) { { person: person } }
+
+      let(:fixture) { file_fixture("search/by_person_response.json").read }
+      let(:response) { JSON.parse(fixture) }
+
+      before do
+        allow(PodcastIndex::Api::Search).to receive(:by_person).with(hash_including(attributes))
+                                                               .and_return(response)
+      end
+
+      it { is_expected.to be_an Array }
+
+      it "contains episodes" do
+        expect(episodes.first.title).to eq("Episode #2: A conversation with Adam Curry")
+      end
     end
   end
 
@@ -122,22 +157,6 @@ RSpec.describe PodcastIndex::Episode do
 
     it "contains episodes" do
       expect(episodes.first.title).to eq("10 Surprising Stats and What They Mean")
-    end
-  end
-
-  describe ".find_by_person" do
-    subject(:episodes) { described_class.find_by_person(person) }
-
-    let(:person) { "Adam Curry" }
-    let(:fixture) { file_fixture("search/by_person_response.json").read }
-    let(:response) { JSON.parse(fixture) }
-
-    before { allow(PodcastIndex::Api::Search).to receive(:by_person).and_return(response) }
-
-    it { is_expected.to be_an Array }
-
-    it "contains episodes" do
-      expect(episodes.first.title).to eq("Episode #2: A conversation with Adam Curry")
     end
   end
 end

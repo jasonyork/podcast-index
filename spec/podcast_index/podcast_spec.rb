@@ -17,103 +17,121 @@ RSpec.describe PodcastIndex::Podcast do
     end
   end
 
-  describe ".find_by_feed_url" do
-    subject { described_class.find_by_feed_url(feed_url) }
+  describe ".find_by" do
+    subject { described_class.find_by(attribute) }
 
-    let(:feed_url) { "http://mp3s.nashownotes.com/pc20rss.xml" }
-    let(:fixture) { file_fixture("podcasts/by_feed_url_response.json").read }
-    let(:response) { JSON.parse(fixture) }
+    context "with feed_url attribute" do
+      let(:feed_url) { "http://mp3s.nashownotes.com/pc20rss.xml" }
+      let(:attribute) { { feed_url: feed_url } }
+      let(:fixture) { file_fixture("podcasts/by_feed_url_response.json").read }
+      let(:response) { JSON.parse(fixture) }
 
-    before { allow(PodcastIndex::Api::Podcasts).to receive(:by_feed_url).and_return(response) }
+      before do
+        allow(PodcastIndex::Api::Podcasts).to receive(:by_feed_url).with(hash_including(url: feed_url))
+                                                                   .and_return(response)
+      end
 
-    its(:url) { is_expected.to eq(feed_url) }
-  end
+      its(:url) { is_expected.to eq(feed_url) }
+    end
 
-  describe ".find_by_guid" do
-    subject { described_class.find_by_guid(guid) }
+    context "with guid attribute" do
+      let(:guid) { "917393e3-1b1e-5cef-ace4-edaa54e1f810" }
+      let(:attribute) { { guid: guid } }
 
-    let(:guid) { "917393e3-1b1e-5cef-ace4-edaa54e1f810" }
-    let(:fixture) { file_fixture("podcasts/by_guid_response.json").read }
-    let(:response) { JSON.parse(fixture) }
+      let(:fixture) { file_fixture("podcasts/by_guid_response.json").read }
+      let(:response) { JSON.parse(fixture) }
 
-    before { allow(PodcastIndex::Api::Podcasts).to receive(:by_guid).and_return(response) }
+      before do
+        allow(PodcastIndex::Api::Podcasts).to receive(:by_guid).with(hash_including(attribute)).and_return(response)
+      end
 
-    its(:podcast_guid) { is_expected.to eq(guid) }
-  end
+      its(:podcast_guid) { is_expected.to eq(guid) }
+    end
 
-  describe ".find_by_itunes_id" do
-    subject { described_class.find_by_itunes_id(itunes_id) }
+    context "with itunes_id attribute" do
+      let(:itunes_id) { 1584274529 }
+      let(:attribute) { { itunes_id: itunes_id } }
+      let(:fixture) { file_fixture("podcasts/by_itunes_id_response.json").read }
+      let(:response) { JSON.parse(fixture) }
 
-    let(:itunes_id) { 1584274529 }
-    let(:fixture) { file_fixture("podcasts/by_itunes_id_response.json").read }
-    let(:response) { JSON.parse(fixture) }
+      before do
+        allow(PodcastIndex::Api::Podcasts).to receive(:by_itunes_id).with(hash_including(id: itunes_id))
+                                                                    .and_return(response)
+      end
 
-    before { allow(PodcastIndex::Api::Podcasts).to receive(:by_itunes_id).and_return(response) }
-
-    its(:itunes_id) { is_expected.to eq(itunes_id) }
-  end
-
-  describe ".find_by_tag" do
-    subject(:podcasts) { described_class.find_by_tag(tag) }
-
-    let(:tag) { "podcast-value" }
-    let(:fixture) { file_fixture("podcasts/by_tag_response.json").read }
-    let(:response) { JSON.parse(fixture) }
-
-    before { allow(PodcastIndex::Api::Podcasts).to receive(:by_tag).and_return(response) }
-
-    it { is_expected.to be_an Array }
-
-    it "contains podcasts" do
-      expect(podcasts.first.title).to eq("No Agenda")
+      its(:itunes_id) { is_expected.to eq(itunes_id) }
     end
   end
 
-  describe ".find_by_medium" do
-    subject(:podcasts) { described_class.find_by_medium(medium) }
+  describe ".where" do
+    subject(:podcasts) { described_class.where(attributes) }
 
-    let(:medium) { "music" }
-    let(:fixture) { file_fixture("podcasts/by_medium_response.json").read }
-    let(:response) { JSON.parse(fixture) }
+    context "with tag attribute" do
+      let(:tag) { "podcast-value" }
+      let(:attributes) { { tag: tag } }
+      let(:fixture) { file_fixture("podcasts/by_tag_response.json").read }
+      let(:response) { JSON.parse(fixture) }
 
-    before { allow(PodcastIndex::Api::Podcasts).to receive(:by_medium).and_return(response) }
+      before do
+        allow(PodcastIndex::Api::Podcasts).to receive(:by_tag).with(hash_including(attributes)).and_return(response)
+      end
 
-    it { is_expected.to be_an Array }
+      it { is_expected.to be_an Array }
 
-    it "contains podcasts" do
-      expect(podcasts.first.title).to eq("100% Retro - Live 24/7")
+      it "contains podcasts" do
+        expect(podcasts.first.title).to eq("No Agenda")
+      end
     end
-  end
 
-  describe ".find_by_term" do
-    subject(:podcasts) { described_class.find_by_term(term) }
+    context "with medium attribute" do
+      let(:medium) { "music" }
+      let(:attributes) { { medium: medium } }
+      let(:fixture) { file_fixture("podcasts/by_medium_response.json").read }
+      let(:response) { JSON.parse(fixture) }
 
-    let(:term) { "Podcasting 2.0" }
-    let(:fixture) { file_fixture("search/by_term_response.json").read }
-    let(:response) { JSON.parse(fixture) }
+      before do
+        allow(PodcastIndex::Api::Podcasts).to receive(:by_medium).with(hash_including(attributes)).and_return(response)
+      end
 
-    before { allow(PodcastIndex::Api::Search).to receive(:by_term).and_return(response) }
+      it { is_expected.to be_an Array }
 
-    it { is_expected.to be_an Array }
-
-    it "contains feeds" do
-      expect(podcasts.first.id).to eq(920666)
+      it "contains podcasts" do
+        expect(podcasts.first.title).to eq("100% Retro - Live 24/7")
+      end
     end
-  end
 
-  describe ".find_by_title" do
-    subject(:podcasts) { described_class.find_by_title(title) }
+    context "with term attribute" do
+      let(:term) { "Podcasting 2.0" }
+      let(:attributes) { { term: term } }
+      let(:fixture) { file_fixture("search/by_term_response.json").read }
+      let(:response) { JSON.parse(fixture) }
 
-    let(:title) { "Podcasting 2.0" }
-    let(:fixture) { file_fixture("search/by_title_response.json").read }
-    let(:response) { JSON.parse(fixture) }
+      before do
+        allow(PodcastIndex::Api::Search).to receive(:by_term).with(hash_including(attributes)).and_return(response)
+      end
 
-    before { allow(PodcastIndex::Api::Search).to receive(:by_title).and_return(response) }
+      it { is_expected.to be_an Array }
 
-    it { is_expected.to be_an Array }
+      it "contains feeds" do
+        expect(podcasts.first.id).to eq(920666)
+      end
+    end
 
-    it "contains feeds" do
-      expect(podcasts.first.id).to eq(920666)
+    context "with title attribute" do
+      let(:title) { "Podcasting 2.0" }
+      let(:attributes) { { title: title } }
+      let(:fixture) { file_fixture("search/by_title_response.json").read }
+      let(:response) { JSON.parse(fixture) }
+
+      before do
+        allow(PodcastIndex::Api::Search).to receive(:by_title).with(hash_including(attributes)).and_return(response)
+      end
+
+      it { is_expected.to be_an Array }
+
+      it "contains feeds" do
+        expect(podcasts.first.id).to eq(920666)
+      end
     end
   end
 end

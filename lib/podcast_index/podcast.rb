@@ -6,7 +6,7 @@ module PodcastIndex
   class Podcast < SimpleDelegator
     class << self
       FIND_ONE_ATTRIBUTES = %i[feed_url guid itunes_id].freeze
-      FIND_MANY_ATTRIBUTES = %i[tag medium term title trending dead recent new].freeze
+      FIND_MANY_ATTRIBUTES = %i[tag medium term title trending dead recent new newly_found].freeze
 
       def find(id)
         response = Api::Podcasts.by_feed_id(id: id)
@@ -95,6 +95,16 @@ module PodcastIndex
         from_response_collection(response)
       end
 
+      def find_all_by_newly_found(newly_found:, max: nil, since: nil)
+        response = Api::Recent.data(max: max, since: since)
+        # This one has a bit of an oddball response.  It's nested in a "data" attribute and all the keys
+        # for each feed are prefixed with "feed" (see example fixture)
+        response["data"]["feeds"].map do |item|
+          feed = item.transform_keys { |key| key.delete_prefix("feed").underscore }
+          new(JSON.parse(feed.to_json, object_class: OpenStruct)) # rubocop:disable Style/OpenStructUse
+        end
+      end
+
       def from_response(response)
         feed = response["feed"].transform_keys(&:underscore)
         new(JSON.parse(feed.to_json, object_class: OpenStruct)) # rubocop:disable Style/OpenStructUse
@@ -102,8 +112,8 @@ module PodcastIndex
 
       def from_response_collection(response)
         response["feeds"].map do |item|
-          episode = item.transform_keys(&:underscore)
-          new(JSON.parse(episode.to_json, object_class: OpenStruct)) # rubocop:disable Style/OpenStructUse
+          feed = item.transform_keys(&:underscore)
+          new(JSON.parse(feed.to_json, object_class: OpenStruct)) # rubocop:disable Style/OpenStructUse
         end
       end
     end

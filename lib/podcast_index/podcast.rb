@@ -10,7 +10,11 @@ module PodcastIndex
 
       def find(id)
         response = Api::Podcasts.by_feed_id(id: id)
-        from_response(response)
+        unless response["feed"].empty?
+           from_response(response)
+        else
+           raise PodcastIndex::Error, "PodcastIndex: No feeds match this id." 
+        end
       end
 
       def find_by(attributes)

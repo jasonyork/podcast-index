@@ -20,6 +20,7 @@ module PodcastIndex
   config_accessor :api_key, :api_secret, :base_url
 
   class Error < StandardError; end
+  class PodcastNotFound < Error; end
 
   def self.configure
     self.base_url = "https://api.podcastindex.org/api/1.0".freeze

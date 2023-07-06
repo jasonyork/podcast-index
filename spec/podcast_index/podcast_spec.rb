@@ -15,6 +15,14 @@ RSpec.describe PodcastIndex::Podcast do
     it "parses nested attributes" do
       expect(podcast.value.destinations[0].name).to eq "Podcastindex.org"
     end
+
+    context "when the podcast is not found" do
+      let(:response) { { "status" => "true", "feed" => [], "description" => "No feeds match this id." } }
+
+      it "raises an error" do
+        expect { podcast }.to raise_error(PodcastIndex::PodcastNotFound).with_message("No feeds match this id.")
+      end
+    end
   end
 
   describe ".find_by" do

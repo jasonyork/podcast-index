@@ -56,6 +56,16 @@ podcast = PodcastIndex::Podcast.find(920666)
 podcast.title # => "Podcasting 2.0"
 ```
 
+When the podcast cannot be found:
+
+```ruby
+begin
+  podcast = PodcastIndex::Podcast.find("invalid")
+rescue PodcastIndex::PodcastNotFound
+  puts "Podcast not found"
+end
+```
+
 Find an episode by guid:
 
 ```ruby

@@ -1,5 +1,7 @@
 ## [Unreleased]
 
+* Raise exception when `Podcast.find` returns no result ([#6](https://github.com/jasonyork/podcast-index/issues/6))
+
 ## [0.2.0] - 2023-04-24
 
 * BREAKING: Switching to be more consistent with ActiveRecord conventions, using `find_by` and `where` methods for all models

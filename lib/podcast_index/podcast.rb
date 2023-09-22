@@ -55,8 +55,9 @@ module PodcastIndex
         from_response_collection(response)
       end
 
-      def find_all_music_by_term(medium:, term:, val: nil, aponly: nil, clean: nil, fulltext: nil)
-        response = Api::Search.music_by_term(term: term, val: val, aponly: aponly, clean: clean, fulltext: fulltext)
+      def find_all_music_by_term(medium:, term:, val: nil, aponly: nil, clean: nil, fulltext: nil, max: nil)
+        response = Api::Search.music_by_term(term: term, val: val, aponly: aponly, clean: clean, fulltext: fulltext,
+                                             max: max)
         from_response_collection(response)
       end
 
@@ -76,13 +77,13 @@ module PodcastIndex
         from_response_collection(response)
       end
 
-      def find_all_by_term(term:, val: nil, aponly: nil, clean: nil, fulltext: nil)
-        response = Api::Search.by_term(term: term, val: val, aponly: aponly, clean: clean, fulltext: fulltext)
+      def find_all_by_term(term:, val: nil, aponly: nil, clean: nil, fulltext: nil, max: nil)
+        response = Api::Search.by_term(term: term, val: val, aponly: aponly, clean: clean, fulltext: fulltext, max: max)
         from_response_collection(response)
       end
 
-      def find_all_by_title(title:, val: nil, clean: nil, fulltext: nil)
-        response = Api::Search.by_title(title: title, val: val, clean: clean, fulltext: fulltext)
+      def find_all_by_title(title:, val: nil, clean: nil, fulltext: nil, max: nil)
+        response = Api::Search.by_title(title: title, val: val, clean: clean, fulltext: fulltext, max: max)
         from_response_collection(response)
       end
 

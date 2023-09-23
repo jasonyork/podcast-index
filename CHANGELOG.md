@@ -1,5 +1,7 @@
 ## [Unreleased]
 
+* Add `max` parameter to search requests (thanks @lbrito1)
+
 ## [0.2.1] - 2023-07-06
 
 * Raise exception when `Podcast.find` returns no result ([#6](https://github.com/jasonyork/podcast-index/issues/6))

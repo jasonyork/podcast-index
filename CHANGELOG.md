@@ -1,5 +1,7 @@
 ## [Unreleased]
 
+## [0.3.0] - 2023-09-22
+
 * Add `max` parameter to search requests (thanks @lbrito1)
 
 ## [0.2.1] - 2023-07-06

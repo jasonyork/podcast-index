@@ -66,8 +66,8 @@ module PodcastIndex
         from_response_collection(response)
       end
 
-      def find_all_by_person(person:, fulltext: nil)
-        response = Api::Search.by_person(person: person, fulltext: fulltext)
+      def find_all_by_person(person:, fulltext: nil, max: nil)
+        response = Api::Search.by_person(person: person, fulltext: fulltext, max: max)
         from_response_collection(response)
       end
 

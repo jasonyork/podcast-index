@@ -1,5 +1,7 @@
 ## [Unreleased]
 
+## [0.4.0] - 2024-01-21
+
 * Add Categories to API (thanks @lbrito1)
 * Add Category domain model
 * Add stats API and domain model

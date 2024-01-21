@@ -1,5 +1,8 @@
 ## [Unreleased]
 
+* Add Categories to API (thanks @lbrito1)
+* Add Category domain model
+
 ## [0.3.0] - 2023-09-22
 
 * Add `max` parameter to search requests (thanks @lbrito1)

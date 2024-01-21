@@ -2,6 +2,7 @@
 
 * Add Categories to API (thanks @lbrito1)
 * Add Category domain model
+* Add stats API and domain model
 
 ## [0.3.0] - 2023-09-22
 

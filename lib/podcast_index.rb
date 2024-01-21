@@ -10,11 +10,13 @@ require_relative "podcast_index/api/episodes"
 require_relative "podcast_index/api/podcasts"
 require_relative "podcast_index/api/recent"
 require_relative "podcast_index/api/search"
+require_relative "podcast_index/api/stats"
 require_relative "podcast_index/api/value"
 require_relative "podcast_index/category"
 require_relative "podcast_index/episode"
 require_relative "podcast_index/podcast"
 require_relative "podcast_index/soundbite"
+require_relative "podcast_index/stats"
 require_relative "podcast_index/value"
 
 module PodcastIndex

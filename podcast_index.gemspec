@@ -27,15 +27,15 @@ Gem::Specification.new do |spec|
   spec.executables = spec.files.grep(%r{\Aexe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
-  spec.add_dependency "activesupport", ">= 6.0", "< 8"
-  spec.add_dependency "addressable", "~> 2"
+  spec.add_dependency "activesupport"
+  spec.add_dependency "addressable"
 
-  spec.add_development_dependency "codecov", "~> 0.4"
-  spec.add_development_dependency "debug", "~> 1"
-  spec.add_development_dependency "rspec-core", "~> 3"
-  spec.add_development_dependency "rspec-its", "~> 1"
-  spec.add_development_dependency "rubocop-performance", "~> 1"
-  spec.add_development_dependency "rubocop-rake", "~> 0.6"
-  spec.add_development_dependency "rubocop-rspec", "~> 2"
-  spec.add_development_dependency "webmock", "~> 3"
+  spec.add_development_dependency "codecov"
+  spec.add_development_dependency "debug"
+  spec.add_development_dependency "rspec-core"
+  spec.add_development_dependency "rspec-its"
+  spec.add_development_dependency "rubocop-performance"
+  spec.add_development_dependency "rubocop-rake"
+  spec.add_development_dependency "rubocop-rspec"
+  spec.add_development_dependency "webmock"
 end

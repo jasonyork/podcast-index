@@ -1,5 +1,9 @@
 ## [Unreleased]
 
+## [0.5.0] - 2024-11-08
+
+* Remove gem version restrictions to support Rails 8
+
 ## [0.4.0] - 2024-01-21
 
 * Add Categories to API (thanks @lbrito1)

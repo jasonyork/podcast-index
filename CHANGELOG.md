@@ -1,5 +1,7 @@
 ## [Unreleased]
 
+## [0.5.1] - 2026-01-30
+
 * Remove dependency on ActiveSupport::Configurable
 
 ## [0.5.0] - 2024-11-08

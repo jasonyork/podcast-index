@@ -1,5 +1,7 @@
 ## [Unreleased]
 
+* Remove dependency on ActiveSupport::Configurable
+
 ## [0.5.0] - 2024-11-08
 
 * Remove gem version restrictions to support Rails 8

@@ -1,5 +1,5 @@
 require_relative "podcast_index/version"
-require "active_support/configurable"
+require "active_support/ordered_options"
 require "active_support/core_ext/string/inflections"
 require "json"
 
@@ -20,16 +20,20 @@ require_relative "podcast_index/stats"
 require_relative "podcast_index/value"
 
 module PodcastIndex
-  include ActiveSupport::Configurable
-
-  config_accessor :api_key, :api_secret, :base_url
-
   class Error < StandardError; end
   class PodcastNotFound < Error; end
   class CategoryNotFound < Error; end
 
   def self.configure
-    self.base_url = "https://api.podcastindex.org/api/1.0".freeze
-    super
+    config.base_url = "https://api.podcastindex.org/api/1.0".freeze
+    yield config
   end
+
+  def self.config
+    @config ||= ActiveSupport::OrderedOptions.new
+  end
+
+  def self.api_key = config.api_key
+  def self.api_secret = config.api_secret
+  def self.base_url = config.base_url
 end

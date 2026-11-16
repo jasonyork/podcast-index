@@ -1,10 +1,13 @@
+# SimpleCov must start before the library is loaded, or lib/ is not measured.
+require "simplecov"
+SimpleCov.start do
+  add_filter "/spec/"
+end
+
 require "active_support/testing/time_helpers"
 require "podcast_index"
 require "rspec/its"
 require "webmock/rspec"
-require "simplecov"
-
-SimpleCov.start
 
 Dir[File.join(__dir__, "support", "*.rb")].each { |file| require file }
 

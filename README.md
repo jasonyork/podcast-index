@@ -168,6 +168,15 @@ Be aware that this client currently does not cache responses.  So for example, m
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
 
+The default test run never touches the network. To also run the specs in `spec/live` against the real podcastindex.org API, put your credentials in a `.env` file at the project root (it is git-ignored):
+
+```
+API_KEY=<your api key>
+API_SECRET=<your api secret>
+```
+
+Then run `bundle exec rake spec:live`. Values are read literally, so a secret containing `$` needs no quoting. Variables already set in the environment take precedence.
+
 To install this gem onto your local machine, run `bundle exec rake install`.
 
 ## Contributing

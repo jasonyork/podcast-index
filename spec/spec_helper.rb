@@ -24,7 +24,9 @@ RSpec.configure do |config|
 
   config.order = :random
 
-  config.before do
+  config.before do |example|
+    next if example.metadata[:live]
+
     PodcastIndex.configure do |c|
       c.api_key = "123"
       c.api_secret = "ABC"

@@ -17,6 +17,10 @@ Metrics/AbcSize:
   Exclude:
     - spec/**/*
 
+Metrics/ModuleLength:
+  Exclude:
+    - spec/**/*
+
 Metrics/BlockLength:
   Exclude:
     - spec/**/*

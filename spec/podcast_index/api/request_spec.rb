@@ -46,6 +46,7 @@ module PodcastIndex
               "Accept" => "*/*",
               "Accept-Encoding" => "gzip;q=1.0,deflate;q=0.6,identity;q=0.3",
               "Authorization" => "88f9e47ed7f0fb27aee876a772d0b2ae5486f890",
+              "Host" => "api.podcastindex.org",
               "User-Agent" => "ruby-nethttp-podcast-index/#{PodcastIndex::VERSION}",
               "X-Auth-Date" => "1672531200",
               "X-Auth-Key" => "123"
@@ -61,6 +62,47 @@ module PodcastIndex
           it "removes `nil` and `false` params" do
             TestService.get("/foo", param1: "bar", param2: false, param3: nil, param4: true)
             expect(a_request(:get, "https://api.podcastindex.org/api/1.0/foo?param1=bar&param4=true")).to have_been_made
+          end
+        end
+
+        describe "a POST request" do
+          subject(:response) { TestService.post("/foo/batch", %w[guid-1 guid-2]) }
+
+          before do
+            stub_request(:post, %r{/foo/batch}).to_return(status: 200, body: { status: "true" }.to_json)
+            travel_to(Time.new(2023, 1, 1, 0, 0, 0, "+00:00"))
+          end
+
+          after { travel_back }
+
+          let(:expected_headers) do
+            {
+              "Content-Type" => "application/json",
+              "X-Auth-Key" => "123",
+              "X-Auth-Date" => "1672531200",
+              "Authorization" => "88f9e47ed7f0fb27aee876a772d0b2ae5486f890"
+            }
+          end
+
+          it "sends the body as JSON with the auth headers" do
+            response
+            expect(WebMock).to have_requested(:post, "https://api.podcastindex.org/api/1.0/foo/batch")
+              .with(body: '["guid-1","guid-2"]', headers: expected_headers)
+          end
+
+          it "returns the response" do
+            expect(response.body).to eq({ status: "true" }.to_json)
+          end
+
+          context "when a 400 response is returned" do
+            before do
+              stub_request(:post, %r{/foo/batch})
+                .to_return(status: 400, body: { status: "false", description: "Invalid parameters" }.to_json)
+            end
+
+            it "raises an exception" do
+              expect { response }.to raise_error(PodcastIndex::Error, "Invalid parameters")
+            end
           end
         end
 

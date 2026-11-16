@@ -1,6 +1,7 @@
 require "ostruct"
 require "delegate"
 
+# rubocop:disable Metrics/ParameterLists
 module PodcastIndex
   class Episode < SimpleDelegator
     class << self
@@ -36,8 +37,9 @@ module PodcastIndex
 
     private
 
-      def find_all_by_feed_id(feed_id:, since: nil, max: nil, fulltext: nil)
-        response = Api::Episodes.by_feed_id(id: feed_id, since: since, max: max, fulltext: fulltext)
+      def find_all_by_feed_id(feed_id:, since: nil, max: nil, fulltext: nil, enclosure: nil, newest: nil)
+        response = Api::Episodes.by_feed_id(id: feed_id, since: since, max: max, fulltext: fulltext,
+                                            enclosure: enclosure, newest: newest)
         from_response_collection(response)
       end
 
@@ -51,8 +53,9 @@ module PodcastIndex
         from_response_collection(response)
       end
 
-      def find_by_guid(guid, feedurl: nil, feedid: nil, fulltext: nil)
-        response = Api::Episodes.by_guid(guid: guid, feedurl: feedurl, feedid: feedid, fulltext: fulltext)
+      def find_by_guid(guid, feedurl: nil, feedid: nil, podcastguid: nil, fulltext: nil)
+        response = Api::Episodes.by_guid(guid: guid, feedurl: feedurl, feedid: feedid, podcastguid: podcastguid,
+                                         fulltext: fulltext)
         from_response(response)
       end
 
@@ -61,8 +64,9 @@ module PodcastIndex
         from_response_collection(response)
       end
 
-      def find_all_by_itunes_id(itunes_id:, since: nil, max: nil, fulltext: nil)
-        response = Api::Episodes.by_itunes_id(id: itunes_id, since: since, max: max, fulltext: fulltext)
+      def find_all_by_itunes_id(itunes_id:, since: nil, max: nil, fulltext: nil, enclosure: nil)
+        response = Api::Episodes.by_itunes_id(id: itunes_id, since: since, max: max, fulltext: fulltext,
+                                              enclosure: enclosure)
         from_response_collection(response)
       end
 
@@ -92,3 +96,4 @@ module PodcastIndex
     end
   end
 end
+# rubocop:enable Metrics/ParameterLists

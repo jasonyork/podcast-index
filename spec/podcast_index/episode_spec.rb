@@ -48,7 +48,8 @@ RSpec.describe PodcastIndex::Episode do
         it "passes the options to the API" do
           described_class.find_by(attribute)
           expect(PodcastIndex::Api::Episodes).to have_received(:by_guid)
-            .with(guid: guid, feedurl: "http://mp3s.nashownotes.com/pc20rss.xml", feedid: 920666, fulltext: true)
+            .with(hash_including(guid: guid, feedurl: "http://mp3s.nashownotes.com/pc20rss.xml", feedid: 920666,
+                                 fulltext: true))
         end
       end
     end
@@ -64,6 +65,21 @@ RSpec.describe PodcastIndex::Episode do
       it "raises EpisodeNotFound" do
         expect { described_class.find_by(attribute) }
           .to raise_error(PodcastIndex::EpisodeNotFound, "No episodes found.")
+      end
+    end
+
+    context "with guid and the podcastguid option" do
+      let(:attribute) { { guid: "PC2084", podcastguid: "917393e3-1b1e-5cef-ace4-edaa54e1f810" } }
+      let(:response) { JSON.parse(file_fixture("episodes/by_guid_response.json").read) }
+
+      before do
+        allow(PodcastIndex::Api::Episodes).to receive(:by_guid).and_return(response)
+      end
+
+      it "passes the option to the API" do
+        described_class.find_by(attribute)
+        expect(PodcastIndex::Api::Episodes).to have_received(:by_guid)
+          .with(hash_including(guid: "PC2084", podcastguid: "917393e3-1b1e-5cef-ace4-edaa54e1f810"))
       end
     end
   end
@@ -187,6 +203,34 @@ RSpec.describe PodcastIndex::Episode do
 
       it "contains episodes" do
         expect(episodes.first.feed_title).to eq("Petites musiques d'une grande guerre")
+      end
+    end
+
+    context "with feed_id and the enclosure and newest options" do
+      let(:attributes) { { feed_id: [920666, 41504], enclosure: "https://example.com/ep.mp3", newest: true } }
+
+      before do
+        allow(PodcastIndex::Api::Episodes).to receive(:by_feed_id).and_return({ "items" => [] })
+      end
+
+      it "passes the options to the API" do
+        episodes
+        expect(PodcastIndex::Api::Episodes).to have_received(:by_feed_id)
+          .with(hash_including(id: [920666, 41504], enclosure: "https://example.com/ep.mp3", newest: true))
+      end
+    end
+
+    context "with itunes_id and the enclosure option" do
+      let(:attributes) { { itunes_id: 1441923632, enclosure: "https://example.com/ep.mp3" } }
+
+      before do
+        allow(PodcastIndex::Api::Episodes).to receive(:by_itunes_id).and_return({ "items" => [] })
+      end
+
+      it "passes the option to the API" do
+        episodes
+        expect(PodcastIndex::Api::Episodes).to have_received(:by_itunes_id)
+          .with(hash_including(id: 1441923632, enclosure: "https://example.com/ep.mp3"))
       end
     end
   end

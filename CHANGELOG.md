@@ -1,5 +1,7 @@
 ## [Unreleased]
 
+* Add `Podcast.where(guids: [...])` for batch lookup by podcast guid (`POST /podcasts/batch/byguid`)
+* Add `Value.where(episode_guids: { podcast_guid => [episode_guid, ...] })` for batch value lookup (`POST /value/batch/byepisodeguid`)
 * Add `Value.find_by(podcast_guid:)` and `Value.find_by(podcast_guid:, episode_guid:)`
 * Add `Podcast.where(new_value: true, max:, since:)` for feeds that recently added a value block
 * Add `PodcastIndex::RecordNotFound`, the parent class of `PodcastNotFound`, `EpisodeNotFound`, `ValueNotFound` and `CategoryNotFound`

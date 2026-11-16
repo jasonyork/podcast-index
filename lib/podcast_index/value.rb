@@ -1,8 +1,9 @@
-require "ostruct"
 require "delegate"
 
 module PodcastIndex
   class Value < SimpleDelegator
+    extend Model
+
     class << self
       FIND_ONE_ATTRIBUTES = %i[feed_id feed_url podcast_guid].freeze
       FIND_MANY_ATTRIBUTES = %i[episode_guids].freeze
@@ -10,20 +11,15 @@ module PodcastIndex
       def find_by(attributes)
         return find_by_episode_guid(**attributes.slice(:podcast_guid, :episode_guid)) if attributes.key?(:episode_guid)
 
-        match = (attributes.keys & FIND_ONE_ATTRIBUTES)
-        raise ArgumentError, "Must supply one of the attributes: #{FIND_ONE_ATTRIBUTES}" unless match.present?
-        raise ArgumentError, "Must supply only one of the attributes: #{FIND_ONE_ATTRIBUTES}" if match.length > 1
-
-        send("find_by_#{match.first}", attributes[match.first])
+        key = lookup_attribute(attributes, FIND_ONE_ATTRIBUTES)
+        send("find_by_#{key}", attributes[key])
       rescue PodcastIndex::RecordNotFound => e
         raise PodcastIndex::ValueNotFound, e.message
       end
 
       def where(attributes)
-        match = (attributes.keys & FIND_MANY_ATTRIBUTES)
-        raise ArgumentError, "Must supply one of the attributes: #{FIND_MANY_ATTRIBUTES}" unless match.present?
-
-        send("find_all_by_#{match.first}", **attributes)
+        key = lookup_attribute(attributes, FIND_MANY_ATTRIBUTES)
+        send("find_all_by_#{key}", **attributes)
       end
 
     private
@@ -33,7 +29,7 @@ module PodcastIndex
         response = Api::Value.batch_by_episode_guid(guids: episode_guids)
         # Each item wraps its value block with the episode's details; flatten them into one object. The API omits
         # "value" when nothing matches.
-        Array(response["value"]).map { |item| build(item.except("value").merge(item["value"])) }
+        build_all(Array(response["value"]).map { |item| item.except("value").merge(item["value"]) })
       end
 
       def find_by_feed_id(feed_id)
@@ -62,11 +58,6 @@ module PodcastIndex
         raise PodcastIndex::ValueNotFound, response["description"] if response["value"].blank?
 
         build(response["value"])
-      end
-
-      def build(attributes)
-        value = attributes.transform_keys(&:underscore)
-        new(JSON.parse(value.to_json, object_class: OpenStruct)) # rubocop:disable Style/OpenStructUse
       end
     end
   end

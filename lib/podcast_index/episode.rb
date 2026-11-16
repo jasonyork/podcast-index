@@ -1,9 +1,10 @@
-require "ostruct"
 require "delegate"
 
 # rubocop:disable Metrics/ParameterLists
 module PodcastIndex
   class Episode < SimpleDelegator
+    extend Model
+
     class << self
       FIND_ONE_ATTRIBUTES = %i[guid].freeze
       FIND_MANY_ATTRIBUTES = %i[feed_id feed_url podcast_guid live itunes_id person recent].freeze
@@ -16,27 +17,21 @@ module PodcastIndex
       end
 
       def find_by(attributes)
-        match = (attributes.keys & FIND_ONE_ATTRIBUTES)
-        raise ArgumentError, "Must supply one of the attributes: #{FIND_ONE_ATTRIBUTES}" unless match.present?
-        raise ArgumentError, "Must supply only one of the attributes: #{FIND_ONE_ATTRIBUTES}" if match.length > 1
-
-        send("find_by_#{match.first}", attributes[match.first], **attributes.except(match.first))
+        key = lookup_attribute(attributes, FIND_ONE_ATTRIBUTES)
+        send("find_by_#{key}", attributes[key], **attributes.except(key))
       rescue PodcastIndex::RecordNotFound => e
         raise PodcastIndex::EpisodeNotFound, e.message
       end
 
       def where(attributes)
-        match = (attributes.keys & FIND_MANY_ATTRIBUTES)
-        raise ArgumentError, "Must supply one of the attributes: #{FIND_MANY_ATTRIBUTES}" unless match.present?
-        raise ArgumentError, "Must supply only one of the attributes: #{FIND_MANY_ATTRIBUTES}" if match.length > 1
-
-        send("find_all_by_#{match.first}", **attributes)
+        key = lookup_attribute(attributes, FIND_MANY_ATTRIBUTES)
+        send("find_all_by_#{key}", **attributes)
       end
 
       def sample(max: nil, lang: nil, categories: [], exclude_categories: [], fulltext: nil)
         response = Api::Episodes.random(max: max, lang: lang, cat: categories.join(","),
                                         notcat: exclude_categories.join(","), fulltext: fulltext)
-        from_response_collection(response, "episodes")
+        build_all(response["episodes"])
       end
 
     private
@@ -44,17 +39,17 @@ module PodcastIndex
       def find_all_by_feed_id(feed_id:, since: nil, max: nil, fulltext: nil, enclosure: nil, newest: nil)
         response = Api::Episodes.by_feed_id(id: feed_id, since: since, max: max, fulltext: fulltext,
                                             enclosure: enclosure, newest: newest)
-        from_response_collection(response)
+        build_all(response["items"])
       end
 
       def find_all_by_feed_url(feed_url:, since: nil, max: nil, fulltext: nil)
         response = Api::Episodes.by_feed_url(url: feed_url, since: since, max: max, fulltext: fulltext)
-        from_response_collection(response)
+        build_all(response["items"])
       end
 
       def find_all_by_podcast_guid(podcast_guid:, since: nil, max: nil, fulltext: nil)
         response = Api::Episodes.by_podcast_guid(podcast_guid: podcast_guid, since: since, max: max, fulltext: fulltext)
-        from_response_collection(response)
+        build_all(response["items"])
       end
 
       def find_by_guid(guid, feedurl: nil, feedid: nil, podcastguid: nil, fulltext: nil)
@@ -65,37 +60,29 @@ module PodcastIndex
 
       def find_all_by_live(live:, max: nil) # rubocop:disable Lint/UnusedMethodArgument
         response = Api::Episodes.live(max: max)
-        from_response_collection(response)
+        build_all(response["items"])
       end
 
       def find_all_by_itunes_id(itunes_id:, since: nil, max: nil, fulltext: nil, enclosure: nil)
         response = Api::Episodes.by_itunes_id(id: itunes_id, since: since, max: max, fulltext: fulltext,
                                               enclosure: enclosure)
-        from_response_collection(response)
+        build_all(response["items"])
       end
 
       def find_all_by_person(person:, fulltext: nil, max: nil)
         response = Api::Search.by_person(person: person, fulltext: fulltext, max: max)
-        from_response_collection(response)
+        build_all(response["items"])
       end
 
       def find_all_by_recent(recent:, max: nil, exclude_string: nil, before: nil, fulltext: nil) # rubocop:disable Lint/UnusedMethodArgument
         response = Api::Recent.episodes(max: max, exclude_string: exclude_string, before: before, fulltext: fulltext)
-        from_response_collection(response)
+        build_all(response["items"])
       end
 
       def from_response(response)
         raise PodcastIndex::EpisodeNotFound, response["description"] if response["episode"].blank?
 
-        feed = response["episode"].transform_keys(&:underscore)
-        new(JSON.parse(feed.to_json, object_class: OpenStruct)) # rubocop:disable Style/OpenStructUse
-      end
-
-      def from_response_collection(response, collection_key = "items")
-        response[collection_key].map do |item|
-          episode = item.transform_keys(&:underscore)
-          new(JSON.parse(episode.to_json, object_class: OpenStruct)) # rubocop:disable Style/OpenStructUse
-        end
+        build(response["episode"])
       end
     end
   end

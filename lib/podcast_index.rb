@@ -4,6 +4,7 @@ require "active_support/core_ext/string/inflections"
 require "json"
 
 require_relative "podcast_index/api/request"
+require_relative "podcast_index/model"
 
 require_relative "podcast_index/api/categories"
 require_relative "podcast_index/api/episodes"

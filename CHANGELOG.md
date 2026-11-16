@@ -1,26 +1,29 @@
 ## [Unreleased]
 
+## [0.6.0] - 2026-11-16
+
 * BREAKING: Require Ruby 3.3 or later
-* Raise `PodcastIndex::Error` for network failures (timeouts, DNS errors, refused connections), with the original exception as its `cause`
-* Add `open_timeout` (default 10 seconds) and `read_timeout` (default 60 seconds) configuration options
-* Return `[]` instead of raising `NoMethodError` when a list response is missing its results key
+* Add `PodcastIndex::RecordNotFound`, the parent class of `PodcastNotFound`, `EpisodeNotFound`, `ValueNotFound` and `CategoryNotFound`
 * Add `Podcast.where(guids: [...])` for batch lookup by podcast guid (`POST /podcasts/batch/byguid`)
 * Add `Value.where(episode_guids: { podcast_guid => [episode_guid, ...] })` for batch value lookup (`POST /value/batch/byepisodeguid`)
 * Add `Value.find_by(podcast_guid:)` and `Value.find_by(podcast_guid:, episode_guid:)`
 * Add `Podcast.where(new_value: true, max:, since:)` for feeds that recently added a value block
-* Add `PodcastIndex::RecordNotFound`, the parent class of `PodcastNotFound`, `EpisodeNotFound`, `ValueNotFound` and `CategoryNotFound`
-* Raise `ValueNotFound` from `Value.find_by` and `PodcastNotFound` from `Podcast.find_by(feed_url:)` when the API answers a missing record with HTTP 400 (previously a generic `PodcastIndex::Error`)
 * Add `enclosure` and `newest` options to `Episode.where(feed_id:)`, and accept an array of feed ids
 * Add `enclosure` option to `Episode.where(itunes_id:)`
 * Add `podcastguid` option to `Episode.find_by(guid:)`
 * Add `similar` option to `Podcast.where(term:)` and `Podcast.where(title:)`
 * Add `max` and `start_at` options to `Podcast.where(tag:)`, and `max` to `Podcast.where(medium:)`
+* Add `open_timeout` (default 10 seconds) and `read_timeout` (default 60 seconds) configuration options
+* Raise `PodcastIndex::Error` for network failures (timeouts, DNS errors, refused connections), with the original exception as its `cause`
+* Return `[]` instead of raising `NoMethodError` when a list response is missing its results key
+* Raise `ValueNotFound` from `Value.find_by` and `PodcastNotFound` from `Podcast.find_by(feed_url:)` when the API answers a missing record with HTTP 400 (previously a generic `PodcastIndex::Error`)
 * Fix `Episode.find_by(guid:)` ignoring `feedurl`, `feedid` and `fulltext` options
 * Fix `Episode.where(recent: true, exclude_string:)` sending the wrong query parameter (now `excludeString`)
 * Raise `PodcastNotFound`, `EpisodeNotFound` or `ValueNotFound` instead of `NoMethodError` when `Podcast.find_by`, `Episode.find`, `Episode.find_by` or `Value.find_by` find no match
 * Add `ostruct` as a runtime dependency (no longer a default gem in Ruby 4.0)
 * Update RuboCop and move development dependencies to the Gemfile
 * Test against Ruby 3.3, 3.4 and 4.0 in CI
+* Add opt-in specs against the live API (`bundle exec rake spec:live`)
 
 ## [0.5.1] - 2026-01-30
 

@@ -16,3 +16,4 @@
 *.gem
 
 .DS_Store
+.env

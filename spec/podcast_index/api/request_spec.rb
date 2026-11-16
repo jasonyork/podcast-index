@@ -106,6 +106,64 @@ module PodcastIndex
           end
         end
 
+        describe "network failures" do
+          subject(:response) { TestService.get("/foo", param1: "bar") }
+
+          context "when the connection times out" do
+            before { stub_request(:get, %r{/foo}).to_timeout }
+
+            it "raises a PodcastIndex::Error" do
+              expect { response }.to raise_error(PodcastIndex::Error, /network error.*Net::OpenTimeout/)
+            end
+
+            it "keeps the original exception as the cause" do
+              expect { response }.to raise_error(an_object_having_attributes(cause: an_instance_of(Net::OpenTimeout)))
+            end
+          end
+
+          context "when the host cannot be resolved" do
+            before { stub_request(:get, %r{/foo}).to_raise(SocketError.new("getaddrinfo: nodename nor servname")) }
+
+            it "raises a PodcastIndex::Error" do
+              expect { response }.to raise_error(PodcastIndex::Error, /network error.*SocketError.*getaddrinfo/)
+            end
+          end
+
+          context "when the connection is refused" do
+            before { stub_request(:get, %r{/foo}).to_raise(Errno::ECONNREFUSED) }
+
+            it "raises a PodcastIndex::Error" do
+              expect { response }.to raise_error(PodcastIndex::Error, /network error.*Errno::ECONNREFUSED/)
+            end
+          end
+        end
+
+        describe "timeouts" do
+          before do
+            stub_request(:get, %r{/foo})
+            allow(Net::HTTP).to receive(:start).and_call_original
+          end
+
+          it "uses default open and read timeouts" do
+            TestService.get("/foo", {})
+            expect(Net::HTTP).to have_received(:start)
+              .with("api.podcastindex.org", 443, hash_including(open_timeout: 10, read_timeout: 60))
+          end
+
+          context "when timeouts are configured" do
+            before do
+              PodcastIndex.config.open_timeout = 2
+              PodcastIndex.config.read_timeout = 5
+            end
+
+            it "uses the configured timeouts" do
+              TestService.get("/foo", {})
+              expect(Net::HTTP).to have_received(:start)
+                .with("api.podcastindex.org", 443, hash_including(open_timeout: 2, read_timeout: 5))
+            end
+          end
+        end
+
         describe "response handling" do
           subject(:response) { TestService.get("/foo", param1: "bar") }
 

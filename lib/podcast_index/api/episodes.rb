@@ -1,3 +1,4 @@
+# rubocop:disable Metrics/ParameterLists
 module PodcastIndex
   module Api
     class Episodes
@@ -11,8 +12,9 @@ module PodcastIndex
         end
 
         # https://podcastindex-org.github.io/docs-api/#get-/episodes/byfeedid
-        def by_feed_id(id:, since: nil, max: nil, fulltext: nil)
-          response = get("/episodes/byfeedid", id: id, since: since, max: max, fulltext: fulltext)
+        def by_feed_id(id:, since: nil, max: nil, fulltext: nil, enclosure: nil, newest: nil)
+          response = get("/episodes/byfeedid", id: Array(id).join(","), since: since, max: max, fulltext: fulltext,
+                                               enclosure: enclosure, newest: newest)
           JSON.parse(response.body)
         end
 
@@ -29,14 +31,16 @@ module PodcastIndex
         end
 
         # https://podcastindex-org.github.io/docs-api/#get-/episodes/byguid
-        def by_guid(guid:, feedurl: nil, feedid: nil, fulltext: nil)
-          response = get("/episodes/byguid", guid: guid, feedurl: feedurl, feedid: feedid, fulltext: fulltext)
+        def by_guid(guid:, feedurl: nil, feedid: nil, podcastguid: nil, fulltext: nil)
+          response = get("/episodes/byguid", guid: guid, feedurl: feedurl, feedid: feedid, podcastguid: podcastguid,
+                                             fulltext: fulltext)
           JSON.parse(response.body)
         end
 
         # https://podcastindex-org.github.io/docs-api/#get-/episodes/byitunesid
-        def by_itunes_id(id:, since: nil, max: nil, fulltext: nil)
-          response = get("/episodes/byitunesid", id: id, since: since, max: max, fulltext: fulltext)
+        def by_itunes_id(id:, since: nil, max: nil, fulltext: nil, enclosure: nil)
+          response = get("/episodes/byitunesid", id: id, since: since, max: max, fulltext: fulltext,
+                                                 enclosure: enclosure)
           JSON.parse(response.body)
         end
 
@@ -55,3 +59,4 @@ module PodcastIndex
     end
   end
 end
+# rubocop:enable Metrics/ParameterLists

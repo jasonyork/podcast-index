@@ -249,5 +249,61 @@ RSpec.describe PodcastIndex::Podcast do
         expect(podcasts.first.id).to eq(830200)
       end
     end
+
+    context "with term and the similar option" do
+      let(:attributes) { { term: "no agenda", similar: true } }
+
+      before do
+        allow(PodcastIndex::Api::Search).to receive(:by_term).and_return({ "feeds" => [] })
+      end
+
+      it "passes the option to the API" do
+        podcasts
+        expect(PodcastIndex::Api::Search).to have_received(:by_term)
+          .with(hash_including(term: "no agenda", similar: true))
+      end
+    end
+
+    context "with title and the similar option" do
+      let(:attributes) { { title: "no agenda", similar: true } }
+
+      before do
+        allow(PodcastIndex::Api::Search).to receive(:by_title).and_return({ "feeds" => [] })
+      end
+
+      it "passes the option to the API" do
+        podcasts
+        expect(PodcastIndex::Api::Search).to have_received(:by_title)
+          .with(hash_including(title: "no agenda", similar: true))
+      end
+    end
+
+    context "with tag and the max and start_at options" do
+      let(:attributes) { { tag: "podcast-value", max: 10, start_at: 920666 } }
+
+      before do
+        allow(PodcastIndex::Api::Podcasts).to receive(:by_tag).and_return({ "feeds" => [] })
+      end
+
+      it "passes the options to the API" do
+        podcasts
+        expect(PodcastIndex::Api::Podcasts).to have_received(:by_tag)
+          .with(hash_including(tag: "podcast-value", max: 10, start_at: 920666))
+      end
+    end
+
+    context "with medium and the max option" do
+      let(:attributes) { { medium: "video", max: 10 } }
+
+      before do
+        allow(PodcastIndex::Api::Podcasts).to receive(:by_medium).and_return({ "feeds" => [] })
+      end
+
+      it "passes the option to the API" do
+        podcasts
+        expect(PodcastIndex::Api::Podcasts).to have_received(:by_medium)
+          .with(hash_including(medium: "video", max: 10))
+      end
+    end
   end
 end

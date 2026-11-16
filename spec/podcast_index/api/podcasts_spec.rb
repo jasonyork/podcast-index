@@ -123,6 +123,18 @@ RSpec.describe PodcastIndex::Api::Podcasts do
         expect(response["feeds"]).to eq []
       end
     end
+
+    context "with max and start_at" do
+      subject(:response) do
+        described_class.by_tag(tag: tag, max: 10, start_at: 920666)
+      end
+
+      it "sends the max and start_at parameters" do
+        response
+        expect(WebMock).to have_requested(:get, %r{/podcasts/bytag})
+          .with(query: hash_including("max" => "10", "start_at" => "920666"))
+      end
+    end
   end
 
   describe ".by_medium" do
@@ -147,6 +159,18 @@ RSpec.describe PodcastIndex::Api::Podcasts do
 
       it "returns an empty array for the feed" do
         expect(response["feeds"]).to eq []
+      end
+    end
+
+    context "with max" do
+      subject(:response) do
+        described_class.by_medium(medium: medium, max: 10)
+      end
+
+      it "sends the max parameter" do
+        response
+        expect(WebMock).to have_requested(:get, %r{/podcasts/bymedium})
+          .with(query: hash_including("max" => "10"))
       end
     end
   end

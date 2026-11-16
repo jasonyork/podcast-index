@@ -5,9 +5,9 @@ module PodcastIndex
       extend Request
 
       class << self
-        def by_term(term:, val: nil, aponly: nil, clean: nil, fulltext: nil, max: nil)
+        def by_term(term:, val: nil, aponly: nil, clean: nil, fulltext: nil, similar: nil, max: nil)
           response = get("/search/byterm", q: term, val: val, aponly: aponly, clean: clean, fulltext: fulltext,
-                                           max: max)
+                                           similar: similar, max: max)
           JSON.parse(response.body)
         end
 

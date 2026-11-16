@@ -21,6 +21,18 @@ RSpec.describe PodcastIndex::Api::Search do
         expect(result["feeds"]).to eq []
       end
     end
+
+    context "with similar" do
+      subject(:result) do
+        described_class.by_term(term: term, similar: true)
+      end
+
+      it "sends the similar parameter" do
+        result
+        expect(WebMock).to have_requested(:get, %r{/search/byterm})
+          .with(query: hash_including("similar" => "true"))
+      end
+    end
   end
 
   describe ".by_title" do

@@ -49,6 +49,30 @@ RSpec.describe PodcastIndex::Api::Episodes do
         expect(response["items"]).to eq []
       end
     end
+
+    context "with multiple feed ids" do
+      subject(:response) do
+        described_class.by_feed_id(id: [920666, 41504])
+      end
+
+      it "sends them as a comma-separated list" do
+        response
+        expect(WebMock).to have_requested(:get, %r{/episodes/byfeedid})
+          .with(query: hash_including("id" => "920666,41504"))
+      end
+    end
+
+    context "with enclosure and newest" do
+      subject(:response) do
+        described_class.by_feed_id(id: feed_id, enclosure: "https://example.com/ep.mp3", newest: true)
+      end
+
+      it "sends the enclosure and newest parameters" do
+        response
+        expect(WebMock).to have_requested(:get, %r{/episodes/byfeedid})
+          .with(query: hash_including("enclosure" => "https://example.com/ep.mp3", "newest" => "true"))
+      end
+    end
   end
 
   describe ".by_feed_url" do
@@ -125,6 +149,18 @@ RSpec.describe PodcastIndex::Api::Episodes do
         expect(response["episode"]).to eq []
       end
     end
+
+    context "with podcastguid" do
+      subject(:response) do
+        described_class.by_guid(guid: guid, podcastguid: "917393e3-1b1e-5cef-ace4-edaa54e1f810")
+      end
+
+      it "sends the podcastguid parameter" do
+        response
+        expect(WebMock).to have_requested(:get, %r{/episodes/byguid})
+          .with(query: hash_including("podcastguid" => "917393e3-1b1e-5cef-ace4-edaa54e1f810"))
+      end
+    end
   end
 
   describe ".by_itunes_id" do
@@ -150,6 +186,18 @@ RSpec.describe PodcastIndex::Api::Episodes do
 
       it "returns an empty array for the items" do
         expect(response["items"]).to eq []
+      end
+    end
+
+    context "with enclosure" do
+      subject(:response) do
+        described_class.by_itunes_id(id: itunes_id, enclosure: "https://example.com/ep.mp3")
+      end
+
+      it "sends the enclosure parameter" do
+        response
+        expect(WebMock).to have_requested(:get, %r{/episodes/byitunesid})
+          .with(query: hash_including("enclosure" => "https://example.com/ep.mp3"))
       end
     end
   end

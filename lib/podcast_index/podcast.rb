@@ -48,8 +48,8 @@ module PodcastIndex
         from_response(response)
       end
 
-      def find_all_by_tag(tag:)
-        response = Api::Podcasts.by_tag(tag: tag)
+      def find_all_by_tag(tag:, max: nil, start_at: nil)
+        response = Api::Podcasts.by_tag(tag: tag, max: max, start_at: start_at)
         from_response_collection(response)
       end
 
@@ -59,8 +59,8 @@ module PodcastIndex
         from_response_collection(response)
       end
 
-      def find_all_by_medium(medium:)
-        response = Api::Podcasts.by_medium(medium: medium)
+      def find_all_by_medium(medium:, max: nil)
+        response = Api::Podcasts.by_medium(medium: medium, max: max)
         from_response_collection(response)
       end
 
@@ -75,13 +75,15 @@ module PodcastIndex
         from_response_collection(response)
       end
 
-      def find_all_by_term(term:, val: nil, aponly: nil, clean: nil, fulltext: nil, max: nil)
-        response = Api::Search.by_term(term: term, val: val, aponly: aponly, clean: clean, fulltext: fulltext, max: max)
+      def find_all_by_term(term:, val: nil, aponly: nil, clean: nil, fulltext: nil, similar: nil, max: nil)
+        response = Api::Search.by_term(term: term, val: val, aponly: aponly, clean: clean, fulltext: fulltext,
+                                       similar: similar, max: max)
         from_response_collection(response)
       end
 
-      def find_all_by_title(title:, val: nil, clean: nil, fulltext: nil, max: nil)
-        response = Api::Search.by_title(title: title, val: val, clean: clean, fulltext: fulltext, max: max)
+      def find_all_by_title(title:, val: nil, clean: nil, fulltext: nil, similar: nil, max: nil)
+        response = Api::Search.by_title(title: title, val: val, clean: clean, fulltext: fulltext, similar: similar,
+                                        max: max)
         from_response_collection(response)
       end
 

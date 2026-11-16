@@ -24,14 +24,13 @@ module PodcastIndex
           JSON.parse(response.body)
         end
 
-        def by_tag(tag:)
-          params = {}.tap { |p| p[tag] = true }
-          response = get("/podcasts/bytag", params)
+        def by_tag(tag:, max: nil, start_at: nil)
+          response = get("/podcasts/bytag", { tag => true, max: max, start_at: start_at })
           JSON.parse(response.body)
         end
 
-        def by_medium(medium:)
-          response = get("/podcasts/bymedium", medium: medium)
+        def by_medium(medium:, max: nil)
+          response = get("/podcasts/bymedium", medium: medium, max: max)
           JSON.parse(response.body)
         end
 

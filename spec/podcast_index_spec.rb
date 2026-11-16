@@ -1,4 +1,13 @@
 RSpec.describe PodcastIndex do
+  describe "not-found errors" do
+    it "are RecordNotFound errors" do
+      [PodcastIndex::PodcastNotFound, PodcastIndex::EpisodeNotFound, PodcastIndex::ValueNotFound,
+       PodcastIndex::CategoryNotFound].each do |klass|
+        expect(klass.ancestors).to include(PodcastIndex::RecordNotFound, PodcastIndex::Error)
+      end
+    end
+  end
+
   it "has a version number" do
     expect(PodcastIndex::VERSION).not_to be_nil
   end

@@ -54,5 +54,18 @@ RSpec.describe PodcastIndex::Value do
         expect { value }.to raise_error(PodcastIndex::ValueNotFound, "No value block found.")
       end
     end
+
+    context "when the API responds that the feed has no value block" do
+      let(:attribute) { { feed_url: "https://example.com/feed.xml" } }
+
+      before do
+        allow(PodcastIndex::Api::Value).to receive(:by_feed_url)
+          .and_raise(PodcastIndex::RecordNotFound, "This feed has no value block.")
+      end
+
+      it "raises ValueNotFound" do
+        expect { value }.to raise_error(PodcastIndex::ValueNotFound, "This feed has no value block.")
+      end
+    end
   end
 end

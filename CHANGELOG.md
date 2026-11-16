@@ -1,5 +1,9 @@
 ## [Unreleased]
 
+* Add `ostruct` as a runtime dependency (no longer a default gem in Ruby 4.0)
+* Update RuboCop and move development dependencies to the Gemfile
+* Test against Ruby 3.2, 3.3, 3.4 and 4.0 in CI
+
 ## [0.5.1] - 2026-01-30
 
 * Remove dependency on ActiveSupport::Configurable
@@ -20,7 +24,6 @@
 
 ## [0.2.1] - 2023-07-06
 
-* Raise exception when `Podcast.find` returns no result ([#6](https://github.com/jasonyork/podcast-index/issues/6))
 
 ## [0.2.0] - 2023-04-24
 

@@ -29,13 +29,5 @@ Gem::Specification.new do |spec|
 
   spec.add_dependency "activesupport"
   spec.add_dependency "addressable"
-
-  spec.add_development_dependency "codecov"
-  spec.add_development_dependency "debug"
-  spec.add_development_dependency "rspec-core"
-  spec.add_development_dependency "rspec-its"
-  spec.add_development_dependency "rubocop-performance"
-  spec.add_development_dependency "rubocop-rake"
-  spec.add_development_dependency "rubocop-rspec"
-  spec.add_development_dependency "webmock"
+  spec.add_dependency "ostruct"
 end

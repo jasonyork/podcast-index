@@ -20,6 +20,11 @@ module PodcastIndex
           JSON.parse(response.body)
         end
 
+        def new_value_feeds(max: nil, since: nil)
+          response = get("/recent/newvaluefeeds", max: max, since: since)
+          JSON.parse(response.body)
+        end
+
         def data(max: nil, since: nil)
           response = get("/recent/data", max: max, since: since)
           JSON.parse(response.body)

@@ -319,5 +319,19 @@ RSpec.describe PodcastIndex::Podcast do
           .with(hash_including(medium: "video", max: 10))
       end
     end
+
+    context "with new_value attribute" do
+      let(:attributes) { { new_value: true, max: 3, since: 1763326452 } }
+      let(:response) { JSON.parse(file_fixture("recent/new_value_feeds_response.json").read) }
+
+      before do
+        allow(PodcastIndex::Api::Recent).to receive(:new_value_feeds).with(max: 3, since: 1763326452)
+                                                                     .and_return(response)
+      end
+
+      it "contains podcasts" do
+        expect(podcasts.first.id).to eq 8000732
+      end
+    end
   end
 end

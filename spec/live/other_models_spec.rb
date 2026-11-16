@@ -11,6 +11,28 @@ RSpec.describe "Live API: Value, Soundbite, Category and Stats", :live do # rubo
       expect(PodcastIndex::Value.find_by(feed_url: url).destinations).not_to be_empty
     end
 
+    it "finds by podcast_guid" do
+      guid = PodcastIndex::Podcast.find(feed_id).podcast_guid
+      expect(PodcastIndex::Value.find_by(podcast_guid: guid).destinations).not_to be_empty
+    end
+
+    it "finds by podcast_guid and episode_guid" do
+      guid = PodcastIndex::Podcast.find(feed_id).podcast_guid
+      episode = PodcastIndex::Episode.where(feed_id: feed_id, max: 1).first
+      expect(PodcastIndex::Value.find_by(podcast_guid: guid, episode_guid: episode.guid).title).to eq episode.title
+    end
+
+    it "raises ValueNotFound for an unknown podcast_guid" do
+      expect { PodcastIndex::Value.find_by(podcast_guid: "6b1f6a2e-3c1d-4f7e-9a2b-1c2d3e4f5a6b") }
+        .to raise_error(PodcastIndex::ValueNotFound)
+    end
+
+    it "raises ValueNotFound for an unknown episode_guid" do
+      guid = PodcastIndex::Podcast.find(feed_id).podcast_guid
+      expect { PodcastIndex::Value.find_by(podcast_guid: guid, episode_guid: "no-such-episode") }
+        .to raise_error(PodcastIndex::ValueNotFound)
+    end
+
     it "raises ValueNotFound for a feed without a value block" do
       expect { PodcastIndex::Value.find_by(feed_id: 999_999_999) }.to raise_error(PodcastIndex::ValueNotFound)
     end

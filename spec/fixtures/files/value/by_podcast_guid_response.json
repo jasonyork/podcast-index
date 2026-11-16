@@ -1,0 +1,54 @@
+{
+  "status": "true",
+  "query": {
+    "id": 920666
+  },
+  "value": {
+    "model": {
+      "type": "lightning",
+      "method": "keysend",
+      "suggested": "0.00000005000"
+    },
+    "destinations": [
+      {
+        "name": "Podcastindex.org",
+        "type": "lnaddress",
+        "address": "podcastindex@getalby.com",
+        "split": 93
+      },
+      {
+        "name": "Dreb Scott (Chapters)",
+        "type": "lnaddress",
+        "address": "drebscott@getalby.com",
+        "split": 5
+      },
+      {
+        "name": "IPFSPodcasting.net",
+        "type": "node",
+        "address": "028eb5be336f7fdf2a4e40c57ff55d3d5d71277bb4197ea14957f756bff249e623",
+        "split": 5,
+        "fee": true
+      },
+      {
+        "name": "Sovereign Feeds",
+        "type": "node",
+        "address": "035ad2c954e264004986da2d9499e1732e5175e1dcef2453c921c6cdcc3536e9d8",
+        "split": 5,
+        "fee": true
+      },
+      {
+        "name": "Boostagram Monitor",
+        "type": "lnaddress",
+        "address": "adam@getalby.com",
+        "split": 1
+      },
+      {
+        "name": "Fountain Boost Bot",
+        "type": "lnaddress",
+        "address": "boostbot@fountain.fm",
+        "split": 1
+      }
+    ]
+  },
+  "description": "Found."
+}

@@ -124,4 +124,25 @@ RSpec.describe PodcastIndex::Api::Recent do
       end
     end
   end
+
+  describe ".new_value_feeds" do
+    subject(:result) { described_class.new_value_feeds(max: 3, since: 1763326452) }
+
+    let(:fixture) { file_fixture("recent/new_value_feeds_response.json").read }
+
+    before do
+      stub_request(:get, %r{/recent/newvaluefeeds})
+        .to_return(body: fixture, status: 200)
+    end
+
+    it "sends the max and since parameters" do
+      result
+      expect(WebMock).to have_requested(:get, %r{/recent/newvaluefeeds})
+        .with(query: { "max" => "3", "since" => "1763326452" })
+    end
+
+    it "returns the feeds" do
+      expect(result["feeds"].size).to eq 3
+    end
+  end
 end

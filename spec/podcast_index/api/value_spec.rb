@@ -54,4 +54,48 @@ RSpec.describe PodcastIndex::Api::Value do
       end
     end
   end
+
+  describe ".by_podcast_guid" do
+    subject(:result) { described_class.by_podcast_guid(guid: "917393e3-1b1e-5cef-ace4-edaa54e1f810") }
+
+    let(:fixture) { file_fixture("value/by_podcast_guid_response.json").read }
+
+    before do
+      stub_request(:get, %r{/value/bypodcastguid})
+        .to_return(body: fixture, status: 200)
+    end
+
+    it "sends the guid parameter" do
+      result
+      expect(WebMock).to have_requested(:get, %r{/value/bypodcastguid})
+        .with(query: { "guid" => "917393e3-1b1e-5cef-ace4-edaa54e1f810" })
+    end
+
+    it "contains the destination name" do
+      expect(result["value"]["destinations"][0]["name"]).to eq "Podcastindex.org"
+    end
+  end
+
+  describe ".by_episode_guid" do
+    subject(:result) do
+      described_class.by_episode_guid(podcast_guid: "917393e3-1b1e-5cef-ace4-edaa54e1f810", episode_guid: "PC20-278")
+    end
+
+    let(:fixture) { file_fixture("value/by_episode_guid_response.json").read }
+
+    before do
+      stub_request(:get, %r{/value/byepisodeguid})
+        .to_return(body: fixture, status: 200)
+    end
+
+    it "sends the podcastguid and episodeguid parameters" do
+      result
+      expect(WebMock).to have_requested(:get, %r{/value/byepisodeguid})
+        .with(query: { "podcastguid" => "917393e3-1b1e-5cef-ace4-edaa54e1f810", "episodeguid" => "PC20-278" })
+    end
+
+    it "contains the episode title" do
+      expect(result["value"]["title"]).to eq 'Episode 278: "1 Billion Tokens!"'
+    end
+  end
 end

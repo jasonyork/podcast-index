@@ -1,12 +1,12 @@
 require "ostruct"
 require "delegate"
 
-# rubocop:disable Metrics/ParameterLists, Lint/UnusedMethodArgument
+# rubocop:disable Metrics/ParameterLists, Metrics/ClassLength, Lint/UnusedMethodArgument
 module PodcastIndex
   class Podcast < SimpleDelegator
     class << self
       FIND_ONE_ATTRIBUTES = %i[feed_url guid itunes_id].freeze
-      FIND_MANY_ATTRIBUTES = %i[tag medium term title trending dead recent new newly_found].freeze
+      FIND_MANY_ATTRIBUTES = %i[tag medium term title trending dead recent new new_value newly_found].freeze
 
       def find(id)
         response = Api::Podcasts.by_feed_id(id: id)
@@ -102,6 +102,11 @@ module PodcastIndex
         from_response_collection(response)
       end
 
+      def find_all_by_new_value(new_value:, max: nil, since: nil)
+        response = Api::Recent.new_value_feeds(max: max, since: since)
+        from_response_collection(response)
+      end
+
       def find_all_by_newly_found(newly_found:, max: nil, since: nil)
         response = Api::Recent.data(max: max, since: since)
         # This one has a bit of an oddball response.  It's nested in a "data" attribute and all the keys
@@ -128,4 +133,4 @@ module PodcastIndex
     end
   end
 end
-# rubocop:enable Metrics/ParameterLists, Lint/UnusedMethodArgument
+# rubocop:enable Metrics/ParameterLists, Metrics/ClassLength, Lint/UnusedMethodArgument

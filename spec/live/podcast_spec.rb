@@ -70,6 +70,10 @@ RSpec.describe "Live API: Podcast", :live do # rubocop:disable RSpec/DescribeCla
       expect(PodcastIndex::Podcast.where(new: true, max: 5).size).to be_between(1, 5)
     end
 
+    it "finds podcasts that recently added a value block" do
+      expect(PodcastIndex::Podcast.where(new_value: true, max: 3).size).to be_between(1, 3)
+    end
+
     it "finds newly found podcasts" do
       expect(PodcastIndex::Podcast.where(newly_found: true, max: 5).size).to be_between(1, 5)
     end

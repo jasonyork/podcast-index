@@ -13,6 +13,16 @@ module PodcastIndex
           response = get("/value/byfeedurl", url: url)
           JSON.parse(response.body)
         end
+
+        def by_podcast_guid(guid:)
+          response = get("/value/bypodcastguid", guid: guid)
+          JSON.parse(response.body)
+        end
+
+        def by_episode_guid(podcast_guid:, episode_guid:)
+          response = get("/value/byepisodeguid", podcastguid: podcast_guid, episodeguid: episode_guid)
+          JSON.parse(response.body)
+        end
       end
     end
   end

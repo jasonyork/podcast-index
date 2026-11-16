@@ -1,5 +1,9 @@
 ## [Unreleased]
 
+* BREAKING: Require Ruby 3.3 or later
+* Raise `PodcastIndex::Error` for network failures (timeouts, DNS errors, refused connections), with the original exception as its `cause`
+* Add `open_timeout` (default 10 seconds) and `read_timeout` (default 60 seconds) configuration options
+* Return `[]` instead of raising `NoMethodError` when a list response is missing its results key
 * Add `Podcast.where(guids: [...])` for batch lookup by podcast guid (`POST /podcasts/batch/byguid`)
 * Add `Value.where(episode_guids: { podcast_guid => [episode_guid, ...] })` for batch value lookup (`POST /value/batch/byepisodeguid`)
 * Add `Value.find_by(podcast_guid:)` and `Value.find_by(podcast_guid:, episode_guid:)`

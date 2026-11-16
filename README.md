@@ -120,7 +120,7 @@ Podcast.find_by(feed_url)
 Podcast.find_by(guid)
 Podcast.find_by(itunes_id)
 Podcast.where(tag:, max: nil, start_at: nil)
-Podcast.where(medium:, max: nil)
+Podcast.where(medium:, max: nil) # the API currently ignores max for this endpoint
 # Additional parameters only for searching with "music" medium
 Podcast.where(medium: "music", term:, val: nil, aponly: nil, clean: nil, fulltext: nil, max: nil)
 Podcast.where(term:, val: nil, aponly: nil, clean: nil, fulltext: nil, similar: nil, max: nil)

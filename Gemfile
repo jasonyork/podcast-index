@@ -4,6 +4,7 @@ source "https://rubygems.org"
 gemspec
 
 gem "debug"
+gem "dotenv"
 gem "rake"
 gem "rspec"
 gem "rspec-its"

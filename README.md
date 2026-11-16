@@ -172,10 +172,10 @@ The default test run never touches the network. To also run the specs in `spec/l
 
 ```
 API_KEY=<your api key>
-API_SECRET=<your api secret>
+API_SECRET='<your api secret>'
 ```
 
-Then run `bundle exec rake spec:live`. Values are read literally, so a secret containing `$` needs no quoting. Variables already set in the environment take precedence.
+Then run `bundle exec rake spec:live`. The file is loaded with [dotenv](https://github.com/bkeepers/dotenv), which expands `$` in unquoted and double-quoted values, so keep the secret in single quotes if it contains `$`. Variables already set in the environment take precedence.
 
 To install this gem onto your local machine, run `bundle exec rake install`.
 

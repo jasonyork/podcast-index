@@ -5,6 +5,10 @@ require "net/http"
 module PodcastIndex
   module Api
     module Request
+      # The API answers some lookups for a missing record with HTTP 400 rather than an empty result. It also uses
+      # 400 for invalid requests, so the description is the only way to tell them apart.
+      NOT_FOUND_DESCRIPTION = /not found|has no value block/i
+
       def get(path, params)
         template = Addressable::Template.new("#{base_url}#{path}{?query*}")
         uri = template.expand(query: sanitized_params(params))
@@ -31,12 +35,20 @@ module PodcastIndex
       def handle_response(response)
         return response if response.is_a? Net::HTTPSuccess
 
-        message = begin
-          JSON.parse(response.body)["description"]
-        rescue JSON::ParserError
-          response.body.strip.present? ? response.body : response.message
-        end
+        message = error_message(response)
+        raise PodcastIndex::RecordNotFound, message if not_found?(response, message)
+
         raise PodcastIndex::Error, message
+      end
+
+      def error_message(response)
+        JSON.parse(response.body)["description"]
+      rescue JSON::ParserError
+        response.body.strip.present? ? response.body : response.message
+      end
+
+      def not_found?(response, message)
+        %w[400 404].include?(response.code) && message.to_s.match?(NOT_FOUND_DESCRIPTION)
       end
 
       def base_url

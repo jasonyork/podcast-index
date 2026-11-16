@@ -83,6 +83,20 @@ RSpec.describe PodcastIndex::Podcast do
           .to raise_error(PodcastIndex::PodcastNotFound, "No feeds match this guid.")
       end
     end
+
+    context "when the API responds that the feed url was not found" do
+      let(:attribute) { { feed_url: "https://example.com/missing.xml" } }
+
+      before do
+        allow(PodcastIndex::Api::Podcasts).to receive(:by_feed_url)
+          .and_raise(PodcastIndex::RecordNotFound, "Feed url not found.")
+      end
+
+      it "raises PodcastNotFound" do
+        expect { described_class.find_by(attribute) }
+          .to raise_error(PodcastIndex::PodcastNotFound, "Feed url not found.")
+      end
+    end
   end
 
   describe ".where" do

@@ -70,7 +70,7 @@ rescue PodcastIndex::PodcastNotFound
 end
 ```
 
-Single-record lookups raise `PodcastIndex::PodcastNotFound`, `PodcastIndex::EpisodeNotFound` or `PodcastIndex::ValueNotFound` (all subclasses of `PodcastIndex::Error`) when nothing matches.
+Single-record lookups (`find` and `find_by`) raise `PodcastIndex::PodcastNotFound`, `PodcastIndex::EpisodeNotFound` or `PodcastIndex::ValueNotFound` when nothing matches. These, and `PodcastIndex::CategoryNotFound`, are subclasses of `PodcastIndex::RecordNotFound`, which is itself a `PodcastIndex::Error`, so you can rescue a specific error or all of them.
 
 Find an episode by guid:
 

@@ -75,6 +75,26 @@ module PodcastIndex
             it "raises an exception" do
               expect { response }.to raise_error(PodcastIndex::Error, "Invalid parameters")
             end
+
+            it "does not treat it as a missing record" do
+              expect { response }.to raise_error(an_instance_of(PodcastIndex::Error))
+            end
+
+            context "when the description says the feed was not found" do
+              let(:response_body) { { status: "false", description: "Feed url not found." } }
+
+              it "raises RecordNotFound" do
+                expect { response }.to raise_error(PodcastIndex::RecordNotFound, "Feed url not found.")
+              end
+            end
+
+            context "when the description says the feed has no value block" do
+              let(:response_body) { { status: "false", value: [], description: "This feed has no value block." } }
+
+              it "raises RecordNotFound" do
+                expect { response }.to raise_error(PodcastIndex::RecordNotFound, "This feed has no value block.")
+              end
+            end
           end
 
           context "when a 401 response is returned" do

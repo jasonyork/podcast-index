@@ -12,7 +12,6 @@ RSpec.describe "Live API: Value, Soundbite, Category and Stats", :live do # rubo
     end
 
     it "raises ValueNotFound for a feed without a value block" do
-      pending "The API answers HTTP 400 \"This feed has no value block.\", which raises a generic PodcastIndex::Error"
       expect { PodcastIndex::Value.find_by(feed_id: 999_999_999) }.to raise_error(PodcastIndex::ValueNotFound)
     end
   end

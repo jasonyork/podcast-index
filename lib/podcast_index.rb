@@ -21,10 +21,11 @@ require_relative "podcast_index/value"
 
 module PodcastIndex
   class Error < StandardError; end
-  class PodcastNotFound < Error; end
-  class CategoryNotFound < Error; end
-  class EpisodeNotFound < Error; end
-  class ValueNotFound < Error; end
+  class RecordNotFound < Error; end
+  class PodcastNotFound < RecordNotFound; end
+  class CategoryNotFound < RecordNotFound; end
+  class EpisodeNotFound < RecordNotFound; end
+  class ValueNotFound < RecordNotFound; end
 
   def self.configure
     config.base_url = "https://api.podcastindex.org/api/1.0".freeze

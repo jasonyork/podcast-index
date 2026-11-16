@@ -11,6 +11,8 @@ module PodcastIndex
       def find(id, fulltext: nil)
         response = Api::Episodes.by_id(id: id, fulltext: fulltext)
         from_response(response)
+      rescue PodcastIndex::RecordNotFound => e
+        raise PodcastIndex::EpisodeNotFound, e.message
       end
 
       def find_by(attributes)
@@ -19,6 +21,8 @@ module PodcastIndex
         raise ArgumentError, "Must supply only one of the attributes: #{FIND_ONE_ATTRIBUTES}" if match.length > 1
 
         send("find_by_#{match.first}", attributes[match.first], **attributes.except(match.first))
+      rescue PodcastIndex::RecordNotFound => e
+        raise PodcastIndex::EpisodeNotFound, e.message
       end
 
       def where(attributes)

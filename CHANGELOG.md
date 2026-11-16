@@ -1,5 +1,7 @@
 ## [Unreleased]
 
+* Add `PodcastIndex::RecordNotFound`, the parent class of `PodcastNotFound`, `EpisodeNotFound`, `ValueNotFound` and `CategoryNotFound`
+* Raise `ValueNotFound` from `Value.find_by` and `PodcastNotFound` from `Podcast.find_by(feed_url:)` when the API answers a missing record with HTTP 400 (previously a generic `PodcastIndex::Error`)
 * Add `enclosure` and `newest` options to `Episode.where(feed_id:)`, and accept an array of feed ids
 * Add `enclosure` option to `Episode.where(itunes_id:)`
 * Add `podcastguid` option to `Episode.find_by(guid:)`

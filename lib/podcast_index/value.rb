@@ -12,6 +12,8 @@ module PodcastIndex
         raise ArgumentError, "Must supply only one of the attributes: #{FIND_ONE_ATTRIBUTES}" if match.length > 1
 
         send("find_by_#{match.first}", attributes[match.first])
+      rescue PodcastIndex::RecordNotFound => e
+        raise PodcastIndex::ValueNotFound, e.message
       end
 
     private

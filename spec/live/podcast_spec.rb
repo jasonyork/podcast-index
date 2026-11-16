@@ -32,7 +32,6 @@ RSpec.describe "Live API: Podcast", :live do # rubocop:disable RSpec/DescribeCla
     end
 
     it "raises PodcastNotFound for an unknown feed_url" do
-      pending "The API answers HTTP 400 \"Feed url not found.\", which raises a generic PodcastIndex::Error"
       expect { PodcastIndex::Podcast.find_by(feed_url: "https://example.invalid/no-feed.xml") }
         .to raise_error(PodcastIndex::PodcastNotFound)
     end

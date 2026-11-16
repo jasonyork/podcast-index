@@ -82,6 +82,20 @@ RSpec.describe PodcastIndex::Episode do
           .with(hash_including(guid: "PC2084", podcastguid: "917393e3-1b1e-5cef-ace4-edaa54e1f810"))
       end
     end
+
+    context "when the API responds that the feed url was not found" do
+      let(:attribute) { { guid: "PC2084", feedurl: "https://example.com/missing.xml" } }
+
+      before do
+        allow(PodcastIndex::Api::Episodes).to receive(:by_guid)
+          .and_raise(PodcastIndex::RecordNotFound, "Feed url not found.")
+      end
+
+      it "raises EpisodeNotFound" do
+        expect { described_class.find_by(attribute) }
+          .to raise_error(PodcastIndex::EpisodeNotFound, "Feed url not found.")
+      end
+    end
   end
 
   describe ".where" do

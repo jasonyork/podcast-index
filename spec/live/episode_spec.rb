@@ -22,6 +22,11 @@ RSpec.describe "Live API: Episode", :live do # rubocop:disable RSpec/DescribeCla
       expect(PodcastIndex::Episode.find_by(guid: episode.guid, feedurl: podcast.url).id).to eq episode.id
     end
 
+    it "raises a plain Error, not EpisodeNotFound, when no feed is given" do
+      expect { PodcastIndex::Episode.find_by(guid: episode.guid) }
+        .to raise_error(an_instance_of(PodcastIndex::Error), /requires either a valid/)
+    end
+
     it "raises EpisodeNotFound for an unknown guid" do
       expect { PodcastIndex::Episode.find_by(guid: "no-such-guid-#{Time.now.to_i}", feedid: feed_id) }
         .to raise_error(PodcastIndex::EpisodeNotFound)

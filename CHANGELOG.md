@@ -5,7 +5,7 @@
 * Raise `PodcastNotFound`, `EpisodeNotFound` or `ValueNotFound` instead of `NoMethodError` when `Podcast.find_by`, `Episode.find`, `Episode.find_by` or `Value.find_by` find no match
 * Add `ostruct` as a runtime dependency (no longer a default gem in Ruby 4.0)
 * Update RuboCop and move development dependencies to the Gemfile
-* Test against Ruby 3.2, 3.3, 3.4 and 4.0 in CI
+* Test against Ruby 3.3, 3.4 and 4.0 in CI
 
 ## [0.5.1] - 2026-01-30
 

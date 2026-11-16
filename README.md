@@ -129,14 +129,17 @@ Podcast.where(trending: true, max: nil, since: nil, lang: nil, categories: [], e
 Podcast.where(dead: true)
 Podcast.where(recent: true, max: nil, since: nil, lang: nil, categories: [], exclude_categories: [])
 Podcast.where(new: true, max: nil, since: nil, feedid: nil, desc: nil)
+Podcast.where(new_value: true, max: nil, since: nil) # feeds that recently added a value block
 Podcast.where(newly_found: true, max: nil, since: nil)
 
 # Soundbite
 Soundbite.where(recent: true, max: nil)
 
 # Value
-Value.find_by(feed_id)
-Value.find_by(feed_url)
+Value.find_by(feed_id:)
+Value.find_by(feed_url:)
+Value.find_by(podcast_guid:)
+Value.find_by(podcast_guid:, episode_guid:) # value block for one episode
 
 # Category
 Category.all

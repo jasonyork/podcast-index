@@ -1,0 +1,63 @@
+{
+  "status": "true",
+  "feeds": [
+    {
+      "id": 8000732,
+      "url": "https://feed.podbean.com/ThomasFreeMe/feed.xml",
+      "title": "The Thomas FreeMe Show: Why We Do What ”WE” Do & How ”WE” Change",
+      "author": "Thomas FreeMe",
+      "image": "https://media.rss.com/the-thomas-freeme-show/podcast_cover_20261116_150809_b74b7c038124b49c3cd4a5ab247a7370.jpg",
+      "newestItemPublishTime": 1791504811,
+      "itunesId": 1798690813,
+      "trendScore": 9,
+      "language": "en",
+      "categories": {
+        "29": "Health",
+        "30": "Fitness",
+        "33": "Mental",
+        "77": "Society",
+        "78": "Culture",
+        "80": "Personal",
+        "81": "Journals"
+      }
+    },
+    {
+      "id": 8117977,
+      "url": "https://media.rss.com/the-thomas-freeme-show/feed.xml",
+      "title": "The Thomas FreeMe Show: Why We Do What ”WE” Do & How ”WE” Change",
+      "author": "Thomas FreeMe",
+      "image": "https://media.rss.com/the-thomas-freeme-show/podcast_cover_20261116_150809_b74b7c038124b49c3cd4a5ab247a7370.jpg",
+      "newestItemPublishTime": 1791504811,
+      "itunesId": null,
+      "trendScore": 0,
+      "language": "en",
+      "categories": {
+        "29": "Health",
+        "30": "Fitness",
+        "33": "Mental",
+        "77": "Society",
+        "78": "Culture",
+        "80": "Personal",
+        "81": "Journals"
+      }
+    },
+    {
+      "id": 6402138,
+      "url": "https://media.rss.com/emmanuel/feed.xml",
+      "title": "Emmanuel - The broken diary (Podcast Novel)",
+      "author": "Antonia Del Monaco",
+      "image": "https://media.rss.com/emmanuel/podcast_cover_20261108_195532_69c16ba76e80431d4a5071dad84dc90a.png",
+      "newestItemPublishTime": 1794731793,
+      "itunesId": 1705992637,
+      "trendScore": 9,
+      "language": "it",
+      "categories": {
+        "26": "Fiction"
+      }
+    }
+  ],
+  "count": 3,
+  "max": "3",
+  "since": 1763326452,
+  "description": "Found trending feeds."
+}

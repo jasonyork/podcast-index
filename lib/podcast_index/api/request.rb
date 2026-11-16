@@ -11,8 +11,16 @@ module PodcastIndex
 
       def get(path, params)
         template = Addressable::Template.new("#{base_url}#{path}{?query*}")
-        uri = template.expand(query: sanitized_params(params))
-        handle_response(response_to(uri))
+        uri = URI(template.expand(query: sanitized_params(params)).to_s)
+        handle_response(response_to(Net::HTTP::Get.new(uri)))
+      end
+
+      # Sends `body` as JSON, for the batch endpoints.
+      def post(path, body)
+        request = Net::HTTP::Post.new(URI("#{base_url}#{path}"))
+        request["Content-Type"] = "application/json"
+        request.body = body.to_json
+        handle_response(response_to(request))
       end
 
     private
@@ -23,12 +31,12 @@ module PodcastIndex
         params.select { |_k, v| v.present? }
       end
 
-      def response_to(uri)
-        req = Net::HTTP::Get.new(uri)
-        add_headers(req)
+      def response_to(request)
+        add_headers(request)
+        uri = request.uri
 
         Net::HTTP.start(uri.hostname, uri.port, use_ssl: uri.scheme == "https") do |http|
-          http.request(req)
+          http.request(request)
         end
       end
 

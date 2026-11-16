@@ -15,6 +15,14 @@ RSpec.describe PodcastIndex::Episode do
     it "parses nested attributes" do
       expect(episode.value.destinations[0].name).to eq "Podcastindex.org"
     end
+
+    context "when the episode is not found" do
+      let(:response) { { "status" => "true", "episode" => [], "description" => "No episodes found." } }
+
+      it "raises EpisodeNotFound" do
+        expect { episode }.to raise_error(PodcastIndex::EpisodeNotFound, "No episodes found.")
+      end
+    end
   end
 
   describe ".find_by" do
@@ -33,6 +41,30 @@ RSpec.describe PodcastIndex::Episode do
       its(:guid) { is_expected.to eq(guid) }
       its(:title) { is_expected.to eq("Episode 84: All Aboard to On-Board!") }
       its(:guid) { is_expected.to eq("PC2084") }
+
+      context "with additional options" do
+        let(:attribute) { { guid: guid, feedurl: "http://mp3s.nashownotes.com/pc20rss.xml", feedid: 920666, fulltext: true } }
+
+        it "passes the options to the API" do
+          described_class.find_by(attribute)
+          expect(PodcastIndex::Api::Episodes).to have_received(:by_guid)
+            .with(guid: guid, feedurl: "http://mp3s.nashownotes.com/pc20rss.xml", feedid: 920666, fulltext: true)
+        end
+      end
+    end
+
+    context "when the episode is not found" do
+      let(:attribute) { { guid: "missing", feedid: 920666 } }
+
+      before do
+        allow(PodcastIndex::Api::Episodes).to receive(:by_guid)
+          .and_return({ "status" => "true", "episode" => [], "description" => "No episodes found." })
+      end
+
+      it "raises EpisodeNotFound" do
+        expect { described_class.find_by(attribute) }
+          .to raise_error(PodcastIndex::EpisodeNotFound, "No episodes found.")
+      end
     end
   end
 

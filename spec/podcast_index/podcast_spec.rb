@@ -69,6 +69,20 @@ RSpec.describe PodcastIndex::Podcast do
 
       its(:itunes_id) { is_expected.to eq(itunes_id) }
     end
+
+    context "when the podcast is not found" do
+      let(:attribute) { { guid: "missing" } }
+
+      before do
+        allow(PodcastIndex::Api::Podcasts).to receive(:by_guid)
+          .and_return({ "status" => "true", "feed" => [], "description" => "No feeds match this guid." })
+      end
+
+      it "raises PodcastNotFound" do
+        expect { described_class.find_by(attribute) }
+          .to raise_error(PodcastIndex::PodcastNotFound, "No feeds match this guid.")
+      end
+    end
   end
 
   describe ".where" do

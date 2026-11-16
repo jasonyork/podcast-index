@@ -20,6 +20,15 @@ RSpec.describe PodcastIndex::Api::Recent do
         expect(result["feeds"]).to eq []
       end
     end
+
+    context "with exclude_string" do
+      subject(:result) { described_class.episodes(exclude_string: "ads") }
+
+      it "sends the excludeString query parameter" do
+        result
+        expect(a_request(:get, %r{/recent/episodes}).with(query: { "excludeString" => "ads" })).to have_been_made
+      end
+    end
   end
 
   describe ".feeds" do

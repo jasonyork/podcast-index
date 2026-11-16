@@ -27,6 +27,8 @@ module PodcastIndex
       end
 
       def from_response(response)
+        raise PodcastIndex::ValueNotFound, response["description"] if response["value"].blank?
+
         value = response["value"].transform_keys(&:underscore)
         new(JSON.parse(value.to_json, object_class: OpenStruct)) # rubocop:disable Style/OpenStructUse
       end

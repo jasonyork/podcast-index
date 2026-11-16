@@ -10,8 +10,6 @@ module PodcastIndex
 
       def find(id)
         response = Api::Podcasts.by_feed_id(id: id)
-        raise PodcastIndex::PodcastNotFound, response["description"] if response["feed"].empty?
-
         from_response(response)
       end
 
@@ -109,6 +107,8 @@ module PodcastIndex
       end
 
       def from_response(response)
+        raise PodcastIndex::PodcastNotFound, response["description"] if response["feed"].blank?
+
         feed = response["feed"].transform_keys(&:underscore)
         new(JSON.parse(feed.to_json, object_class: OpenStruct)) # rubocop:disable Style/OpenStructUse
       end

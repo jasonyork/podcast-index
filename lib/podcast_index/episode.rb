@@ -17,7 +17,7 @@ module PodcastIndex
         raise ArgumentError, "Must supply one of the attributes: #{FIND_ONE_ATTRIBUTES}" unless match.present?
         raise ArgumentError, "Must supply only one of the attributes: #{FIND_ONE_ATTRIBUTES}" if match.length > 1
 
-        send("find_by_#{match.first}", attributes[match.first])
+        send("find_by_#{match.first}", attributes[match.first], **attributes.except(match.first))
       end
 
       def where(attributes)
@@ -77,6 +77,8 @@ module PodcastIndex
       end
 
       def from_response(response)
+        raise PodcastIndex::EpisodeNotFound, response["description"] if response["episode"].blank?
+
         feed = response["episode"].transform_keys(&:underscore)
         new(JSON.parse(feed.to_json, object_class: OpenStruct)) # rubocop:disable Style/OpenStructUse
       end

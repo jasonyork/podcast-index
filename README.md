@@ -70,6 +70,8 @@ rescue PodcastIndex::PodcastNotFound
 end
 ```
 
+Single-record lookups raise `PodcastIndex::PodcastNotFound`, `PodcastIndex::EpisodeNotFound` or `PodcastIndex::ValueNotFound` (all subclasses of `PodcastIndex::Error`) when nothing matches.
+
 Find an episode by guid:
 
 ```ruby
@@ -152,7 +154,7 @@ If an error occurs, the client will raise a `PodcastIndex::Error` exception.  Th
 
 ```ruby
 begin
-  episode = PodcastIndex::Episode.find_by_guid("PC2084")
+  episode = PodcastIndex::Episode.find_by(guid: "PC2084")
 rescue PodcastIndex::Error => e
   puts e.message # => "This call requires either a valid `feedid`, `feedurl` or `podcastguid` argument. "
 end
@@ -170,7 +172,7 @@ To install this gem onto your local machine, run `bundle exec rake install`.
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/jasonyork/podcast_index.
+Bug reports and pull requests are welcome on GitHub at https://github.com/jasonyork/podcast-index.
 
 ## License
 

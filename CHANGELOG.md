@@ -1,5 +1,8 @@
 ## [Unreleased]
 
+* Fix `Episode.find_by(guid:)` ignoring `feedurl`, `feedid` and `fulltext` options
+* Fix `Episode.where(recent: true, exclude_string:)` sending the wrong query parameter (now `excludeString`)
+* Raise `PodcastNotFound`, `EpisodeNotFound` or `ValueNotFound` instead of `NoMethodError` when `Podcast.find_by`, `Episode.find`, `Episode.find_by` or `Value.find_by` find no match
 * Add `ostruct` as a runtime dependency (no longer a default gem in Ruby 4.0)
 * Update RuboCop and move development dependencies to the Gemfile
 * Test against Ruby 3.2, 3.3, 3.4 and 4.0 in CI
@@ -24,6 +27,7 @@
 
 ## [0.2.1] - 2023-07-06
 
+* Raise exception when `Podcast.find` returns no result ([#6](https://github.com/jasonyork/podcast-index/issues/6))
 
 ## [0.2.0] - 2023-04-24
 

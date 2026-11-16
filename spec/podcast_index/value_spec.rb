@@ -41,5 +41,18 @@ RSpec.describe PodcastIndex::Value do
         expect(value.destinations.first.name).to eq "Podcastindex.org"
       end
     end
+
+    context "when the value block is not found" do
+      let(:attribute) { { feed_id: 1 } }
+
+      before do
+        allow(PodcastIndex::Api::Value).to receive(:by_feed_id)
+          .and_return({ "status" => "true", "value" => [], "description" => "No value block found." })
+      end
+
+      it "raises ValueNotFound" do
+        expect { value }.to raise_error(PodcastIndex::ValueNotFound, "No value block found.")
+      end
+    end
   end
 end

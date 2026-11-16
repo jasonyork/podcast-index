@@ -1,6 +1,7 @@
 require "addressable"
 require "digest"
 require "net/http"
+require "openssl"
 
 module PodcastIndex
   module Api
@@ -8,6 +9,13 @@ module PodcastIndex
       # The API answers some lookups for a missing record with HTTP 400 rather than an empty result. It also uses
       # 400 for invalid requests, so the description is the only way to tell them apart.
       NOT_FOUND_DESCRIPTION = /not found|has no value block/i
+
+      DEFAULT_OPEN_TIMEOUT = 10
+      DEFAULT_READ_TIMEOUT = 60
+
+      # Failures to reach the API at all (timeouts, DNS, refused or dropped connections, TLS).
+      NETWORK_ERRORS = [Timeout::Error, SocketError, SystemCallError, IOError, OpenSSL::SSL::SSLError,
+                        Net::ProtocolError, Net::HTTPBadResponse].freeze
 
       def get(path, params)
         template = Addressable::Template.new("#{base_url}#{path}{?query*}")
@@ -35,9 +43,18 @@ module PodcastIndex
         add_headers(request)
         uri = request.uri
 
-        Net::HTTP.start(uri.hostname, uri.port, use_ssl: uri.scheme == "https") do |http|
+        Net::HTTP.start(uri.hostname, uri.port, use_ssl: uri.scheme == "https", **timeouts) do |http|
           http.request(request)
         end
+      rescue *NETWORK_ERRORS => e
+        raise PodcastIndex::Error, "PodcastIndex: network error (#{e.class}: #{e.message})"
+      end
+
+      def timeouts
+        {
+          open_timeout: PodcastIndex.open_timeout || DEFAULT_OPEN_TIMEOUT,
+          read_timeout: PodcastIndex.read_timeout || DEFAULT_READ_TIMEOUT
+        }
       end
 
       def handle_response(response)

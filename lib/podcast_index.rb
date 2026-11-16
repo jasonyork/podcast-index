@@ -39,4 +39,6 @@ module PodcastIndex
   def self.api_key = config.api_key
   def self.api_secret = config.api_secret
   def self.base_url = config.base_url
+  def self.open_timeout = config.open_timeout
+  def self.read_timeout = config.read_timeout
 end

@@ -4,6 +4,8 @@ A Ruby client for the [podcastindex.org API](https://podcastindex-org.github.io/
 
 ## Installation
 
+Requires Ruby 3.3 or later.
+
 Install the gem and add to the application's Gemfile by executing:
 
     $ bundle add podcast_index
@@ -26,7 +28,13 @@ end
 Additionally, the base url of the API defaults to `https://api.podcastindex.org/api/1.0`, but can be overridden in the configure block if necessary:
 ```ruby
   config.base_url = "<new base url>"
-````
+```
+
+Requests time out after 10 seconds when connecting and 60 seconds when waiting for a response. Both can be changed in the same block:
+```ruby
+  config.open_timeout = 5   # seconds
+  config.read_timeout = 30  # seconds
+```
 
 In a Rails app, this configuration would typically be placed in an initializer file.
 
@@ -155,7 +163,7 @@ The attributes of the models mirror the names in the API, but have been translat
 
 ### Exception Handling
 
-If an error occurs, the client will raise a `PodcastIndex::Error` exception.  The `message` field will contain the description returned from the server if available, or the exception message.  For example, some request require one of three optional params:
+If an error occurs, the client will raise a `PodcastIndex::Error` exception. This includes network failures such as timeouts, DNS errors and refused connections; the original exception is available as the error's `cause`.  The `message` field will contain the description returned from the server if available, or the exception message.  For example, some request require one of three optional params:
 
 ```ruby
 begin

@@ -23,6 +23,8 @@ module PodcastIndex
   class Error < StandardError; end
   class PodcastNotFound < Error; end
   class CategoryNotFound < Error; end
+  class EpisodeNotFound < Error; end
+  class ValueNotFound < Error; end
 
   def self.configure
     config.base_url = "https://api.podcastindex.org/api/1.0".freeze

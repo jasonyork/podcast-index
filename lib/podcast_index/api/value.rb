@@ -19,6 +19,12 @@ module PodcastIndex
           JSON.parse(response.body)
         end
 
+        # guids: a hash of podcast guid => array of episode guids
+        def batch_by_episode_guid(guids:)
+          response = post("/value/batch/byepisodeguid", guids)
+          JSON.parse(response.body)
+        end
+
         def by_episode_guid(podcast_guid:, episode_guid:)
           response = get("/value/byepisodeguid", podcastguid: podcast_guid, episodeguid: episode_guid)
           JSON.parse(response.body)

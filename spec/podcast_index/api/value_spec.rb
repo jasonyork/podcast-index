@@ -98,4 +98,25 @@ RSpec.describe PodcastIndex::Api::Value do
       expect(result["value"]["title"]).to eq 'Episode 278: "1 Billion Tokens!"'
     end
   end
+
+  describe ".batch_by_episode_guid" do
+    subject(:result) { described_class.batch_by_episode_guid(guids: guids) }
+
+    let(:guids) { { "917393e3-1b1e-5cef-ace4-edaa54e1f810" => %w[PC20-278 PC20-277] } }
+    let(:fixture) { file_fixture("value/batch_by_episode_guid_response.json").read }
+
+    before do
+      stub_request(:post, %r{/value/batch/byepisodeguid})
+        .to_return(body: fixture, status: 200)
+    end
+
+    it "posts the podcast guid to episode guids map as JSON" do
+      result
+      expect(WebMock).to have_requested(:post, %r{/value/batch/byepisodeguid}).with(body: guids.to_json)
+    end
+
+    it "returns the value blocks" do
+      expect(result["value"].map { |item| item["guid"] }).to contain_exactly("PC20-278", "PC20-277")
+    end
+  end
 end

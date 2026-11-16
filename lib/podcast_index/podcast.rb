@@ -6,7 +6,7 @@ module PodcastIndex
   class Podcast < SimpleDelegator
     class << self
       FIND_ONE_ATTRIBUTES = %i[feed_url guid itunes_id].freeze
-      FIND_MANY_ATTRIBUTES = %i[tag medium term title trending dead recent new new_value newly_found].freeze
+      FIND_MANY_ATTRIBUTES = %i[guids tag medium term title trending dead recent new new_value newly_found].freeze
 
       def find(id)
         response = Api::Podcasts.by_feed_id(id: id)
@@ -50,6 +50,11 @@ module PodcastIndex
       def find_by_itunes_id(itunes_id)
         response = Api::Podcasts.by_itunes_id(id: itunes_id)
         from_response(response)
+      end
+
+      def find_all_by_guids(guids:)
+        response = Api::Podcasts.batch_by_guid(guids: guids)
+        from_response_collection(response)
       end
 
       def find_all_by_tag(tag:, max: nil, start_at: nil)
@@ -125,7 +130,8 @@ module PodcastIndex
       end
 
       def from_response_collection(response)
-        response["feeds"].map do |item|
+        # The batch endpoint omits "feeds" when nothing matches.
+        Array(response["feeds"]).map do |item|
           feed = item.transform_keys(&:underscore)
           new(JSON.parse(feed.to_json, object_class: OpenStruct)) # rubocop:disable Style/OpenStructUse
         end

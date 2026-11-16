@@ -70,6 +70,15 @@ RSpec.describe "Live API: Podcast", :live do # rubocop:disable RSpec/DescribeCla
       expect(PodcastIndex::Podcast.where(new: true, max: 5).size).to be_between(1, 5)
     end
 
+    it "finds by a batch of guids" do
+      guids = [podcast.podcast_guid, PodcastIndex::Podcast.find(41504).podcast_guid] # 41504: No Agenda
+      expect(PodcastIndex::Podcast.where(guids: guids).map(&:id)).to contain_exactly(feed_id, 41504)
+    end
+
+    it "returns an empty array when no guids in the batch match" do
+      expect(PodcastIndex::Podcast.where(guids: ["6b1f6a2e-3c1d-4f7e-9a2b-1c2d3e4f5a6b"])).to eq []
+    end
+
     it "finds podcasts that recently added a value block" do
       expect(PodcastIndex::Podcast.where(new_value: true, max: 3).size).to be_between(1, 3)
     end

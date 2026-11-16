@@ -134,4 +134,54 @@ RSpec.describe PodcastIndex::Value do
       end
     end
   end
+
+  describe ".where" do
+    subject(:values) { described_class.where(attributes) }
+
+    context "with episode_guids attribute" do
+      let(:guids) { { "917393e3-1b1e-5cef-ace4-edaa54e1f810" => %w[PC20-278 PC20-277] } }
+      let(:attributes) { { episode_guids: guids } }
+      let(:response) { JSON.parse(file_fixture("value/batch_by_episode_guid_response.json").read) }
+
+      before do
+        allow(PodcastIndex::Api::Value).to receive(:batch_by_episode_guid).with(guids: guids).and_return(response)
+      end
+
+      it "returns a value for each episode" do
+        expect(values.map(&:guid)).to contain_exactly("PC20-278", "PC20-277")
+      end
+
+      it "includes the episode details" do
+        episode = values.find { |value| value.guid == "PC20-278" }
+        expect(episode).to have_attributes(podcast_guid: "917393e3-1b1e-5cef-ace4-edaa54e1f810",
+                                           feed_title: "Podcasting 2.0",
+                                           title: 'Episode 278: "1 Billion Tokens!"')
+      end
+
+      it "flattens the value block" do
+        expect(values.first.model.type).to eq "lightning"
+      end
+
+      it "has destinations" do
+        expect(values.first.destinations).not_to be_empty
+      end
+
+      context "when no episodes match" do
+        let(:response) do
+          { "status" => "false", "allFound" => false, "found" => 0,
+            "description" => "No episodes found for this guid combination." }
+        end
+
+        it { is_expected.to eq [] }
+      end
+    end
+
+    context "without a supported attribute" do
+      let(:attributes) { { feed_id: 920666 } }
+
+      it "raises an ArgumentError" do
+        expect { values }.to raise_error(ArgumentError, /episode_guids/)
+      end
+    end
+  end
 end

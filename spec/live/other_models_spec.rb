@@ -33,6 +33,17 @@ RSpec.describe "Live API: Value, Soundbite, Category and Stats", :live do # rubo
         .to raise_error(PodcastIndex::ValueNotFound)
     end
 
+    it "finds by a batch of episode guids" do
+      guid = PodcastIndex::Podcast.find(feed_id).podcast_guid
+      episode_guids = PodcastIndex::Episode.where(feed_id: feed_id, max: 2).map(&:guid)
+      values = PodcastIndex::Value.where(episode_guids: { guid => episode_guids })
+      expect(values.map(&:guid)).to match_array(episode_guids)
+    end
+
+    it "returns an empty array when no episode guids in the batch match" do
+      expect(PodcastIndex::Value.where(episode_guids: { "6b1f6a2e-3c1d-4f7e-9a2b-1c2d3e4f5a6b" => ["x"] })).to eq []
+    end
+
     it "raises ValueNotFound for a feed without a value block" do
       expect { PodcastIndex::Value.find_by(feed_id: 999_999_999) }.to raise_error(PodcastIndex::ValueNotFound)
     end

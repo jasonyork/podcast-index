@@ -39,6 +39,12 @@ module PodcastIndex
           JSON.parse(response.body)
         end
 
+        # guids: an array of podcast guids
+        def batch_by_guid(guids:)
+          response = post("/podcasts/batch/byguid", guids)
+          JSON.parse(response.body)
+        end
+
         def dead
           response = get("/podcasts/dead", {})
           JSON.parse(response.body)

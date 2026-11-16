@@ -119,6 +119,7 @@ Podcast.find(id)
 Podcast.find_by(feed_url)
 Podcast.find_by(guid)
 Podcast.find_by(itunes_id)
+Podcast.where(guids: [guid, ...]) # batch lookup by podcast guid
 Podcast.where(tag:, max: nil, start_at: nil)
 Podcast.where(medium:, max: nil) # the API currently ignores max for this endpoint
 # Additional parameters only for searching with "music" medium
@@ -140,6 +141,7 @@ Value.find_by(feed_id:)
 Value.find_by(feed_url:)
 Value.find_by(podcast_guid:)
 Value.find_by(podcast_guid:, episode_guid:) # value block for one episode
+Value.where(episode_guids: { podcast_guid => [episode_guid, ...] }) # batch; not returned in request order
 
 # Category
 Category.all

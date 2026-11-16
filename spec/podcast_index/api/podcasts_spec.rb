@@ -224,4 +224,27 @@ RSpec.describe PodcastIndex::Api::Podcasts do
       end
     end
   end
+
+  describe ".batch_by_guid" do
+    subject(:response) { described_class.batch_by_guid(guids: guids) }
+
+    let(:guids) { %w[917393e3-1b1e-5cef-ace4-edaa54e1f810 c73b1a23-1c28-5edb-94c3-10d1745d0877] }
+
+    let(:fixture) { file_fixture("podcasts/batch_by_guid_response.json").read }
+
+    before do
+      stub_request(:post, %r{/podcasts/batch/byguid})
+        .to_return(body: fixture, status: 200)
+    end
+
+    it "posts the guids as a JSON array" do
+      response
+      expect(WebMock).to have_requested(:post, %r{/podcasts/batch/byguid})
+        .with(body: guids.to_json)
+    end
+
+    it "returns the feeds" do
+      expect(response["feeds"].map { |feed| feed["id"] }).to eq [920666, 41504]
+    end
+  end
 end

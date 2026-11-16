@@ -333,5 +333,26 @@ RSpec.describe PodcastIndex::Podcast do
         expect(podcasts.first.id).to eq 8000732
       end
     end
+
+    context "with guids attribute" do
+      let(:guids) { %w[917393e3-1b1e-5cef-ace4-edaa54e1f810 c73b1a23-1c28-5edb-94c3-10d1745d0877] }
+      let(:attributes) { { guids: guids } }
+      let(:response) { JSON.parse(file_fixture("podcasts/batch_by_guid_response.json").read) }
+
+      before { allow(PodcastIndex::Api::Podcasts).to receive(:batch_by_guid).with(guids: guids).and_return(response) }
+
+      it "contains podcasts" do
+        expect(podcasts.map(&:title)).to eq ["Podcasting 2.0", "No Agenda Show"]
+      end
+
+      context "when no guids match" do
+        let(:response) do
+          { "status" => "false", "allFound" => false, "found" => 0,
+            "description" => "The guid list given doesn't match any feeds." }
+        end
+
+        it { is_expected.to eq [] }
+      end
+    end
   end
 end

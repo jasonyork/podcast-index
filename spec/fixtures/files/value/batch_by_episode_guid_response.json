@@ -1,0 +1,154 @@
+{
+  "status": "true",
+  "query": {
+    "guids": {
+      "917393e3-1b1e-5cef-ace4-edaa54e1f810": [
+        "PC20-278",
+        "PC20-277"
+      ]
+    }
+  },
+  "value": [
+    {
+      "podcastGuid": "917393e3-1b1e-5cef-ace4-edaa54e1f810",
+      "guid": "PC20-277",
+      "feedTitle": "Podcasting 2.0",
+      "title": "Episode 277: \"x402 Bitch!\"",
+      "value": {
+        "model": {
+          "type": "lightning",
+          "method": "keysend",
+          "suggested": "0.00000005000"
+        },
+        "destinations": [
+          {
+            "name": "PodcastIndex LN Test Wallet",
+            "type": "lnaddress",
+            "address": "podcastindex@getalby.com",
+            "split": 61
+          },
+          {
+            "name": "Sovereign Feeds",
+            "type": "lnaddress",
+            "address": "steven@getalby.com",
+            "split": 10
+          },
+          {
+            "name": "Alecks Gates Strike",
+            "type": "lnaddress",
+            "address": "agates@strike.me",
+            "split": 5
+          },
+          {
+            "name": "Boost Monitor",
+            "type": "lnaddress",
+            "address": "adam@getalby.com",
+            "split": 5
+          },
+          {
+            "name": "Dreb Scott (Chapters)",
+            "type": "lnaddress",
+            "address": "drebscott@getalby.com",
+            "split": 5
+          },
+          {
+            "name": "Reflex.io",
+            "type": "lnaddress",
+            "address": "reflex@livewire.io",
+            "split": 5
+          },
+          {
+            "name": "ericpp@getalby.com",
+            "type": "lnaddress",
+            "address": "ericpp@getalby.com",
+            "split": 5
+          },
+          {
+            "name": "Strike Test",
+            "type": "lnaddress",
+            "address": "adamcurry@strike.me",
+            "split": 3
+          },
+          {
+            "name": "Fountain Boost bot",
+            "type": "lnaddress",
+            "address": "boostbot@fountain.fm",
+            "split": 1
+          }
+        ]
+      }
+    },
+    {
+      "podcastGuid": "917393e3-1b1e-5cef-ace4-edaa54e1f810",
+      "guid": "PC20-278",
+      "feedTitle": "Podcasting 2.0",
+      "title": "Episode 278: \"1 Billion Tokens!\"",
+      "value": {
+        "model": {
+          "type": "lightning",
+          "method": "keysend",
+          "suggested": "0.00000005000"
+        },
+        "destinations": [
+          {
+            "name": "PodcastIndex LN Test Wallet",
+            "type": "lnaddress",
+            "address": "podcastindex@getalby.com",
+            "split": 61
+          },
+          {
+            "name": "Sovereign Feeds",
+            "type": "lnaddress",
+            "address": "steven@getalby.com",
+            "split": 10
+          },
+          {
+            "name": "Alecks Gates Strike",
+            "type": "lnaddress",
+            "address": "agates@strike.me",
+            "split": 5
+          },
+          {
+            "name": "Boost Monitor",
+            "type": "lnaddress",
+            "address": "adam@getalby.com",
+            "split": 5
+          },
+          {
+            "name": "Dreb Scott (Chapters)",
+            "type": "lnaddress",
+            "address": "drebscott@getalby.com",
+            "split": 5
+          },
+          {
+            "name": "Reflex.io",
+            "type": "lnaddress",
+            "address": "reflex@livewire.io",
+            "split": 5
+          },
+          {
+            "name": "ericpp@getalby.com",
+            "type": "lnaddress",
+            "address": "ericpp@getalby.com",
+            "split": 5
+          },
+          {
+            "name": "Strike Test",
+            "type": "lnaddress",
+            "address": "adamcurry@strike.me",
+            "split": 3
+          },
+          {
+            "name": "Fountain Boost bot",
+            "type": "lnaddress",
+            "address": "boostbot@fountain.fm",
+            "split": 1
+          }
+        ]
+      }
+    }
+  ],
+  "allFound": true,
+  "found": 2,
+  "description": "Found."
+}

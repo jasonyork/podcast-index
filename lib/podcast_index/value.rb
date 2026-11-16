@@ -5,6 +5,7 @@ module PodcastIndex
   class Value < SimpleDelegator
     class << self
       FIND_ONE_ATTRIBUTES = %i[feed_id feed_url podcast_guid].freeze
+      FIND_MANY_ATTRIBUTES = %i[episode_guids].freeze
 
       def find_by(attributes)
         return find_by_episode_guid(**attributes.slice(:podcast_guid, :episode_guid)) if attributes.key?(:episode_guid)
@@ -18,7 +19,22 @@ module PodcastIndex
         raise PodcastIndex::ValueNotFound, e.message
       end
 
+      def where(attributes)
+        match = (attributes.keys & FIND_MANY_ATTRIBUTES)
+        raise ArgumentError, "Must supply one of the attributes: #{FIND_MANY_ATTRIBUTES}" unless match.present?
+
+        send("find_all_by_#{match.first}", **attributes)
+      end
+
     private
+
+      # episode_guids: a hash of podcast guid => array of episode guids
+      def find_all_by_episode_guids(episode_guids:)
+        response = Api::Value.batch_by_episode_guid(guids: episode_guids)
+        # Each item wraps its value block with the episode's details; flatten them into one object. The API omits
+        # "value" when nothing matches.
+        Array(response["value"]).map { |item| build(item.except("value").merge(item["value"])) }
+      end
 
       def find_by_feed_id(feed_id)
         response = Api::Value.by_feed_id(id: feed_id)
@@ -45,7 +61,11 @@ module PodcastIndex
       def from_response(response)
         raise PodcastIndex::ValueNotFound, response["description"] if response["value"].blank?
 
-        value = response["value"].transform_keys(&:underscore)
+        build(response["value"])
+      end
+
+      def build(attributes)
+        value = attributes.transform_keys(&:underscore)
         new(JSON.parse(value.to_json, object_class: OpenStruct)) # rubocop:disable Style/OpenStructUse
       end
     end
